@@ -1,0 +1,416 @@
+
+
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+
+<title>REAPER | Download</title>
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href='main.css' rel='stylesheet' type='text/css'>
+
+<script>
+function showHeaderMenu(nm) {
+  var d = document.getElementById(nm);
+  if (d.style.display != "inline") d.style.display = "inline";
+  else d.style.display = "none";
+  return false;
+}
+var g_onload = function() {};
+</script>
+
+
+</head>
+<body onLoad="g_onload();">
+
+<div class='black'>
+  <div class='strip'>
+
+    <div style='width:320px; float:left; text-align:right; margin-top:28px;'>
+      <div class='hdrlink black'>
+        <a href='download.php'>
+        <div class='hdrtop white'>DOWNLOAD REAPER</div>
+        <div class='hdrbottom'>Version 5.12: January 21, 2016</div>
+        </a>
+      </div>
+      <div style='height:11px;'></div>
+      <div class='hdrlink black'>
+        <a href='purchase.php'>
+        <div class='hdrtop'>PURCHASE</div>
+        <div class='hdrbottom'>&nbsp;</div>
+        </a>
+      </div>
+      <div style='height:11px;'></div>
+      <div class='hdrlink black'>
+        <a href='userguide.php'>
+        <div class='hdrtop'>DOWNLOAD USER GUIDE</div>
+        <div class='hdrbottom'>&nbsp;</div>
+        </a>
+      </div>
+    </div>
+
+    <div style='width:360px; float:left; overflow:hidden;'>
+      <center><a href='index.php'><img src='v5img/logo_sc.jpg'></a></center>
+    </div>
+  
+    <div style='width:320px; float:right; text-align:left; margin-top:28px;'>
+      <div class='hdrlink black'>
+        <a href='#' onClick="return showHeaderMenu('resourcesmenu');">
+        <div class='hdrtop'>RESOURCES</div>
+        </a>
+        <div style='position:relative'>
+          <div id='resourcesmenu' class='headermenu dark'>
+            <a href="langpack">Language Packs</a>
+            <BR><a href="http://stash.reaper.fm/tag/Themes" target='_blank'>Themes</a>
+            <BR><a href="http://stash.reaper.fm/" target='_blank'>REAPER Stash</a>
+            <BR><a href="http://sws.mj-s.com/" target='_blank'>SWS REAPER Extension</a>
+            <BR><a href="http://reaperblog.net" target='_blank'>The (unofficial) REAPER Blog</a>
+          </div>
+        </div>
+        <a href='#' onClick="return showHeaderMenu('resourcesmenu');">
+        <div class='hdrbottom'>&nbsp;</div>
+        </a>
+      </div>
+      <div style='height:11px;'></div>
+      <div class='hdrlink black'>
+        <a href='videos.php'>
+        <div class='hdrtop'>VIDEOS</div>
+        <div class='hdrbottom'>&nbsp;</div>
+        </a>
+      </div>
+      <div style='height:11px;'></div>
+      <div class='hdrlink black'>
+        <a href='http://forum.cockos.com/forumdisplay.php?f=20'>
+        <div class='hdrtop'>FORUM</div>
+        <div class='hdrbottom'>&nbsp;</div>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class='light'>
+<div class='light strip' style='padding-bottom:23px;'>
+
+  <div style='width:320px; float:left;'>
+  <div style='height:28px;'></div>
+    <img src='v5img/download.jpg'>
+  </div>
+
+  <div style='width:660px; float:right; margin-top:30px;'>
+    <div class='heading'>Download and Evaluate REAPER for Free</div>
+    <p>Download REAPER below for a free, fully functional 60-day evaluation.<br>No registration or personal details are required.</p>
+    <div style='height:41px; margin-top:10px;'>
+      <div class='heading'>Like A Version</div>
+    </div>
+      <div style='width:320px; float:left;'>
+        <p>REAPER supports all Windows version from Windows XP to Windows 10.
+        
+        <p>The Windows version also works well with <a href="https://www.winehq.org/" target="_blank">WINE</a>.
+      </div>
+      <div style='width:320px; float:right;'>
+        <p>REAPER supports all OS X versions from 10.5<span onmouseover='document.getElementById("r475").style.display = "inline";' style='vertical-align:super; font-size:7pt; font-weight:lighter;'>*</span> to 10.11.</p> 
+        <div style='display:none;' id='r475'>For OS X 10.4 and PPC support, use <a href="download-old.php?ver=4x#r475">REAPER v4.75</a>.</div>
+      </div>
+  </div>
+</div>
+</div>
+
+<div class='dark'>
+<div class='dark strip'>
+
+  <div style='width:480px; float:left; margin-top:40px; background-color:#1F1F1F;'>
+    <div style='width:165px; float:left; margin-top:39px; text-align:center; '>
+      <img src="v5img/dl_win.jpg">
+      <div class="heading">Windows</div>
+    </div>
+    <div style='width:300px; float:right; margin-top:20px;'>
+      <div style='width:187px; float:left;'>
+  <div class='downloadheading'>Windows 32-bit</div>
+  <div class='downloadinfo'>
+REAPER v5.12 - 8MB<br>
+Windows XP/Vista/7/8/10<br>
+  </div>
+</div>
+<div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
+  <a href="files/5.x/reaper512-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+</div>
+<div style='clear:both; height:23px;'></div>
+      <div style='background-color:#313131;height:1px;margin-bottom:20px;'></div>
+      <div style='width:187px; float:left;'>
+  <div class='downloadheading'>Windows 64-bit</div>
+  <div class='downloadinfo'>
+REAPER v5.12 - 10MB<br>
+Windows XP/Vista/7/8/10 x64<br>
+  </div>
+</div>
+<div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
+  <a href="files/5.x/reaper512_x64-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+</div>
+<div style='clear:both; height:23px;'></div>
+    </div>
+  </div>
+
+  <div style='width:480px; float:right; margin-top:40px; background-color:#1F1F1F;'>
+    <div style='width:165px; float:left; margin-top:39px; text-align:center;'>
+      <img src="v5img/dl_osx.jpg">
+      <div class="heading">OS X</div>
+    </div>
+
+    <div style='width:300px; float:right; margin-top:20px;'>
+      <div style='width:187px; float:left;'>
+  <div class='downloadheading'>OS X 32-bit</div>
+  <div class='downloadinfo'>
+REAPER v5.12 - 13MB<br>
+OS X 10.5-10.11<br>
+  </div>
+</div>
+<div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
+  <a href="files/5.x/reaper512_i386.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+</div>
+<div style='clear:both; height:23px;'></div>
+      <div style='background-color:#313131;height:1px;margin-bottom:20px;'></div>
+      <div style='width:187px; float:left;'>
+  <div class='downloadheading'>OS X 64-bit</div>
+  <div class='downloadinfo'>
+REAPER v5.12 - 14MB<br>
+OS X 10.5-10.11<br>
+  </div>
+</div>
+<div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
+  <a href="files/5.x/reaper512_x86_64.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+</div>
+<div style='clear:both; height:23px;'></div>
+    </div> 
+  </div>
+</div>
+
+
+<div class='dark strip'>
+  <div style='background-color:#4E5454;height:1px;margin-top:40px;'></div>
+  <div style='margin-top:30px;margin-bottom:30px;'>
+    <div class='heading'>REAPER 5.12: Warm, Considering</div>
+    <div style='width:1000px; -webkit-column-count: 3; -moz-column-count: 3; column-count: 3;'><a name="whatsnew"></a>
+<div class='avoidbreak'>
+<div class='bold'>VST</div><ul class='bullet'>
+<li> give status when scanning VST2 shell plug-ins
+<li> improve name format of bridged shell plug-ins
+<li> more detailed splash updates during shell plug-in scanning
+<li> obey VST unload preference on OSX scan, exit
+<li> improve detection of toggle parameters
+<li> improve VST3 UI feedback for preset/program selection
+<li> improve VST3 bus-disconnected notifications on stop/reset/channel count change
+<li> safer VST3 initialization sequence
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>JSFX</div><ul class='bullet'>
+<li> fix gfxanalyzer frequency labels, phase display <a href="http://forum.cockos.com/showthread.php?t=169701" target="blank"><span class='whatsnewdot'>.</span></a>
+<li> support UTF-8 in strings in IDE
+<li> increase slider control refresh rate
+<li> support adding and loading JSFX from project_path/Effects/
+<li> show any project-local JFSX in browser, may require F5 refresh after project load/switch
+<li> improve super8 performance with low latencies and long loops
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Project bay</div><ul class='bullet'>
+<li> add FX offline support (menu item, or shift+click bypass button)
+<li> improve display of offline/bypass FX
+<li> include input FX
+<li> fix FX parameter sort order with FX that share names
+<li> fix muting of items from item group view
+<li> improve performance with large numbers of FX parameters
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Video</div><ul class='bullet'>
+<li> add YUV multiplier/desaturation preset
+<li> add cheap brightness/contrast preset
+<li> add gfx_procrect channel-processor
+<li> allow gfx_mode 0x80000 for treating gfx_r/gfx_g/gfx_b as YUV values in non-RGB mode
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>CD burning</div><ul class='bullet'>
+<li> fix CD burn support on 64-bit OSX
+<li> fix possible incorrect error message on completed Windows burn
+<li> remove old pre-XP cdrecord.exe burn method
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Managers</div><ul class='bullet'>
+<li> remember last view sort settings
+<li> allow sort by color in marker/region manager
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>ReaPlugs</div><ul class='bullet'>
+<li> re-send bank/program/CCs from ReaControlMIDI in response to samplerate/block size changes
+<li> improve analysis accuracy in ReaXcomp, ReaEQ
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>ReaScript</div><ul class='bullet'>
+<li> support UTF-8 support in IDE
+<li> allow executing other ReaScripts via actions
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Render</div><ul class='bullet'>
+<li> fix tail option for full project renders
+<li> improve channel count detection when using render selected items/render regions
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Consolidate/export tracks</div><ul class='bullet'>
+<li> allow configurable channel count rather than simply mono/stereo
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Control surfaces</div><ul class='bullet'>
+<li> fix DM2000 HUI issues, improve HUI configuration window
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Cues</div><ul class='bullet'>
+<li> fix unique marker/region indices for cues imported to project
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>File copy</div><ul class='bullet'>
+<li> do not show status window for very short renders (also affects apply FX, many other actions)
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Freeze</div><ul class='bullet'>
+<li> obey tail preference
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>FX</div><ul class='bullet'>
+<li> remember last preset name for offline FX
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Glue</div><ul class='bullet'>
+<li> restored 5.1 channel count glue behavior, added new actions to glue with increasing channel counts
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Grid</div><ul class='bullet'>
+<li> Add action to use the same grid division (ignoring swing) in arrange view and MIDI editor
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Installer</div><ul class='bullet'>
+<li> cleanup of installer, make most functionality required
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Media Explorer</div><ul class='bullet'>
+<li> always allow close of window via Esc key when undocked <a href="http://forum.cockos.com/showthread.php?t=171615" target="blank"><span class='whatsnewdot'>.</span></a>
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Mouse modifiers</div><ul class='bullet'>
+<li> fix shift+drag mappings for arrange view
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Recording</div><ul class='bullet'>
+<li> add support for FLAC/WavPack writing arbitrary bit depths between 16 and 24 bits (encoded as 24-bit)
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>ReWire</div><ul class='bullet'>
+<li> improve behavior when using both bridged and unbridged devices
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Sends</div><ul class='bullet'>
+<li> fix mute envelope bugs when stopped <a href="http://forum.cockos.com/showthread.php?t=159486" target="blank"><span class='whatsnewdot'>.</span></a>
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Subprojects</div><ul class='bullet'>
+<li> fix loss of certain sends when loading parent projects that need a subproject render
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Take FX</div><ul class='bullet'>
+<li> do not increase effective channel count when using non-audio FX
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Tracks</div><ul class='bullet'>
+<li> fix cmd+select multiple tracks with certain options enabled on OS X
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Undo</div><ul class='bullet'>
+<li> optimize undo point adding for large plug-in configuration blocks
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>API</div><ul class='bullet'>
+<li> add SetProjectGrid(), SetMIDIEditorGrid()
+<li> add AddRemoveReaScript(), custom_action_register_t for reascripts
+<li> add ValidatePtr2()
+<li> fix AddProjectMarker() unique index creation for regions, auto-numbered markers
+</ul>
+</div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<div class='foot black'>
+<div class='black strip' style='margin-bottom:20px;'>
+<br>
+
+<div class='footitem'>
+<div class='foot'>&nbsp;&nbsp;<a href='index.php'>Home</a></div>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href='http://www.cockos.com/company.php' target='_blank'>Company</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href='reviews.php'>Reviews</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href='radio.php'>Radio</a><br>
+</div>
+<div class='footitem'>
+<div class='foot'>&nbsp;&nbsp;<a href='about.php'>About</a></div>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href='about.php#technical'>Technical</a><br>
+</div>
+<div class='footitem'>
+<div class='foot'>&#149;&nbsp;<a href='download.php'>Download</a></div>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href='download-old.php'>Old Versions</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href='langpack'>Language Packs</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href='reaplugs/'>ReaPlugs</a><br>
+</div>
+<div class='footitem'>
+<div class='foot'>&nbsp;&nbsp;<a href='purchase.php'>Purchase</a></div>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href='dist-agreement.php'>Distribution</a><br>
+</div>
+<div class='footitem'>
+<div class='foot'>&nbsp;&nbsp;Developer</div>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href='sdk/walter/'>Theme Development</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href='sdk/cursors/cursors.php'>Custom Cursors</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href='sdk/js/js.php'>JSFX Programming</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href='sdk/reascript/reascript.php'>ReaScript</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href='sdk/plugin/plugin.php'>Extensions SDK</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href='sdk/vst/vst_ext.php'>Extensions to VST SDK</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href='sdk/osc/osc.php'>OSC</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href='langpack#langpack_dev'>Language Pack Template</a><br>
+</div>
+<div class='footitem'>
+<div class='foot'>&nbsp;&nbsp;Resources</div>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href='userguide.php'>User Guide</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href='videos.php'>Videos</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href='http://stash.reaper.fm' target='_blank'>Stash</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href='http://forum.cockos.com/forumdisplay.php?f=20'>Forum</a><br>
+</div>
+
+</div>
+</div>
+
+</body></html>

@@ -1,0 +1,223 @@
+{
+    "latest_stable": {
+        "version": "4.4.1"
+    }, 
+    "releases": [
+        {
+            "iseol": false, 
+            "version": "4.5-rc2", 
+            "moniker": "mainline", 
+            "source": "https://www.kernel.org/pub/linux/kernel/v4.x/testing/linux-4.5-rc2.tar.xz", 
+            "pgp": "https://www.kernel.org/pub/linux/kernel/v4.x/testing/linux-4.5-rc2.tar.sign", 
+            "released": {
+                "timestamp": 1454292746, 
+                "isodate": "2016-02-01"
+            }, 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/log/?id=refs/tags/v4.5-rc2", 
+            "changelog": null, 
+            "diffview": "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/diff/?id=v4.5-rc2&id2=v4.5-rc1&dt=2", 
+            "patch": {
+                "full": "https://www.kernel.org/pub/linux/kernel/v4.x/testing/patch-4.5-rc2.xz", 
+                "incremental": null
+            }
+        }, 
+        {
+            "iseol": false, 
+            "version": "4.4.1", 
+            "moniker": "stable", 
+            "source": "https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.4.1.tar.xz", 
+            "pgp": "https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.4.1.tar.sign", 
+            "released": {
+                "timestamp": 1454268583, 
+                "isodate": "2016-01-31"
+            }, 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/log/?id=refs/tags/v4.4.1", 
+            "changelog": "https://www.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.4.1", 
+            "diffview": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/diff/?id=v4.4.1&id2=v4.4&dt=2", 
+            "patch": {
+                "full": "https://www.kernel.org/pub/linux/kernel/v4.x/patch-4.4.1.xz", 
+                "incremental": null
+            }
+        }, 
+        {
+            "iseol": false, 
+            "version": "4.3.5", 
+            "moniker": "stable", 
+            "source": "https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.3.5.tar.xz", 
+            "pgp": "https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.3.5.tar.sign", 
+            "released": {
+                "timestamp": 1454268418, 
+                "isodate": "2016-01-31"
+            }, 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/log/?id=refs/tags/v4.3.5", 
+            "changelog": "https://www.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.3.5", 
+            "diffview": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/diff/?id=v4.3.5&id2=v4.3.4&dt=2", 
+            "patch": {
+                "full": "https://www.kernel.org/pub/linux/kernel/v4.x/patch-4.3.5.xz", 
+                "incremental": "https://www.kernel.org/pub/linux/kernel/v4.x/incr/patch-4.3.4-5.xz"
+            }
+        }, 
+        {
+            "iseol": false, 
+            "version": "4.1.17", 
+            "moniker": "longterm", 
+            "source": "https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.1.17.tar.xz", 
+            "pgp": "https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.1.17.tar.sign", 
+            "released": {
+                "timestamp": 1454268233, 
+                "isodate": "2016-01-31"
+            }, 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/log/?id=refs/tags/v4.1.17", 
+            "changelog": "https://www.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.1.17", 
+            "diffview": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/diff/?id=v4.1.17&id2=v4.1.16&dt=2", 
+            "patch": {
+                "full": "https://www.kernel.org/pub/linux/kernel/v4.x/patch-4.1.17.xz", 
+                "incremental": "https://www.kernel.org/pub/linux/kernel/v4.x/incr/patch-4.1.16-17.xz"
+            }
+        }, 
+        {
+            "iseol": false, 
+            "version": "3.18.26", 
+            "moniker": "longterm", 
+            "source": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.26.tar.xz", 
+            "pgp": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.18.26.tar.sign", 
+            "released": {
+                "timestamp": 1453734398, 
+                "isodate": "2016-01-25"
+            }, 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/log/?id=refs/tags/v3.18.26", 
+            "changelog": "https://www.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.18.26", 
+            "diffview": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/diff/?id=v3.18.26&id2=v3.18.25&dt=2", 
+            "patch": {
+                "full": "https://www.kernel.org/pub/linux/kernel/v3.x/patch-3.18.26.xz", 
+                "incremental": "https://www.kernel.org/pub/linux/kernel/v3.x/incr/patch-3.18.25-26.xz"
+            }
+        }, 
+        {
+            "iseol": false, 
+            "version": "3.14.60", 
+            "moniker": "longterm", 
+            "source": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.14.60.tar.xz", 
+            "pgp": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.14.60.tar.sign", 
+            "released": {
+                "timestamp": 1454047243, 
+                "isodate": "2016-01-29"
+            }, 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/log/?id=refs/tags/v3.14.60", 
+            "changelog": "https://www.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.14.60", 
+            "diffview": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/diff/?id=v3.14.60&id2=v3.14.59&dt=2", 
+            "patch": {
+                "full": "https://www.kernel.org/pub/linux/kernel/v3.x/patch-3.14.60.xz", 
+                "incremental": "https://www.kernel.org/pub/linux/kernel/v3.x/incr/patch-3.14.59-60.xz"
+            }
+        }, 
+        {
+            "iseol": false, 
+            "version": "3.12.53", 
+            "moniker": "longterm", 
+            "source": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.12.53.tar.xz", 
+            "pgp": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.12.53.tar.sign", 
+            "released": {
+                "timestamp": 1453908709, 
+                "isodate": "2016-01-27"
+            }, 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/log/?id=refs/tags/v3.12.53", 
+            "changelog": "https://www.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.12.53", 
+            "diffview": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/diff/?id=v3.12.53&id2=v3.12.52&dt=2", 
+            "patch": {
+                "full": "https://www.kernel.org/pub/linux/kernel/v3.x/patch-3.12.53.xz", 
+                "incremental": "https://www.kernel.org/pub/linux/kernel/v3.x/incr/patch-3.12.52-53.xz"
+            }
+        }, 
+        {
+            "iseol": false, 
+            "version": "3.10.96", 
+            "moniker": "longterm", 
+            "source": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.10.96.tar.xz", 
+            "pgp": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.10.96.tar.sign", 
+            "released": {
+                "timestamp": 1454046600, 
+                "isodate": "2016-01-29"
+            }, 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/log/?id=refs/tags/v3.10.96", 
+            "changelog": "https://www.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.10.96", 
+            "diffview": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/diff/?id=v3.10.96&id2=v3.10.95&dt=2", 
+            "patch": {
+                "full": "https://www.kernel.org/pub/linux/kernel/v3.x/patch-3.10.96.xz", 
+                "incremental": "https://www.kernel.org/pub/linux/kernel/v3.x/incr/patch-3.10.95-96.xz"
+            }
+        }, 
+        {
+            "iseol": false, 
+            "version": "3.4.110", 
+            "moniker": "longterm", 
+            "source": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.4.110.tar.xz", 
+            "pgp": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.4.110.tar.sign", 
+            "released": {
+                "timestamp": 1445476809, 
+                "isodate": "2015-10-22"
+            }, 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/log/?id=refs/tags/v3.4.110", 
+            "changelog": "https://www.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.4.110", 
+            "diffview": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/diff/?id=v3.4.110&id2=v3.4.109&dt=2", 
+            "patch": {
+                "full": "https://www.kernel.org/pub/linux/kernel/v3.x/patch-3.4.110.xz", 
+                "incremental": "https://www.kernel.org/pub/linux/kernel/v3.x/incr/patch-3.4.109-110.xz"
+            }
+        }, 
+        {
+            "iseol": false, 
+            "version": "3.2.76", 
+            "moniker": "longterm", 
+            "source": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.2.76.tar.xz", 
+            "pgp": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.2.76.tar.sign", 
+            "released": {
+                "timestamp": 1453498814, 
+                "isodate": "2016-01-22"
+            }, 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/log/?id=refs/tags/v3.2.76", 
+            "changelog": "https://www.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.2.76", 
+            "diffview": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/diff/?id=v3.2.76&id2=v3.2.75&dt=2", 
+            "patch": {
+                "full": "https://www.kernel.org/pub/linux/kernel/v3.x/patch-3.2.76.xz", 
+                "incremental": "https://www.kernel.org/pub/linux/kernel/v3.x/incr/patch-3.2.75-76.xz"
+            }
+        }, 
+        {
+            "iseol": false, 
+            "version": "2.6.32.70", 
+            "moniker": "longterm", 
+            "source": "https://www.kernel.org/pub/linux/kernel/v2.6/longterm/v2.6.32/linux-2.6.32.70.tar.xz", 
+            "pgp": "https://www.kernel.org/pub/linux/kernel/v2.6/longterm/v2.6.32/linux-2.6.32.70.tar.sign", 
+            "released": {
+                "timestamp": 1454101980, 
+                "isodate": "2016-01-29"
+            }, 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/log/?id=refs/tags/v2.6.32.70", 
+            "changelog": "https://www.kernel.org/pub/linux/kernel/v2.6/longterm/v2.6.32/ChangeLog-2.6.32.70", 
+            "diffview": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/diff/?id=v2.6.32.70&id2=v2.6.32.69&dt=2", 
+            "patch": {
+                "full": "https://www.kernel.org/pub/linux/kernel/v2.6/longterm/v2.6.32/patch-2.6.32.70.xz", 
+                "incremental": "https://www.kernel.org/pub/linux/kernel/v2.6/longterm/v2.6.32/incr/patch-2.6.32.69-70.xz"
+            }
+        }, 
+        {
+            "iseol": false, 
+            "version": "next-20160205", 
+            "moniker": "linux-next", 
+            "source": null, 
+            "pgp": null, 
+            "released": {
+                "timestamp": 1454643779, 
+                "isodate": "2016-02-05"
+            }, 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/next/linux-next.git/log/?id=refs/tags/next-20160205", 
+            "changelog": null, 
+            "diffview": null, 
+            "patch": {
+                "full": null, 
+                "incremental": null
+            }
+        }
+    ]
+}

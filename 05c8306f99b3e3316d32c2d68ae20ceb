@@ -1,0 +1,202 @@
+<html><head>
+<title>musl - Download</title>
+<!--head-->
+<link rel="shortcut icon" href="./favicon.ico" type="image/png">
+<link rel="stylesheet" href="./main.css" type="text/css">
+
+<style><!--
+
+.colmask {
+	clear: both;
+	float: left;
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.colbg {
+	float: 100%;
+	left: 50%;
+	position: relative;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+.col {
+	float: left;
+	position: relative;
+	overflow: hidden;
+	width: 50%;
+	left: -50%;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
+
+.col1 { background-color: #fff0b0; }
+.col2 { background-color: #d0e0ff; }
+.col3 { background-color: #f0d0ff; }
+.colbody { padding: .25em .5em .25em .5em; }
+
+.clear { clear: both; }
+
+.headnum {
+	font-style: italic;
+	font-size: 400%;
+	padding-left: 1em;
+	//text-align: center;
+}
+
+div.tty {
+	margin: 1em 1em 1em 1em;
+	padding: 2px 2px 2px 2px;
+	background-color: black;
+	color: #00ff00;
+//	color: #ffc000;
+	font-family: monospace;
+	font-size: 80%;
+	overflow: hidden;
+}
+
+.nestboxes {
+	font-style: italic;
+	text-align: center;
+	font-size: 80%;
+}
+
+--></style>
+
+</head>
+<body>
+
+
+
+<!--topad-->
+<!--menu-->
+<div class="menu"><ul>
+<li><a href="./">Home</a>
+<li><a href="intro.html">Introduction</a>
+<li><a href="faq.html">FAQ</a>
+<li><a href="how.html">How to use</a>
+<li><a href="support.html">Support</a>
+</ul><ul>
+<li><a href="manual.html">Documentation</a>
+<li><a href="download.html">Download</a>
+<li><a href="http://git.musl-libc.org/cgit/musl/tree">Browse Source</a>
+<li><a href="http://wiki.musl-libc.org">Community Wiki</a>
+</ul></div>
+<h1><img src="musl2.png">Download musl</h1>
+
+
+<div class="colmask col1">
+<div class="colbg col2">
+
+<div class="col"><div class="colbody">
+
+<h2>Git repository</h2>
+
+<p>The latest musl source is always available via the git revision
+control system. Efforts are made to keep the master branch in a state
+that not only compiles and works, but that works at least as well or
+better than the latest release.
+
+<p>The following command can be used to checkout a copy of the musl
+git repository:</p>
+
+
+<div class="tty">
+<pre>$ git clone git://git.musl-libc.org/musl
+</pre>
+</div>
+
+<p>Source and revision history are
+also <a href="http://git.musl-libc.org/cgit/musl">browsable
+online</a> via cgit.</p>
+
+
+</div></div>
+
+
+<div class="col"><div class="colbody">
+
+<h2>Official releases</h2>
+
+<p>musl generally follows a time-based release cycle, with versions
+spaced roughly one to three months apart. Version numbering, however,
+is based on an evolving roadmap for particular compatibility and
+feature goals. Releases are timed so as to make fixes for major bugs
+available in release form as soon as possible while leaving ample time
+for testing after significant invasive changes.</p>
+
+<p>Beginning with 1.1.7, releases are signed with
+the <a href="musl.pub">project GPG key</a>. Its fingerprint
+is <tt>8364 8929 0BB6 B70F 99FF DA05 56BC DB59 3020 450F</tt> and can
+be cross-checked
+against <a href="https://twitter.com/musllibc/status/578347641395748865">@musllibc</a>
+on Twitter.
+
+<p>See below for release notes summaries and download links.</p>
+
+</div></div>
+
+<div class="clear"></div>
+
+
+</div>
+</div>
+
+
+
+<div class="colmask col3">
+<div class="colbody">
+
+<h2>Current Versions</h2>
+
+<h3>Mainline - 1.1.13</h3>
+
+<p><small><em>This series is actively developed but intended for use
+in production environments as long as appropriate testing is
+performed.</em></small>
+
+
+
+<p><a href="releases/musl-1.1.13.tar.gz">musl-1.1.13.tar.gz</a>
+(<a href="releases/musl-1.1.13.tar.gz.asc">sig</a>)
+- Feb 15, 2016
+
+<p>This release adds support for out-of-tree builds, search domains in
+resolv.conf, VDSO-accelerated clock_gettime on MIPS, and building
+SMP-safe/ready SH binaries for the open-hardware J2. Performance of
+atomics and synchronization primitives has been greatly improved on
+most "ll/sc model" RISC archs. Regex BRE now supports the widely-used
+extensions \|, \+, and \? and larger regular expressions are now
+supported. A number of minor application and toolchain compatibility
+improvements have also been made, including changes which reduce the
+risk of assembler and linker bugs leading to malfunctioning binaries.
+
+<p>Two potentially dangerous bugs have been fixed: a single-byte heap
+overflow in getdelim and a pointer indexing error in dynamic TLS
+allocation. Other bugs fixed include various issues in parsing and
+error handling for resolv.conf and related files, incorrect error
+return values for some functions, and failures to accept null pointer
+arguments in some functions for which they have defined behavior. Some
+arch-specific bugs affecting ARM, MIPS, and SH/FDPIC have also been
+fixed.
+
+
+<h2>Older versions</h2>
+
+<p>Earlier versions of musl have been moved
+to <a href="oldversions.html">a separate page</a>.
+
+
+</div></div>
+
+
+<div class="clear"></div>
+
+
+<!--botad-->
+
+
+</body>
+</html>

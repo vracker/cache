@@ -1,0 +1,394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+	"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="Content-Style-Type" content="text/css">
+	<title>XZ Utils</title>
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+
+<body>
+
+<div id="content">
+
+<img id="logo" alt="Tukaani logo" src="/images/tukaani_120x60.png">
+
+<h1>XZ Utils</h1>
+
+<p>
+XZ Utils is free general-purpose data compression software with a high
+compression ratio. XZ Utils were written for POSIX-like systems,
+but also work on some not-so-POSIX systems.
+XZ Utils are the successor to LZMA Utils.
+</p>
+<p>
+The core of the XZ Utils compression code is based on
+<a href="http://7-zip.org/sdk.html">LZMA SDK</a>, but it has been modified
+quite a lot to be suitable for XZ Utils. The primary compression
+algorithm is currently LZMA2, which is used inside the .xz container format.
+With typical files, XZ Utils create 30&nbsp;% smaller output than gzip and
+15&nbsp;% smaller output than bzip2.
+</p>
+<p>
+XZ Utils consist of several components:
+</p>
+<ul>
+	<li>liblzma is a compression library with an API similar to that
+	of zlib.</li>
+	<li>xz is a command line tool with syntax similar to that
+	of gzip.</li>
+	<li>xzdec is a decompression-only tool smaller than
+	the full-featured xz tool.</li>
+	<li>A set of shell scripts (xzgrep, xzdiff, etc.) have been adapted
+	from gzip to ease viewing, grepping, and comparing compressed
+	files.</li>
+	<li>Emulation of command line tools of LZMA Utils eases transition
+	from LZMA Utils to XZ Utils.</li>
+</ul>
+<p>
+While liblzma has a zlib-like API, liblzma doesn't include any file I/O
+functions. A separate I/O library is planned, which would abstract handling
+of .gz, .bz2, and .xz files with an easy to use API.
+</p>
+
+<h2>Source code</h2>
+<p>
+The files have been signed with
+<a href="/misc/lasse_collin_pubkey.txt">this OpenPGP key</a>.
+</p>
+<p>
+See the
+<a href="http://git.tukaani.org/?p=xz.git;a=blob;f=NEWS;hb=HEAD">NEWS</a>
+file for a summary of changes between versions.
+</p>
+
+<h3>Stable</h3>
+<p>
+5.2.2 was released on 2015-09-29.
+</p>
+<p>
+<b>Cygwin users</b> should note that XZ Utils 5.2.x can <b>lose data</b>
+on Cygwin 1.7.34 or older. The bugs have been fixed in Cygwin 1.7.35
+and thus XZ Utils 5.2.x works correctly on Cygwin 1.7.35 and later.
+You can check your Cygwin version with <tt>cygcheck -V</tt>.
+If you cannot upgrade to new enough Cygwin, you should stick to
+XZ Utils 5.0.x which is fine and safe to use on older Cygwin versions.
+</p>
+<p>
+<a href="xz-5.2.2.tar.gz">xz-5.2.2.tar.gz</a> (1430 KiB)
+	<a href="xz-5.2.2.tar.gz.sig">signature</a>
+<br><a href="xz-5.2.2.tar.bz2">xz-5.2.2.tar.bz2</a> (1165 KiB)
+	<a href="xz-5.2.2.tar.bz2.sig">signature</a>
+<br><a href="xz-5.2.2.tar.xz">xz-5.2.2.tar.xz</a> (993 KiB)
+	<a href="xz-5.2.2.tar.xz.sig">signature</a>
+</p>
+
+<h3>Old stable</h3>
+<p>
+5.0.8 was released on 2014-12-21.
+</p>
+<p>
+The 5.0.x branch is no longer maintained.
+As of 2015-09-29 there are no known major bugs and
+it is fine to keep using 5.0.8 for now if you don't want to upgrade to 5.2.x.
+The API and ABI in 5.2.x are backward compatible with 5.0.x
+so it should be straightforward to upgrade from 5.0.x to 5.2.x.
+</p>
+<p>
+<a href="xz-5.0.8.tar.gz">xz-5.0.8.tar.gz</a> (1298 KiB)
+	<a href="xz-5.0.8.tar.gz.sig">signature</a>
+<br><a href="xz-5.0.8.tar.bz2">xz-5.0.8.tar.bz2</a> (1060 KiB)
+	<a href="xz-5.0.8.tar.bz2.sig">signature</a>
+<br><a href="xz-5.0.8.tar.xz">xz-5.0.8.tar.xz</a> (923 KiB)
+	<a href="xz-5.0.8.tar.xz.sig">signature</a>
+</p>
+
+<h3>Development</h3>
+<p>
+The new APIs, command line options etc. in development releases
+should be considered unstable.
+Incompatible changes to unstable features may be done before
+they get included in a stable release.
+</p>
+<p>
+There currently are no development releases.
+</p>
+<!--
+<p>
+<a href="xz-5.1.4beta.tar.gz">xz-5.1.4beta.tar.gz</a> (1265 KiB)
+	<a href="xz-5.1.4beta.tar.gz.sig">signature</a>
+<br><a href="xz-5.1.4beta.tar.xz">xz-5.1.4beta.tar.xz</a> (882 KiB)
+	<a href="xz-5.1.4beta.tar.xz.sig">signature</a>
+</p>
+-->
+
+<h3>Git repository</h3>
+<p><tt>git clone http://git.tukaani.org/xz.git</tt></p>
+<p><a href="http://git.tukaani.org/?p=xz.git">Gitweb</a></p>
+<p>
+Branches:
+</p>
+<ul>
+	<li><b>master</b>: the latest development code</li>
+	<li><b>v5.2</b>: fixes for the next 5.2.x release</li>
+	<li><b>v5.0</b>: fixes for the next 5.0.x release (unmaintained)</li>
+</ul>
+<p>
+Building the code from the git repository requires GNU Autotools. Here are
+the <em>minimum</em> versions that should work with XZ Utils; using the
+latest versions is strongly recommended:
+</p>
+<ul>
+	<li>Autoconf 2.64</li>
+	<li>Automake 1.12</li>
+	<li>gettext 0.18 (Note: autopoint depends on cvs!)</li>
+	<li>libtool 2.2</li>
+</ul>
+
+<h2>Bindings</h2>
+
+<h3>Python</h3>
+<p>
+Python 3.3 includes
+<a href="http://docs.python.org/3/library/lzma">bindings for liblzma</a>.
+A backport of these bindings are available for Python 2 in the
+<a href="https://pypi.python.org/pypi/backports.lzma">backports.lzma</a>
+package.
+</p>
+<p>
+<a href="https://pypi.python.org/pypi/lzmaffi">lzmaffi</a> is
+another Python binding which adds random-access decompression support.
+</p>
+<p>
+The original Python 2 binding for liblzma is
+<a href="https://pypi.python.org/pypi/pyliblzma">PylibLZMA</a>.
+</p>
+
+<h3>Perl</h3>
+<p>
+Perl bindings for liblzma:
+<a href="http://search.cpan.org/~pmqs/IO-Compress-Lzma/">IO-Compress-Lzma</a>
+and
+<a href="http://search.cpan.org/~pmqs/Compress-Raw-Lzma/">Compress-Raw-Lzma</a>.
+</p>
+
+<h3>Delphi and Free Pascal</h3>
+<p>
+Bindings and example programs for Delphi and Free Pascal are available
+<a href="https://github.com/delphiunderground/xz-examples-delphi">here</a>.
+</p>
+
+<h2>Pre-built binaries</h2>
+<p>
+Many free software operating systems already provide easy-to-install
+XZ Utils binaries.
+It doesn't make sense to provide links to all those here.
+Instead, binaries or links to websites providing binaries are listed here
+only for operating systems that don't have well-known repositories where
+users would get software like this.
+</p>
+<p>
+If you have a website that provides up-to-date XZ Utils binaries for
+an operating system that meets the the criteria above, let me know
+and I will include a link here. Note that I won't host the binaries
+themselves without a good reason.
+</p>
+
+<h3>Windows</h3>
+<p>
+The Windows version of XZ Utils includes binaries for 32-bit and 64-bit x86.
+The binaries only depend on msvcrt.dll, which is available
+on Windows 98 and later out of the box.
+</p>
+<ul>
+	<li>Command line tools: xz, xzdec, lzmadec, lzmainfo</li>
+	<li>Shared (DLL) and static liblzma, required C header files,
+	and liblzma.def to create import libraries for non-GNU toolchains
+	(no import library is needed with GNU toolchain)</li>
+	<li>Documentation is in plain text (UTF-8) format. The man pages
+	of the command line tools are included also as PDF.</li>
+</ul>
+<p>
+5.2.2 was a minor update and there's nothing that would affect
+the Windows binaries compared to 5.2.1.
+</p>
+<p>
+<a href="xz-5.2.1-windows.zip">xz-5.2.1-windows.zip</a> (1352 KiB)
+	<a href="xz-5.2.1-windows.zip.sig">signature</a>
+<br><a href="xz-5.2.1-windows.7z">xz-5.2.1-windows.7z</a> (633 KiB)
+	<a href="xz-5.2.1-windows.7z.sig">signature</a>
+</p>
+<p>
+Old stable release is available below.
+Note that 5.0.6, 5.0.7, and 5.0.8 were very minor updates and there's
+nothing that would affect the Windows binaries compared to 5.0.5.
+</p>
+<p>
+<a href="xz-5.0.5-windows.zip">xz-5.0.5-windows.zip</a> (916 KiB)
+	<a href="xz-5.0.5-windows.zip.sig">signature</a>
+<br><a href="xz-5.0.5-windows.7z">xz-5.0.5-windows.7z</a> (552 KiB)
+	<a href="xz-5.0.5-windows.7z.sig">signature</a>
+</p>
+
+<h3>Mac OS X</h3>
+<p>
+Anders F Björklund has made a
+<a href="http://macpkg.sourceforge.net/">XZ Utils
+binary package for Mac OS X 10.5 and later</a>
+(for ppc, i386, and x86_64).
+</p>
+
+<h3>DOS</h3>
+<p>
+The DOS version of XZ Utils includes only the xz command line tool
+and some documentation.
+The xz tool should work e.g. on FreeDOS (also in DOSEMU), MS-DOS,
+and Windows 95/98/98SE/ME.
+This doesn't necessarily work in DOSBox at all,
+and at least some problems are expected under Windows XP Command Prompt
+(signal handling doesn't work).
+</p>
+<p>
+Since the DOS version is naturally going to get very little testing,
+it is recommended to use the Windows version instead of the DOS version
+if you need xz under Windows 98 or later.
+It is likely that that the DOS version will be updated only occasionally.
+</p>
+<p>
+5.2.0 and later have experimental support for 8.3 filenames.
+See <tt>xz-dos.txt</tt> in the binary package or
+<tt>dos/README.txt</tt> in the source package for details.
+</p>
+<p>
+<a href="xz-5.2.1-dos.zip">xz-5.2.1-dos.zip</a> (222 KiB)
+	<a href="xz-5.2.1-dos.zip.sig">signature</a>
+</p>
+<p>
+The package includes some copylefted code from
+<a href="http://www.delorie.com/djgpp/">DJGPP</a> and
+<a href="http://homer.rice.edu/~sandmann/cwsdpmi/index.html">CWSDPMI</a>.
+The relevant source code is available from their home pages,
+and copies are also available below.
+</p>
+<p>
+<a href="/misc/djlsr204.zip">djlsr204.zip</a> (1880 KiB)
+<br><a href="/misc/djtst204.zip">djtst204.zip</a> (963 KiB)
+<br><a href="/misc/csdpmi7s.zip">csdpmi7s.zip</a> (88 KiB)
+</p>
+<p>
+Juan Manuel Guerrero has made a more complete port of XZ Utils to DOS.
+It also has support for short file names (8.3), but the naming
+method is different from the one found in 5.2.0 and later.
+It is available from
+<a href="http://www.delorie.com/djgpp/getting.html">DJGPP mirrors</a>
+under /current/v2apps (e.g. xz-500b.zip for 5.0.0 binaries).
+</p>
+
+<h2>Old versions</h2>
+<p>
+Source and binary packages of
+<a href="/xz/old.html">old XZ Utils releases</a>
+are available on a separate page.
+</p>
+
+<h2>Supported platforms</h2>
+<p>
+Below is an incomplete and somewhat vague (version numbers mostly missing)
+list of operating systems on which XZ Utils should work.
+The compiler(s) or toolchains are mentioned in parenthesis.
+GCC refers to GCC 3 or later.
+If you have additions or corrections, please email them to me.
+</p>
+<ul>
+	<li>GNU/Linux (GCC, LLVM/Clang, ICC)</li>
+	<li>GNU/HURD (GCC)</li>
+	<li>DragonflyBSD (GCC)</li>
+	<li>FreeBSD (GCC)</li>
+	<li>MirBSD (GCC)</li>
+	<li>NetBSD (GCC)</li>
+	<li>OpenBSD (GCC)</li>
+	<li>MINIX 3 (GCC) [1]</li>
+	<li>Haiku (GCC4)</li>
+	<li>Mac OS X (GCC)</li>
+	<li>Solaris 8, 9, 10, 11 (GCC, Sun Studio) [3]</li>
+	<li>Solaris 2.6, 7 (GCC)</li>
+	<li>HP-UX (GCC, HP ANSI C) [2]</li>
+	<li>Tru64 (GCC, Compaq C compiler) [1]</li>
+	<li>IRIX (MIPSpro) [1]</li>
+	<li>AIX (GCC)</li>
+	<li>QNX (compilers?)</li>
+	<li>OpenVMS (HP C compiler) [1]</li>
+	<li>OpenVOS 17 (GCC)</li>
+	<li>Windows 95 and later (GCC/MinGW, GCC/MinGW-w64,
+		GCC/Cygwin, GCC/Interix) [1]</li>
+	<li>OS/2, eComStation (GCC)</li>
+	<li>DOS e.g. FreeDOS and MS-DOS (GCC/DJGPP) [1]</li>
+</ul>
+<p>
+[1] See also the platform-specific notes in the INSTALL file.
+</p>
+<p>
+[2] 2010-09-22: HP ANSI C compiler crashes when compiling XZ Utils
+on PA-RISC. On Itanium there are no problems.
+</p>
+<p>
+[3] On Solaris 8 and 9 one may need to pass
+ac_cv_prog_cc_c99= to configure if using Sun Studio.
+</p>
+
+<h2>Licensing</h2>
+<p>
+The most interesting parts of XZ Utils (e.g. liblzma) are in the
+public domain. You can do whatever you want with the public domain parts.
+</p>
+<p>
+Some parts of XZ Utils (e.g. build system and some utilities) are under
+different free software licenses such as GNU LGPLv2.1, GNU GPLv2,
+or GNU GPLv3.
+</p>
+
+</div>
+
+<hr id="sidebarseparator">
+
+<div id="sidebar">
+<p>Navigation:</p>
+<ul id="navi">
+	<li>General
+	<ul class="subnavi">
+		<li><a href="/" title="tukaani.org front page">Front page</a></li>
+		<li><a href="http://git.tukaani.org/" title="Gitweb">Git repositories</a></li>
+		<li><a href="/artwork.html" title="Various version of the logo">Artwork</a></li>
+		<li><a href="/about.html" title="People behind the Tukaani project">About</a></li>
+		<li><a href="/contact.html" title="Contact information">Contact</a></li>
+	</ul></li>
+	<li>XZ Data Compression
+	<ul class="subnavi">
+		<li>XZ Utils</li>
+		<li><a href="/xz/embedded.html" title="Size-optimized decompressor for the .xz file format">XZ Embedded</a></li>
+		<li><a href="/xz/java.html" title="Java implementation of the .xz format">XZ for Java</a></li>
+		<li><a href="/xz/format.html" title="Specification and other information about the .xz file format">.xz file format</a></li>
+		<li><a href="http://sourceforge.net/p/lzmautils/discussion/708858" title="Discussion forum on SourceForge.net">Forum</a></li>
+		<li><a href="/xz/lists.html" title="XZ related mailing lists">Mailing lists</a>
+	</ul></li>
+	<li>Miscellaneous
+	<ul class="subnavi">
+		<li><a href="/difmplay/" title="Script to ease playing music from DI.fm and SKY.fm">difmplay</a></li>
+	</ul></li>
+	<li>Old Projects
+	<ul class="subnavi">
+		<li><a href="/lzma/" title="Legacy data compression software superseded by XZ Utils">LZMA Utils</a></li>
+		<li><a href="/pkgtools/" title="Tukaani pkgtools">pkgtools</a></li>
+		<li><a href="/tukbuild/" title="Package building tool for Slackware-like distributions">tukbuild</a></li>
+		<li><a href="/fakedestdir/" title="fakedestdir helps with broken makefiles">fakedestdir</a></li>
+	</ul></li>
+</ul>
+</div>
+
+</body>
+
+</html>

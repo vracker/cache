@@ -151,7 +151,7 @@ on Twitter.
 
 <h2>Current Versions</h2>
 
-<h3>Mainline - 1.1.13</h3>
+<h3>Mainline - 1.1.14</h3>
 
 <p><small><em>This series is actively developed but intended for use
 in production environments as long as appropriate testing is
@@ -159,28 +159,18 @@ performed.</em></small>
 
 
 
-<p><a href="releases/musl-1.1.13.tar.gz">musl-1.1.13.tar.gz</a>
-(<a href="releases/musl-1.1.13.tar.gz.asc">sig</a>)
-- Feb 15, 2016
+<p><a href="releases/musl-1.1.14.tar.gz">musl-1.1.14.tar.gz</a>
+(<a href="releases/musl-1.1.14.tar.gz.asc">sig</a>)
+- Feb 22, 2016
 
-<p>This release adds support for out-of-tree builds, search domains in
-resolv.conf, VDSO-accelerated clock_gettime on MIPS, and building
-SMP-safe/ready SH binaries for the open-hardware J2. Performance of
-atomics and synchronization primitives has been greatly improved on
-most "ll/sc model" RISC archs. Regex BRE now supports the widely-used
-extensions \|, \+, and \? and larger regular expressions are now
-supported. A number of minor application and toolchain compatibility
-improvements have also been made, including changes which reduce the
-risk of assembler and linker bugs leading to malfunctioning binaries.
-
-<p>Two potentially dangerous bugs have been fixed: a single-byte heap
-overflow in getdelim and a pointer indexing error in dynamic TLS
-allocation. Other bugs fixed include various issues in parsing and
-error handling for resolv.conf and related files, incorrect error
-return values for some functions, and failures to accept null pointer
-arguments in some functions for which they have defined behavior. Some
-arch-specific bugs affecting ARM, MIPS, and SH/FDPIC have also been
-fixed.
+<p>This release primarily fixes regressions that slipped into 1.1.13,
+including a significant stdio regression causing fputs and puts to
+fail on zero-length strings, ARM hard-float build failure on clang due
+to a compiler bug which is now detected and worked around, a hang at
+the entry point of the dynamic linker on SH/FDPIC, and make clean/make
+distclean no longer working in unconfigured trees. A minor
+longstanding bug in crypt-sha256/512 was also fixed, and further
+improvements to the build system have been made.
 
 
 <h2>Older versions</h2>

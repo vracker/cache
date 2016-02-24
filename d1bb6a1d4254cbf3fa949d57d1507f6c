@@ -147,6 +147,10 @@
 <tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gdb-7.10.tar.gz.sig">gdb-7.10.tar.gz.sig</a></td><td align="right">2015-08-28 17:48  </td><td align="right"> 72 </td><td>&nbsp;</td></tr>
 <tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gdb-7.10.tar.xz">gdb-7.10.tar.xz</a></td><td align="right">2015-08-28 17:48  </td><td align="right"> 18M</td><td>&nbsp;</td></tr>
 <tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gdb-7.10.tar.xz.sig">gdb-7.10.tar.xz.sig</a></td><td align="right">2015-08-28 17:48  </td><td align="right"> 72 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="gdb-7.11.tar.gz">gdb-7.11.tar.gz</a></td><td align="right">2016-02-24 05:24  </td><td align="right"> 34M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gdb-7.11.tar.gz.sig">gdb-7.11.tar.gz.sig</a></td><td align="right">2016-02-24 05:24  </td><td align="right"> 72 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gdb-7.11.tar.xz">gdb-7.11.tar.xz</a></td><td align="right">2016-02-24 05:24  </td><td align="right"> 18M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gdb-7.11.tar.xz.sig">gdb-7.11.tar.xz.sig</a></td><td align="right">2016-02-24 05:24  </td><td align="right"> 72 </td><td>&nbsp;</td></tr>
 <tr><td valign="top"><img src="/icons/hand.right.gif" alt="[   ]"></td><td><a href="xxgdb.README">xxgdb.README</a></td><td align="right">1999-08-31 19:15  </td><td align="right"> 52 </td><td>&nbsp;</td></tr>
    <tr><th colspan="5"><hr></th></tr>
 </table>

@@ -1,0 +1,1536 @@
+<!DOCTYPE HTML PUBLIC '-//W3C//DTD HTML 4.01 Transitional//EN'>
+
+<html>
+  <head>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+    <title>BusyBox</title>
+    <style type="text/css">
+     body {
+      background-color: #DEE2DE;
+      color: #000000;
+      font-family: lucida, helvetica, arial;
+      font-size: 100%;
+     }
+     :link { color: #660000 }
+     :visited { color: #660000 }
+     :active { color: #660000 }
+     td.c2 {font-family: arial, helvetica, sans-serif; font-size: 80%}
+     td.c1 {font-family: lucida, helvetica; font-size: 248%}
+    </style>
+  </head>
+
+  <body>
+    <!--basefont face="lucida, helvetica, arial" size="3"-->
+
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td>
+    <div class="c3">
+      <table border="0" cellspacing="1" cellpadding="2">
+        <tr>
+          <td class="c1">BUSYBOX</td>
+        </tr>
+      </table>
+    </div>
+
+  <a href="/"><img src="images/busybox1.png" alt="BusyBox" border="0" /></a><br>
+</td>
+</tr>
+
+<tr>
+
+<td valign="top" style="white-space:nowrap;">
+    <b>About</b>
+    <ul>
+        <li><a href="about.html">About BusyBox</a></li>
+        <li><a href="live_bbox/live_bbox.html">BusyBox in VM</a></li>
+        <li><a href="screenshot.html">Screenshot</a></li>
+        <li><a href="news.html">Announcements</a></li>
+    </ul>
+    <b>Documentation</b>
+    <ul>
+        <li><a href="FAQ.html">FAQ</a></li>
+        <li><a href="downloads/BusyBox.html">Command Help</a></li>
+    </ul>
+    <b>Get BusyBox</b>
+    <ul>
+        <li><a href="downloads/">Download Source</a></li>
+        <li><a href="downloads/binaries/">Download Binaries</a></li>
+        <li><a href="license.html">License</a></li>
+        <li><a href="products.html">Products</a></li>
+    </ul>
+    <b>Development</b>
+    <ul>
+        <li><a href="http://git.busybox.net/busybox/">Browse Source</a></li>
+        <li><a href="source.html">Source Control</a></li>
+        <!--li><a href="/downloads/patches/recent.html">Recent Changes</a></li-->
+        <li><a href="lists.html">Mailing Lists</a></li>
+        <li><a href="https://bugs.busybox.net/">Bug Tracking</a></li>
+        <li><a href="developer.html">Contributing</a></li>
+    </ul>
+    <p><b>Links</b>
+    <ul>
+        <li><a href="links.html">Related Sites</a></li>
+        <li><a href="tinyutils.html">Tiny Utilities</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+    </ul>
+    <p><b>Developer Pages</b>
+    <ul>
+        <li><a href="http://busybox.net/~landley/">Rob</a></li>
+        <li><a href="http://busybox.net/~aldot/">Bernhard</a></li>
+	<li><a href="http://busybox.net/~vda/">Denys</a>
+	 <br>- <a href="http://busybox.net/~vda/resume/denys_vlasenko.htm">resume</a>
+	 <br>- <a href="http://busybox.net/~vda/inline_hunt/">kernel inlines</a>
+	 <br>- <a href="http://busybox.net/~vda/k-sections/">kernel size</a>
+	 <br>- <a href="http://busybox.net/~vda/mboot/">mboot</a>
+	 <br>- <a href="http://busybox.net/~vda/linld/">linld</a>
+	 <br>- <a href="http://busybox.net/~vda/init_vs_runsv.html">init must die</a>
+	 <br>- <a href="http://busybox.net/~vda/no_ifup.txt">no ifup</a>
+	 <br>- <a href="http://busybox.net/~vda/unscd/">unscd</a>
+	</li>
+    </ul>
+</td>
+
+<td valign="top">
+
+
+
+<ul>
+
+  <li>
+    <p>
+    <a href="http://sfconservancy.org">The Software Freedom Conservancy</a>
+    acts as the GPL enforcement agent for various BusyBox copyright holders.
+    If you wish to report a GPL violation on BusyBox,
+    please write to <a href="mailto:gpl@busybox.net">gpl@busybox.net</a>.
+    </p>
+  </li>
+
+  <li>
+    <p>I want to thank the following companies which are providing support for the BusyBox project:
+      <ul>
+        <li><a href="http://www.analog.com/en/">Analog Devices, Inc.</a> provided
+        a Blackfin development board free of charge.
+        <a href="http://www.analog.com/blackfin">Blackfin</a>
+        is a NOMMU processor, and its availability for testing is invaluable.
+        If you are an embedded device developer,
+        please note that Analog Devices has an entire Linux distribution available
+        for download for this board. Visit
+        <a href="http://blackfin.uclinux.org/">http://blackfin.uclinux.org/</a>
+        for more information.
+        </li>
+        <li><a href="http://www.aoe.com/">
+        AOE - Open Source Web Development</a> contributes financially.
+        </li>
+      </ul>
+    </p>
+  </li>
+
+  <li><b>24 October 2015 -- BusyBox 1.24.1 (stable)</b>
+    <p><a href="http://busybox.net/downloads/busybox-1.24.1.tar.bz2">BusyBox 1.24.1</a>.
+    (<a href="http://git.busybox.net/busybox/tree/?h=1_24_stable">git</a>,
+    <a href="http://busybox.net/downloads/fixes-1.24.1/">patches</a>,
+    <a href="http://busybox.net/fix.html">how to add a patch</a>)</p>
+
+    <p>Bug fix release. 1.24.1 has fixes for
+    ftpd (DIR parameter works for non-root too),
+    httpd (heap overflow fix),
+    sort (fix for a a problem affecting glibc build).
+    Build system has a fix for the lost link-time optimizations. In 1.24.0 announcement,
+    you might have noticed that sizes unexpectedly grew relative to 1.23.2. Now it is fixed:<pre>
+   text    data     bss     dec     hex filename
+ 860126     486    7272  867884   d3e2c busybox-1.23.2
+ 869074     516    7364  876954   d619a busybox-1.24.0 (buggy link script)
+ 858906     486    7180  866572   d390c busybox-1.24.0 (fixed link script)
+ 858941     486    7180  866607   d392f busybox-1.24.1</pre>
+    </p>
+
+    <p>Check out a new applet, "uevent". It is a netlink listener. It provides
+    alternative to having mdev as kernel hotplug helper. Instead of setting up
+    the former via "echo /sbin/mdev >/proc/sys/kernel/hotplug", start "uevent mdev"
+    early during boot. "uevent" will run "mdev" for each hotplug event, waiting
+    for each child to terminate before starting a next one.</p>
+
+    <p>The former method does not require a long-lived listener process,
+    but it is racy: many copies of mdev can run in parallel.</p>
+  </li>
+
+  <li><b>12 October 2015 -- BusyBox 1.24.0 (unstable)</b>
+    <p><a href="http://busybox.net/downloads/busybox-1.24.0.tar.bz2">BusyBox 1.24.0</a>.
+    (<a href="http://git.busybox.net/busybox/tree/?h=1_24_stable">git</a>,
+    <a href="http://busybox.net/downloads/fixes-1.24.0/">patches</a>,
+    <a href="http://busybox.net/fix.html">how to add a patch</a>)</p>
+
+    <p>Sizes of busybox-1.23.2 and busybox-1.24.0 (with equivalent config, static uclibc build):<pre>
+   text    data     bss     dec     hex filename
+ 860126     486    7272  867884   d3e2c busybox-1.23.2
+ 869074     516    7364  876954   d619a busybox-1.24.0</pre>
+    </p>
+
+    <p>I would like to feature some less-known useful tools in Busybox.
+    Let me talk about "nmeter" applet. I find myself using it
+    surprisingly often. For example, it helped me to correctly parallelize
+    a very large multiple kernel build job (~30000 kernel builds)
+    so that all CPUs are loaded, but machine isn't evicting file cache
+    because it has too many jobs for installed RAM.<p>
+
+    <p>When dealing with a machine which seems to be sluggish, it takes some time
+    to pinpoint the cause. It can be lack of free memory. It can be excessive
+    CPU load. It can be misbehaving (slow) storage or network.
+    nmeter allows to monitor many such parameters and presents them in a
+    compact one-line form. This lets you see the time evolution as well.
+    Here is an example:</p>
+<p><pre>
+# nmeter '%t %c x %x m %[mf] f%p p %[pn] b %b net%[neth0]'
+20:51:22 .......... x  837 m 2.2g f   0 p  377 b    0    0 net    0    0
+20:51:23 .......... x 1195 m 2.2g f   0 p  377 b    0    0 net  128    0
+20:51:24 .......... x 1687 m 2.2g f   0 p  377 b    0    0 net   64    0
+20:51:25 .......... x 1829 m 2.2g f   0 p  377 b    0    0 net  875   70
+20:51:26 U......... x 1567 m 2.2g f   6 p  377 b    0    0 net   64    0
+20:51:27 U......... x 1451 m 2.2g f   0 p  377 b    0    0 net   64    0
+20:51:28 .......... x 1332 m 2.2g f   0 p  377 b    0    0 net   64    0
+20:51:29 .......... x 1698 m 2.2g f   0 p  377 b    0    0 net   64    0
+20:51:30 .......... x 1640 m 2.2g f   0 p  377 b    0    0 net   64    0
+20:51:31 .......... x 1397 m 2.2g f   0 p  377 b    0    0 net   64    0
+20:51:32 .......... x 1244 m 2.2g f   0 p  377 b    0 4096 net   64    0
+20:51:33 U......... x 1660 m 2.2g f   0 p  377 b    0    0 net  128    0
+20:51:34 U......... x 1793 m 2.2g f   0 p  377 b    0    0 net   64    0
+20:51:35 .......... x 1583 m 2.2g f   0 p  377 b    0    0 net   64    0
+20:51:36 .......... x 1308 m 2.2g f   0 p  377 b    0    0 net   64    0</pre>
+    </p>
+
+    <p>If CPU load is high, the CPU bar will immediately show this.
+    %x column shows context switches per second, allowing to detect cases
+    where processes are waking and waiting on each other excessively.
+    %[mf] is free memory, and it is smart enough to show actual usable memory:
+    unlike many other tools, it considers buffer cache as free memory.
+    %p and %[pn] columns show forks and number of processes, they let you
+    detect a case where a daemon is respawning continuously.
+    Two %b numbers are block IO read and write rates. %[neth0] is network IO
+    rate on the specified interface. More specifiers exist - please read
+    "nmeter --help" output.
+    </p>
+    <p>With -d MSEC option and small values of MSEC, this tool allows to see a
+    detailed view of bursty activity. Sometimes you can literally see every
+    network packet arriving. To make this possible, this tool is written
+    so that it reads the minimum of informaion it needs from /proc.
+    In this example, we can see how a packet arrived to eth0, complete with
+    its IRQ#30 firing:
+
+    <p><pre># nmeter -d10 '%4t irq%30i net%[neth0]'
+21:07:58.2301 irq   0 net    0    0
+21:07:58.2401 irq   0 net    0    0
+21:07:58.2502 irq   0 net    0    0
+21:07:58.2601 irq   1 net   64    0
+21:07:58.2701 irq   0 net    0    0
+21:07:58.2802 irq   0 net    0    0
+21:07:58.2902 irq   0 net    0    0</pre></p>
+
+    <p>As you see, each update takes about 0.2 millisecond of processing
+    time. You can run even -d1, if you want. -d0 also works, it is a mode
+    where updates are continuous.
+
+    <p>On the other hand, with large update interval,
+    you can run this tool continuously on a server machine and save its output,
+    to be able to investigate mysterious drops in performance at a time when
+    there was no operator present. If you have an oopsing server, it is useful
+    to have another nmeter instance's output to be constantly printed to
+    its console, if you want to see what was going on just before oops.
+    "Is my server occasionally dies in an IRQ storm?" situation.
+    </p>
+
+    <p>Changes since previous release:
+<pre>
+Aaro Koskinen (3):
+      gzip: add support for compression levels 4-9
+      diff: fix -B with single line changes
+      diff.tests: add testcases for -B and single line changes
+
+Adam Tkac (1):
+      ntpd: relicense ntpd applet to ISC-style license
+
+Alex Dowad (1):
+      ifupdown: 'prio' should have been 'metric' in static_up and static_up6
+
+Alexander Korolkov (1):
+      arping: fix iface name in error messages
+
+Alfonso Ranieri (1):
+      volume_id: fix a buglet introduced by is_prefixed_with() conversion
+
+Andrew Fuller (1):
+      vi: basic undo feature shouldn't depend on yankmark
+
+Ari Sundholm (3):
+      dd: add optional support for status=noxfer/none
+      dd: move suffix struct to xatonum.c
+      truncate: new applet
+
+Arthur Gautier (1):
+      udhcpc: dns labels can actually start with a number
+
+Bartosz Golaszewski:
+      Makefile: fix cscope target
+      i2cget, i2cset, i2cdetect, i2cdump: new applets
+      i2c-tools: fix 'i2cdetect -l'
+      i2c-tools: only try /dev/i2c/* if opening /dev/i2c-* fails with ENOENT
+      unit-tests: remove unnecesary field from struct bbunit_listelem
+      unit-tests: remove code depending on WANT_TIMING
+      Makefile: add missing libraries to LDLIBS
+      libbb: add unit tests for is_prefixed_with()
+      libbb: add a comment describing the way is_prefixed_with() works
+      libbb: add is_suffixed_with() function
+      i2c-tools: remove duplicate definitions
+      i2c-tools: rename remaining defines
+
+Bernhard Reutner-Fischer (5):
+      dc: tweak parsing
+      wget: fix --header to not append duplicate headers
+      *: Switch to POSIX utmpx API
+      include: Fallback to UTMP unless there is UTMPX support
+      adduser: Add -k /path/to/skel
+
+Christoph J. Thompson (1):
+      iproute: don't hardcode the path to config files
+
+Clayton Shotwell (1):
+      applets: add installation of individual binaries
+
+Daniel Thompson (1):
+      libbb: enable support for !CONFIG_MULTIUSER
+
+Denys Vlasenko:
+      truncate: new applet
+      uevent: new applet
+      build system: -fno-builtin-printf
+      build system: make CONFIG_EXTRA_LDFLAGS go to LDFLAGS, not EXTRA_LDFLAGS
+      build system: remove special-casing for extra libs
+      examples/mdev_fat.conf: document that newer mdev exposes path
+      update example ntp.script
+      updated android_ndk_defconfig
+      platform.h: add compat mempcpy
+      platform.h: enable mempcpy for FreeBSD
+      platform.h: mempcpy needs &lt;string.h&gt;
+      libbb: add setsockopt_foo helpers
+      libbb: auto_string() for efficient handling of temporary malloced stirngs
+      libbb: code shrink by factoring out common update_utmp_DEAD_PROCESS
+      libbb: introduce and use is_prefixed_with()
+      libbb: make INET[6]_rresolve use sockaddr2{host,dotted}_noport
+      libbb: make is_suffixed_with() return pointer inside string, not key.
+      libbb: more compact API for bb_parse_mode()
+      libiproute: use itoa() where appropriate
+      libpwdgrp: fix a memory leak in getXXnam (we did not save address of string buf)
+      libpwdgrp: fix counting of commas in group list
+      libpwdgrp: getgrXXX: empty string is not a member name, do not store it
+      libpwdgrp: reinstate Tito's optional atexit freeing
+      libpwdgrp: store getXXnam result in a single malloc block
+      libpwdgrp: use FAST_FUNC to make "matching ABI" optimization more likely to succeed
+      libpwdgrp: use a better estimate of max struct size
+      libpwdgrp: use getpwent() instead of getpwent_r()
+      ash: a bunch of trivial simplifications
+      ash: add tests adapted from hush glob tests. glob2.tests currently fails
+      ash: explain what "local -" does
+      ash: fix a SEGV case in an invalid heredoc
+      ash: fix a SEGV in ${#1}
+      ash: fix handling of duplicate "local"
+      ash: make dowait() a bit more readable. Logic is unchanged
+      ash: simplify "you have mail" code
+      hush: add recent ash tests to hush testsuite too (they all pass for hush)
+      hush: document buggy handling of duplicate "local"
+      hush: fix a nommu bug where a part of function body is lost if run in a pipe
+      hush: fix umask: umask(022) was setting umask(755)
+      awk: support "length" form of "length()". Closes 8371
+      dc: fix "dc p" printing bogus data
+      deluser: also remove user from /etc/group
+      deluser: implement --remove-home
+      depmod: fix recent breakage in modules.dep generation
+      dhcpd: fix an improper widening conversion
+      diff: fix a bug in diffing against stdin. Closes 7784
+      dpkg: update supported compression methods
+      find: support "find . -delete" idiom - do not try rmdir(".")
+      ftpd: change_identity() must be after chroot()
+      ftpd: prevent zombies. closes 7832
+      gzip: speed up and shrink put_16bit()
+      ifconfig: fix double free fatal error in INET_sprint
+      ifplugd: discovered why it needed net/ethernet.h: just for ETH_ALEN
+      inetd: fix order of array index check and array access
+      ip: increased max ID for /etc/iproute2/rt_tables to 1023
+      ipaddress: better formatting, no code changes
+      less: improve regular file detection in line counting code
+      ls: fix year 9999 bug :)
+      mdev: if a "future" mdev.seq is seen, do not overwrite it with ours
+      mdev: improve logging
+      modinfo: fix fallout from basename removal
+      modprobe-small: fix and simplify rmmod
+      modprobe-small: fix recent breakage: modprobe -r was using full path
+      modprobe-small: if concurrent module load did not succeed, wait
+      modprobe: fix "modprobe devname:snd/timer" case (alias with a slash)
+      modprobe: fix recent breakage: modules.dep reading code needs to strip dirname
+      modprobe: revert checking for /, stop doing basename() on modprobe args
+      ntpd: change help text about -l to say that it doesn't disable client code
+      ntpd: get rid of G.initial_poll_complete
+      patch: segfault fix. Closes 7916
+      ping: fix recently introduced build breakage for non-optimizing builds
+      ps: fix SEGV on narrow screens. closes 8176
+      remove global "jmp_buf die_jmp" from !FEATURE_PREFER_APPLETS builds
+      route: fix bogus read error when route table is empty
+      route: improve -A inet6
+      runsvdir: (almost) close a signal race
+      runsvdir: do not block SIGCHLD around poll/sleep
+      runsvdir: if pid==1, also intercept SIGINT for -s SCRIPT
+      sed: implement ",+N" range end
+      sort: fix -kN,M handling (was including last separator into the comparison)
+      ssl_helper: tweaks discovered while building 32-bit version
+      sync: add support for -d -f FILE
+      tar: do not try to decode GNU extended headers as pax headers
+      tc: fix print_rate
+      trim extra newlines in help texts
+      udhcpc: fix for some Android toolchain breakage
+      umount: always use umount2 syscall with specified flags
+      unzip: prevent attacks via malicious filenames
+      uudecode: tolerate text input with CR+LF line ends
+      vi: make BACKSPACE and DELETE join lines at start/end of line
+      wget: make openssl/ssl_helper choice configurable
+
+Eugene Rudoy (1):
+      ash: consider "local -" case while iterating over local variables in mklocal.
+
+Felix Fietkau (1):
+      find: fix regression in status processing for path arguments
+
+Frank Bergmann (1):
+      ifupdown: correct ifstate update during 'ifup -a'. Closes 6212
+
+Guillermo Rodriguez (1):
+      free: handle "cached" value too
+
+Isaac Dunham (1):
+      mount: -T OTHERTAB support
+
+John Schroeder (1):
+      udhcpd: account for script delay in lease
+
+Junling Zheng (1):
+      chown: fix help text
+
+Kevin Wallace (1):
+      libbb/loop: don't try to re-use existing loop device
+
+Linus Walleij (1):
+      fbset: fix rgba parsing
+
+Maninder Singh (4):
+      typo fixes
+      fix if(p)/free(p) construct
+      fix whitespaces
+      Removes stray empty line from code
+
+Martin Kaiser (1):
+      telnetd: we only need CONFIG_UNIX98_PTYS from the Linux kernel
+
+Matt Whitlock (4):
+      Bionic lacks ttyname_r; provide a workaround
+      Bionic lacks tcdrain; provide a workaround
+      Bionic lacks mempcpy; enable existing workaround
+      Conditionalize Bionic workarounds on __ANDROID_API__
+
+Michael Tokarev (1):
+      ip addr: support change and replace commands
+
+Micke Prag (1):
+      ubiattach: add option -O
+
+Mike Frysinger (3):
+      trylink: use mktemp instead of hardcoding paths
+      trylink: respect compiler settings when probing features
+      echo: make escape sequences depend on fancy mode
+
+Natanael Copa (1):
+      modprobe: fix modprobe -r and parsing of /etc/modprobe.d
+
+Peter Korsgaard (2):
+      dmesg: add -r option to print raw format even when FEATURE_DMESG_PRETTY is enabled
+      modprobe: handle module arguments containing spaces
+
+Phil Sutter (1):
+      logread: implement dumpfollow mode of operation
+
+René Rhéaume (1):
+      swaponoff: add support for -e
+
+Rich Felker (1):
+      gzip: do not store timestamp in gzip header
+
+Ron Yorston:
+      libbb: remove unnecessary argument to nonblock_immune_read
+      libbb: add a function to make a copy of a region of memory
+      ash: do not split the result of tilde expansion
+      ash: code shrink around varvalue
+      ash: perform tilde expansion in all parameter expansion words
+      ash: do not expand tilde in parameter expansion within quotes
+      ash: remove superfluous code in arithmetic mode
+      ash: remove arithmetic expansion collapsing at parse time
+      ash: move parse-time quote flag detection to run-time
+      ash: fix breakage of ${v/pat/str}
+      ash: remove parsebackquote flag
+      ash: use alloca to get rid of setjmp
+      ash: fix slash treatment in expmeta
+      less: document -S flag and make it independently configurable
+      less: fix display of line numbers
+      less: correctly account for tabs when rewrapping lines
+      less: improvements to verbose status messages
+      less: fix numeric input
+      less: move code to count lines into a separate function
+      less: rearrange detection of non-regular files
+      less: add a function to detect when display is at end of file
+      less: fix line number confusion
+      less: allow use of last column of terminal
+      less: further tweaks to regular file detection
+      less: fix botched attempt to use last column
+      vi: failure to open file is not an error when initialising buffer
+      vi: fix reading of file after last line
+      od: fix printing of high-bit chars
+      uname: make OS name configurable
+      ipcalc: fix trivial usage message
+
+Serj Kalichev (1):
+      acpid: fix logging
+
+Sören Tempel (1):
+      login: don't print motd if .hushlogin exists in users home
+
+Thiago Jung Bauermann (2):
+      libarchive: auto-detect .Z files as well
+      bzcat.tests: Run both .gz and .bz2 tests, and add .Z tests
+
+Tito Ragusa (4):
+      libpwdgrp: rewritten to use malloced implementation
+      libpwdgrp: line counting in error meesages is broken, remove it
+      libpwdgrp: fix thinko in getpwnam
+      libbb: another unit test for is_suffixed_with
+
+Vladislav Grishenko (1):
+      zcip: fix wrong comparison of source IP with our IP
+</pre>
+    </p>
+  </li>
+
+  <li><b>23 March 2015 -- BusyBox 1.23.2 (stable)</b>
+    <p><a href="http://busybox.net/downloads/busybox-1.23.2.tar.bz2">BusyBox 1.23.2</a>.
+    (<a href="http://git.busybox.net/busybox/tree/?h=1_23_stable">git</a>,
+    <a href="http://busybox.net/downloads/fixes-1.23.2/">patches</a>,
+    <a href="http://busybox.net/fix.html">how to add a patch</a>)</p>
+
+    <p>Bug fix release. 1.23.2 has fixes for
+    dc (more tolerant to lack of whitespace),
+    modinfo (was not ignoring directory component of path names in a few places),
+    modprobe (better compatibility for "rmmod" alias),
+    wget (--header now overrides built-in headers, not appends to).
+    </p>
+  </li>
+
+  <li><b>23 March 2015 -- BusyBox 1.23.2 (stable)</b>
+    <p><a href="http://busybox.net/downloads/busybox-1.23.2.tar.bz2">BusyBox 1.23.2</a>.
+    (<a href="http://git.busybox.net/busybox/tree/?h=1_23_stable">git</a>,
+    <a href="http://busybox.net/downloads/fixes-1.23.2/">patches</a>,
+    <a href="http://busybox.net/fix.html">how to add a patch</a>)</p>
+
+    <p>Bug fix release. 1.23.2 has fixes for
+    dc (more tolerant to lack of whitespace),
+    modinfo (was not ignoring directory component of path names in a few places),
+    modprobe (better compatibility for "rmmod" alias),
+    wget (--header now overrides built-in headers, not appends to).
+    </p>
+  </li>
+
+  <li><b>27 January 2015 -- BusyBox 1.23.1 (stable)</b>
+    <p><a href="http://busybox.net/downloads/busybox-1.23.1.tar.bz2">BusyBox 1.23.1</a>.
+    (<a href="http://git.busybox.net/busybox/tree/?h=1_23_stable">git</a>,
+    <a href="http://busybox.net/downloads/fixes-1.23.1/">patches</a>,
+    <a href="http://busybox.net/fix.html">how to add a patch</a>)</p>
+
+    <p>Bug fix release. 1.23.1 has fixes for
+    ash (fixed a problem with ${#N} expansion),
+    ftpd (fixed "zombie apocalypse"),
+    modprobe (was not ignoring directory component of path names in a few places),
+    vi.
+    </p>
+  </li>
+
+  <li><b>23 December 2014 -- BusyBox 1.23.0 (unstable)</b>
+    <p><a href="http://busybox.net/downloads/busybox-1.23.0.tar.bz2">BusyBox 1.23.0</a>.
+    (<a href="http://git.busybox.net/busybox/tree/?h=1_23_stable">git</a>,
+    <a href="http://busybox.net/downloads/fixes-1.23.0/">patches</a>,
+    <a href="http://busybox.net/fix.html">how to add a patch</a>)</p>
+
+    <p>Sizes of busybox-1.22.1 and busybox-1.23.0 (with equivalent config, static uclibc build):<pre>
+   text	   data	    bss	    dec	    hex	filename
+ 873357	    489	   7072	 880918	  d7116	busybox-1.22.1
+ 876323	    490	   7072	 883885	  d7cad	busybox-1.23.0</pre>
+    </p>
+
+    <p>Changes since previous release:
+<pre>
+Aaro Koskinen (2):
+      less: make -E work
+      install: implement -t DIR
+
+Ari Sundholm (2):
+      df: implement -T option
+      df: fix -T option when ENABLE_FEATURE_HUMAN_READABLE=0
+
+Bartosz Golaszewski (17):
+      gitignore: ignore files generated by 'make test'
+      sort: remove a magic number from compare_keys()
+      sort: check global flags on fallback sort
+      ntpd: fix compilation warnings
+      top: fix compilation warnings
+      grep: properly handle grep -w "^str" in !EXTRA_COMPAT case too
+      Kbuild: move CONFIG_PAM to general configuration
+      shuf: fix a segfault on 'shuf -e'
+      shuf: improve help text
+      docs: update new-applet-HOWTO.txt
+      find: add optional support for '-exec ... {} +'
+      libbb: use a wrapper around sysconf(_SC_CLK_TCK) to save a few bytes
+      unit-tests: implement the unit-testing framework
+      Rename INIT_LAST to INIT_FUNC to avoid confusion
+      gitignore: add testsuite/echo-ne
+      libbb: use sendfile() to copy data between file descriptors
+      Config: select PLATFORM_LINUX if using sendfile()
+
+Baruch Siach (2):
+      nandwrite: fix build when long options are disabled
+      nanddump: don't show --bb in usage when disabled
+
+Bernhard Reutner-Fischer (1):
+      libbb: provide usleep() fallback implementation
+
+Cristian Ionescu-Idbohrn (1):
+      tail: adjust help/usage texts
+
+David Marchand (1):
+      modinfo: fix module parsing with kernel &gt;= 2.6.37
+
+Denys Vlasenko:
+      *: add conditional support for -v / --verbose
+      *: exit with 127 if applet name wasn't found - it's more POSIXy
+      ash,hush: do not segfault on $((2**63 / -1))
+      ash,hush: fix a thinko about 2^64-1 factorization
+      ash,hush: improve randomness of $RANDOM, add easy-ish way to test it
+      ash,hush: run reinit_unicode() only if makes sense
+      ash,hush: set $HOSTNAME is bash compat. Closes 7028
+      ash: factor out ASH_HELP config option
+      ash: fix handling of negative start value in ${v:start:len}
+      ash: fix off-by-one in "jobs %4" handling. Closes 7310
+      ash: in bash compat mode, always export $SHLVL
+      ash: make "local VAR" unset VAR (bash does that)
+      ash: make ${#var} unicode-aware
+      awk: fix handling of "if ... break ; else ..." - closes 7226
+      crond: implement "SHELL=prog" in crontab. Export LOGNAME as POSIX wants
+      crond: simplify logging code
+      du, copy_file: fix file matching on cramfs. Closes 5456
+      fakeidentd: simplify ndelay manipulations
+      false: make "false --help" exit with 1
+      find: exit code fixes for find -exec
+      find: fix a regression introduced with -HLP support
+      find: support -perm /BITS. Closes 7340
+      find: use sysconf(_SC_ARG_MAX) to determine the command-line size limit
+      ftpd: do not use root_fd if we are not in chroot
+      ftpd: escape chroot prior to re-executing ls helper
+      ftpd: for LIST, open current directory *in the child*
+      ftpd: make LIST command show dotfiles too
+      ftpd: support deprecated XPWD command
+      getty: set tty attrs so that control chars are shown as ^c
+      grep: fix "grep -r PATTRN SYMLINK_TO_DIR"
+      grep: fix -w match if first match isn't a word, but second is. Closes 4520
+      grep: fix two bugs with -w
+      hush: make "true" built-in
+      hush: make ${#var} unicode-aware
+      hwclock: fix setting of tz_minuteswest. Closes 5414
+      init: do not run shutdown/reexec actions from signal handler
+      init: if libc-based Unicode support is on, run setlocale(LC_ALL, "") at startup
+      ip link: add support for "address ETHADDR". Closes 4862
+      less: accept and ignore -s
+      less: disable "suppress empty wraparound" optimization
+      less: fix bugs discovered with "git log -p | less -m" on kernel tree
+      less: move "retry-on-EAGAIN" logic closer to read ops
+      libarchive: add capability to unpack to mem.buffer
+      libarchive: open_zipped() does not need to check extensions for e.g. gzip
+      libbb/obscure.c: code shrink. Suggested by Tito.
+      libbb: FreeBSD fix for B&lt;num&gt; baud rate constants not fitting into a short
+      libbb: don't die if crypt() returns NULL
+      libbb: fix a bad check for uclibc &gt;= 0.9.31
+      libbb: fix bb_ask() to flush input before prompt, not after. Closes 7190
+      libbb: fix compile failure if both ARG_MAX and _SC_ARG_MAX are defined
+      libbb: fix empty PATH components handling
+      libbb: fix parsing of "10101010" date/time form
+      libbb: fix thinko in rtc_xopen()
+      libbb: if opening /dev/loopN returns ENXIO, don't try N++
+      libbb: make rtc_xopen try harder on EBUSY
+      libbb: make syslog level for bb_error_msg's configurable. use it in crond
+      libbb: open_zipped() should not fail on non-compressed files
+      libbb: use ARG_MAX for bb_arg_max() only if it's 60k+
+      lineedit: don't fall back to simple line input if tty is in raw mode
+      ls: make "ls -s DIR" show total too. Closes 4946
+      lzop: add overflow check
+      make xmalloc_open_zipped_read_close result NUL terminated
+      man: accept a list of dirs in $MANPATH
+      man: default to ascii
+      man: do not mangle $MANPATH in memory
+      mdev: treat zero-length /dev/mdev.seq the same as "\n" one. Closes 7334
+      modprobe,rmmod: reject module names with slashes
+      modprobe-small: (un)load all modules which match the alias, not only first one
+      modprobe-small: fix help messages for aliased module-related applets
+      modprobe-small: fix safe_strncpy truncating last char of module name
+      modprobe-small: remove redundant aliases from modules.dep.bb
+      nc: fix option bit positions. Closes 6926
+      networking/ssl_helper: experimental matrixssl-based ssl helper
+      networking: explain isrv_run() API
+      ntpd: add optional support for /etc/ntp.conf
+      ntpd: add support for -I IFACE
+      ntpd: adjust last packet's recv time after a step
+      ntpd: be less eager to use shorter poll intervals
+      ntpd: fix wrong delay value in one of the printed messages
+      ntpd: remove now unnecessary check for IP_PKTINFO definition
+      ntpd: truly ignore high delay packet
+      ping: revert "try SOCK_DGRAM if no root privileges"
+      platform.h: undef HAVE_STRCHRNUL only on correct versions of FreeBSD
+      rtcwake: fix incorrect (reversed) rtc/sys adjuestment; code shrink
+      script: make it work even if fd 0 is closed
+      sed: fix "sed CMD -i nonexistent_file". Closes 7484
+      sed: fix a buglet in s///NUM handling
+      sendmail: make -f optional, document its default value
+      sha3: add 32-bit optimized bit-sliced implementation
+      sha3: code shrink (and speedup for SHA3_SMALL=0)
+      shuf: new applet
+      sysctl: do not error out showing write-only data. Closes 6386
+      syslogd: make "-O -" log to stdout
+      tar: fix "tar -cJ" ignoring -J option. Closes 7706
+      tar: tighten up pax header validity check
+      taskset: fix logic error in "if it doesn't start with 0x..."
+      taskset: support CPU masks for more than 64 CPUs
+      test: fix mishandling of "test '(' = '('" and similar
+      tftpd: support full 512-byte requests
+      tftpd: tweak HP PA-RISC firmware bug compatibility
+      top: fix memset length (sizeof(ptr) vs sizeof(array) problem)
+      trylink: emit names of linked executables
+      ubiupdatevol: fix -t to not require an option. Closes 7466
+      udhcpc: account for script run time
+      udhcpc: don't use BPF filter, users report problems (bugs 4598, 6746)
+      udhcpc: fix BPF filter. Hopefully fixes the root cause of 4598 and 6746
+      udhcpc: ignore NAKs from "wrong" servers. Closes 4267
+      udhcpc: in comments, explain the kind of raw socket we create
+      udhcpc: make hostname sanitization optional. Closes 3979
+      udhcpd: if a lease from lease file coincides with a static one, ignore it
+      vi: clear undo buffer when we change to another file
+      vi: fix incorrect memory access on brace matching. Closes 7256
+      wget: add commented-out code to use ssl_helper instead of openssl
+      wget: add support for https using "openssl s_client" as a helper
+      wget: fix a case where progress bar isn't updated if writes are very slow
+      wget: fix use-after-free of -&gt;user. Closes 6836
+      xargs: add support for -I and -i. Closes 493
+      zcat: complain if input is not compressed
+
+Drew Moseley (1):
+      build system: specify '-nostldlib' when linking to .o files
+
+Eugene Rudoy (1):
+      iplink: fix build with kernel versions prior to 2.6.23
+
+Florian Fainelli (1):
+      ping: add -p to specify data pattern
+
+Isaac Dunham (1):
+      unlink: new applet
+
+Jacob Kjaergaard (1):
+      flashcp: change BUFSIZE to 4k
+
+Jeremy Kerr (1):
+      udhcp: add PXELINUX path prefix option (code 210) definition
+
+Jody Bruchon (1):
+      vi: undo support for vi with intermediate queuing
+
+John Spencer (1):
+      man: parse "DEFINE pager" in config
+
+Joshua Judson Rosen (5):
+      syslogd: avoid spurious ftrunctate() calls for "-b 0"
+      syslogd: remember to un-writelock log-files even when called with "-b 0"
+      syslogd: Unify unlink/truncate + unlock log-rotation logic
+      syslogd: syslogd: don't *decrement* log_file-&gt;size on write failures
+      syslogd: make "reopen log file every second" logic work for multiple logs
+
+Kaarle Ritvanen (2):
+      ifupdown: support 'link' address family
+      sendmail: use FQDN in default envelope sender
+
+Ken Sharp (1):
+      zcip: fix link-local IP conflict detection
+
+Matt Whitlock (3):
+      avoid calling bb_strtou twice in MIN macro expansion
+      fix interaction of -a and -p options in swapon
+      add discard option -d to swapon
+
+Matthias Andree (1):
+      build system: fix non-portable sed constructs.
+
+Michael Gernoth (1):
+      stat: fix printing selinux context and null-dereference
+
+Michael Tokarev (3):
+      testsuite: fix last "which" change
+      init: do not fail build if SIGPWR is not defined
+      iproute: support onelink route option and print route flags
+
+Michel Stam (3):
+      udhcpd: add option for tweaking arpping
+      zcip: allow our own class B range to be used for ZeroConf
+      zcip: Add environment variable for overriding log functionality
+
+Mike Frysinger (2):
+      uname: fix up usage documentation
+      appletlib: fix set-but-unused warning
+
+Miroslav Lichvar (4):
+      ntpd: don't wait for good offset before disabling burst mode
+      ntpd: split out poll adjusting code
+      ntpd: don't stay at short polling interval
+      ntpd: calculate offset to jitter ratio before updating jitter
+
+Morten Kvistgaard (1):
+      ftpd: add optional support for authentication
+
+Pascal Bellard (1):
+      fatattr: new applet
+
+Peter Kümmel (1):
+      Make it possible to override LOGIN_FAIL_DELAY in CONFIG_EXTRA_CFLAGS
+
+Richard Genoud (4):
+      nanddump: correct rounding to next page (lead to infinite loop)
+      nanddump: add options --bb=skipbad and padbad
+      nanddump: kill -b Omit bad block
+      nanddump: change default to --bb=skipbad
+
+Romain Naour (1):
+      su: add a delay if the password is incorrect
+
+Ron Yorston (1):
+      lineedit: don't block when looking for escape sequence in vi-mode
+
+Ryan Mallon (1):
+      fakeidentd: fix use-after-free
+
+Timo Teräs (1):
+      top: fix and merge code to parse /proc/meminfo
+
+Tito Ragusa (4):
+      adduser,addgroup: introduce and use CONFIG_LAST_ID
+      swapon/swapoff: size reduction, cleanup, fixes, improvements
+      swapon/swapoff: -a returns 0 on ignored errors
+      which: rewrite
+</pre>
+    </p>
+  </li>
+
+  <li><b>20 January 2014 -- BusyBox 1.22.1 (stable)</b>
+    <p><a href="http://busybox.net/downloads/busybox-1.22.1.tar.bz2">BusyBox 1.22.1</a>.
+    (<a href="http://git.busybox.net/busybox/tree/?h=1_22_stable">git</a>,
+    <a href="http://busybox.net/downloads/fixes-1.22.1/">patches</a>,
+    <a href="http://busybox.net/fix.html">how to add a patch</a>)</p>
+
+    <p>Bug fix release. 1.22.1 has fixes for
+    find (was requiring the path argument in some cases, unlike GNU find),
+    grep (fixes for -w handling),
+    ntpd (wasn't slewing time after large negative step),
+    compile fixes for some configurations.
+    </p>
+  </li>
+
+  <li><b>1 January 2014 -- BusyBox 1.22.0 (unstable)</b>
+    <p><a href="http://busybox.net/downloads/busybox-1.22.0.tar.bz2">BusyBox 1.22.0</a>.
+    (<a href="http://git.busybox.net/busybox/tree/?h=1_22_stable">git</a>,
+    <a href="http://busybox.net/downloads/fixes-1.22.0/">patches</a>,
+    <a href="http://busybox.net/fix.html">how to add a patch</a>)</p>
+
+    <p>Sizes of busybox-1.21.1 and busybox-1.22.0 (with equivalent config, static uclibc build):<pre>
+   text    data     bss     dec     hex filename
+ 891522     497    7584  899603   dba13 busybox-1.21.1
+ 893754     497    7568  901819   dc2bb busybox-1.22.0</pre>
+    </p>
+
+    <p>Changes since previous release:
+<pre>
+Aaro Koskinen (9):
+      fdisk_sun: fix corrupted partition data with blank disk
+      fdisk_sun: fix partition alignment
+      sendmail: avoid sending mail to wrong addresses
+      sendmail: don't mangle e-mail headers
+      sendmail: support addresses inside angle brackets
+      sendmail: support address lists
+      sendmail: support long header fields for recipients
+      sendmail: don't add To: header if it already exists
+      sendmail: don't add multiple To: headers
+
+Alexander Shiyan (2):
+      nanddump: fix build if nandwrite isn't enabled
+      flash_eraseall: implement -N
+
+Bartosz Golaszewski (6):
+      grep: don't bail out on first mismatch if '-w' option is set
+      networking: code shrink
+      date: accept 'yyyy-mm-dd HH' and 'yyyy-mm-dd' date formats
+      Refactor catv. Move visible() from stty to libbb.
+      tail compat: fix header printing for tail -f
+      bloat-o-meter: add usage info
+
+Bernhard Reutner-Fischer (11):
+      awk: Fix handling of functions with empty body
+      setserial: Fix typo: s/baund_rate/baud_rate/g
+      chrt: remove warning for _POSIX_PRIORITY_SCHEDULING
+      buildsys: Add helper to list suid applets
+      awk: Fix handling of functions with empty body
+      swaponoff: shrink
+      ash: Use setvar2 some more
+      ash: Set SHLVL in ASH_BASH_COMPAT
+      fstrim: -17b
+      fstrim: Indicate failure on error
+      fstrim: Needs to fire at the mp, not bd
+
+Bernhard Walle:
+      pgrep: fix -x option
+
+Bogdan Purcareata:
+      init: halt on SIGPWR too
+
+Cristian Ionescu-Idbohrn:
+      foo*sum: Correct syntax error
+
+Cédric Cabessa:
+      syslogd: use _PATH_LOG when available
+
+Daniel Borca (4):
+      platform: strchrnul is missing if __APPLE__
+      dpkg-deb: cosmetic correction to usage text
+      ping: try SOCK_DGRAM if no root privileges
+      build system: fix make gconfig
+
+David A. Wheeler (2):
+      sed: accept -E as a synonym for -r
+      sed: accept s///i as a synonym for s///I ("ignore case")
+
+Denys Vlasenko:
+      Call setlocale("") , not "C", if we want to set the default one
+      Commonalize typical [b,]k,m suffix struct
+      Make smart_ulltoa return pointer to end (allows for code shrink in callers)
+      Makefile.custom: make "make release" delete .gitignore files too
+      Move create_icmp[6]_socket to its only user, and simplify it
+      Use unsigned printf/scanf conversion where more appropriate
+      adduser: check whether run with no USERNAME. Closes 6728
+      awk: fix a bug in argc counting in recent change
+      awk: fix length(array)
+      awk: use "long long" as integer type, not "int"
+      bootchartd: warn if .config looks wrong
+      build system: use od -b instead of od -t x1
+      bunzip2: fix off-by-one check
+      chpst: fix a bug where -U USER was using wrong USER (one from -u USER)
+      cryptpw: do not segfault on EOF. Closes 6350
+      dd: do not reuse local variables for unrelated values
+      dd: fail if swab is attempted on odd-sized block
+      dd: support conv=swab
+      decompress_unlzma: 10% speedup in "small" code
+      decompress_unlzma: make "fast" version a bit smaller
+      devfsd: remove static variable
+      ether-wake: shorten help text, reduce packet buffer size
+      find: support -HLP
+      find: get rid of nested function (it's a gcc-ism)
+      fix assorted unused code and wrong format specs found by cppcheck (bug 6716)
+      fix build error with musl libc due to if_slip.h
+      fix error message on failure to open /dev/null; fix zcat's help text
+      flashcp: pad output to BUFSIZE. Hopefully closes 5882
+      foo*sum: report I/O errors, don't merely exit with 1
+      head,tail: use common suffix struct. simplify help text
+      head: support -n -NUM and -c -NUM
+      hexdump: don't unconditionally limit the usable address range
+      hexdump: need to use xstrtoull for off_t
+      hostid: do not output sign-extended host id. Closes 6056
+      httpd: don't allow tabs and multiple spaces in request string
+      httpd: make sure pfd[TO_CGI].revents is cleared before poll()
+      httpd: treat errors from stdin correctly.
+      hush: fix build failure if FEATURE_EDITING=y &amp;&amp; !HUSH_INTERACTIVE
+      hush: fix for "while false &amp;&amp; true; do echo BUG; break; done". Closes 6170
+      hush: source builtin should override $N only if it has args
+      hush: typo fixes in comments
+      ifplugd: make -k send SIGINT, not SIGQUIT
+      ifupdown: support "source" stanza in /etc/network/interfaces
+      init: don't use fixed size buffer for command
+      init: remove special-case code for machines with less tham 1 MB of RAM
+      iplink: comment out include &lt;net/if_packet.h&gt;
+      iplink: fix build error (IFLA_VLAN_PROTOCOL defined before include)
+      less: support "less 1&lt;&gt;TTY"
+      libbb: introduce and use strftime_[YYYYMMDD]HHMMSS()
+      lineedit: \W on "/bin" should show "bin", not "/bin"
+      lineedit: add handling of \H in prompt
+      lineedit: fix multi-line PS1 handling: calculate PS1 length from last \n
+      lineedit: implement \T \t \A \@ prompts escapes, fix \W escape, drop \!
+      lineedit: improve Unicode handling (still buggy though)
+      lineedit: use unicode_strwidth instead of unicode_strlen
+      loadkmap: explain what happens with K_ALLOCATED key value
+      logread: don't call shmdt() before exit, kernel does it for us
+      logread: flush output. Closes 6710
+      logread: intercept all fatal signals, not just SIGINT
+      losetup: assorted fixes. Closes 6314
+      lzop: fiq -q and OPTION_DECOMPRESS mismatch
+      make --help return exitcode 0. Closes 5612
+      man: install to /usr/bin, not /sbin
+      md5/sha512: a better fix for strict aliasing warnings
+      mdev: add environment variable match
+      mdev: call index_in_strings on $ACTION only after we checked it for NULL
+      mdev: chdir back to /dev after trying to read firmware
+      mdev: extend debug logging output
+      mdev: improve $SEQ handling; improve debug logging
+      mkfs_minix: use get_volume_size_in_bytes instead of local version
+      nc: don't redirect stderr to network in -e PROG mode
+      nc: exit when both stdin and network are closed
+      nc: fix build failure ("subscripted value is neither array nor pointer")
+      nc: remove some dead code
+      nc: remove unnecessary "errno = 0"
+      nc: use symbolic SHUT_WR instead of literal 1
+      nc_bloaty: support -ll and -lk. Closes 2245
+      nslookup: set default DNS server again. Hopefully helps with 675
+      ntpd: do not invalidate datapoints after step
+      ntpd: drop delay outliers; run "unsync" handler if no replies for some time
+      ntpd: let user know if spike was detected
+      ntpd: make "unsync" code actually work
+      ntpd: promote log level 3 to production
+      ntpd: set G.last_script_run even if script isn't configured
+      ntpd: set offset to 0.0 in "unsync" event
+      ntpd: speed up resyncing if our clock is seriously off
+      ping[6]: accept and ignore -n. Code shrink
+      ps: fix sscanf format specifier (%l); make uptime unsigned
+      ps: seconds_since_boot: uint64_t -&gt; ulong
+      pstree: fix theoretically unsafe code
+      rfkill: use new-style config/kbuild/applet
+      rpm: make -ql display more compatible; improve help text
+      rpm: stop using statics; move main() to the end of the source file
+      rpm: unmap rpm file before working with next one
+      rpm: use "create+rename" method of replacing existing files
+      run-parts: stop providing incompatible short options
+      sed: document where we are more liberal then GNU
+      sed: fix "sed clusternewline" testcase
+      sed: fix matching of newlines by $
+      sed: fix memory leak in 'r FILE' command
+      sed: open input files sequentially to avoid EMFILE
+      sed: remove now-redundant backslash-newline handling
+      stty: disable CIBAUD leak check - it is not necessary on Linux
+      sulogin: use common password-checking routine
+      tail: track file size only in -f mode
+      tar: add a testcase for previous commit
+      tar: fix exitcode check for MMU-spawned unpacking helpers
+      tar: prevent empty file to be treated as valid tarball
+      testsuite: fix false positives for du
+      touch: add conditional support for -h
+      ubi_tools: add forgotten argv++
+      ubi_tools: enhance -s option to allow size multiplier to match mtd-utils
+      ubi_tools: extend supported volume size to 64 bits; shrink code
+      udhcpc6: fix port numbers used if !FEATURE_UDHCP_PORT
+      udhcpc: allow zero server-id. Closes 6614
+      udhcpc: fix a problem with binary-encoded options #2
+      udhcpd: add -I LOCAL_ADDR option
+      unicode: check $LC_ALL to detect Unicode mode, not only $LANG
+      unicode: check $LC_CTYPE too to detect Unicode mode
+      unpackers: by users' request, print compression percentage if -v and DESKTOP
+      unzip: increase PEEK_FROM_END from 16k to 64k
+      unzip: survive lack of CDF on non-streaming zip files
+      vasprintf: do not use xmalloc, it will deadlock on OOM
+      vasprintf: return -1 on strdup failure
+      vi: make regexp search case-insensitive if ":set ignorecase" is active
+      volume_id_internal.h: drop unoptimized byteswap routines
+      wall: access FILE under real user's credentials
+      wget: do not abort if "_" is encountered in a HTTP header
+      zcat: fix "zcat FILE" trying to do detection twice
+      zcat: if seamless uncompressors are defined, autodetect file's format
+
+Flemming Madsen:
+      ash,hush: history builtin
+
+Guilherme Maciel Ferreira (2):
+      traceroute: free some memory allocated by xzalloc()
+      wget: if FEATURE_CLEAN_UP, free(ptr_to_globals)
+
+James Hogan:
+      grep: fix grep -x to not set REG_NOSUB
+
+Jeremy Kerr:
+      udhcp: add PXELINUX config file option (code 209) definition
+
+Jody Bruchon:
+      fdisk: fix GPT size math errors
+
+Johannes Stezenbach:
+      udhcpc: make DHCP packets to have at least 300 DHCP bytes
+
+John Spencer:
+      man: find posix man pages
+
+Jonathan Liu:
+      sulogin: allow system maintenance login if root password is empty
+
+Kang Kai:
+      testsuite/du/du-k-works: fix false positive
+
+Kuleshov Aleksey:
+      arp: fix -H/-t handling.
+
+Lasse Collin (11):
+      xz: omit explicit \0 from HEADER_MAGIC
+      xz: update README
+      xz: avoid "NOTE:" in xz.h
+      xz: add a comment about using uint32_t as vli_type
+      xz: make bcj_x86_test_msbyte() an inline function
+      xz: remove an empty line from xz_dec_lzma2.c
+      xz: add C++ support to xz.h
+      xz: fix decoding of LZMA2 streams having no uncompressed data.
+      xz: fix incorrect XZ_BUF_ERROR
+      xz: mention xzminidec.c in README
+      xz: support concatenated .xz streams
+
+Lauri Kasanen (2):
+      wget: add support for connect timeout
+      wget: user-friendly fallback to http
+
+Leonid Lisovskiy:
+      xz: fix put_unaligned_{l,b}e32
+
+Malek Degachi:
+      fstrim: New applet
+
+Mandeep Singh Baines:
+      losetup: fix util-linux compatibility
+
+Michael Tokarev (4):
+      fix bashisms in testsuite/
+      expand: use printable_string instead of hard-coding implementation
+      do not fail build if MAXSYMLINKS isn't defined
+      hostname: do not use gethostbyname() for "hostname -s"
+
+Mike Frysinger (12):
+      udhcpc: support resolv.conf symlinks
+      udhcpc: tweak math shell style with the metric var
+      bbunzip: ignore the -q flag with the decompressors
+      bbunzip: fix order of flags vs bit defines
+      archival: note implicit dependencies between lzop &amp; bbunzip
+      udhcpc: use readlink rather than realpath
+      platform: use KERNEL_VERSION to simplify uClibc version checking
+      readlink: uClibc supports automatic allocation too now
+      readlink: note that our -f is really -e
+      pstree: stop truncating thread names
+      md5/sha512: fix strict aliasing warnings
+      trylink: only prefix libs with -l
+
+Nicolas Dichtel:
+      networking: fix potential overflow in ife_print6()
+
+Nikolaus Voss:
+      mdev: use $DEVNAME in uevent sysfs file for device node name
+
+Oliver Metz:
+      volume_id: fix ntfs attribute search
+
+Patrick McHardy:
+      ip link: add VLAN support
+
+Paul B. Henson (2):
+      ubimkvol: add -m option to create volume of maximum size
+      ubi_tools: fix typo in strcpy
+
+Paulius Zaleckas:
+      init: don't srop unterminated processes' entries during inittab reload
+
+Peter Korsgaard (3):
+      run-parts: add --exit-on-error | -e support
+      run-parts: fix unicode creep in --help
+      ar: read_num(): fix reading fields using the entire width
+
+Rich Felker:
+      *: change execl sentinels from NULL to (char*)0
+
+Ron Yorston:
+      vi: fix adjustment of buffer on partial file read
+
+Ryan Mallon (2):
+      libbb: Add xsetegid(), xseteuid(), xopen_as_uid_gid() functions
+      wall,crontab: use xopen_as_uid_gid()
+
+SASAKI Suguru:
+      tar: fix tar -T to add entries in the exact order as the input list
+
+Shawn J. Goff:
+      lineedit: initialize delptr
+
+Stefan Hellermann (2):
+      ash: move code to allow setting $HOME in /etc/profile
+      ash: read $HOME/.profile instead of $(pwd)/.profile
+
+Sven-Göran Bergh (5):
+      volume_id: Adopt to new kbuild style.
+      volume_id: Adopt to new config style.
+      volume_id: nilfs config description.
+      volume_id: add f2fs detection
+      awk: optionally support -e AWK_PROG
+
+Thomas De Schampheleire (2):
+      nameif: fix use-after-free in ENABLE_FEATURE_CLEAN_UP code
+      lsof: correct check for symbolic link
+
+Thomas Petazzoni:
+      libbb: use &lt;poll.h&gt; instead of &lt;sys/poll.h&gt;
+
+Tito Ragusa (2):
+      ifplugd: use a larger netlink buffer
+      swapon: support "pri=NNN" in fstab
+
+Uros Vampl:
+      killall5: return 2 if no processes got killed
+
+Yuan-Hsiang Lee:
+      init: fix illegal memory access when max message length is reached
+</pre>
+    </p>
+  </li>
+
+  <li><b>29 June 2013 -- BusyBox 1.21.1 (stable)</b>
+    <p><a href="http://busybox.net/downloads/busybox-1.21.1.tar.bz2">BusyBox 1.21.1</a>.
+    (<a href="http://git.busybox.net/busybox/tree/?h=1_21_stable">git</a>,
+    <a href="http://busybox.net/downloads/fixes-1.21.1/">patches</a>,
+    <a href="http://busybox.net/fix.html">how to add a patch</a>)</p>
+
+    <p>Bug fix release. 1.21.1 has fixes for
+    ntfs detection (big-endian fix),
+    xz decompression of concatenated streams,
+    mdev acquired a [ENV=regex;] extension instead of undocumented subsystem match hack
+    it used to have prior to 1.21.x.
+    </p>
+  </li>
+
+  <li><b>21 January 2013 -- BusyBox 1.21.0 (unstable)</b>
+    <p><a href="http://busybox.net/downloads/busybox-1.21.0.tar.bz2">BusyBox 1.21.0</a>.
+    (<a href="http://git.busybox.net/busybox/tree/?h=1_21_stable">git</a>,
+    <a href="http://busybox.net/downloads/fixes-1.21.0/">patches</a>,
+    <a href="http://busybox.net/fix.html">how to add a patch</a>)</p>
+
+    <p>Sizes of busybox-1.20.2 and busybox-1.21.0 (with equivalent config, static uclibc build):<pre>
+   text    data     bss     dec     hex filename
+ 895377     497    7584  903458   dc922 busybox-1.20.2
+ 897317     497    7584  905398   dd0b6 busybox-1.21.0</pre>
+    </p>
+
+    <p>Changes since previous release:
+<pre>
+Alexey Froloff (1):
+      udhcpc: gracefully handle packets with CHECKSUM_PARTIAL
+
+Andreas Oberritter (2):
+      ifupdown: improve compatibility with Debian
+      get_linux_version_code: don't fail on Linux version strings like "3.0-foo"
+
+Anthony G. Basile (2):
+      build system: fix build failure when only gunzip is selected
+      CONFIG_PID_FILE_PATH: new configuration option for pidfile paths
+
+Aurelien Jarno (1):
+      *: declare strings with ALIGN1, as appropriate
+
+Baruch Siach (3):
+      nanddump: use the right operator of logic AND
+      nanddump: skip bad blocks when instructed to do so
+      nanddump: invert the meaning of the -o parameter to match upstream
+
+Bernhard Reutner-Fischer (1):
+      mount: fix -o user=foo mishandling, fix unc= generation, add prefixpath=
+
+Bernhard Walle (1):
+      build system: fix build of kconfig on Darwin
+
+Boris Reisig (1):
+      tar: support -J, --xz explicit compression option
+
+Bradley M. Kuhn (1):
+      Simplify copyright/license notice that appears in the binary
+
+Christoph Lohmann (1):
+      mdev: tell kernel that we didn't find the firmware
+
+Cliff Frey (1):
+      lineedit: fix Alt-D when cursor==0
+
+Dennis Groenen (1):
+      lineedit: histfile can get emptied when CONFIG_FEATURE_EDITING_SAVE_ON_EXIT=y
+
+Denys Vlasenko:
+      build system: stop .eh_frame generation
+      build system: fix build failure when compressed help is selected, but bz2 compression is not
+      scripts/kconfig/mconf: work on systems w/o SIGWINCH
+      platform.h: disable ALIGNn macros for s390[x]
+      adduser: install to /usr, not /, like all other similar tools
+      ash: fix "read -s" + ^C. Closes 5504
+      ash: fix a bug in &gt;${varexp} handling. Closes 5282
+      ash: implement export -n
+      ash: revert wrong "fix" for an apparent memory leak. Closes 5822
+      awk: fix FS assignment behavior. Closes 5108
+      awk: make -F STR interpret escape sequences. Closes 5126
+      brctl: fix build failure by s/strtotimeval/bb_strtotimeval/ (android has strtotimeval)
+      busybox: tweak help text and copyright year
+      decompress_uncompress: comment out debug printout on corrupted data
+      decompress_uncompress: move 'code' variable into loop - sole user
+      dhcpd: write lease file on exit
+      dpkg: fix creation of .list files (were empty since b768aeb). Closes 5324
+      du: document incompatibility with standard tool
+      examples/mdev_fat.conf: small addition
+      find: if DESKTOP=y, support -wholename (synonym for -path)
+      find: make -mindepth N -xdev correctly stop on mountpoints
+      ftpd: fix MDTM's month value. Closes 5336
+      ftpd: free allocated string on error path
+      getty: fix for NOCTTY killing us with SIGHUP
+      grep: fix grep -Fw not respecting the -w option. Closes 5792
+      ifconfig: do not accept "ifconfig eth0 up 1.2.3.4/17" (ip with mask). Closes 5786
+      libbb: correctness/size tweaks in signal-related helpers
+      lineedit: in !EDITING config, return -1 on fgets error
+      login: increase login name size limit from 32 to 64
+      lpr: don't send 0-byte print jobs (compat)
+      man: fix handling of gzipped manpages
+      mdev: add support for $DEVNAME and /dev/mdev.log debug aid
+      mdev: fix mode of dir1 in =dir1/dir2/file rule
+      mdev: remove undocumented subsystem/devname matching hack
+      mdev: when found, print major,minor into mdev.log
+      modprobe_small: make rmmod to NOT remove dependencies. Closes 5162
+      mount: do not pass "comment=ANYTHING" option to kernel. Closes 5240
+      mount: fix the wrongly stored fs creation time
+      mount: set up RO loop device if mount -o ro. Closes 4784
+      mount: support strictatime option. Closes 5240
+      ntpd: on time step, kill all outstanding replies from other peers
+      sed: fix handling of s/// which has empty matches
+      sed: fix zero chars match/replace
+      sha3: make size/speed optimization decision configurable
+      syslogd: do not segfault on parse error when using default config. Closes 5762
+      telnet: convert CR -&gt; CR LF, not CR -&gt; CR NUL when sending data to server
+      telnet: convert Enter -&gt; CR LF in line mode too
+      tftpd: fix -u USER to work with chroot. Closes 5348
+      top/ps: argv0:"gdm-session-worker [pam/gdm-password]" == comm:"gdm-session-wor"
+      top: do not touch stdin if -b
+      top: fix "last CPU" parsing
+      top: implement scrolling up/down (_very_ useful)
+      udhcp[cd]: fix binding to network aliases. Closes 5432, 5438
+      udhcpc: make -O &lt;numeric_opt&gt; work. Closes 5402
+      udhcpc[6]: show select timeout in log
+      unzip: make options parsing more robust on getopt w/o gnu extensions
+      vi: do not set autoindent by default
+      vi: nuke FEATURE_VI_OPTIMIZE_CURSOR
+      vi: save/restore screen upon invocation
+      volume_id/ext: detect ext4 too
+      wget: correctly handle failure to -c (continue)
+      wget: make -c _not_ truncate the file
+      wget: reorder fread and poll: poll only if fread returns EAGAIN. Closes 5426
+      wget: try reading after poll timeout - stdio may have buffered data. Closes 5426
+
+Eric Martin (1):
+      acpid: add missing lid switch definition
+
+Etienne Le Sueur (1):
+      tar: fix 256-bit encoded number decoding
+
+Felix Fietkau (1):
+      udhcpc[6]: allow discover_retries == 0 (infinite)
+
+Jon Tollefson (1):
+      ash: fix a memory leak
+
+Joshua Kahlenberg (1):
+      sysctl: implement -q
+
+Lauri Hintsala (1):
+      powertop: fix error message
+
+Lauri Kasanen (1):
+      sha3sum: new applet
+
+Linus Walleij (2):
+      fbset: respect rgba configuration lines in fb.modes
+      fbsplash: support non-RGB565 pixels in 16-bit mode
+
+Manuel Zerpies (1):
+      flashcp: remove unused variable opts
+
+Martin Santesson (1):
+      mount: add unc option to CIFS mount (needed for Linux 3.4+)
+
+Matt Reimer (1):
+      nanddump: make dumping read-only partitions work
+
+Michael Tokarev (2):
+      ps: use separate get_uptime() and make it work on non-linux too
+      *: declare strings with ALIGN1, as appropriate
+
+Mike Frysinger (5):
+      udhcpc6: depend on ipv6
+      include sys/resource.h where needed
+      disable format security warnings
+      build system: use pkg-config to look up selinux libs
+      ifenslave: fix missing close paren
+
+Mimi Li (1):
+      sed: allow 'w' cmd to use two address form
+
+Natanael Copa (2):
+      tar: implement --no-recursion
+      unzip: ignore chmod errors
+
+Nicolas Thill (1):
+      brctl: fix description and usage
+
+Pascal Bellard (1):
+      su: do not change to home dir unless -l
+
+Paul Marks (1):
+      ntpd: fix incorrect m_status field in outgoing packets. Closes 5120
+
+Peter Korsgaard (4):
+      dmesg: handle multi-char log levels
+      klogd: handle multi-char log levels
+      syslogd: add option to log to Linux kernel printk buffer
+      syslogd: convert dummy functions to statics and get rid of IF_FEATURE_* checks
+
+Pierre Carrier (1):
+      config: do not refer to HTTPS for wget
+
+Ron Yorston (2):
+      sendmail: use host rather than NIS domain name for HELO
+      mktemp: fix mktemp -u temp.XXXXXX returning garbage when TMPDIR is set
+
+S-G Bergh (2):
+      blkid: show filesystem when both label and UUID are missing, but type is known
+      volume_id: add exFAT detection
+
+Simon B (4):
+      ln: support -T and -v
+      sed: support long opts and -iSFX
+      mkdir,rmdir: accept and ignore -v, --verbose
+      mv: accept but ignore -v
+
+Sven-Göran Bergh (6):
+      blkid: add type display for btrfs
+      blkid: add support for nilfs2
+      blkid: add type display for hfsplus
+      volume_id: display hfs[+] 128-bit UUID properly
+      volume_id: uuid_format small code shrink
+      volume_id: add squashfs detection
+
+Tanguy Pruvot (2):
+      testsuite: some more awk tests related to conditions
+      modinfo: match more standard module fields and fix version field
+
+Tias Guns (5):
+      inetd: fix build failure in Android
+      android: fix 'stat', ifdef S_TYPEIS* in coreutiles/stat.c
+      platform.h: Android tweaks: ioprio defines, BB_ADDITIONAL_PATH
+      android: some sensible defconfig changes
+      libbb: add missing_syscalls.c: for now, only Android syscalls
+
+Timo Teräs (1):
+      fbsplash: fix regression from e4fa7b7
+
+Tito Ragusa (1):
+      adduser: make it accept "adduser USER GROUP" form
+
+Vladimir Dronnikov (1):
+      wget: add dummy --no-cache
+
+Yao Zhao (1):
+      testsuite: make mkfs.minix test not fail spuriously on big endian
+
+walter harms (1):
+      refactor correct_password.c to avoid one if
+</pre>
+    </p>
+  </li>
+
+  <li><b>2 July 2012 -- BusyBox 1.20.2 (stable)</b>
+    <p><a href="http://busybox.net/downloads/busybox-1.20.2.tar.bz2">BusyBox 1.20.2</a>.
+    (<a href="http://git.busybox.net/busybox/tree/?h=1_20_stable">git</a>,
+    <a href="http://busybox.net/downloads/fixes-1.20.2/">patches</a>,
+    <a href="http://busybox.net/fix.html">how to add a patch</a>)</p>
+
+    <p>Bug fix release. 1.20.2 has fixes for
+    ash (fix for variable expansion in redirection),
+    ifup/down (fix for "pre-up" and "pre-down" handling),
+    man (fixes for compressed man pages handling),
+    mke2fs (important fix! due to misplaced s_mkfs_time field, ext4 driver couldn't mount our images),
+    ps (fix for getting uptime on non-Linux platforms),
+    tar (fix base-256 decoding).
+    </p>
+  </li>
+
+  <li><b>Old News</b><p>
+    Click here to read <a href="oldnews.html">older news</a>
+    </p>
+  </li>
+
+</ul>
+
+<!-- Footer -->
+
+
+    </td>
+    </tr>
+    </table>
+
+<hr />
+
+
+    <table width="100%">
+	<tr>
+	    <td width="60%">
+	    	<font face="arial, helvetica, sans-serif" size="-1">
+		<!--div style="font-family: arial, helvetica, sans-serif; font-size: 80%;" -->
+		    <a href="/copyright.txt">Copyright &copy; 1999-2008 Erik Andersen</a>
+		    <br>
+		    Mail all comments, insults, suggestions and bribes to
+		    <br>
+		    Denys Vlasenko <a href="mailto:vda.linux@googlemail.com">vda.linux@googlemail.com</a><br>
+		</font>
+		<!--/div-->
+	    </td>
+
+	    <td>
+		<a href="http://www.vim.org/"><img border="0"
+		width="88" height="31"
+		src="images/written.in.vi.png"
+		alt="This site created with the vi editor" /></a>
+	    </td>
+
+	    <td>
+		<a href="http://osuosl.org/"><img border="0"
+		width="114" height="63"
+		src="images/osuosl.png"
+		alt="This site is kindly hosted by OSL" /></a>
+	    </td>
+<!--
+	    <td>
+		<a href="http://validator.w3.org/check?uri=referer"><img
+		border="0" height="31" width="88"
+		src="images/valid-html401.png"
+		alt="Valid HTML" /></a>
+	    </td>
+-->
+	</tr>
+    </table>
+
+  </body>
+</html>
+
+
+
+

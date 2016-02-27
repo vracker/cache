@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /gnu/findutils</title>
+ </head>
+ <body>
+<h1>Index of /gnu/findutils</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/gnu/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="findutils-4.0-4.1.diff.gz">findutils-4.0-4.1.diff.gz</a></td><td align="right">1994-11-05 03:00  </td><td align="right">3.7K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="findutils-4.1.20.tar.gz">findutils-4.1.20.tar.gz</a></td><td align="right">2004-10-16 13:08  </td><td align="right">760K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="findutils-4.1.20.tar.gz.sig">findutils-4.1.20.tar.gz.sig</a></td><td align="right">2004-10-16 13:08  </td><td align="right"> 65 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="findutils-4.1.tar.gz">findutils-4.1.tar.gz</a></td><td align="right">1994-11-05 03:00  </td><td align="right">288K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="findutils-4.2.15.tar.gz">findutils-4.2.15.tar.gz</a></td><td align="right">2005-01-30 07:53  </td><td align="right">805K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="findutils-4.2.15.tar.gz.sig">findutils-4.2.15.tar.gz.sig</a></td><td align="right">2005-01-30 07:53  </td><td align="right"> 65 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="findutils-4.2.18.tar.gz">findutils-4.2.18.tar.gz</a></td><td align="right">2005-02-19 07:17  </td><td align="right">920K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="findutils-4.2.18.tar.gz.sig">findutils-4.2.18.tar.gz.sig</a></td><td align="right">2005-02-19 07:17  </td><td align="right"> 65 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="findutils-4.2.20.tar.gz">findutils-4.2.20.tar.gz</a></td><td align="right">2005-03-17 07:18  </td><td align="right">1.0M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="findutils-4.2.20.tar.gz.sig">findutils-4.2.20.tar.gz.sig</a></td><td align="right">2005-03-17 07:18  </td><td align="right"> 65 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="findutils-4.2.23.tar.gz">findutils-4.2.23.tar.gz</a></td><td align="right">2005-06-19 07:35  </td><td align="right">956K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="findutils-4.2.23.tar.gz.sig">findutils-4.2.23.tar.gz.sig</a></td><td align="right">2005-06-19 07:35  </td><td align="right"> 65 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="findutils-4.2.25.tar.gz">findutils-4.2.25.tar.gz</a></td><td align="right">2005-09-03 07:25  </td><td align="right">1.0M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="findutils-4.2.25.tar.gz.sig">findutils-4.2.25.tar.gz.sig</a></td><td align="right">2005-09-03 07:25  </td><td align="right"> 65 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="findutils-4.2.26.tar.gz">findutils-4.2.26.tar.gz</a></td><td align="right">2005-11-19 16:27  </td><td align="right">1.1M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="findutils-4.2.26.tar.gz.sig">findutils-4.2.26.tar.gz.sig</a></td><td align="right">2005-11-19 16:27  </td><td align="right"> 65 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="findutils-4.2.27.tar.gz">findutils-4.2.27.tar.gz</a></td><td align="right">2005-12-06 02:01  </td><td align="right">1.1M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="findutils-4.2.27.tar.gz.sig">findutils-4.2.27.tar.gz.sig</a></td><td align="right">2005-12-06 02:01  </td><td align="right"> 65 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="findutils-4.2.28.tar.gz">findutils-4.2.28.tar.gz</a></td><td align="right">2006-08-05 15:16  </td><td align="right">1.0M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="findutils-4.2.28.tar.gz.sig">findutils-4.2.28.tar.gz.sig</a></td><td align="right">2006-08-05 15:16  </td><td align="right"> 65 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="findutils-4.2.29.tar.gz">findutils-4.2.29.tar.gz</a></td><td align="right">2006-11-25 13:27  </td><td align="right">1.0M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="findutils-4.2.29.tar.gz.sig">findutils-4.2.29.tar.gz.sig</a></td><td align="right">2006-11-25 13:27  </td><td align="right"> 65 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="findutils-4.2.30.tar.gz">findutils-4.2.30.tar.gz</a></td><td align="right">2007-02-28 05:50  </td><td align="right">1.1M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="findutils-4.2.30.tar.gz.sig">findutils-4.2.30.tar.gz.sig</a></td><td align="right">2007-02-28 05:50  </td><td align="right"> 65 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="findutils-4.2.31.tar.gz">findutils-4.2.31.tar.gz</a></td><td align="right">2007-05-30 16:30  </td><td align="right">1.3M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="findutils-4.2.31.tar.gz.sig">findutils-4.2.31.tar.gz.sig</a></td><td align="right">2007-05-30 16:30  </td><td align="right"> 65 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="findutils-4.2.32.tar.gz">findutils-4.2.32.tar.gz</a></td><td align="right">2008-01-25 14:27  </td><td align="right">1.4M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="findutils-4.2.32.tar.gz.sig">findutils-4.2.32.tar.gz.sig</a></td><td align="right">2008-01-25 14:26  </td><td align="right"> 65 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="findutils-4.2.33.tar.gz">findutils-4.2.33.tar.gz</a></td><td align="right">2008-02-13 18:17  </td><td align="right">1.4M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="findutils-4.2.33.tar.gz.sig">findutils-4.2.33.tar.gz.sig</a></td><td align="right">2008-02-13 18:17  </td><td align="right"> 65 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="findutils-4.4.0.tar.gz">findutils-4.4.0.tar.gz</a></td><td align="right">2008-03-15 08:59  </td><td align="right">1.9M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="findutils-4.4.0.tar.gz.sig">findutils-4.4.0.tar.gz.sig</a></td><td align="right">2008-03-15 08:59  </td><td align="right"> 65 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="findutils-4.4.1.tar.gz">findutils-4.4.1.tar.gz</a></td><td align="right">2009-04-21 17:20  </td><td align="right">2.0M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="findutils-4.4.1.tar.gz.sig">findutils-4.4.1.tar.gz.sig</a></td><td align="right">2009-04-21 17:20  </td><td align="right">152 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="findutils-4.4.2.tar.gz">findutils-4.4.2.tar.gz</a></td><td align="right">2009-06-06 10:38  </td><td align="right">2.0M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="findutils-4.4.2.tar.gz.sig">findutils-4.4.2.tar.gz.sig</a></td><td align="right">2009-06-06 10:38  </td><td align="right">152 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="findutils-4.6.0.tar.gz">findutils-4.6.0.tar.gz</a></td><td align="right">2015-12-28 16:53  </td><td align="right">3.6M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="findutils-4.6.0.tar.gz.sig">findutils-4.6.0.tar.gz.sig</a></td><td align="right">2015-12-28 16:53  </td><td align="right">152 </td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.7 (Trisquel_GNU/Linux) Server at ftp.gnu.org Port 80</address>
+</body></html>

@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /gnu/diffutils</title>
+ </head>
+ <body>
+<h1>Index of /gnu/diffutils</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/gnu/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="diffutils-2.7.tar.gz">diffutils-2.7.tar.gz</a></td><td align="right">1994-10-02 03:00  </td><td align="right">305K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="diffutils-2.8.1.tar.gz">diffutils-2.8.1.tar.gz</a></td><td align="right">2002-04-05 20:13  </td><td align="right">762K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="diffutils-2.8.tar.gz">diffutils-2.8.tar.gz</a></td><td align="right">2002-03-25 05:49  </td><td align="right">761K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="diffutils-2.9.tar.gz">diffutils-2.9.tar.gz</a></td><td align="right">2010-02-13 08:07  </td><td align="right">1.7M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="diffutils-2.9.tar.gz.sig">diffutils-2.9.tar.gz.sig</a></td><td align="right">2010-02-13 08:07  </td><td align="right">836 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="diffutils-2.9.tar.xz">diffutils-2.9.tar.xz</a></td><td align="right">2010-02-13 08:08  </td><td align="right">972K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="diffutils-2.9.tar.xz.sig">diffutils-2.9.tar.xz.sig</a></td><td align="right">2010-02-13 08:08  </td><td align="right">836 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="diffutils-3.0.tar.gz">diffutils-3.0.tar.gz</a></td><td align="right">2010-05-03 12:59  </td><td align="right">1.7M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="diffutils-3.0.tar.gz.sig">diffutils-3.0.tar.gz.sig</a></td><td align="right">2010-05-03 12:59  </td><td align="right">836 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="diffutils-3.0.tar.xz">diffutils-3.0.tar.xz</a></td><td align="right">2010-05-03 12:59  </td><td align="right">1.0M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="diffutils-3.0.tar.xz.sig">diffutils-3.0.tar.xz.sig</a></td><td align="right">2010-05-03 13:00  </td><td align="right">836 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="diffutils-3.1.tar.gz">diffutils-3.1.tar.gz</a></td><td align="right">2011-08-11 08:31  </td><td align="right">1.9M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="diffutils-3.1.tar.gz.sig">diffutils-3.1.tar.gz.sig</a></td><td align="right">2011-08-11 08:31  </td><td align="right">836 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="diffutils-3.1.tar.xz">diffutils-3.1.tar.xz</a></td><td align="right">2011-08-11 08:31  </td><td align="right">1.1M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="diffutils-3.1.tar.xz.sig">diffutils-3.1.tar.xz.sig</a></td><td align="right">2011-08-11 08:31  </td><td align="right">836 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="diffutils-3.2.tar.gz">diffutils-3.2.tar.gz</a></td><td align="right">2011-09-02 11:27  </td><td align="right">1.9M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="diffutils-3.2.tar.gz.sig">diffutils-3.2.tar.gz.sig</a></td><td align="right">2011-09-02 11:27  </td><td align="right">836 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="diffutils-3.2.tar.xz">diffutils-3.2.tar.xz</a></td><td align="right">2011-09-02 11:27  </td><td align="right">1.1M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="diffutils-3.2.tar.xz.sig">diffutils-3.2.tar.xz.sig</a></td><td align="right">2011-09-02 11:27  </td><td align="right">836 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="diffutils-3.3.tar.xz">diffutils-3.3.tar.xz</a></td><td align="right">2013-03-24 14:12  </td><td align="right">1.1M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="diffutils-3.3.tar.xz.sig">diffutils-3.3.tar.xz.sig</a></td><td align="right">2013-03-24 14:12  </td><td align="right">966 </td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.7 (Trisquel_GNU/Linux) Server at ftp.gnu.org Port 80</address>
+</body></html>

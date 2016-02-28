@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /gnu/cpio</title>
+ </head>
+ <body>
+<h1>Index of /gnu/cpio</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/gnu/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="cpio-2.4.2.tar.gz">cpio-2.4.2.tar.gz</a></td><td align="right">1996-01-22 03:00  </td><td align="right">181K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="cpio-2.5.tar.gz">cpio-2.5.tar.gz</a></td><td align="right">2002-06-14 15:36  </td><td align="right">181K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="cpio-2.6.tar.bz2">cpio-2.6.tar.bz2</a></td><td align="right">2004-12-20 11:45  </td><td align="right">438K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="cpio-2.6.tar.bz2.sig">cpio-2.6.tar.bz2.sig</a></td><td align="right">2004-12-20 11:45  </td><td align="right"> 65 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="cpio-2.6.tar.gz">cpio-2.6.tar.gz</a></td><td align="right">2004-12-20 11:45  </td><td align="right">543K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="cpio-2.6.tar.gz.sig">cpio-2.6.tar.gz.sig</a></td><td align="right">2004-12-20 11:46  </td><td align="right"> 65 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="cpio-2.7.tar.bz2">cpio-2.7.tar.bz2</a></td><td align="right">2006-10-21 12:57  </td><td align="right">682K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="cpio-2.7.tar.bz2.sig">cpio-2.7.tar.bz2.sig</a></td><td align="right">2006-10-21 12:57  </td><td align="right">189 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="cpio-2.7.tar.gz">cpio-2.7.tar.gz</a></td><td align="right">2006-10-21 12:57  </td><td align="right">875K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="cpio-2.7.tar.gz.sig">cpio-2.7.tar.gz.sig</a></td><td align="right">2006-10-21 12:57  </td><td align="right">189 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="cpio-2.8.tar.bz2">cpio-2.8.tar.bz2</a></td><td align="right">2007-06-08 06:05  </td><td align="right">728K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="cpio-2.8.tar.bz2.sig">cpio-2.8.tar.bz2.sig</a></td><td align="right">2007-06-08 06:05  </td><td align="right">189 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="cpio-2.8.tar.gz">cpio-2.8.tar.gz</a></td><td align="right">2007-06-08 06:05  </td><td align="right">945K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="cpio-2.8.tar.gz.sig">cpio-2.8.tar.gz.sig</a></td><td align="right">2007-06-08 06:05  </td><td align="right">189 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="cpio-2.9.tar.bz2">cpio-2.9.tar.bz2</a></td><td align="right">2007-06-29 12:51  </td><td align="right">740K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="cpio-2.9.tar.bz2.sig">cpio-2.9.tar.bz2.sig</a></td><td align="right">2007-06-29 12:51  </td><td align="right">189 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="cpio-2.9.tar.gz">cpio-2.9.tar.gz</a></td><td align="right">2007-06-29 12:50  </td><td align="right">954K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="cpio-2.9.tar.gz.sig">cpio-2.9.tar.gz.sig</a></td><td align="right">2007-06-29 12:50  </td><td align="right">189 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="cpio-2.10.tar.bz2">cpio-2.10.tar.bz2</a></td><td align="right">2009-06-20 04:42  </td><td align="right">929K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="cpio-2.10.tar.bz2.sig">cpio-2.10.tar.bz2.sig</a></td><td align="right">2009-06-20 04:42  </td><td align="right">189 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="cpio-2.10.tar.gz">cpio-2.10.tar.gz</a></td><td align="right">2009-06-20 04:42  </td><td align="right">1.3M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="cpio-2.10.tar.gz.sig">cpio-2.10.tar.gz.sig</a></td><td align="right">2009-06-20 04:42  </td><td align="right">189 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="cpio-2.11.shar.gz">cpio-2.11.shar.gz</a></td><td align="right">2010-03-10 08:16  </td><td align="right">2.0M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="cpio-2.11.shar.gz.sig">cpio-2.11.shar.gz.sig</a></td><td align="right">2010-03-10 08:16  </td><td align="right">189 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="cpio-2.11.tar.bz2">cpio-2.11.tar.bz2</a></td><td align="right">2010-03-10 08:15  </td><td align="right">1.0M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="cpio-2.11.tar.bz2.sig">cpio-2.11.tar.bz2.sig</a></td><td align="right">2010-03-10 08:16  </td><td align="right">189 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="cpio-2.11.tar.gz">cpio-2.11.tar.gz</a></td><td align="right">2010-03-10 08:15  </td><td align="right">1.4M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="cpio-2.11.tar.gz.sig">cpio-2.11.tar.gz.sig</a></td><td align="right">2010-03-10 08:15  </td><td align="right">189 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="cpio-2.12.tar.bz2">cpio-2.12.tar.bz2</a></td><td align="right">2015-09-12 07:37  </td><td align="right">1.2M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="cpio-2.12.tar.bz2.sig">cpio-2.12.tar.bz2.sig</a></td><td align="right">2015-09-12 07:37  </td><td align="right">198 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="cpio-2.12.tar.gz">cpio-2.12.tar.gz</a></td><td align="right">2015-09-12 07:36  </td><td align="right">1.7M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="cpio-2.12.tar.gz.sig">cpio-2.12.tar.gz.sig</a></td><td align="right">2015-09-12 07:36  </td><td align="right">198 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="cpio-latest.shar.gz">cpio-latest.shar.gz</a></td><td align="right">2010-03-10 08:16  </td><td align="right">2.0M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="cpio-latest.shar.gz.sig">cpio-latest.shar.gz.sig</a></td><td align="right">2010-03-10 08:16  </td><td align="right">189 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="cpio-latest.tar.bz2">cpio-latest.tar.bz2</a></td><td align="right">2015-09-12 07:37  </td><td align="right">1.2M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="cpio-latest.tar.bz2.sig">cpio-latest.tar.bz2.sig</a></td><td align="right">2015-09-12 07:37  </td><td align="right">198 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="cpio-latest.tar.gz">cpio-latest.tar.gz</a></td><td align="right">2015-09-12 07:36  </td><td align="right">1.7M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="cpio-latest.tar.gz.sig">cpio-latest.tar.gz.sig</a></td><td align="right">2015-09-12 07:36  </td><td align="right">198 </td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.7 (Trisquel_GNU/Linux) Server at ftp.gnu.org Port 80</address>
+</body></html>

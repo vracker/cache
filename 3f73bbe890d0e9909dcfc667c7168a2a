@@ -58,22 +58,22 @@ main <a href="./">Tcl/Tk</a> page.
 </p>
 
 <table id="downloads">
-<tr class=even><th colspan=3>Tcl 8.6.4 Sources</th>
-<th colspan=3>Tk 8.6.4 Sources</th>
+<tr class=even><th colspan=3>Tcl 8.6.5 Sources</th>
+<th colspan=3>Tk 8.6.5 Sources</th>
 </tr>
 <tr>
-<td><b><a href="http://prdownloads.sourceforge.net/tcl/tcl8.6.4-src.tar.gz">tcl8.6.4-src.tar.gz</a></b></td>
+<td><b><a href="http://prdownloads.sourceforge.net/tcl/tcl8.6.5-src.tar.gz">tcl8.6.5-src.tar.gz</a></b></td>
 <td>Gzip format</td><td>  </td>
 
-<td><b><a href="http://prdownloads.sourceforge.net/tcl/tk8.6.4-src.tar.gz">tk8.6.4-src.tar.gz</a></b></td>
+<td><b><a href="http://prdownloads.sourceforge.net/tcl/tk8.6.5-src.tar.gz">tk8.6.5-src.tar.gz</a></b></td>
 <td>Gzip format</td><td>  </td>
 
 </tr>
 <tr>
-<td><b><a href="http://prdownloads.sourceforge.net/tcl/tcl864-src.zip">tcl864-src.zip</a></b></td>
+<td><b><a href="http://prdownloads.sourceforge.net/tcl/tcl865-src.zip">tcl865-src.zip</a></b></td>
 <td>Zip format</td><td>  </td>
 
-<td><b><a href="http://prdownloads.sourceforge.net/tcl/tk864-src.zip">tk864-src.zip</a></b></td>
+<td><b><a href="http://prdownloads.sourceforge.net/tcl/tk865-src.zip">tk865-src.zip</a></b></td>
 <td>Zip format</td><td>  </td>
 
 </tr>

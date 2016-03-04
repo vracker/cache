@@ -30,7 +30,7 @@ var g_onload = function() {};
       <div class='hdrlink black'>
         <a href='download.php'>
         <div class='hdrtop white'>DOWNLOAD REAPER</div>
-        <div class='hdrbottom'>Version 5.15: February 10, 2016</div>
+        <div class='hdrbottom'>Version 5.16: March 3, 2016</div>
         </a>
       </div>
       <div style='height:11px;'></div>
@@ -129,24 +129,24 @@ var g_onload = function() {};
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>Windows 32-bit</div>
   <div class='downloadinfo'>
-REAPER v5.15 - 8MB<br>
+REAPER v5.16 - 8MB<br>
 Windows XP/Vista/7/8/10<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper515-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper516-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
       <div style='background-color:#313131;height:1px;margin-bottom:20px;'></div>
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>Windows 64-bit</div>
   <div class='downloadinfo'>
-REAPER v5.15 - 10MB<br>
+REAPER v5.16 - 10MB<br>
 Windows XP/Vista/7/8/10 x64<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper515_x64-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper516_x64-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
     </div>
@@ -162,24 +162,24 @@ Windows XP/Vista/7/8/10 x64<br>
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>OS X 32-bit</div>
   <div class='downloadinfo'>
-REAPER v5.15 - 13MB<br>
+REAPER v5.16 - 13MB<br>
 OS X 10.5-10.11<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper515_i386.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper516_i386.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
       <div style='background-color:#313131;height:1px;margin-bottom:20px;'></div>
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>OS X 64-bit</div>
   <div class='downloadinfo'>
-REAPER v5.15 - 14MB<br>
+REAPER v5.16 - 14MB<br>
 OS X 10.5-10.11<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper515_x86_64.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper516_x86_64.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
     </div> 
@@ -190,156 +190,155 @@ OS X 10.5-10.11<br>
 <div class='dark strip'>
   <div style='background-color:#4E5454;height:1px;margin-top:40px;'></div>
   <div style='margin-top:30px;margin-bottom:30px;'>
-    <div class='heading'>REAPER 5.15: Happy New Monkey</div>
+    <div class='heading'>REAPER 5.16: Fully Leapt</div>
     <div style='width:1000px; -webkit-column-count: 3; -moz-column-count: 3; column-count: 3;'><a name="whatsnew"></a>
 <div class='avoidbreak'>
-<div class='bold'>Automation</div><ul class='bullet'>
-<li> automatically use absolute mouse editing for stepped pitch, fx param enum and toggle envelopes
-<li> improve sample accurate automation, fix parameter modulation issues with sample accurate plug-ins
-<li> improved automation recording behavior for toggle/enum parameters
-<li> improved automation recording for bypass envelopes in latch/write modes
-<li> improved automation recording for mute envelopes in latch/write modes
-<li> support enum/toggle FX parameter envelopes
-<li> improve accuracy of VCA envelope combination
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>MIDI</div><ul class='bullet'>
-<li> fix label for unnamed 14-bit CCs in list editor <a href="http://forum.cockos.com/showthread.php?t=172381" target="blank"><span class='whatsnewdot'>.</span></a>
-<li> fix switch from Grid to custom quantize settings in MIDI editor quantize window
-<li> fix MIDI editor toolbar feedback for set grid preserving type actions
-<li> fix timing of time selection consolidate project MIDI exports
-<li> configurable CC reset values for all CCs, default expression to 127
-<li> improve timing when extending left edge of unlooped MIDI items <a href="http://forum.cockos.com/showthread.php?t=143255" target="blank"><span class='whatsnewdot'>.</span></a>
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>VST</div><ul class='bullet'>
-<li> fix VST3 factory preset compatibility with Waves
-<li> improve automation behavior with VST3 plug-ins that do not properly support sample accurate automation
-<li> fix excess automation notifications from some plug-ins <a href="http://forum.cockos.com/showthread.php?t=165093" target="blank"><span class='whatsnewdot'>.</span></a>
-<li> fix preset combo box display issues on Windows
-<li> improve enum/toggle parameter detection
-<li> improve plug-in scanning compatibility broken in 5.0pre8
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Control surfaces</div><ul class='bullet'>
-<li> support HUI/DM2000 MCP/TCP views via fader button
-<li> support HUI/DM2000 flip mode via pan button
-<li> support HUI/DM2000 pan knob press to reset pan
-<li> use a global bank offset for all HUI interfaces
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Solo</div><ul class='bullet'>
-<li> do not enable hardware outputs when an unsoloed track sends to a solo-in-placed track <a href="http://forum.cockos.com/showthread.php?t=171900" target="blank"><span class='whatsnewdot'>.</span></a>
-<li> do not input monitor MIDI on tracks that are unsoloed-in-place
-<li> fix various possible glitches when using solo and routing
-<li> send noteoffs for track media when unsoloed-in-place <a href="http://forum.cockos.com/project.php?issueid=4515" target="blank"><span class='whatsnewdot'>.</span></a>
-</ul>
-</div>
-<div class='avoidbreak'>
 <div class='bold'>JSFX</div><ul class='bullet'>
-<li> add parameter "Other events (CC, etc) pass through" to midi_note_filter <a href="http://forum.cockos.com/showthread.php?t=171739" target="blank"><span class='whatsnewdot'>.</span></a>
-<li> remove zipper noises when adjusting volume_pan_sample_accurate_auto manually
+<li> improve screen layout for graphical scripts, add support for disabling metering, options:no_meter
+<li> add General Dynamics gate/compressor/expander
+<li> add Spectral Hold
+<li> improve Graphics Analyzer and Oscilloscope plug-ins (thanks Tale)
+<li> improve envelope step sizes for enum parameters with extended ranges
+<li> fix PDC glitches on playback start/latency changes/wet-dry change
+<li> fix potential deadlock when opening pin mapper
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Media explorer</div><ul class='bullet'>
-<li> fix reset of last path in certain instances
-<li> sanity check timestamps to avoid localtime() errors
+<div class='bold'>Action list</div><ul class='bullet'>
+<li> improve auto-wide layout
+<li> prevent scroll of action list after action assign/delete
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>OSX</div><ul class='bullet'>
-<li> allow override of optimized drawing setting in Preferences/General/Advanced
-<li> improved OSX drawing performance/behavior on 10.5-10.9
-<li> fixed 64-bit listview exceptions
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Pan</div><ul class='bullet'>
-<li> fix support for pan laws with newer pan modes on master track
-<li> optimized pan law calculations
-<li> properly show non-customized pan law for master track
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Peaks</div><ul class='bullet'>
-<li> fix realtime peaks display error with short sources
-<li> fixed instances where peaks building could be interrupted by editing
-<li> support new extended-range peaks format for FP WAV/WavPack files
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Projects</div><ul class='bullet'>
-<li> add option for default path for save/load new project
-<li> do not treat lone CR as line endings in project files <a href="http://forum.cockos.com/showthread.php?t=172252" target="blank"><span class='whatsnewdot'>.</span></a>
-<li> improve filename resolving when loading projects saved on a different platform
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Render</div><ul class='bullet'>
-<li> do not adjust time selection when saving project along with normal renders
-<li> store render tail length/configuration per-project, support render queue
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Ripple editing</div><ul class='bullet'>
-<li> add right click menu to ripple toolbar button
-<li> add option to allow ripple-all to affect tempo map
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Tooltips</div><ul class='bullet'>
-<li> arrange-view tooltips can now cross track boundaries
-<li> show relative move amounts for item, envelope, and stretch marker edits
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Elastique</div><ul class='bullet'>
-<li> updated to v3.1.4 (performance and memory use improvements)
+<div class='bold'>Docks</div><ul class='bullet'>
+<li> improve docked FX chain behavior when switching project tabs
+<li> improve docked MIDI editor behavior when switching project tabs
 </ul>
 </div>
 <div class='avoidbreak'>
 <div class='bold'>FX</div><ul class='bullet'>
-<li> preference option to allow filtering all browser views, filter Waves AU on OS X by default
+<li> include selected JSFX in the browser Cockos view
+<li> improve floating FX windows focus behavior when restoring from project/screenset
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Marker/region</div><ul class='bullet'>
-<li> fix auto-insertion of duplicate marker/region numbers
+<div class='bold'>Glue</div><ul class='bullet'>
+<li> avoid generating filenames from take names that are too long for filesystem
+<li> obey recording preference for maximum file size <a href="http://forum.cockos.com/showthread.php?t=173567" target="blank"><span class='whatsnewdot'>.</span></a>
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Search</div><ul class='bullet'>
-<li> support ( and ) for more power, e.g. '( Spectrum OR Scope ) NOT ( VST: OR AU: )'
+<div class='bold'>MIDI</div><ul class='bullet'>
+<li> fix bugs when humanize used from the list editor, better support for humanizing multiple contexts
+<li> added option to always prompt when importing MIDI with simple tempo information
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Stretch markers</div><ul class='bullet'>
-<li> allow setting rate mouse modifier to "no action"
+<div class='bold'>Recording</div><ul class='bullet'>
+<li> fix automatic import of recorded .mid files (issue since 5.11) <a href="http://forum.cockos.com/showthread.php?t=173491" target="blank"><span class='whatsnewdot'>.</span></a>
+<li> option to use alternate keyboard section also affects MIDI, OSC devices <a href="http://forum.cockos.com/showthread.php?t=121935" target="blank"><span class='whatsnewdot'>.</span></a>
+<li> improve position/length of looped MIDI overdub recording <a href="http://forum.cockos.com/showthread.php?t=167323" target="blank"><span class='whatsnewdot'>.</span></a>
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Video</div><ul class='bullet'>
-<li> fix docked fullscreen issue on OSX 10.11
+<div class='bold'>Render</div><ul class='bullet'>
+<li> improve handling of non-latin characters when inserting wildcards <a href="http://forum.cockos.com/showthread.php?t=173064" target="blank"><span class='whatsnewdot'>.</span></a>
+<li> always skip process of muted tracks when rendering and using full-speed render <a href="http://forum.cockos.com/showthread.php?t=56169" target="blank"><span class='whatsnewdot'>.</span></a>
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>WavPack</div><ul class='bullet'>
-<li> add 32-bit FP mode with -144, -120, or -96dB floor for better compression ratios
+<div class='bold'>Undo</div><ul class='bullet'>
+<li> improve added undo point on project undo history load <a href="http://forum.cockos.com/showthread.php?t=173486" target="blank"><span class='whatsnewdot'>.</span></a>
+<li> fix undo point addition when moving FX via mixer <a href="http://forum.cockos.com/showthread.php?t=173271" target="blank"><span class='whatsnewdot'>.</span></a>
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Arrange</div><ul class='bullet'>
+<li> improve vertical scroll behavior when resizing arrange <a href="http://forum.cockos.com/showthread.php?t=172819" target="blank"><span class='whatsnewdot'>.</span></a>
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Envelopes</div><ul class='bullet'>
+<li> better handle edge points when copying regions, moving time in project <a href="http://forum.cockos.com/showthread.php?t=173600" target="blank"><span class='whatsnewdot'>.</span></a>
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Freeze</div><ul class='bullet'>
+<li> fix stability issues when performing complex freeze operations <a href="http://forum.cockos.com/showthread.php?t=172637" target="blank"><span class='whatsnewdot'>.</span></a>
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>ID3v2 reading</div><ul class='bullet'>
+<li> fix possible crash reading long UTF-16 strings
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>LAME</div><ul class='bullet'>
+<li> allow configuration of quality/speed settings, more sensible default setting
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Marker/region manager</div><ul class='bullet'>
+<li> do not seek on sort by column <a href="http://forum.cockos.com/showthread.php?t=173282" target="blank"><span class='whatsnewdot'>.</span></a>
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Media explorer</div><ul class='bullet'>
+<li> do not prompt for tempo map import of MIDI items when using tempo matching
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Mixer</div><ul class='bullet'>
+<li> improve mouse cursor feedback when alt+drag used to move FX/sends <a href="http://forum.cockos.com/showthread.php?t=173098" target="blank"><span class='whatsnewdot'>.</span></a>
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>OSX</div><ul class='bullet'>
+<li> fix mouse issues after certain popup menus (such as docker menu)
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Panning</div><ul class='bullet'>
+<li> optimize pan law calculation, improve rounding
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Project</div><ul class='bullet'>
+<li> prevent writing user-entered newlines into project files
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>ReaPlugs</div><ul class='bullet'>
+<li> improve gain display of ReaEQ/ReaXcomp spectrum analyzer
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>ReaScript</div><ul class='bullet'>
+<li> increase image/font handle count limit for gfx_* in Lua to match that of EEL
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>ReaTune</div><ul class='bullet'>
+<li> remember the exact key set by user, rather than just the valid notes
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Sends</div><ul class='bullet'>
+<li> fix tiny glitch at playback start when using newer pan modes and a non-0dB pan law <a href="http://forum.cockos.com/showpost.php?p=1645671" target="blank"><span class='whatsnewdot'>.</span></a>
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Windows</div><ul class='bullet'>
+<li> properly display F13-F24 in actions list <a href="http://forum.cockos.com/showthread.php?t=173394" target="blank"><span class='whatsnewdot'>.</span></a>
 </ul>
 </div>
 <div class='avoidbreak'>
 <div class='bold'>API</div><ul class='bullet'>
-<li> add CountSelectedTracks2, GetSelectedTrack2 (to include the master track)
-<li> add CreateTrackSend, RemoveTrackSend, GetTrackSendInfo_Value, SetTrackSendInfo_Value
-<li> add ExecProcess
-<li> add GetSetProjectNotes
-<li> add TrackFX_GetUserPresetFilename
-<li> enable GetSetMediaTrackInfo and related function support for P_ICON <a href="http://forum.cockos.com/showpost.php?p=1628164" target="blank"><span class='whatsnewdot'>.</span></a>
+<li> add Envelope_FormatValue, TakeFX_GetEnvelope, TakeFX_* which mirror TrackFX
+<li> add TrackFX_AddByName, deprecating TrackFX_GetByName
+<li> add TrackFX_GetIOSize, TrackFX_GetPinMappings, TrackFX_SetPinMappings
+<li> extend TrackFX_* to allow access to Record Input FX and Monitoring FX
+<li> fix CreateTrackSend for hardware outputs, improve validation/return value <a href="http://forum.cockos.com/showthread.php?t=173455" target="blank"><span class='whatsnewdot'>.</span></a>
 </ul>
 </div>
     </div>

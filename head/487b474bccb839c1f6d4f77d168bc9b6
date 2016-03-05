@@ -1,24 +1,24 @@
 HTTP/1.1 301 Moved Permanently
 Server: nginx
-Date: Fri, 04 Mar 2016 22:31:41 GMT
+Date: Sat, 05 Mar 2016 17:16:48 GMT
 Content-Type: text/html; charset=UTF-8
 Connection: close
 Location: http://downloads.sourceforge.net/project/tcl/Tcl/8.5.19/tcl8.5.19-src.tar.gz
 
 HTTP/1.1 302 Found
 Server: nginx
-Date: Fri, 04 Mar 2016 22:31:41 GMT
+Date: Sat, 05 Mar 2016 17:16:48 GMT
 Content-Type: text/html; charset=UTF-8
 Connection: close
 content-disposition: attachment; filename="tcl8.5.19-src.tar.gz"
-Set-Cookie: sf_mirror_attempt="tcl:vorboss:Tcl/8.5.19/tcl8.5.19-src.tar.gz"; expires=120; Path=/
-Location: http://vorboss.dl.sourceforge.net/project/tcl/Tcl/8.5.19/tcl8.5.19-src.tar.gz
+Set-Cookie: sf_mirror_attempt="tcl:heanet:Tcl/8.5.19/tcl8.5.19-src.tar.gz"; expires=120; Path=/
+Location: http://heanet.dl.sourceforge.net/project/tcl/Tcl/8.5.19/tcl8.5.19-src.tar.gz
 
 HTTP/1.1 200 OK
-Date: Fri, 04 Mar 2016 22:31:41 GMT
-Server: Apache/2.2.22 (Debian)
+Date: Sat, 05 Mar 2016 17:16:49 GMT
+Server: Apache/2.4.7
 Last-Modified: Fri, 12 Feb 2016 15:32:17 GMT
-ETag: "3da9-4576b3-52b945f440240"
+ETag: "4576b3-52b945f440240"
 Accept-Ranges: bytes
 Content-Length: 4552371
 Connection: close

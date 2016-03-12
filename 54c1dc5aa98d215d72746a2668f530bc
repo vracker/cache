@@ -90,6 +90,8 @@
 <tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="grep-2.22.tar.xz.sig">grep-2.22.tar.xz.sig</a></td><td align="right">2015-11-01 21:09  </td><td align="right">801 </td><td>&nbsp;</td></tr>
 <tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="grep-2.23.tar.xz">grep-2.23.tar.xz</a></td><td align="right">2016-02-04 19:33  </td><td align="right">1.3M</td><td>&nbsp;</td></tr>
 <tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="grep-2.23.tar.xz.sig">grep-2.23.tar.xz.sig</a></td><td align="right">2016-02-04 19:33  </td><td align="right">801 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="grep-2.24.tar.xz">grep-2.24.tar.xz</a></td><td align="right">2016-03-11 00:41  </td><td align="right">1.3M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="grep-2.24.tar.xz.sig">grep-2.24.tar.xz.sig</a></td><td align="right">2016-03-11 00:41  </td><td align="right">801 </td><td>&nbsp;</td></tr>
    <tr><th colspan="5"><hr></th></tr>
 </table>
 <address>Apache/2.4.7 (Trisquel_GNU/Linux) Server at ftp.gnu.org Port 80</address>

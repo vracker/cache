@@ -50,9 +50,9 @@
             if (!window.net.sf) { window.net.sf = {}; }
             SF.Ads = {};
             SF.cdn = '//a.fsdn.com/con';
-            SF.deploy_time = '1457725733';
+            SF.deploy_time = '1458146571';
         </script>
-        <script src="//a.fsdn.com/con/js/min/sf.head.js?1457725733" type="text/javascript"></script>
+        <script src="//a.fsdn.com/con/js/min/sf.head.js?1458146571" type="text/javascript"></script>
         
 <!--[if lt IE 7 ]>
   <script src="//a.fsdn.com/con/js/sftheme/dd_belatedpng.js"></script>
@@ -67,7 +67,7 @@
         src: local("☺"), url('//a.fsdn.com/con/css/fonts/sftheme/pictos-web.woff') format('woff'), url('//a.fsdn.com/con/css/fonts/sftheme/pictos-web.ttf') format('truetype'), url('//a.fsdn.com/con/css/fonts/sftheme/pictos-web.svg') format('svg');
     }
 </style>
- <link rel="stylesheet" href="//a.fsdn.com/con/css/sf.css?1457725733" type="text/css">
+ <link rel="stylesheet" href="//a.fsdn.com/con/css/sf.css?1458146571" type="text/css">
 
 
         
@@ -181,7 +181,7 @@
         
 
         
-        <script type="text/javascript" src="//a.fsdn.com/con/js/adframe.js?1457725733"></script>
+        <script type="text/javascript" src="//a.fsdn.com/con/js/adframe.js?1458146571"></script>
         <script type="text/javascript">
 
             /*jshint ignore:start*/
@@ -294,7 +294,10 @@
 
 
 
+
     
+
+
 
 <div id="SF_ProjectFiles_728x90_A_wrapped" class="ad leaderboard  " data-unit="SF_ProjectFiles_728x90_A">
 <script type="text/javascript">
@@ -311,11 +314,16 @@
 }());
 </script>
 </div>
+
+
         
 
 
 
+
     
+
+
 
 <div id="SF_ProjectFiles_HubIcon_200x90_A_wrapped" class="ad hub  " data-unit="SF_ProjectFiles_HubIcon_200x90_A">
 <script type="text/javascript">
@@ -332,6 +340,8 @@
 }());
 </script>
 </div>
+
+
     </div>
     <div style="clear:both"></div>
 
@@ -487,7 +497,10 @@
 
 
 
+
     
+
+
 
 <div id="SF_Bookend_Left_150x1060_wrapped" class="ad   " data-unit="SF_Bookend_Left_150x1060">
 <script type="text/javascript">
@@ -504,11 +517,16 @@
 }());
 </script>
 </div>
+
+
                 
 
 
 
+
     
+
+
 
 <div id="SF_Bookend_Right_150x1060_wrapped" class="ad   " data-unit="SF_Bookend_Right_150x1060">
 <script type="text/javascript">
@@ -525,6 +543,8 @@
 }());
 </script>
 </div>
+
+
             </div>
     <noscript>
         <p>The interactive file manager requires Javascript. Please enable it or use <a href="https://sourceforge.net/p/forge/documentation/Release%20Files%20for%20Download#scp">sftp or scp</a>.
@@ -617,8 +637,11 @@
 
 
 
+
     
     
+
+
 
 <div id="SF_ProjectFiles_300x250_A_wrapped" class="ad multisize  " data-unit="SF_ProjectFiles_300x250_A">
 <script type="text/javascript">
@@ -635,6 +658,8 @@
 }());
 </script>
 </div>
+
+
         </div>
                 <aside class="sidebar-widget">
         <header>
@@ -699,7 +724,10 @@
 
 
 
+
     
+
+
 
 <div id="SF-300x250_wrapped" class="ad medrec  " data-unit="SF-300x250">
 <script type="text/javascript">
@@ -716,6 +744,8 @@
 }());
 </script>
 </div>
+
+
     </aside>
     
 
@@ -774,13 +804,13 @@
         </nav>
     </div>
 </footer>
-            <script src="//a.fsdn.com/con/js/min/sf.js?1457725733" type="text/javascript"></script>
+            <script src="//a.fsdn.com/con/js/min/sf.js?1458146571" type="text/javascript"></script>
         
 
         
             <script type="text/javascript" src="//consent-st.truste.com/get?name=notice.js&amp;domain=slashdot.org&amp;c=teconsent&amp;text=true"></script>
             
-<script type="text/javascript" src="https://a.fsdn.com/con/js/files.js?1457725733"></script>
+<script type="text/javascript" src="https://a.fsdn.com/con/js/files.js?1458146571"></script>
 
 
 <script type="text/x-handlebars-template" id="file-drawer-template">

@@ -113,20 +113,20 @@
         }, 
         {
             "iseol": false, 
-            "version": "3.12.56", 
+            "version": "3.12.57", 
             "moniker": "longterm", 
-            "source": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.12.56.tar.xz", 
-            "pgp": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.12.56.tar.sign", 
+            "source": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.12.57.tar.xz", 
+            "pgp": "https://www.kernel.org/pub/linux/kernel/v3.x/linux-3.12.57.tar.sign", 
             "released": {
-                "timestamp": 1457452577, 
-                "isodate": "2016-03-08"
+                "timestamp": 1458304952, 
+                "isodate": "2016-03-18"
             }, 
-            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/log/?id=refs/tags/v3.12.56", 
-            "changelog": "https://www.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.12.56", 
-            "diffview": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/diff/?id=v3.12.56&id2=v3.12.55&dt=2", 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/log/?id=refs/tags/v3.12.57", 
+            "changelog": "https://www.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.12.57", 
+            "diffview": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/diff/?id=v3.12.57&id2=v3.12.56&dt=2", 
             "patch": {
-                "full": "https://www.kernel.org/pub/linux/kernel/v3.x/patch-3.12.56.xz", 
-                "incremental": "https://www.kernel.org/pub/linux/kernel/v3.x/incr/patch-3.12.55-56.xz"
+                "full": "https://www.kernel.org/pub/linux/kernel/v3.x/patch-3.12.57.xz", 
+                "incremental": "https://www.kernel.org/pub/linux/kernel/v3.x/incr/patch-3.12.56-57.xz"
             }
         }, 
         {
@@ -203,15 +203,15 @@
         }, 
         {
             "iseol": false, 
-            "version": "next-20160317", 
+            "version": "next-20160318", 
             "moniker": "linux-next", 
             "source": null, 
             "pgp": null, 
             "released": {
-                "timestamp": 1458191781, 
-                "isodate": "2016-03-17"
+                "timestamp": 1458278391, 
+                "isodate": "2016-03-18"
             }, 
-            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/next/linux-next.git/log/?id=refs/tags/next-20160317", 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/next/linux-next.git/log/?id=refs/tags/next-20160318", 
             "changelog": null, 
             "diffview": null, 
             "patch": {

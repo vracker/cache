@@ -126,6 +126,49 @@
     </p>
   </li>
 
+  <li><b>25 March 2016 -- Building on an Android tablet.</b>
+    <p>Android is based on Linux kernel, but sadly and unexplicably,
+    Android userspace is not Unix-friendly: in many cases,
+    things are done differently than in "usual" Unix systems.
+    For example, there is no /bin directory (and therefore ubiquitous #!/bin/sh
+    scripts won't work). Instead, there is /system/bin.</p>
+
+    <p>I have a Samsung Galaxy Tab S (SM-T700 model) and I made it compile Busybox as follows:
+    <ul>
+    <li>"Rooted" the tablet (acquired root access). This step is device-specific.</li>
+    <li>Installed SuperSU application.</li>
+    <li>Installed the <a href="https://termux.com/">Termux</a> application -
+    it provides a small repository of essential tools: gcc-based toolchain,
+    git, ncurses, etc.</li>
+    <li>Ran its terminal, installed packages I needed, pulled Busybox git tree.</li>
+    <li>Created a /bin symlink to /system/bin, to make #!/bin/sh scripts work
+    (the build fails otherwise).</li>
+    <li>Now the usual "make defconfig", "make menuconfig", "make" work.</li>
+    </ul></p>
+
+    <p>Some parts won't compile (not all kernel headers are present, libc API
+    different or incomplete, etc). The maximal config which did compile
+    is now in the git tree, in configs/android_502_defconfig.
+    The toolchain provided by Termux is based on Android's Bionic libc
+    and Bionic has some design problems. An annoying one is that off_t is
+    32-bit, struct_stat::st_size is not off_t (this voilates standard
+    expectations), therefore CONFIG_LFS=y does not build, and CONFIG_LFS=n
+    builds with warnings (printf'ing st->st_size with wrong specifier).
+    </p>
+  </li>
+
+  <li><b>24 March 2016 -- BusyBox 1.24.2 (stable)</b>
+    <p><a href="http://busybox.net/downloads/busybox-1.24.2.tar.bz2">BusyBox 1.24.2</a>.
+    (<a href="http://git.busybox.net/busybox/tree/?h=1_24_stable">git</a>,
+    <a href="http://busybox.net/downloads/fixes-1.24.2/">patches</a>,
+    <a href="http://busybox.net/fix.html">how to add a patch</a>)</p>
+
+    <p>Bug fix release. 1.24.2 has fixes for
+    build system (static build with glibc fixed),
+    truncate, gunzin and unzip.
+    </p>
+  </li>
+
   <li><b>24 October 2015 -- BusyBox 1.24.1 (stable)</b>
     <p><a href="http://busybox.net/downloads/busybox-1.24.1.tar.bz2">BusyBox 1.24.1</a>.
     (<a href="http://git.busybox.net/busybox/tree/?h=1_24_stable">git</a>,

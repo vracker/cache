@@ -286,6 +286,9 @@
 <a href="git-2.7.4.tar.gz">git-2.7.4.tar.gz</a>                17-Mar-2016 21:05  5.5M  
 <a href="git-2.7.4.tar.sign">git-2.7.4.tar.sign</a>              17-Mar-2016 21:05  543   
 <a href="git-2.7.4.tar.xz">git-2.7.4.tar.xz</a>                17-Mar-2016 21:05  3.7M  
+<a href="git-2.8.0.tar.gz">git-2.8.0.tar.gz</a>                28-Mar-2016 20:45  5.6M  
+<a href="git-2.8.0.tar.sign">git-2.8.0.tar.sign</a>              28-Mar-2016 20:45  543   
+<a href="git-2.8.0.tar.xz">git-2.8.0.tar.xz</a>                28-Mar-2016 20:45  3.8M  
 <a href="git-core-0.99.4.tar.gz">git-core-0.99.4.tar.gz</a>          12-Aug-2005 07:02  329K  
 <a href="git-core-0.99.4.tar.sign">git-core-0.99.4.tar.sign</a>        08-Aug-2013 19:44  665   
 <a href="git-core-0.99.5.tar.gz">git-core-0.99.5.tar.gz</a>          25-Aug-2005 02:48  364K  
@@ -550,6 +553,9 @@
 <a href="git-htmldocs-2.7.4.tar.gz">git-htmldocs-2.7.4.tar.gz</a>       17-Mar-2016 21:05  2.4M  
 <a href="git-htmldocs-2.7.4.tar.sign">git-htmldocs-2.7.4.tar.sign</a>     17-Mar-2016 21:05  543   
 <a href="git-htmldocs-2.7.4.tar.xz">git-htmldocs-2.7.4.tar.xz</a>       17-Mar-2016 21:05  1.0M  
+<a href="git-htmldocs-2.8.0.tar.gz">git-htmldocs-2.8.0.tar.gz</a>       28-Mar-2016 20:45  2.4M  
+<a href="git-htmldocs-2.8.0.tar.sign">git-htmldocs-2.8.0.tar.sign</a>     28-Mar-2016 20:45  543   
+<a href="git-htmldocs-2.8.0.tar.xz">git-htmldocs-2.8.0.tar.xz</a>       28-Mar-2016 20:45  1.0M  
 <a href="git-manpages-1.8.3.1.tar.bz2">git-manpages-1.8.3.1.tar.bz2</a>    10-Jun-2013 21:01  371K  
 <a href="git-manpages-1.8.3.1.tar.gz">git-manpages-1.8.3.1.tar.gz</a>     10-Jun-2013 21:01  530K  
 <a href="git-manpages-1.8.3.1.tar.sign">git-manpages-1.8.3.1.tar.sign</a>   10-Jun-2013 21:01  543   
@@ -808,6 +814,9 @@
 <a href="git-manpages-2.7.4.tar.gz">git-manpages-2.7.4.tar.gz</a>       17-Mar-2016 21:05  599K  
 <a href="git-manpages-2.7.4.tar.sign">git-manpages-2.7.4.tar.sign</a>     17-Mar-2016 21:05  543   
 <a href="git-manpages-2.7.4.tar.xz">git-manpages-2.7.4.tar.xz</a>       17-Mar-2016 21:05  375K  
-<a href="sha256sums.asc">sha256sums.asc</a>                  17-Mar-2016 21:11   48K  
+<a href="git-manpages-2.8.0.tar.gz">git-manpages-2.8.0.tar.gz</a>       28-Mar-2016 20:45  602K  
+<a href="git-manpages-2.8.0.tar.sign">git-manpages-2.8.0.tar.sign</a>     28-Mar-2016 20:45  543   
+<a href="git-manpages-2.8.0.tar.xz">git-manpages-2.8.0.tar.xz</a>       28-Mar-2016 20:45  378K  
+<a href="sha256sums.asc">sha256sums.asc</a>                  28-Mar-2016 20:46   49K  
 <hr></pre>
 </body></html>

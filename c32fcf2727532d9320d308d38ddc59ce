@@ -50,9 +50,9 @@
             if (!window.net.sf) { window.net.sf = {}; }
             SF.Ads = {};
             SF.cdn = '//a.fsdn.com/con';
-            SF.deploy_time = '1459375319';
+            SF.deploy_time = '1459518548';
         </script>
-        <script src="//a.fsdn.com/con/js/min/sf.head.js?1459375319" type="text/javascript"></script>
+        <script src="//a.fsdn.com/con/js/min/sf.head.js?1459518548" type="text/javascript"></script>
         
 <!--[if lt IE 7 ]>
   <script src="//a.fsdn.com/con/js/sftheme/dd_belatedpng.js"></script>
@@ -67,7 +67,7 @@
         src: local("☺"), url('//a.fsdn.com/con/css/fonts/sftheme/pictos-web.woff') format('woff'), url('//a.fsdn.com/con/css/fonts/sftheme/pictos-web.ttf') format('truetype'), url('//a.fsdn.com/con/css/fonts/sftheme/pictos-web.svg') format('svg');
     }
 </style>
- <link rel="stylesheet" href="//a.fsdn.com/con/css/sf.css?1459375319" type="text/css">
+ <link rel="stylesheet" href="//a.fsdn.com/con/css/sf.css?1459518548" type="text/css">
 
 
         
@@ -98,7 +98,7 @@
        var gptadslots=[];
        var gptadHandlers={};
        googletag.cmd.push(function() {
-            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_ProjectFiles_728x90_A', [728, 90], 'div-gpt-ad-1393435113147-0')
+            gptadslots.push(googletag.defineSlot('/41014381/Sourceforge/SF_ProjectFiles_728x90_A', [728, 90], 'div-gpt-ad-1393435113147-0')
                                                     .addService(googletag.pubads())
                                                         .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])
                                                         .setTargeting('shortname', 'expect')
@@ -107,7 +107,7 @@
                                                         .setTargeting('dc_ref', 'https://sourceforge.net/projects/expect/files/Expect/5.45/')
                                                         .setTargeting('sz', '728x90')
                                                         .setTargeting('page_type', 'pg_files'));
-            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_ProjectFiles_300x250_A', [[300, 250], [300, 600], [300, 1050]], 'div-gpt-ad-1392147725721-0')
+            gptadslots.push(googletag.defineSlot('/41014381/Sourceforge/SF_ProjectFiles_300x250_A', [[300, 250], [300, 600], [300, 1050]], 'div-gpt-ad-1392147725721-0')
                                                     .addService(googletag.pubads())
                                                         .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])
                                                         .setTargeting('shortname', 'expect')
@@ -116,7 +116,7 @@
                                                         .setTargeting('dc_ref', 'https://sourceforge.net/projects/expect/files/Expect/5.45/')
                                                         .setTargeting('sz', '300x250,300x600,300x1050')
                                                         .setTargeting('page_type', 'pg_files'));
-            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_ProjectFiles_HubIcon_200x90_A', [200, 90], 'div-gpt-ad-1392148098424-0')
+            gptadslots.push(googletag.defineSlot('/41014381/Sourceforge/SF_ProjectFiles_HubIcon_200x90_A', [200, 90], 'div-gpt-ad-1392148098424-0')
                                                     .addService(googletag.pubads())
                                                         .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])
                                                         .setTargeting('shortname', 'expect')
@@ -125,7 +125,7 @@
                                                         .setTargeting('dc_ref', 'https://sourceforge.net/projects/expect/files/Expect/5.45/')
                                                         .setTargeting('sz', '200x90')
                                                         .setTargeting('page_type', 'pg_files'));
-            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_ProjectFiles_300x250_B', [300, 250], 'div-gpt-ad-1392148208789-0')
+            gptadslots.push(googletag.defineSlot('/41014381/Sourceforge/SF_ProjectFiles_300x250_B', [300, 250], 'div-gpt-ad-1392148208789-0')
                                                     .addService(googletag.pubads())
                                                         .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])
                                                         .setTargeting('shortname', 'expect')
@@ -143,7 +143,7 @@
                                                         .setTargeting('dc_ref', 'https://sourceforge.net/projects/expect/files/Expect/5.45/')
                                                         .setTargeting('sz', '300x250')
                                                         .setTargeting('page_type', 'pg_files'));
-            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Bookend_Left_150x1060', [150, 1060], 'div-gpt-ad-139343511-0')
+            gptadslots.push(googletag.defineSlot('/41014381/Sourceforge/SF_Bookend_Left_150x1060', [150, 1060], 'div-gpt-ad-139343511-0')
                                                     .addService(googletag.pubads())
                                                         .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])
                                                         .setTargeting('shortname', 'expect')
@@ -152,7 +152,7 @@
                                                         .setTargeting('dc_ref', 'https://sourceforge.net/projects/expect/files/Expect/5.45/')
                                                         .setTargeting('sz', '150x1060')
                                                         .setTargeting('page_type', 'pg_files'));
-            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Bookend_Right_150x1060', [150, 1060], 'div-gpt-ad-139343512-0')
+            gptadslots.push(googletag.defineSlot('/41014381/Sourceforge/SF_Bookend_Right_150x1060', [150, 1060], 'div-gpt-ad-139343512-0')
                                                     .addService(googletag.pubads())
                                                         .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])
                                                         .setTargeting('shortname', 'expect')
@@ -181,7 +181,7 @@
         
 
         
-        <script type="text/javascript" src="//a.fsdn.com/con/js/adframe.js?1459375319"></script>
+        <script type="text/javascript" src="//a.fsdn.com/con/js/adframe.js?1459518548"></script>
         <script type="text/javascript">
 
             /*jshint ignore:start*/
@@ -797,18 +797,15 @@
             <a href="https://slashdotmedia.com/privacy-statement/">Privacy</a>
             <span id='teconsent'></span>
             <a href="https://slashdotmedia.com/opt-out-choices/">Opt Out Choices</a>
-
-
-        </nav>
     </div>
 </footer>
-            <script src="//a.fsdn.com/con/js/min/sf.js?1459375319" type="text/javascript"></script>
+            <script src="//a.fsdn.com/con/js/min/sf.js?1459518548" type="text/javascript"></script>
         
 
         
             <script type="text/javascript" src="//consent-st.truste.com/get?name=notice.js&amp;domain=slashdot.org&amp;c=teconsent&amp;text=true"></script>
             
-<script type="text/javascript" src="https://a.fsdn.com/con/js/files.js?1459375319"></script>
+<script type="text/javascript" src="https://a.fsdn.com/con/js/files.js?1459518548"></script>
 
 
 <script type="text/x-handlebars-template" id="file-drawer-template">

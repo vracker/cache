@@ -17,30 +17,6 @@
         <link rel="shortcut icon" href="//a.fsdn.com/con/img/sftheme/favicon.ico">
         
 
-<!-- CCM Tag -->
-<script type="text/javascript">
-  //ccm informer
-/*jshint ignore:start*/
-    (function(f,i,c){var a=decodeURIComponent,e="",l="",o="||",g=";;",h="split",b="length",j="indexOf",k=0,n="localStorage",m="_ccmdt";f[c]=f[c]||{};function d(q){var p;if(f[n]){return f[n][q]||""}else{p=i.cookie.match(q+"=([^;]*)");return(p&&p[1])||""}}f[c].us={};e=a(d(m))[h](o);k=e[b];if(k>0){while(k--){l=e[k][h]("=");if(l[b]>1){if(l[1][j](g)>-1){f[c].us[l[0]]=l[1][h](g);f[c].us[l[0]].pop()}else{f[c].us[l[0]]=l[1]}}}}})(window,document,"_ml");
-/*jshint ignore:end*/
-
-  //ccm tag
-  (function () {
-    /*global _ml:true, window */
-    _ml = window._ml || {};
-    _ml.eid = '771';
-    _ml.ht = 'shex';
-    _ml.informer = {
-      enable: true
-    };
-    var s = document.getElementsByTagName('script')[0], cd = new Date(), mltag = document.createElement('script');
-    mltag.type = 'text/javascript'; mltag.async = true;
-    mltag.src = '//ml314.com/tag.aspx?' + cd.getDate() + cd.getMonth() + cd.getFullYear();
-    s.parentNode.insertBefore(mltag, s);
-  })();
-</script>
-<!-- End CCM Tag -->
-
         
         <script type="text/javascript">
             /*global unescape, window, console, jQuery, $, net, SF, DD_belatedPNG, ga */
@@ -233,6 +209,38 @@
         </script>
         <noscript><p><img src="//analytics.slashdotmedia.com/piwik.php?idsite=39" style="border:0;" alt="" /></p></noscript>
         <!-- End Piwik Code -->
+
+        <script type="text/javascript">
+        /*global _taboola*/
+        window._taboola = window._taboola || [];
+        _taboola.push({article:'auto'});
+        (function (e, f, u) {
+            e.async = 1;
+            e.src = u;
+            f.parentNode.insertBefore(e, f);
+        })(document.createElement('script'),
+        document.getElementsByTagName('script')[0],
+        '//cdn.taboola.com/libtrc/sourceforge/loader.js');
+        </script><script type="text/javascript"> try{(function(){ var cb = new Date().getTime(); var s = document.createElement("script"); s.defer = true; s.src = "//tag.crsspxl.com/s1.js?d=2396&cb="+cb; var s0 = document.getElementsByTagName('script')[0]; s0.parentNode.insertBefore(s, s0); })();}catch(e){} </script>
+<script type="text/javascript">
+/* Version: 0.7 */
+/* <![CDATA[ */
+try {
+    var _mag = _mag || {};
+    _mag.kw = 'Software Development,Systems Administration';
+    _mag.kw_encoded = 0;
+    _mag.shortName = 'sourceforgemedia-computing';
+    _mag.default_protocol = ('https:' == document.location.protocol ? 'https:' : 'http:');
+    _mag.startTime = (new Date()).getTime();
+    (function(d,t) {
+        var mag = d.createElement('script'); mag.type = 'text/javascript'; mag.async = true; mag.src = t;
+        var head = d.getElementsByTagName('head')[0] || d.documentElement; head.insertBefore(mag, head.firstChild);
+    })(document,  _mag.default_protocol + '//d3ezl4ajpp2zy8.cloudfront.net/sourceforgemedia-computing_tag.js');
+} catch (e) {}
+/* ]]> */
+</script>
+
+
     </head>
     <body id="pg_files" class="
     user
@@ -297,7 +305,7 @@
 
         <header id="page-header">
     
-    <div id="banner-ads" class="ads">
+    <div id="banner-sterling" class="sterling">
         
 
 
@@ -309,7 +317,7 @@
 <div class="sticky-anchor"></div>
 <div class="sticky">
 
-<div id="SF_ProjectFiles_728x90_A_wrapped" class="ad leaderboard  " data-unit="SF_ProjectFiles_728x90_A">
+<div id="SF_ProjectFiles_728x90_A_wrapped" class="draper leaderboard  " data-unit="SF_ProjectFiles_728x90_A">
 <script type="text/javascript">
 /*global googletag */
 (function(){
@@ -336,7 +344,7 @@
 
 
 
-<div id="SF_ProjectFiles_HubIcon_200x90_A_wrapped" class="ad hub  " data-unit="SF_ProjectFiles_HubIcon_200x90_A">
+<div id="SF_ProjectFiles_HubIcon_200x90_A_wrapped" class="draper hub  " data-unit="SF_ProjectFiles_HubIcon_200x90_A">
 <script type="text/javascript">
 /*global googletag */
 (function(){
@@ -513,7 +521,7 @@
 
 
 
-<div id="SF_Bookend_Left_150x1060_wrapped" class="ad   " data-unit="SF_Bookend_Left_150x1060">
+<div id="SF_Bookend_Left_150x1060_wrapped" class="draper   " data-unit="SF_Bookend_Left_150x1060">
 <script type="text/javascript">
 /*global googletag */
 (function(){
@@ -539,7 +547,7 @@
 
 
 
-<div id="SF_Bookend_Right_150x1060_wrapped" class="ad   " data-unit="SF_Bookend_Right_150x1060">
+<div id="SF_Bookend_Right_150x1060_wrapped" class="draper   " data-unit="SF_Bookend_Right_150x1060">
 <script type="text/javascript">
 /*global googletag */
 (function(){
@@ -643,7 +651,7 @@
 
     
     <div id="files-sidebar">
-        <div class="ads">
+        <div class="sterling">
         
 
 
@@ -654,7 +662,7 @@
 
 
 
-<div id="SF_ProjectFiles_300x250_A_wrapped" class="ad multisize  " data-unit="SF_ProjectFiles_300x250_A">
+<div id="SF_ProjectFiles_300x250_A_wrapped" class="draper multisize  " data-unit="SF_ProjectFiles_300x250_A">
 <script type="text/javascript">
 /*global googletag */
 (function(){
@@ -727,7 +735,7 @@
 <a href="http://track.totalvpn.com/5703e6ec22268/click" rel="nofollow" class="static-placement recovery"><img width="300" height="250" alt="Total VPN" src="//a.fsdn.com/con/img/promotional/1394209358857.jpg"/></a>
 
         
-                <div class="ads">
+                <div class="sterling">
                     
     <aside class="sidebar-widget stackcommerce-widget">
             <header id="stackcommerce-header">
@@ -743,7 +751,7 @@
 
 
 
-<div id="SF-300x250_wrapped" class="ad medrec  " data-unit="SF-300x250">
+<div id="SF-300x250_wrapped" class="draper medrec  " data-unit="SF-300x250">
 <script type="text/javascript">
 /*global googletag */
 (function(){

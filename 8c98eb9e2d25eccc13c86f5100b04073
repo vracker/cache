@@ -203,15 +203,15 @@
         }, 
         {
             "iseol": false, 
-            "version": "next-20160406", 
+            "version": "next-20160408", 
             "moniker": "linux-next", 
             "source": null, 
             "pgp": null, 
             "released": {
-                "timestamp": 1459916634, 
-                "isodate": "2016-04-06"
+                "timestamp": 1460088843, 
+                "isodate": "2016-04-08"
             }, 
-            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/next/linux-next.git/log/?id=refs/tags/next-20160406", 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/next/linux-next.git/log/?id=refs/tags/next-20160408", 
             "changelog": null, 
             "diffview": null, 
             "patch": {

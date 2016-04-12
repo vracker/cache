@@ -5,19 +5,19 @@
     "releases": [
         {
             "iseol": false, 
-            "version": "4.6-rc2", 
+            "version": "4.6-rc3", 
             "moniker": "mainline", 
-            "source": "https://www.kernel.org/pub/linux/kernel/v4.x/testing/linux-4.6-rc2.tar.xz", 
-            "pgp": "https://www.kernel.org/pub/linux/kernel/v4.x/testing/linux-4.6-rc2.tar.sign", 
+            "source": "https://www.kernel.org/pub/linux/kernel/v4.x/testing/linux-4.6-rc3.tar.xz", 
+            "pgp": "https://www.kernel.org/pub/linux/kernel/v4.x/testing/linux-4.6-rc3.tar.sign", 
             "released": {
-                "timestamp": 1459692593, 
-                "isodate": "2016-04-03"
+                "timestamp": 1460336316, 
+                "isodate": "2016-04-11"
             }, 
-            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/log/?id=refs/tags/v4.6-rc2", 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/log/?id=refs/tags/v4.6-rc3", 
             "changelog": null, 
-            "diffview": "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/diff/?id=v4.6-rc2&id2=v4.6-rc1&dt=2", 
+            "diffview": "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/diff/?id=v4.6-rc3&id2=v4.6-rc2&dt=2", 
             "patch": {
-                "full": "https://www.kernel.org/pub/linux/kernel/v4.x/testing/patch-4.6-rc2.xz", 
+                "full": "https://www.kernel.org/pub/linux/kernel/v4.x/testing/patch-4.6-rc3.xz", 
                 "incremental": null
             }
         }, 
@@ -184,34 +184,16 @@
             }
         }, 
         {
-            "iseol": true, 
-            "version": "2.6.32.71", 
-            "moniker": "longterm", 
-            "source": "https://www.kernel.org/pub/linux/kernel/v2.6/longterm/v2.6.32/linux-2.6.32.71.tar.xz", 
-            "pgp": "https://www.kernel.org/pub/linux/kernel/v2.6/longterm/v2.6.32/linux-2.6.32.71.tar.sign", 
-            "released": {
-                "timestamp": 1457789148, 
-                "isodate": "2016-03-12"
-            }, 
-            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/log/?id=refs/tags/v2.6.32.71", 
-            "changelog": "https://www.kernel.org/pub/linux/kernel/v2.6/longterm/v2.6.32/ChangeLog-2.6.32.71", 
-            "diffview": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/diff/?id=v2.6.32.71&id2=v2.6.32.70&dt=2", 
-            "patch": {
-                "full": "https://www.kernel.org/pub/linux/kernel/v2.6/longterm/v2.6.32/patch-2.6.32.71.xz", 
-                "incremental": "https://www.kernel.org/pub/linux/kernel/v2.6/longterm/v2.6.32/incr/patch-2.6.32.70-71.xz"
-            }
-        }, 
-        {
             "iseol": false, 
-            "version": "next-20160408", 
+            "version": "next-20160412", 
             "moniker": "linux-next", 
             "source": null, 
             "pgp": null, 
             "released": {
-                "timestamp": 1460088843, 
-                "isodate": "2016-04-08"
+                "timestamp": 1460435592, 
+                "isodate": "2016-04-12"
             }, 
-            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/next/linux-next.git/log/?id=refs/tags/next-20160408", 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/next/linux-next.git/log/?id=refs/tags/next-20160412", 
             "changelog": null, 
             "diffview": null, 
             "patch": {

@@ -511,60 +511,6 @@ try {
 
 
         <div id="page-body">
-            <div id="bookends_container">
-                
-
-
-
-
-    
-
-
-
-<div id="SF_Bookend_Left_150x1060_wrapped" class="draper   " data-unit="SF_Bookend_Left_150x1060">
-<script type="text/javascript">
-/*global googletag */
-(function(){
-    var immersionCompliment = false;
-    
-    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
-        document.write('<div id="div-gpt-ad-139343511-0" ></div>');
-        googletag.cmd.push(function() {
-            googletag.display('div-gpt-ad-139343511-0');
-        });
-    }
-}());
-</script>
-</div>
-
-
-                
-
-
-
-
-    
-
-
-
-<div id="SF_Bookend_Right_150x1060_wrapped" class="draper   " data-unit="SF_Bookend_Right_150x1060">
-<script type="text/javascript">
-/*global googletag */
-(function(){
-    var immersionCompliment = false;
-    
-    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
-        document.write('<div id="div-gpt-ad-139343512-0" ></div>');
-        googletag.cmd.push(function() {
-            googletag.display('div-gpt-ad-139343512-0');
-        });
-    }
-}());
-</script>
-</div>
-
-
-            </div>
     <noscript>
         <p>The interactive file manager requires Javascript. Please enable it or use <a href="https://sourceforge.net/p/forge/documentation/Release%20Files%20for%20Download#scp">sftp or scp</a>.
         <br/>You may still <em>browse</em> the files here.</p>

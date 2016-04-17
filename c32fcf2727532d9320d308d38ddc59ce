@@ -137,6 +137,7 @@
                                                         .setTargeting('sz', '150x1060')
                                                         .setTargeting('page_type', 'pg_files'));
             
+            googletag.pubads().setTargeting("requestSource", "GPT");
             googletag.pubads().enableAsyncRendering();
             googletag.pubads().collapseEmptyDivs();
             googletag.enableServices();

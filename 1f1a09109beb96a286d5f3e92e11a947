@@ -532,7 +532,9 @@ try {
                 /
             
             
-            <span class="current-dir">Expect</span></div>
+            <span class="current-dir">Expect</span>
+
+        </div>
 
         <table id="files_list" title="This is a list of the files for this project">
             <col class="name-column">

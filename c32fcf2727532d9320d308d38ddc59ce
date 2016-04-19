@@ -533,7 +533,9 @@ try {
             
             <a href="/projects/expect/files/Expect/" title="Expect">Expect</a> /
             
-            <span class="current-dir">5.45</span></div>
+            <span class="current-dir">5.45</span>
+
+        </div>
 
         <table id="files_list" title="This is a list of the files for this project">
             <col class="name-column">

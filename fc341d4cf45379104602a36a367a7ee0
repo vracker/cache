@@ -145,7 +145,7 @@ latest versions is strongly recommended:
 <ul>
 	<li>Autoconf 2.64</li>
 	<li>Automake 1.12</li>
-	<li>gettext 0.18 (Note: autopoint depends on cvs!)</li>
+	<li>gettext 0.19 (Note: autopoint depends on cvs!)</li>
 	<li>libtool 2.2</li>
 </ul>
 

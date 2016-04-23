@@ -118,24 +118,6 @@
                                                         .setTargeting('dc_ref', 'https://sourceforge.net/projects/expect/files/Expect/')
                                                         .setTargeting('sz', '300x250')
                                                         .setTargeting('page_type', 'pg_files'));
-            gptadslots.push(googletag.defineSlot('/41014381/Sourceforge/SF_Bookend_Left_150x1060', [150, 1060], 'div-gpt-ad-139343511-0')
-                                                    .addService(googletag.pubads())
-                                                        .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])
-                                                        .setTargeting('shortname', 'expect')
-                                                        .setTargeting('aud', ['developers', 'endusers', 'sysadmins'])
-                                                        .setTargeting('mirror', 'False')
-                                                        .setTargeting('dc_ref', 'https://sourceforge.net/projects/expect/files/Expect/')
-                                                        .setTargeting('sz', '150x1060')
-                                                        .setTargeting('page_type', 'pg_files'));
-            gptadslots.push(googletag.defineSlot('/41014381/Sourceforge/SF_Bookend_Right_150x1060', [150, 1060], 'div-gpt-ad-139343512-0')
-                                                    .addService(googletag.pubads())
-                                                        .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])
-                                                        .setTargeting('shortname', 'expect')
-                                                        .setTargeting('aud', ['developers', 'endusers', 'sysadmins'])
-                                                        .setTargeting('mirror', 'False')
-                                                        .setTargeting('dc_ref', 'https://sourceforge.net/projects/expect/files/Expect/')
-                                                        .setTargeting('sz', '150x1060')
-                                                        .setTargeting('page_type', 'pg_files'));
             
             googletag.pubads().setTargeting("requestSource", "GPT");
             googletag.pubads().enableAsyncRendering();
@@ -241,8 +223,7 @@ try {
 /* ]]> */
 </script>
 
-
-    </head>
+        <script type="text/javascript" src="//ads.pro-market.net/ads/scripts/site-143572.js"></script></head>
     <body id="pg_files" class="
     user
      bluesteel

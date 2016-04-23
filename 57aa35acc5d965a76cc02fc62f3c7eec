@@ -66,6 +66,7 @@
         <!--li><a href="/downloads/patches/recent.html">Recent Changes</a></li-->
         <li><a href="lists.html">Mailing Lists</a></li>
         <li><a href="https://bugs.busybox.net/">Bug Tracking</a></li>
+        <li><a href="use_less_ram.html">Use less RAM</a></li>
         <li><a href="developer.html">Contributing</a></li>
     </ul>
     <p><b>Links</b>
@@ -136,7 +137,7 @@
     <p>I have a Samsung Galaxy Tab S (SM-T700 model) and I made it compile Busybox as follows:
     <ul>
     <li>"Rooted" the tablet (acquired root access). This step is device-specific.</li>
-    <li>Installed SuperSU application.</li>
+    <li>Installed the SuperSU application.</li>
     <li>Installed the <a href="https://termux.com/">Termux</a> application -
     it provides a small repository of essential tools: gcc-based toolchain,
     git, ncurses, etc.</li>
@@ -151,7 +152,7 @@
     is now in the git tree, in configs/android_502_defconfig.
     The toolchain provided by Termux is based on Android's Bionic libc
     and Bionic has some design problems. An annoying one is that off_t is
-    32-bit, struct_stat::st_size is not off_t (this voilates standard
+    32-bit, struct_stat::st_size is not off_t (this violates standard
     expectations), therefore CONFIG_LFS=y does not build, and CONFIG_LFS=n
     builds with warnings (printf'ing st->st_size with wrong specifier).
     </p>

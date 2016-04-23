@@ -81,7 +81,7 @@ div.tty {
 </ul><ul>
 <li><a href="manual.html">Documentation</a>
 <li><a href="download.html">Download</a>
-<li><a href="http://git.musl-libc.org/cgit/musl/tree">Browse Source</a>
+<li><a href="//git.musl-libc.org/cgit/musl/tree">Browse Source</a>
 <li><a href="http://wiki.musl-libc.org">Community Wiki</a>
 </ul></div>
 <h1><img src="musl2.png">Download musl</h1>

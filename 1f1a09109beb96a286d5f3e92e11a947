@@ -8,6 +8,7 @@
     <head>
         <meta charset="utf-8">
         
+        
         <meta id="project_name" name="project_name" content="expect">
         
         <meta name="description" content="Expect is a tool for automating interactive applications such as telnet, ftp, passwd, fsck, rlogin, tip, etc. Expect is also useful for testing these …">
@@ -119,7 +120,6 @@
                                                         .setTargeting('sz', '300x250')
                                                         .setTargeting('page_type', 'pg_files'));
             
-            googletag.pubads().setTargeting("requestSource", "GPT");
             googletag.pubads().enableAsyncRendering();
             googletag.pubads().collapseEmptyDivs();
             googletag.enableServices();
@@ -154,19 +154,7 @@
         <script type="text/javascript">
                 ga('create', 'UA-36130941-1', {'name': '1'});
                 ga('create', 'UA-36130941-1', 'auto');
-            if (typeof _ml !== 'undefined' && _ml.us) {
-                if (_ml.us.tp && _ml.us.tp.length > 0) {
-                    ga('set', 'dimension2', _ml.us.tp[0]);
-                }
-                if (_ml.us.pc && _ml.us.pc.length > 0) {
-                    ga('set', 'dimension7', _ml.us.pc[0]);
-                }
-                ga('set', 'dimension3', _ml.us.ind);
-                ga('set', 'dimension4', _ml.us.cr);
-                ga('set', 'dimension5', _ml.us.cs);
-                ga('set', 'dimension6', _ml.us.dm);
-                ga('set', 'dimension8', _ml.us.sn);
-            }
+
             
                 ga('set', 'dimension9', 'expect');
                 ga('set', 'dimension10', 'pg_files');
@@ -177,34 +165,21 @@
                 ga('send', 'pageview');
 
             
-        </script><!-- Piwik -->
+        </script>
         <script type="text/javascript">
         var _paq = _paq || [];
         _paq.push(['trackPageView']);
         _paq.push(['enableLinkTracking']);
         (function() {
             var u="//analytics.slashdotmedia.com/";
-            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setTrackerUrl', u+'sf.php']);
             _paq.push(['setSiteId', 39]);
             var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'sf.js'; s.parentNode.insertBefore(g,s);
         })();
         </script>
-        <noscript><p><img src="//analytics.slashdotmedia.com/piwik.php?idsite=39" style="border:0;" alt="" /></p></noscript>
-        <!-- End Piwik Code -->
 
-        <script type="text/javascript">
-        /*global _taboola*/
-        window._taboola = window._taboola || [];
-        _taboola.push({article:'auto'});
-        (function (e, f, u) {
-            e.async = 1;
-            e.src = u;
-            f.parentNode.insertBefore(e, f);
-        })(document.createElement('script'),
-        document.getElementsByTagName('script')[0],
-        '//cdn.taboola.com/libtrc/sourceforge/loader.js');
-        </script><script type="text/javascript"> try{(function(){ var cb = new Date().getTime(); var s = document.createElement("script"); s.defer = true; s.src = "//tag.crsspxl.com/s1.js?d=2396&cb="+cb; var s0 = document.getElementsByTagName('script')[0]; s0.parentNode.insertBefore(s, s0); })();}catch(e){} </script>
+        <script type="text/javascript"> try{(function(){ var cb = new Date().getTime(); var s = document.createElement("script"); s.defer = true; s.src = "//tag.crsspxl.com/s1.js?d=2396&cb="+cb; var s0 = document.getElementsByTagName('script')[0]; s0.parentNode.insertBefore(s, s0); })();}catch(e){} </script>
 <script type="text/javascript">
 /* Version: 0.7 */
 /* <![CDATA[ */
@@ -213,7 +188,7 @@ try {
     _mag.kw = 'Software Development,Systems Administration';
     _mag.kw_encoded = 0;
     _mag.shortName = 'sourceforgemedia-computing';
-    _mag.default_protocol = ('https:' == document.location.protocol ? 'https:' : 'http:');
+    _mag.default_protocol = ('https:' === document.location.protocol ? 'https:' : 'http:');
     _mag.startTime = (new Date()).getTime();
     (function(d,t) {
         var mag = d.createElement('script'); mag.type = 'text/javascript'; mag.async = true; mag.src = t;
@@ -227,8 +202,10 @@ try {
     <body id="pg_files" class="
     user
      bluesteel
-">
+ anonymous">
         
+        
+
         <div id="busy-spinner"></div>
         
 <header id="site-header">
@@ -266,11 +243,9 @@ try {
         </nav>
         <nav id="nav-collateral">
 
-            <a href="https://library.slashdotmedia.com/?source=sfnet_header">Resources</a>
+            <a href="https://library.slashdotmedia.com/">Resources</a>
 
-            
-            <a href="https://sourceforge.net/user/registration">Newsletters</a>
-            
+            <a href="/user/newsletters?source=sfnet_header">Newsletters</a>
 
             
             <a href="/cloud-storage-providers/?source=sfnet_header">Cloud Storage Providers</a>
@@ -555,8 +530,7 @@ try {
                         <a href="/projects/expect/files/Expect/5.45/"
                            title="Click to enter 5.45"
                            class="name">
-                        5.45
-                        </a></th>
+                        5.45</a></th>
                     <td headers="files_date_h" class="opt"><abbr title="2010-11-09 19:57:19 UTC">2010-11-09</abbr></td>
                     <td headers="files_size_h" class="opt"></td>
                     <td headers="files_status_h" class="status folder"></td>
@@ -567,8 +541,7 @@ try {
                         <a href="/projects/expect/files/Expect/5.44.1.15/"
                            title="Click to enter 5.44.1.15"
                            class="name">
-                        5.44.1.15
-                        </a></th>
+                        5.44.1.15</a></th>
                     <td headers="files_date_h" class="opt"><abbr title="2010-03-11 19:28:57 UTC">2010-03-11</abbr></td>
                     <td headers="files_size_h" class="opt"></td>
                     <td headers="files_status_h" class="status folder"></td>
@@ -731,7 +704,7 @@ try {
             <h5>Community</h5>
             <a href="/blog/">Blog</a>
             <a href="http://twitter.com/sourceforge">@sourceforge</a>
-            <a href="https://library.slashdotmedia.com/?source=sfnet_footer">Resources</a>
+            <a href="https://library.slashdotmedia.com/">Resources</a>
         </nav>
         <nav>
             <h5>Help</h5>
@@ -758,7 +731,7 @@ try {
 
         
             <script type="text/javascript" src="//consent-st.truste.com/get?name=notice.js&amp;domain=slashdot.org&amp;c=teconsent&amp;text=true"></script>
-            
+            <noscript><p><img src="//analytics.slashdotmedia.com/sf.php?idsite=39" style="border:0;" alt="" /></p></noscript>
 <script type="text/javascript" src="https://a.fsdn.com/con/js/files.js"></script>
 
 
@@ -959,5 +932,6 @@ try {
     });
 </script>
 
+        
       </body>
 </html>

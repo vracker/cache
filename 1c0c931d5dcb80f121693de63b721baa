@@ -44,6 +44,10 @@
 <tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gzip-1.7.tar.gz.sig">gzip-1.7.tar.gz.sig</a></td><td align="right">2016-03-28 00:05  </td><td align="right">801 </td><td>&nbsp;</td></tr>
 <tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gzip-1.7.tar.xz">gzip-1.7.tar.xz</a></td><td align="right">2016-03-28 00:05  </td><td align="right">746K</td><td>&nbsp;</td></tr>
 <tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gzip-1.7.tar.xz.sig">gzip-1.7.tar.xz.sig</a></td><td align="right">2016-03-28 00:05  </td><td align="right">801 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="gzip-1.8.tar.gz">gzip-1.8.tar.gz</a></td><td align="right">2016-04-26 17:03  </td><td align="right">1.1M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gzip-1.8.tar.gz.sig">gzip-1.8.tar.gz.sig</a></td><td align="right">2016-04-26 17:03  </td><td align="right">801 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gzip-1.8.tar.xz">gzip-1.8.tar.xz</a></td><td align="right">2016-04-26 17:03  </td><td align="right">711K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gzip-1.8.tar.xz.sig">gzip-1.8.tar.xz.sig</a></td><td align="right">2016-04-26 17:03  </td><td align="right">801 </td><td>&nbsp;</td></tr>
    <tr><th colspan="5"><hr></th></tr>
 </table>
 <address>Apache/2.4.7 (Trisquel_GNU/Linux) Server at ftp.gnu.org Port 80</address>

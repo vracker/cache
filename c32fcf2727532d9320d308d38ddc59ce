@@ -44,7 +44,7 @@
     }
 </style>
  <link rel="stylesheet" href="//a.fsdn.com/con/css/sf.css" type="text/css">
-<style type="text/css">.K1eb9fe7a7f2f7fc25c5faacfdcddfa490424dc27 { display: none !important; }</style>
+<style type="text/css">.F8aa17be3ba9caeff46d188e4c9f83e857105a888 { display: none !important; }</style>
 
         
 <script type="text/javascript">
@@ -328,7 +328,7 @@ try {
 </section>
 <div id="project-title" class="project-mirror">
     <div >
-        <div style="position:relative">
+        <div>
             <h1 itemprop="name">
                     <a href="/projects/expect/" itemprop="url">Expect</a></h1>
         </div>

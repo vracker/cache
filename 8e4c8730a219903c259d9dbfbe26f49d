@@ -30,7 +30,7 @@ var g_onload = function() {};
       <div class='hdrlink black'>
         <a href='download.php'>
         <div class='hdrtop white'>DOWNLOAD REAPER</div>
-        <div class='hdrbottom'>Version 5.20: May 17, 2016</div>
+        <div class='hdrbottom'>Version 5.201: May 24, 2016</div>
         </a>
       </div>
       <div style='height:11px;'></div>
@@ -129,24 +129,24 @@ var g_onload = function() {};
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>Windows 32-bit</div>
   <div class='downloadinfo'>
-REAPER v5.20 - 9MB<br>
+REAPER v5.201 - 9MB<br>
 Windows XP/Vista/7/8/10<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper520-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper5201-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
       <div style='background-color:#313131;height:1px;margin-bottom:20px;'></div>
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>Windows 64-bit</div>
   <div class='downloadinfo'>
-REAPER v5.20 - 11MB<br>
+REAPER v5.201 - 11MB<br>
 Windows XP/Vista/7/8/10 x64<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper520_x64-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper5201_x64-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
     </div>
@@ -162,24 +162,24 @@ Windows XP/Vista/7/8/10 x64<br>
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>OS X 32-bit</div>
   <div class='downloadinfo'>
-REAPER v5.20 - 14MB<br>
+REAPER v5.201 - 14MB<br>
 OS X 10.5-10.11<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper520_i386.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper5201_i386.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
       <div style='background-color:#313131;height:1px;margin-bottom:20px;'></div>
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>OS X 64-bit</div>
   <div class='downloadinfo'>
-REAPER v5.20 - 16MB<br>
+REAPER v5.201 - 16MB<br>
 OS X 10.5-10.11<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper520_x86_64.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper5201_x86_64.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
     </div> 
@@ -190,8 +190,15 @@ OS X 10.5-10.11<br>
 <div class='dark strip'>
   <div style='background-color:#4E5454;height:1px;margin-top:40px;'></div>
   <div style='margin-top:30px;margin-bottom:30px;'>
-    <div class='heading'>REAPER 5.20: We are great programmers, folks. We make the best software. Really terrific software.  Everybody says it's the best.  (applause)</div>
+    <div class='heading'>REAPER 5.201: We are great programmers, folks. We make the best software. Really terrific software.  Everybody says it's the best.  (applause)</div>
     <div style='width:1000px; -webkit-column-count: 3; -moz-column-count: 3; column-count: 3;'><a name="whatsnew"></a>
+<div class='avoidbreak'>
+<div class='bold'>5.201</div><ul class='bullet'>
+<li> Metronome: fix project metronome pattern not applying immediately, regression from 5.18 <a href="http://forum.cockos.com/showthread.php?t=177206" target="blank"><span class='whatsnewdot'>.</span></a>
+<li> Notation editor: fix potential crash when entering lyrics outside the bounds of the media item <a href="http://forum.cockos.com/showthread.php?t=176990" target="blank"><span class='whatsnewdot'>.</span></a>
+<li> VST: better behavior when manually re-scanning shell plug-ins
+</ul>
+</div>
 <div class='avoidbreak'>
 <div class='bold'>Notation editor</div><ul class='bullet'>
 <li> add MIDI notation editor!

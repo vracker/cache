@@ -41,6 +41,7 @@
             if (!window.net.sf) { window.net.sf = {}; }
             SF.Ads = {};
             SF.cdn = '//a.fsdn.com/con';
+            SF.ad_block_measurement = true;
         </script>
         <script src="//a.fsdn.com/con/js/min/sf.head.js" type="text/javascript"></script>
         
@@ -60,7 +61,7 @@
  <link rel="stylesheet" href="//a.fsdn.com/con/css/sf.css" type="text/css">
 
 
-        <style type="text/css">.eb7e882103a118bb35aab2518eed7c4121032ab33 { display: none !important; }</style>
+        <style type="text/css">.t74e71a8ee54cd9903907dfb6db0516b7f1e6daad { display: none !important; }</style>
 
         
 <script type="text/javascript">
@@ -77,6 +78,15 @@
      gads.src = 'https://www.googletagservices.com/tag/js/gpt.js';
 
      
+     SF.Ads.gpt_loaded = false;
+     function gpt_callback(){
+         SF.Ads.gpt_loaded = true;
+     }
+     function gpt_onerror(){
+         SF.Ads.gpt_blocked = true;
+     }
+     gads.onload=gpt_callback;
+     gads.onerror=gpt_onerror;
 
      var node = document.getElementsByTagName('script')[0];
      node.parentNode.insertBefore(gads, node);

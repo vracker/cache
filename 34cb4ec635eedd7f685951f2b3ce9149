@@ -103,6 +103,10 @@
 <tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="wget-1.17.tar.gz.sig">wget-1.17.tar.gz.sig</a></td><td align="right">2015-11-15 09:21  </td><td align="right">543 </td><td>&nbsp;</td></tr>
 <tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="wget-1.17.tar.xz">wget-1.17.tar.xz</a></td><td align="right">2015-11-15 09:20  </td><td align="right">1.8M</td><td>&nbsp;</td></tr>
 <tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="wget-1.17.tar.xz.sig">wget-1.17.tar.xz.sig</a></td><td align="right">2015-11-15 09:21  </td><td align="right">543 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="wget-1.18.tar.gz">wget-1.18.tar.gz</a></td><td align="right">2016-06-09 12:30  </td><td align="right">3.7M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="wget-1.18.tar.gz.sig">wget-1.18.tar.gz.sig</a></td><td align="right">2016-06-09 12:30  </td><td align="right">543 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="wget-1.18.tar.xz">wget-1.18.tar.xz</a></td><td align="right">2016-06-09 12:30  </td><td align="right">1.8M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="wget-1.18.tar.xz.sig">wget-1.18.tar.xz.sig</a></td><td align="right">2016-06-09 12:30  </td><td align="right">543 </td><td>&nbsp;</td></tr>
    <tr><th colspan="5"><hr></th></tr>
 </table>
 <address>Apache/2.4.7 (Trisquel_GNU/Linux) Server at ftp.gnu.org Port 80</address>

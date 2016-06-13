@@ -330,7 +330,9 @@ try {
 
 </div>
 <script type="text/javascript">
-    SF.Ads.stickyLeader = new SF.Stickify($('.sticky').eq(0));
+    if (!SF.adblock) {
+        SF.Ads.stickyLeader = new SF.Stickify($('.sticky').eq(0));
+    }
 </script>
         
 
@@ -714,9 +716,11 @@ try {
     
     
 <script type="text/javascript">
-
-SF.Ads.scrollFixableEnabled = true;
-
+if (!SF.adblock) {
+    
+    SF.Ads.scrollFixableEnabled = true;
+    
+}
 </script>
 
         </div>
@@ -766,6 +770,50 @@ SF.Ads.scrollFixableEnabled = true;
     </div>
 </footer>
             <script src="//a.fsdn.com/con/js/min/sf.js" type="text/javascript"></script>
+        
+        
+<div id="newsletter-floating" class="goth-form">
+    <h2>Get latest updates about Open Source Projects, Conferences and News.</h2>
+    <p>Sign up for the SourceForge newsletter:</p>
+    <form action="/user/newsletters/subscribe" method="post">
+    <div class="form">
+        <input type="email" name="XY7KIK0uKB2CU6W4yDDvmTRqxre4"  placeholder="email@address.com" value="">
+    <input type="submit" value="Subscribe" class="bt">
+    </div>
+    <div class="fielderror"></div>
+
+    <p class="details">
+    <span class="fielderror"></span>
+    <label>
+        <input type="checkbox" required name="XYbSKJFGDXi:DcKQcc60AIpu9sPg" value="true" >I agree to receive quotes, newsletters and other information from sourceforge.net and its partners regarding IT services and products. I understand that I can withdraw my consent at any time. Please refer to our <a href="https://slashdotmedia.com/privacy-statement/">Privacy Policy</a> or <a href="/support">Contact Us</a> for more details
+        <input type="hidden" name="Xa7mAL0aVbzjbJffb91WiA8hqqA0" value="true">
+    </label>
+    </p>
+
+    <input type="hidden" name="source" value="floating">
+    <input type="hidden" name="XarSKP0ySQiLrKOva_BauGEoizhQ" value="PL">
+    <input type="hidden" name="XdbSKP0ySQiLrKOva_H7mV526IeQ" value="ip_address">
+    <input type="hidden" name="XbbmAPVGKVS_ALvbNrhq1mgJE15s" value="sitewide">
+    <input type="hidden" name="XbbmAPVGKVS_ALvbNrhq1mgJE15s" value="research">
+    <input type="hidden" name="XbbmAPVGKVS_ALvbNrhq1mgJE15s" value="events">
+    <input type="hidden" name="XbbmAPVGKVS_ALvbNrhq1mgJE15s" value="thirdparty">
+    <input type="hidden" name="XbbmAPVGKVS_ALvbNrhq1mgJE15s" value="all">
+    <input type="hidden" name="XZbyIPxXdEPlexxGk6lRnQQenztA" value="">
+    
+  <input type="hidden" name="_visit_cookie" value=""/>
+    <input type='hidden' name='timestamp' value='1465839855'/>
+    <input type='hidden' name='spinner' value='XZtflSiLmMFu0S4S:mSGVOOjIQoE'/>
+    <p class='mc0ec1a5bdb180b4d9ae4947d94109a70d8e4b3a7'><label for='XYb:KJEefAGuDcKQcc60AIpu9sPg'>You seem to have CSS turned off.
+             Please don't fill out this field.</label><input id='XYb:KJEefAGuDcKQcc60AIpu9sPg' name='XYL:KJEefAGyPayZUFbSPS506O24' type=
+             'text'/></p>
+    <p class='mc0ec1a5bdb180b4d9ae4947d94109a70d8e4b3a7'><label for='XYb:KJEefAGqDcKQcc60AIpu9sPg'>You seem to have CSS turned off.
+             Please don't fill out this field.</label><input id='XYb:KJEefAGqDcKQcc60AIpu9sPg' name='XYL:KJEefAWyPayZUFbSPS506O24' type=
+             'text'/></p>
+</form>
+
+    <a id="btn-float-close">No, thanks</a>
+</div>
+
         
 
         

@@ -63,34 +63,54 @@
 
 
         
+
 <script type="text/javascript">
     SF.adblock = true;
 </script>
   <script type='text/javascript'>
+    var googletag = window.googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    var pbjs = pbjs || {};
 
-  var googletag = window.googletag || {};
-   googletag.cmd = googletag.cmd || [];
-   (function() {
-     var gads = document.createElement('script');
-     gads.async = true;
-     gads.type = 'text/javascript';
-     gads.src = 'https://www.googletagservices.com/tag/js/gpt.js';
+    SF.Ads.initAdServer = function() {
+            if (pbjs.initAdserverSet) {
+                return;
+            }
+            (function() {
+                var gads = document.createElement('script');
+                gads.async = true;
+                gads.type = 'text/javascript';
+                var useSSL = 'https:' === document.location.protocol;
+                gads.src = (useSSL ? 'https:' : 'http:') +
+                    '//www.googletagservices.com/tag/js/gpt.js';
+                
+                
+                SF.Ads.gpt_loaded = false;
+                function gpt_callback(){
+                    SF.Ads.gpt_loaded = true;
+                }
+                function gpt_onerror(){
+                    SF.Ads.gpt_blocked = true;
+                }
+                gads.onload=gpt_callback;
+                gads.onerror=gpt_onerror;
 
-     
-     SF.Ads.gpt_loaded = false;
-     function gpt_callback(){
-         SF.Ads.gpt_loaded = true;
-     }
-     function gpt_onerror(){
-         SF.Ads.gpt_blocked = true;
-     }
-     gads.onload=gpt_callback;
-     gads.onerror=gpt_onerror;
+                var node = document.getElementsByTagName('script')[0];
+                node.parentNode.insertBefore(gads, node);
+            })();
 
-     var node = document.getElementsByTagName('script')[0];
-     node.parentNode.insertBefore(gads, node);
-   })();
-   </script>
+        pbjs.initAdserverSet = true;
+    }; 
+
+  </script>
+
+
+  
+  <script type='text/javascript'>
+    SF.Ads.initAdServer();
+  </script>
+
+
 
    <!-- GPT Slot Definitions -->
    <script type='text/javascript'>
@@ -145,6 +165,7 @@
                                                         .setTargeting('page_type', 'pg_files'));
             
             googletag.pubads().enableAsyncRendering();
+
             googletag.pubads().collapseEmptyDivs();
             googletag.pubads().addEventListener('slotRenderEnded', function(event) {
                 var unitName = event.slot.getName();
@@ -158,9 +179,10 @@
             googletag.pubads().addEventListener('impressionViewable', SF.Ads.RenderHandlers.viewabilityInstrumentation);
 
             
+
             googletag.enableServices();
         });
-   </script>
+   </script> 
 
         
 
@@ -777,7 +799,7 @@ if (!SF.adblock) {
     <p>Sign up for the SourceForge newsletter:</p>
     <form action="/user/newsletters/subscribe" method="post">
     <div class="form">
-        <input type="email" name="XY7KIK0uKB2CU6W4yDDvmTRqxre4"  placeholder="email@address.com" value="">
+        <input type="email" name="X97qUNuGDukJfKjmnN23zSG7PH6Y"  placeholder="email@address.com" value="">
     <input type="submit" value="Subscribe" class="bt">
     </div>
     <div class="fielderror"></div>
@@ -785,29 +807,29 @@ if (!SF.adblock) {
     <p class="details">
     <span class="fielderror"></span>
     <label>
-        <input type="checkbox" required name="XYbSKJFGDXi:DcKQcc60AIpu9sPg" value="true" >I agree to receive quotes, newsletters and other information from sourceforge.net and its partners regarding IT services and products. I understand that I can withdraw my consent at any time. Please refer to our <a href="https://slashdotmedia.com/privacy-statement/">Privacy Policy</a> or <a href="/support">Contact Us</a> for more details
-        <input type="hidden" name="Xa7mAL0aVbzjbJffb91WiA8hqqA0" value="true">
+        <input type="checkbox" required name="X9byWOfuKE4xDixyJPPZVxjBjClY" value="true" >I agree to receive quotes, newsletters and other information from sourceforge.net and its partners regarding IT services and products. I understand that I can withdraw my consent at any time. Please refer to our <a href="https://slashdotmedia.com/privacy-statement/">Privacy Policy</a> or <a href="/support">Contact Us</a> for more details
+        <input type="hidden" name="X_7GcMuycIpvrX7T3rLdn0rhY:e8" value="true">
     </label>
     </p>
 
     <input type="hidden" name="source" value="floating">
-    <input type="hidden" name="XarSKP0ySQiLrKOva_BauGEoizhQ" value="PL">
-    <input type="hidden" name="XdbSKP0ySQiLrKOva_H7mV526IeQ" value="ip_address">
-    <input type="hidden" name="XbbmAPVGKVS_ALvbNrhq1mgJE15s" value="sitewide">
-    <input type="hidden" name="XbbmAPVGKVS_ALvbNrhq1mgJE15s" value="research">
-    <input type="hidden" name="XbbmAPVGKVS_ALvbNrhq1mgJE15s" value="events">
-    <input type="hidden" name="XbbmAPVGKVS_ALvbNrhq1mgJE15s" value="thirdparty">
-    <input type="hidden" name="XbbmAPVGKVS_ALvbNrhq1mgJE15s" value="all">
-    <input type="hidden" name="XZbyIPxXdEPlexxGk6lRnQQenztA" value="">
+    <input type="hidden" name="X_ryWIuabD4HbUqj2pwQas3i9Mi8" value="PL">
+    <input type="hidden" name="X4byWIuabD4HbUqj2p5zTBxYxZL8" value="ip_address">
+    <input type="hidden" name="X:bGcIPuDGIzwVLXhBXl7c5128nQ" value="sitewide">
+    <input type="hidden" name="X:bGcIPuDGIzwVLXhBXl7c5128nQ" value="research">
+    <input type="hidden" name="X:bGcIPuDGIzwVLXhBXl7c5128nQ" value="events">
+    <input type="hidden" name="X:bGcIPuDGIzwVLXhBXl7c5128nQ" value="thirdparty">
+    <input type="hidden" name="X:bGcIPuDGIzwVLXhBXl7c5128nQ" value="all">
+    <input type="hidden" name="X8bSUIk9VpuN6BDI8keOt5Hs_rCU" value="">
     
   <input type="hidden" name="_visit_cookie" value=""/>
-    <input type='hidden' name='timestamp' value='1465839855'/>
-    <input type='hidden' name='spinner' value='XZtflSiLmMFu0S4S:mSGVOOjIQoE'/>
-    <p class='mc0ec1a5bdb180b4d9ae4947d94109a70d8e4b3a7'><label for='XYb:KJEefAGuDcKQcc60AIpu9sPg'>You seem to have CSS turned off.
-             Please don't fill out this field.</label><input id='XYb:KJEefAGuDcKQcc60AIpu9sPg' name='XYL:KJEefAGyPayZUFbSPS506O24' type=
+    <input type='hidden' name='timestamp' value='1465924525'/>
+    <input type='hidden' name='spinner' value='X8t_5V4jvffiEMceSwsOgaGNDB9o'/>
+    <p class='A0658b88ee5f42f118e988677ba8c0177ad9541d0'><label for='X9beWOe2WTchDixyJPPZVxjBjClY'>You seem to have CSS turned off.
+             Please don't fill out this field.</label><input id='X9beWOe2WTchDixyJPPZVxjBjClY' name='X9LeWOe2WTT8:6txs9zYOO0NOi8I' type=
              'text'/></p>
-    <p class='mc0ec1a5bdb180b4d9ae4947d94109a70d8e4b3a7'><label for='XYb:KJEefAGqDcKQcc60AIpu9sPg'>You seem to have CSS turned off.
-             Please don't fill out this field.</label><input id='XYb:KJEefAGqDcKQcc60AIpu9sPg' name='XYL:KJEefAWyPayZUFbSPS506O24' type=
+    <p class='A0658b88ee5f42f118e988677ba8c0177ad9541d0'><label for='X9beWOe2WTclDixyJPPZVxjBjClY'>You seem to have CSS turned off.
+             Please don't fill out this field.</label><input id='X9beWOe2WTclDixyJPPZVxjBjClY' name='X9LeWOe2WTD8:6txs9zYOO0NOi8I' type=
              'text'/></p>
 </form>
 

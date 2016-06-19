@@ -164,6 +164,8 @@
                                                         .setTargeting('sz', '300x250')
                                                         .setTargeting('page_type', 'pg_files'));
             
+
+            googletag.pubads().setTargeting('requestSource', 'GPT');
             googletag.pubads().enableAsyncRendering();
 
             googletag.pubads().collapseEmptyDivs();
@@ -179,6 +181,7 @@
             googletag.pubads().addEventListener('impressionViewable', SF.Ads.RenderHandlers.viewabilityInstrumentation);
 
             
+            googletag.pubads().addEventListener('slotRenderEnded', SF.Ads.listenerForBlockThis);
 
             googletag.enableServices();
         });
@@ -259,7 +262,7 @@ try {
 /* ]]> */
 </script>
 
-        <script type="text/javascript" src="//ads.pro-market.net/ads/scripts/site-143572.js"></script></head>
+    </head>
     <body id="pg_files" class="
     user
      bluesteel
@@ -537,7 +540,8 @@ try {
       <div class="download-bar">Looking for the latest version? <strong>
             <a href="/projects/expect/files/latest/download?source=files" title="/Expect/5.45/expect5.45.tar.gz:  released on 2010-11-09 19:57:20 UTC">
                 <span>Download expect5.45.tar.gz (628.8 kB)</span>
-            </a></strong>
+            </a>
+            </strong>
         </div><div class="files-breadcrumb">
             <span class="actions"><a href="/projects/expect/rss?path=/Expect/5.45" title="Monitor this project's files using RSS" data-icon="f" class="ico ico-feed"></a></span>
             
@@ -738,9 +742,71 @@ if (!SF.adblock) {
         
 
         
+            
+    <div id="overlay-blockthis-wrapper">
+    <div id="overlay-blockthis">
+        <div class="instructions">
+            <h2>Thanks for helping keep SourceForge clean.</h2>
+            <p>
+            <u>Screenshot instructions:</u><br>
+            <a data-external target=_blank href="http://windows.microsoft.com/en-us/windows/take-screen-capture-print-screen#take-screen-capture-print-screen=windows-8">Windows</a><br>
+            <a data-external target=_blank href="https://support.apple.com/en-us/HT201361">Mac</a><br>
+            <a data-external target=_blank href="https://access.redhat.com/solutions/2178">Red Hat Linux</a> &nbsp;
+            <a data-external target=_blank href="https://help.ubuntu.com/stable/ubuntu-help/screen-shot-record.html">Ubuntu</a>
+            </p>
+            <p>
+                <u>Click URL instructions:</u><br>
+                Right-click on ad, choose "Copy Link", then paste here &rarr;<br>
+                (This may not be possible with some types of ads)
+            </p>
+            <a class="more-info" href="https://sourceforge.net/p/forge/documentation/Report%20a%20problem%20with%20Ad%20content/" target="_blank">More information about our ad policies</a>
+        </div>
+        <form class="dropzone" action="/api/instrumentation/gpt" id="blockthisForm" method="POST">
+            <a href="#" id="btn-blockthis-close">X</a>
+            
+  <input type="hidden" name="_visit_cookie" value=""/>
+                <input type='hidden' name='timestamp' value='1466370970'/>
+                <input type='hidden' name='spinner' value='Xo9QXf2_iuoKmQGjHzDAw:h3G_Iw'/>
+                <p class='Z22c33105c345c1aefa23587a0a006de055b10c09'><label for='XpLx4EQqbirLXNHkOMYKE1OWl7B8'>You seem to have CSS turned off.
+             Please don't fill out this field.</label><input id='XpLx4EQqbirLXNHkOMYKE1OWl7B8' name='Xpbx4EQqbivPSUaE6foQeAn7Wb00' type=
+             'text'/></p>
+                <p class='Z22c33105c345c1aefa23587a0a006de055b10c09'><label for='XpLx4EQqbirPXNHkOMYKE1OWl7B8'>You seem to have CSS turned off.
+             Please don't fill out this field.</label><input id='XpLx4EQqbirPXNHkOMYKE1OWl7B8' name='Xpbx4EQqbi_PSUaE6foQeAn7Wb00' type=
+             'text'/></p>
+            <p>Briefly describe the problem (required):
+            <input name="XqLByDAyQ0_LSKQepvUQhM:B0SKI" type="text" required>
+            </p>
+
+            <div class="upload-text">Upload screenshot of ad (required):</div>
+            <div id='upload-it'>
+                <a href="#" onclick="return false">Select a file</a>, or drag & drop file here.
+            </div>
+            <div id="upload-it-placeholder"></div> 
+
+            <div class="dropzone-previews" style="display: none"></div>
+            <div class="dz-message" style="display: none"></div> 
+            
+            <div id="dropzone-preview-template" style="display: none">
+                <div class="dz-preview dz-file-preview">
+                    <img data-dz-thumbnail src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt=""/>
+                    <div class="dz-success-mark"><span>✔</span></div>
+                    <div class="dz-error-mark"><span>✘</span></div>
+                    <div class="dz-error-message"><span data-dz-errormessage></span></div>
+                </div>
+            </div>
+            <p></p>
+            <p>Please provide the ad click URL, if possible:
+            <input name="Xqrd7FgyJ5ffULBmz3fnNSKnoBO8" type="url">
+            </p>
+            <textarea id="gpt-info" name="Xp7B2Cw6TzpNvvdpz4shT6o4H2aQ"></textarea>
+            <input type="submit" id="btn-blockthis-submit" value="Submit Report">
+        </form>
+    </div>
+    </div>
+
         
 
-          
+        <script type="text/javascript" src="//ads.pro-market.net/ads/scripts/site-143572.js"></script>  
 <footer id="site-footer">
     <div class="wrapper">
         <nav>
@@ -788,7 +854,7 @@ if (!SF.adblock) {
     <p>Sign up for the SourceForge newsletter:</p>
     <form action="/user/newsletters/subscribe" method="post">
     <div class="form">
-        <input type="email" name="XH_Evn:jX:44CjhyRoEgGiXwiWvo"  placeholder="email@address.com" value="">
+        <input type="email" name="XprF6HgaOy_a3iZV1eB7ImQ1VPak"  placeholder="email@address.com" value="">
     <input type="submit" value="Subscribe" class="bt">
     </div>
     <div class="fielderror"></div>
@@ -796,29 +862,29 @@ if (!SF.adblock) {
     <p class="details">
     <span class="fielderror"></span>
     <label>
-        <input type="checkbox" required name="XHfctkPLeQKi8YN8i9PH2Uve8IZw" value="true" >I agree to receive quotes, newsletters and other information from sourceforge.net and its partners regarding IT services and products. I understand that I can withdraw my consent at any time. Please refer to our <a href="https://slashdotmedia.com/privacy-statement/">Privacy Policy</a> or <a href="/support">Contact Us</a> for more details
-        <input type="hidden" name="XF_onm:XIcb8GXMf7MorftpBtDmA" value="true">
+        <input type="checkbox" required name="XpLd4ERyH1PbXNHkOMYKE1OWl7B8" value="true" >I agree to receive quotes, newsletters and other information from sourceforge.net and its partners regarding IT services and products. I understand that I can withdraw my consent at any time. Please refer to our <a href="https://slashdotmedia.com/privacy-statement/">Privacy Policy</a> or <a href="/support">Contact Us</a> for more details
+        <input type="hidden" name="XrrpyGguR5eHJLhuiokRBjgwPAT4" value="true">
     </label>
     </p>
 
     <input type="hidden" name="source" value="floating">
-    <input type="hidden" name="XFvcti:_PXKU2Udv6OStYj0d5qZM" value="PL">
-    <input type="hidden" name="XCfcti:_PXKU2Udv6OaF5i46jxQo" value="ip_address">
-    <input type="hidden" name="XEfonifLXS6gdV8btiaxhWFPeWtk" value="sitewide">
-    <input type="hidden" name="XEfonifLXS6gdV8btiaxhWFPeWtk" value="research">
-    <input type="hidden" name="XEfonifLXS6gdV8btiaxhWFPeWtk" value="events">
-    <input type="hidden" name="XEfonifLXS6gdV8btiaxhWFPeWtk" value="thirdparty">
-    <input type="hidden" name="XEfonifLXS6gdV8btiaxhWFPeWtk" value="all">
-    <input type="hidden" name="XGf8vi1TpRWDBPUgoUJONFwdErus" value="">
+    <input type="hidden" name="Xr7d4CgGWyPv5IwejqUFE69Q7Tjg" value="PL">
+    <input type="hidden" name="XsLd4CgGWyPv5IwejqW9DlWi0n:k" value="ip_address">
+    <input type="hidden" name="XqLpyCByO3_bSJRq0vUQhM:B0SKI" value="sitewide">
+    <input type="hidden" name="XqLpyCByO3_bSJRq0vUQhM:B0SKI" value="research">
+    <input type="hidden" name="XqLpyCByO3_bSJRq0vUQhM:B0SKI" value="events">
+    <input type="hidden" name="XqLpyCByO3_bSJRq0vUQhM:B0SKI" value="thirdparty">
+    <input type="hidden" name="XqLpyCByO3_bSJRq0vUQhM:B0SKI" value="all">
+    <input type="hidden" name="XoL96Ch6Wq0tb8tzpNFMgadzj1Po" value="">
     
   <input type="hidden" name="_visit_cookie" value=""/>
-    <input type='hidden' name='timestamp' value='1465924526'/>
-    <input type='hidden' name='spinner' value='XGpRC_oG7LtxpMrSeXP4K5PvRpm8'/>
-    <p class='mc0013e0ecf56e8fa670f7588c361c8bcac6b0b62'><label for='XHfwtkOTCHuy8YN8i9PH2Uve8IZw'>You seem to have CSS turned off.
-             Please don't fill out this field.</label><input id='XHfwtkOTCHuy8YN8i9PH2Uve8IZw' name='XHPwtkOTCHgk7WQg2UwK86JZWVZM' type=
+    <input type='hidden' name='timestamp' value='1466370970'/>
+    <input type='hidden' name='spinner' value='Xo9QXf2_iuoKmQGjHzDAw:h3G_Iw'/>
+    <p class='Z22c33105c345c1aefa23587a0a006de055b10c09'><label for='XpLx4EQqbi7LXNHkOMYKE1OWl7B8'>You seem to have CSS turned off.
+             Please don't fill out this field.</label><input id='XpLx4EQqbi7LXNHkOMYKE1OWl7B8' name='Xpbx4EQqbivPSUaE6foQeAn7Wb00' type=
              'text'/></p>
-    <p class='mc0013e0ecf56e8fa670f7588c361c8bcac6b0b62'><label for='XHfwtkOTCHu28YN8i9PH2Uve8IZw'>You seem to have CSS turned off.
-             Please don't fill out this field.</label><input id='XHfwtkOTCHu28YN8i9PH2Uve8IZw' name='XHPwtkOTCHwk7WQg2UwK86JZWVZM' type=
+    <p class='Z22c33105c345c1aefa23587a0a006de055b10c09'><label for='XpLx4EQqbi7PXNHkOMYKE1OWl7B8'>You seem to have CSS turned off.
+             Please don't fill out this field.</label><input id='XpLx4EQqbi7PXNHkOMYKE1OWl7B8' name='Xpbx4EQqbi_PSUaE6foQeAn7Wb00' type=
              'text'/></p>
 </form>
 

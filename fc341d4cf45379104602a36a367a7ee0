@@ -176,6 +176,11 @@ and
 <a href="http://search.cpan.org/~pmqs/Compress-Raw-Lzma/">Compress-Raw-Lzma</a>.
 </p>
 
+<h3>Haskell</h3>
+<p>
+<a href="https://hackage.haskell.org/package/lzma">Haskell bindings</a>.
+</p>
+
 <h3>Delphi and Free Pascal</h3>
 <p>
 Bindings and example programs for Delphi and Free Pascal are available

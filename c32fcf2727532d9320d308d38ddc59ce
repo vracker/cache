@@ -8,6 +8,9 @@
     <head>
         <meta charset="utf-8">
         
+            <script type="text/javascript" src="//a.fsdn.com/con/js/sftheme/vendor/prebid-0.9.2-dev.js" async></script>
+        
+        
         
         <meta id="project_name" name="project_name" content="expect">
         
@@ -68,22 +71,39 @@
     SF.adblock = true;
 </script>
   <script type='text/javascript'>
+    /*global performance */
     var googletag = window.googletag || {};
     googletag.cmd = googletag.cmd || [];
     var pbjs = pbjs || {};
+    pbjs.que = pbjs.que || [];
+
+    var PREBID_TIMEOUT = 500;
+    var PREBID_DEBUG = document.location.search.indexOf('pbjs_debug') !== -1;
+
+    function prebid_log() {
+        if (PREBID_DEBUG) {
+            // http://stackoverflow.com/questions/5538972/console-log-apply-not-working-in-ie9#comment8444540_5539378
+            Function.prototype.apply.call(console.log, console, arguments);
+        }
+    }
 
     SF.Ads.initAdServer = function() {
-            if (pbjs.initAdserverSet) {
-                return;
-            }
+        if (pbjs.initAdserverSet) {
+            return;
+        }
             (function() {
+                prebid_log('load main gpt script');
+                if (PREBID_DEBUG) {
+                    performance.mark('load-gpt-start');
+                }
+
                 var gads = document.createElement('script');
                 gads.async = true;
                 gads.type = 'text/javascript';
                 var useSSL = 'https:' === document.location.protocol;
                 gads.src = (useSSL ? 'https:' : 'http:') +
                     '//www.googletagservices.com/tag/js/gpt.js';
-                
+
                 
                 SF.Ads.gpt_loaded = false;
                 function gpt_callback(){
@@ -97,17 +117,134 @@
 
                 var node = document.getElementsByTagName('script')[0];
                 node.parentNode.insertBefore(gads, node);
-            })();
+            })();pbjs.initAdserverSet = true;
+    };
+    SF.Ads.prebidWinners = SF.Ads.prebidWinners || {};
 
-        pbjs.initAdserverSet = true;
+    SF.Ads.initPrebid = function(){
+
+        pbjs.que.push(function() {
+            prebid_log('pbjs set price granularity');
+            pbjs.setPriceGranularity("high");
+        });
+
+        pbjs.que.push(function() {
+
+            if (PREBID_DEBUG) {
+                pbjs.onEvent('bidRequested', function (info) {
+                    for (var i = 0; i < info.bids.length; i++) {
+                        var bid = info.bids[i];
+                        performance.mark(bid.bidder + '-' + bid.placementCode + '-start');
+                    }
+                });
+                pbjs.onEvent('bidResponse', function (adunit, bid) {
+                    var name = bid.bidder + '-' + adunit;
+                    performance.mark(name + '-end');
+                    performance.measure(name, name+'-start', name+'-end');
+                });
+            }
+            pbjs.onEvent('bidWon', function (bid) {
+                var adposition = SF.Ads.Helpers.getPathFromContainerID(bid.adUnitCode);
+                SF.Ads.prebidWinners[adposition] = bid;
+                prebid_log('bidWon:', adposition, bid.adId, bid);
+            });
+
+            pbjs.bidderSettings = {
+                
+                brealtime: {
+                    bidCpmAdjustment: function(bidCpm) {
+                        return bidCpm * 0.9;
+                    }
+                },
+                
+                
+                
+            };
+
+            prebid_log('pbjs units pushed');
+            var adUnits = [{
+                    bids: [{'params': {'tagid': '364648'}, 'bidder': 'sovrn'},
+                            {'params': {'cp': 558092, 'cf': '728x90', 'ct': '472223'}, 'bidder': 'pulsepoint'},
+                            {'params': {'placementId': 8841121}, 'bidder': 'brealtime'},
+                            ],
+                    code: 'div-gpt-ad-1393435113147-0',
+                    sizes: [728, 90]
+                },
+            {
+                    bids: [{'params': {'tagid': '364646'}, 'bidder': 'sovrn'},
+                            {'params': {'cp': 558092, 'cf': '300x250', 'ct': '472221'}, 'bidder': 'pulsepoint'},
+                            {'params': {'placementId': 8829467}, 'bidder': 'brealtime'},
+                            ],
+                    code: 'div-gpt-ad-1392147725721-0',
+                    sizes: [[300, 250], [300, 600], [300, 1050]]
+                },
+            {
+                    bids: [{'params': {'tagid': '364647'}, 'bidder': 'sovrn'},
+                            {'params': {'cp': 558092, 'cf': '300x250', 'ct': '472222'}, 'bidder': 'pulsepoint'},
+                            {'params': {'placementId': 8829468}, 'bidder': 'brealtime'},
+                            ],
+                    code: 'div-gpt-ad-1392148208789-0',
+                    sizes: [300, 250]
+                }
+            ];
+            pbjs.addAdUnits(adUnits);
+
+            pbjs.requestBids({
+                bidsBackHandler:function(){
+                    prebid_log('bidsbackhandler calling initAdServer');
+                    SF.Ads.initAdServer();
+                }
+            });
+        });
+
+    };
+
+    SF.Ads.debugPrebidResults = function() {
+        if (PREBID_DEBUG) {
+            var responses = pbjs.getBidResponses();
+            var output = [];
+            for (var adunit in responses) {
+                if (responses.hasOwnProperty(adunit)) {
+                    var bids = responses[adunit].bids;
+                    for (var i = 0; i < bids.length; i++) {
+                        var b = bids[i];
+                        var adposition = SF.Ads.Helpers.getPathFromContainerID(b.adUnitCode);
+                        output.push({
+                            'position': adposition, 'adunit': adunit, 'adId': b.adId, 'bidder': b.bidder,
+                            'time': b.timeToRespond, 'cpm': b.cpm, 'msg': b.statusMessage
+                        });
+                    }
+                }
+            }
+            if (output.length) {
+                if (console.table) {
+                    console.table(output);
+                } else {
+                    for (var j = 0; j < output.length; j++) {
+                        console.log(output[j]);
+                    }
+                }
+            } else {
+                console.warn('NO prebid responses');
+            }
+        }
     }; 
-
-  </script>
-
-
-  
-  <script type='text/javascript'>
-    SF.Ads.initAdServer();
+        SF.Ads.initPrebid();
+        if (performance) {
+            performance.mark('prebid-time-start');
+            performance.measure('page fetch', 'fetchStart', 'responseEnd');
+            performance.measure('page parsing until prebid init', 'responseEnd', 'prebid-time-start');
+        }
+        setTimeout(function() {
+            prebid_log('prebid timeout reached');
+            if (performance) {
+                performance.mark('prebid-time-end');
+                performance.measure('prebid-timeout', 'prebid-time-start', 'prebid-time-end');
+            }
+            SF.Ads.initAdServer();
+        }, PREBID_TIMEOUT);
+        prebid_log('prebid init');
+    prebid_log('adserver  init');
   </script>
 
 
@@ -118,6 +255,7 @@
        var gptadslots=[];
        var gptadHandlers={};
        googletag.cmd.push(function() {
+           prebid_log('GPT push define slots and targeting');
             gptadslots.push(googletag.defineSlot('/41014381/Sourceforge/SF_ProjectFiles_728x90_A', [728, 90], 'div-gpt-ad-1393435113147-0')
                                                     .addService(googletag.pubads())
                                                         .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])
@@ -136,15 +274,6 @@
                                                         .setTargeting('dc_ref', 'https://sourceforge.net/projects/expect/files/Expect/5.45/')
                                                         .setTargeting('sz', '300x250,300x600,300x1050')
                                                         .setTargeting('page_type', 'pg_files'));
-            gptadslots.push(googletag.defineSlot('/41014381/Sourceforge/SF_ProjectFiles_HubIcon_200x90_A', [200, 90], 'div-gpt-ad-1392148098424-0')
-                                                    .addService(googletag.pubads())
-                                                        .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])
-                                                        .setTargeting('shortname', 'expect')
-                                                        .setTargeting('aud', ['developers', 'endusers', 'sysadmins'])
-                                                        .setTargeting('mirror', 'False')
-                                                        .setTargeting('dc_ref', 'https://sourceforge.net/projects/expect/files/Expect/5.45/')
-                                                        .setTargeting('sz', '200x90')
-                                                        .setTargeting('page_type', 'pg_files'));
             gptadslots.push(googletag.defineSlot('/41014381/Sourceforge/SF_ProjectFiles_300x250_B', [300, 250], 'div-gpt-ad-1392148208789-0')
                                                     .addService(googletag.pubads())
                                                         .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])
@@ -153,6 +282,15 @@
                                                         .setTargeting('mirror', 'False')
                                                         .setTargeting('dc_ref', 'https://sourceforge.net/projects/expect/files/Expect/5.45/')
                                                         .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_files'));
+            gptadslots.push(googletag.defineSlot('/41014381/Sourceforge/SF_ProjectFiles_HubIcon_200x90_A', [200, 90], 'div-gpt-ad-1392148098424-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])
+                                                        .setTargeting('shortname', 'expect')
+                                                        .setTargeting('aud', ['developers', 'endusers', 'sysadmins'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'https://sourceforge.net/projects/expect/files/Expect/5.45/')
+                                                        .setTargeting('sz', '200x90')
                                                         .setTargeting('page_type', 'pg_files'));
             gptadslots.push(googletag.defineSlot('/7346874/SF-300x250', [300, 250], 'div-gpt-ad-1392148208795-0')
                                                     .addService(googletag.pubads())
@@ -179,10 +317,19 @@
                 }
             });
             googletag.pubads().addEventListener('impressionViewable', SF.Ads.RenderHandlers.viewabilityInstrumentation);
-
             
             googletag.pubads().addEventListener('slotRenderEnded', SF.Ads.listenerForBlockThis);
-
+            pbjs.que.push(function() {
+                prebid_log('pbjs.setTargetingForGPTAsync');
+                pbjs.setTargetingForGPTAsync();
+                SF.Ads.debugPrebidResults();
+            });
+            if (PREBID_DEBUG) {
+                performance.mark('load-gpt-end');
+                performance.measure('load-gpt', 'load-gpt-start', 'load-gpt-end');
+            }
+       
+            prebid_log('GPT enable services');
             googletag.enableServices();
         });
    </script> 
@@ -287,6 +434,7 @@ try {
             <a href="/blog/" title="Read the latest news from the SF HQ.">Blog</a>
             <a href="//deals.sourceforge.net/?utm_source=sourceforge&amp;utm_medium=navbar&amp;utm_campaign=homepage" title="Discover and Save on the Best Gear, Gadgets, and Software" class="featured-link" target="_blank">Deals</a>
             <a href="/support" title="Contact us for help and feedback.">Help</a>
+            <a href="/create"  class="featured-link blue" title="Create and publish Open Source software for free.">Create</a>
         </nav>
         <nav id="nav-account">
             
@@ -306,20 +454,13 @@ try {
             <a href="http://goparallel.sourceforge.net/">Go Parallel</a>
         </nav>
         <nav id="nav-collateral">
-
             <a href="https://library.slashdotmedia.com/">Resources</a>
-
             <a href="/user/newsletters?source=sfnet_header">Newsletters</a>
 
-            
             <a href="/cloud-storage-providers/?source=sfnet_header">Cloud Storage Providers</a>
-            
-            
             <a href="/business-voip/?source=sfnet_header">Business VoIP Providers</a>
             
-            
-
-
+            <a href="/call-center-providers/?source=sfnet_header">Call Center Providers</a>
         </nav>
     </div>
 </header>
@@ -688,10 +829,31 @@ try {
 
 
         
-<a href="http://track.totalvpn.com/5703e6ec22268/click" rel="nofollow" class="static-placement recovery"><img width="300" height="250" alt="Total VPN" src="//a.fsdn.com/con/img/promotional/1394209358857.jpg"/></a>
+
+
+
+
+    
+
+
+
+<div id="SF_ProjectFiles_300x250_B_wrapped" class="draper medrec  " data-unit="SF_ProjectFiles_300x250_B">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    
+    document.write('<div id="div-gpt-ad-1392148208789-0" ></div>');
+    googletag.cmd.push(function() {
+        googletag.display('div-gpt-ad-1392148208789-0');
+    });
+}());
+</script>
+</div>
+
+
 
         
-                <div class="sterling">
+                <div class="sterling" id="deals-widget">
                     
     <aside class="sidebar-widget stackcommerce-widget">
             <header id="stackcommerce-header">
@@ -765,16 +927,16 @@ if (!SF.adblock) {
             <a href="#" id="btn-blockthis-close">X</a>
             
   <input type="hidden" name="_visit_cookie" value=""/>
-                <input type='hidden' name='timestamp' value='1466370970'/>
-                <input type='hidden' name='spinner' value='Xo9QXf2_iuoKmQGjHzDAw:h3G_Iw'/>
-                <p class='Z22c33105c345c1aefa23587a0a006de055b10c09'><label for='XpLx4EQqbirLXNHkOMYKE1OWl7B8'>You seem to have CSS turned off.
-             Please don't fill out this field.</label><input id='XpLx4EQqbirLXNHkOMYKE1OWl7B8' name='Xpbx4EQqbivPSUaE6foQeAn7Wb00' type=
+                <input type='hidden' name='timestamp' value='1468447135'/>
+                <input type='hidden' name='spinner' value='XQCLMi_D8OIEqf5h7XY9Y_fHbdqk'/>
+                <p class='z1863ee3ac624cafc928578897020f3611b577c35'><label for='XR0qj5ZWFCLGxbZXzDDyCbOC1yCY'>You seem to have CSS turned off.
+             Please don't fill out this field.</label><input id='XR0qj5ZWFCLGxbZXzDDyCbOC1yCY' name='XRkqj5ZWFCBo4chAq7lXJ7J9l:WQ' type=
              'text'/></p>
-                <p class='Z22c33105c345c1aefa23587a0a006de055b10c09'><label for='XpLx4EQqbirPXNHkOMYKE1OWl7B8'>You seem to have CSS turned off.
-             Please don't fill out this field.</label><input id='XpLx4EQqbirPXNHkOMYKE1OWl7B8' name='Xpbx4EQqbi_PSUaE6foQeAn7Wb00' type=
+                <p class='z1863ee3ac624cafc928578897020f3611b577c35'><label for='XR0qj5ZWFCLCxbZXzDDyCbOC1yCY'>You seem to have CSS turned off.
+             Please don't fill out this field.</label><input id='XR0qj5ZWFCLCxbZXzDDyCbOC1yCY' name='XRkqj5ZWFCRo4chAq7lXJ7J9l:WQ' type=
              'text'/></p>
             <p>Briefly describe the problem (required):
-            <input name="XqLByDAyQ0_LSKQepvUQhM:B0SKI" type="text" required>
+            <input name="XS0ap:JOOUfFeFvcVxp1VdaBorDg" type="text" required>
             </p>
 
             <div class="upload-text">Upload screenshot of ad (required):</div>
@@ -796,9 +958,9 @@ if (!SF.adblock) {
             </div>
             <p></p>
             <p>Please provide the ad click URL, if possible:
-            <input name="Xqrd7FgyJ5ffULBmz3fnNSKnoBO8" type="url">
+            <input name="XSUGg4pOXZ_RYEwNpUAcJTitKZ8c" type="url">
             </p>
-            <textarea id="gpt-info" name="Xp7B2Cw6TzpNvvdpz4shT6o4H2aQ"></textarea>
+            <textarea id="gpt-info" name="XREat_5FnKoyiLiuhzJ42Q34WlrI"></textarea>
             <input type="submit" id="btn-blockthis-submit" value="Submit Report">
         </form>
     </div>
@@ -854,7 +1016,7 @@ if (!SF.adblock) {
     <p>Sign up for the SourceForge newsletter:</p>
     <form action="/user/newsletters/subscribe" method="post">
     <div class="form">
-        <input type="email" name="XprF6HgaOy_a3iZV1eB7ImQ1VPak"  placeholder="email@address.com" value="">
+        <input type="email" name="XRUeh6pmQo5Mn98nIhx5Jk09Uu0k"  placeholder="email@address.com" value="">
     <input type="submit" value="Subscribe" class="bt">
     </div>
     <div class="fielderror"></div>
@@ -862,29 +1024,29 @@ if (!SF.adblock) {
     <p class="details">
     <span class="fielderror"></span>
     <label>
-        <input type="checkbox" required name="XpLd4ERyH1PbXNHkOMYKE1OWl7B8" value="true" >I agree to receive quotes, newsletters and other information from sourceforge.net and its partners regarding IT services and products. I understand that I can withdraw my consent at any time. Please refer to our <a href="https://slashdotmedia.com/privacy-statement/">Privacy Policy</a> or <a href="/support">Contact Us</a> for more details
-        <input type="hidden" name="XrrpyGguR5eHJLhuiokRBjgwPAT4" value="true">
+        <input type="checkbox" required name="XR0Gj5YOZVvWxbZXzDDyCbOC1yCY" value="true" >I agree to receive quotes, newsletters and other information from sourceforge.net and its partners regarding IT services and products. I understand that I can withdraw my consent at any time. Please refer to our <a href="https://slashdotmedia.com/privacy-statement/">Privacy Policy</a> or <a href="/support">Contact Us</a> for more details
+        <input type="hidden" name="XTUyp7pSPZ:JFEeseM_vD7_xTJxo" value="true">
     </label>
     </p>
 
     <input type="hidden" name="source" value="floating">
-    <input type="hidden" name="Xr7d4CgGWyPv5IwejqUFE69Q7Tjg" value="PL">
-    <input type="hidden" name="XsLd4CgGWyPv5IwejqW9DlWi0n:k" value="ip_address">
-    <input type="hidden" name="XqLpyCByO3_bSJRq0vUQhM:B0SKI" value="sitewide">
-    <input type="hidden" name="XqLpyCByO3_bSJRq0vUQhM:B0SKI" value="research">
-    <input type="hidden" name="XqLpyCByO3_bSJRq0vUQhM:B0SKI" value="events">
-    <input type="hidden" name="XqLpyCByO3_bSJRq0vUQhM:B0SKI" value="thirdparty">
-    <input type="hidden" name="XqLpyCByO3_bSJRq0vUQhM:B0SKI" value="all">
-    <input type="hidden" name="XoL96Ch6Wq0tb8tzpNFMgadzj1Po" value="">
+    <input type="hidden" name="XTEGj_p6ISvh1HPcfOBRK8HmKxXM" value="PL">
+    <input type="hidden" name="XU0Gj_p6ISvh1HPcfONArkoSpFcw" value="ip_address">
+    <input type="hidden" name="XS0yp_IOQXfVeGuoIxp1VdaBorDg" value="sitewide">
+    <input type="hidden" name="XS0yp_IOQXfVeGuoIxp1VdaBorDg" value="research">
+    <input type="hidden" name="XS0yp_IOQXfVeGuoIxp1VdaBorDg" value="events">
+    <input type="hidden" name="XS0yp_IOQXfVeGuoIxp1VdaBorDg" value="thirdparty">
+    <input type="hidden" name="XS0yp_IOQXfVeGuoIxp1VdaBorDg" value="all">
+    <input type="hidden" name="XQ0mh_mvuNQl7zELqTOHmcjw7bco" value="">
     
   <input type="hidden" name="_visit_cookie" value=""/>
-    <input type='hidden' name='timestamp' value='1466370970'/>
-    <input type='hidden' name='spinner' value='Xo9QXf2_iuoKmQGjHzDAw:h3G_Iw'/>
-    <p class='Z22c33105c345c1aefa23587a0a006de055b10c09'><label for='XpLx4EQqbi7LXNHkOMYKE1OWl7B8'>You seem to have CSS turned off.
-             Please don't fill out this field.</label><input id='XpLx4EQqbi7LXNHkOMYKE1OWl7B8' name='Xpbx4EQqbivPSUaE6foQeAn7Wb00' type=
+    <input type='hidden' name='timestamp' value='1468447135'/>
+    <input type='hidden' name='spinner' value='XQCLMi_D8OIEqf5h7XY9Y_fHbdqk'/>
+    <p class='z1863ee3ac624cafc928578897020f3611b577c35'><label for='XR0qj5ZWFCbGxbZXzDDyCbOC1yCY'>You seem to have CSS turned off.
+             Please don't fill out this field.</label><input id='XR0qj5ZWFCbGxbZXzDDyCbOC1yCY' name='XRkqj5ZWFCBo4chAq7lXJ7J9l:WQ' type=
              'text'/></p>
-    <p class='Z22c33105c345c1aefa23587a0a006de055b10c09'><label for='XpLx4EQqbi7PXNHkOMYKE1OWl7B8'>You seem to have CSS turned off.
-             Please don't fill out this field.</label><input id='XpLx4EQqbi7PXNHkOMYKE1OWl7B8' name='Xpbx4EQqbi_PSUaE6foQeAn7Wb00' type=
+    <p class='z1863ee3ac624cafc928578897020f3611b577c35'><label for='XR0qj5ZWFCbCxbZXzDDyCbOC1yCY'>You seem to have CSS turned off.
+             Please don't fill out this field.</label><input id='XR0qj5ZWFCbCxbZXzDDyCbOC1yCY' name='XRkqj5ZWFCRo4chAq7lXJ7J9l:WQ' type=
              'text'/></p>
 </form>
 

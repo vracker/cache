@@ -30,7 +30,7 @@ var g_onload = function() {};
       <div class='hdrlink black'>
         <a href='download.php'>
         <div class='hdrtop white'>DOWNLOAD REAPER</div>
-        <div class='hdrbottom'>Version 5.21: June 16, 2016</div>
+        <div class='hdrbottom'>Version 5.211: June 20, 2016</div>
         </a>
       </div>
       <div style='height:11px;'></div>
@@ -129,24 +129,24 @@ var g_onload = function() {};
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>Windows 32-bit</div>
   <div class='downloadinfo'>
-REAPER v5.21 - 9MB<br>
+REAPER v5.211 - 9MB<br>
 Windows XP/Vista/7/8/10<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper521-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper5211-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
       <div style='background-color:#313131;height:1px;margin-bottom:20px;'></div>
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>Windows 64-bit</div>
   <div class='downloadinfo'>
-REAPER v5.21 - 11MB<br>
+REAPER v5.211 - 11MB<br>
 Windows XP/Vista/7/8/10 x64<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper521_x64-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper5211_x64-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
     </div>
@@ -162,24 +162,24 @@ Windows XP/Vista/7/8/10 x64<br>
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>OS X 32-bit</div>
   <div class='downloadinfo'>
-REAPER v5.21 - 14MB<br>
+REAPER v5.211 - 14MB<br>
 OS X 10.5-10.11<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper521_i386.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper5211_i386.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
       <div style='background-color:#313131;height:1px;margin-bottom:20px;'></div>
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>OS X 64-bit</div>
   <div class='downloadinfo'>
-REAPER v5.21 - 16MB<br>
+REAPER v5.211 - 16MB<br>
 OS X 10.5-10.11<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper521_x86_64.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper5211_x86_64.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
     </div> 
@@ -190,8 +190,17 @@ OS X 10.5-10.11<br>
 <div class='dark strip'>
   <div style='background-color:#4E5454;height:1px;margin-top:40px;'></div>
   <div style='margin-top:30px;margin-bottom:30px;'>
-    <div class='heading'>REAPER 5.21: We are great programmers, folks. We make the best software. Really terrific software.  Everybody says it's the best.  (applause)</div>
+    <div class='heading'>REAPER 5.211: We are great programmers, folks. We make the best software. Really terrific software.  Everybody says it's the best.  (applause)</div>
     <div style='width:1000px; -webkit-column-count: 3; -moz-column-count: 3; column-count: 3;'><a name="whatsnew"></a>
+<div class='avoidbreak'>
+<div class='bold'>5.211</div><ul class='bullet'>
+<li> MIDI editor: fix possible crash when destroying midi item via undo/redo
+<li> OGG Opus: improve end of stream behavior when writing <a href="http://forum.cockos.com/showpost.php?p=1695410" target="blank"><span class='whatsnewdot'>.</span></a>
+<li> VST: fix support for HALion 5 and other VST3 with more than 64 output channels
+<li> VST: skip non-automatable and plugin-internal VST3 parameters in the FX envelope dialog and FX parameter dropdown
+<li> VST: fix display issue with bridged embedded UIs on Windows <a href="http://forum.cockos.com/showthread.php?t=178132" target="blank"><span class='whatsnewdot'>.</span></a>
+</ul>
+</div>
 <div class='avoidbreak'>
 <div class='bold'>MIDI editor</div><ul class='bullet'>
 <li> action to set note ends to start of next note will not shorten notes beyond the lesser of (grid size, 25% of original note length) <a href="http://forum.cockos.com/showpost.php?p=1688568" target="blank"><span class='whatsnewdot'>.</span></a>

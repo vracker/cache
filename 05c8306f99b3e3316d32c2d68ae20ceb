@@ -151,7 +151,7 @@ on Twitter.
 
 <h2>Current Versions</h2>
 
-<h3>Mainline - 1.1.14</h3>
+<h3>Mainline - 1.1.15</h3>
 
 <p><small><em>This series is actively developed but intended for use
 in production environments as long as appropriate testing is
@@ -159,18 +159,22 @@ performed.</em></small>
 
 
 
-<p><a href="releases/musl-1.1.14.tar.gz">musl-1.1.14.tar.gz</a>
-(<a href="releases/musl-1.1.14.tar.gz.asc">sig</a>)
-- Feb 22, 2016
+<p><a href="releases/musl-1.1.15.tar.gz">musl-1.1.15.tar.gz</a>
+(<a href="releases/musl-1.1.15.tar.gz.asc">sig</a>)
+- July 5, 2016
 
-<p>This release primarily fixes regressions that slipped into 1.1.13,
-including a significant stdio regression causing fputs and puts to
-fail on zero-length strings, ARM hard-float build failure on clang due
-to a compiler bug which is now detected and worked around, a hang at
-the entry point of the dynamic linker on SH/FDPIC, and make clean/make
-distclean no longer working in unconfigured trees. A minor
-longstanding bug in crypt-sha256/512 was also fixed, and further
-improvements to the build system have been made.
+<p>This release adds new 64-bit MIPS and PowerPC ports, soft-float ABI
+support for the 32-bit PowerPC arch, and support for revision 6 of the
+MIPS ISA (not backwards compatible with original MIPS). Serious bugs
+in memmem, ungetwc, and putenv have been fixed, as well as bug that
+could break thread-local storage on PowerPC depending on the compiler
+used to build musl, and a number of low-impact bugs in various
+interfaces. The pthread_tryjoin_np, pthread_timedjoin_np, and
+sched_getcpu extension functions, and header-level support for new
+Linux 4.5 and 4.6 features, have also been added, and the configure
+script now honors standard options for cross-compiling more correctly.
+
+
 
 
 <h2>Older versions</h2>

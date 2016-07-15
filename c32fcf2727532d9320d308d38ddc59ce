@@ -927,16 +927,16 @@ if (!SF.adblock) {
             <a href="#" id="btn-blockthis-close">X</a>
             
   <input type="hidden" name="_visit_cookie" value=""/>
-                <input type='hidden' name='timestamp' value='1468527719'/>
-                <input type='hidden' name='spinner' value='Xcf:cDBP9CSqOgqWxU0OIHO8XQIU'/>
-                <p class='Ob01a35b65de71f804cf093ce901bdae5c70abe91'><label for='XdpfzYnaEORqs5QVZisx1kp7k440'>You seem to have CSS turned off.
-             Please don't fill out this field.</label><input id='XdpfzYnaEORqs5QVZisx1kp7k440' name='Xd5fzYnaEOQjpIk1o3L4GbRy0SIM' type=
+                <input type='hidden' name='timestamp' value='1468603470'/>
+                <input type='hidden' name='spinner' value='XzS8N_H6MkK67Jk3Rb5xSlz1rbPo'/>
+                <p class='D3b17590fd6337370205d4180951b126c3cbfb1e3'><label for='Xykdikhv1oJ5tTOPIC8jMxhqRuDU'>You seem to have CSS turned off.
+             Please don't fill out this field.</label><input id='Xykdikhv1oJ5tTOPIC8jMxhqRuDU' name='Xy0dikhv1oHjRiFS1OwIDsMe_oxk' type=
              'text'/></p>
-                <p class='Ob01a35b65de71f804cf093ce901bdae5c70abe91'><label for='XdpfzYnaEORus5QVZisx1kp7k440'>You seem to have CSS turned off.
-             Please don't fill out this field.</label><input id='XdpfzYnaEORus5QVZisx1kp7k440' name='Xd5fzYnaEOAjpIk1o3L4GbRy0SIM' type=
+                <p class='D3b17590fd6337370205d4180951b126c3cbfb1e3'><label for='Xykdikhv1oJ9tTOPIC8jMxhqRuDU'>You seem to have CSS turned off.
+             Please don't fill out this field.</label><input id='Xykdikhv1oJ9tTOPIC8jMxhqRuDU' name='Xy0dikhv1oXjRiFS1OwIDsMe_oxk' type=
              'text'/></p>
             <p>Briefly describe the problem (required):
-            <input name="Xepv5f3CPYFr668rfcSQo9DaYvQs" type="text" required>
+            <input name="Xxktojx3::d7PTyK_ufb8jlk_8qs" type="text" required>
             </p>
 
             <div class="upload-text">Upload screenshot of ad (required):</div>
@@ -958,9 +958,9 @@ if (!SF.adblock) {
             </div>
             <p></p>
             <p>Please provide the ad click URL, if possible:
-            <input name="XeJzwZXCWVl_87ofW86tRkxKZMXY" type="url">
+            <input name="XxExhlR3nz9vJSpu7wYU2w6M6SwA" type="url">
             </p>
-            <textarea id="gpt-info" name="XdZv9eHLfbopmWypM3TJ7v:cRFRg"></textarea>
+            <textarea id="gpt-info" name="XyUtsiB9a:gCiQhlPPruoQ_KI1XY"></textarea>
             <input type="submit" id="btn-blockthis-submit" value="Submit Report">
         </form>
     </div>
@@ -1016,7 +1016,7 @@ if (!SF.adblock) {
     <p>Sign up for the SourceForge newsletter:</p>
     <form action="/user/newsletters/subscribe" method="post">
     <div class="form">
-        <input type="email" name="XdJrxbXqRK00uanw:rs3570wfRtA"  placeholder="email@address.com" value="">
+        <input type="email" name="XyEpgnRfgRsQVPymF8c11bemkj0M"  placeholder="email@address.com" value="">
     <input type="submit" value="Subscribe" class="bt">
     </div>
     <div class="fielderror"></div>
@@ -1024,29 +1024,29 @@ if (!SF.adblock) {
     <p class="details">
     <span class="fielderror"></span>
     <label>
-        <input type="checkbox" required name="XdpzzYmCYZ16s5QVZisx1kp7k440" value="true" >I agree to receive quotes, newsletters and other information from sourceforge.net and its partners regarding IT services and products. I understand that I can withdraw my consent at any time. Please refer to our <a href="https://slashdotmedia.com/privacy-statement/">Privacy Policy</a> or <a href="/support">Contact Us</a> for more details
-        <input type="hidden" name="XfJH5aXeOVknh7NbUPTeqe0__mQo" value="true">
+        <input type="checkbox" required name="Xykxikg3p_tptTOPIC8jMxhqRuDU" value="true" >I agree to receive quotes, newsletters and other information from sourceforge.net and its partners regarding IT services and products. I understand that I can withdraw my consent at any time. Please refer to our <a href="https://slashdotmedia.com/privacy-statement/">Privacy Policy</a> or <a href="/support">Contact Us</a> for more details
+        <input type="hidden" name="XwEFomRr_z83USD60AeiE_ZNyCK4" value="true">
     </label>
     </p>
 
     <input type="hidden" name="source" value="floating">
-    <input type="hidden" name="XfZzzeX2Je1PR4crVNmHvvAfOz3g" value="PL">
-    <input type="hidden" name="XYpzzeX2Je1PR4crVNhz7c5plI:A" value="ip_address">
-    <input type="hidden" name="XepH5e2CRbF7659fCcSQo9DaYvQs" value="sitewide">
-    <input type="hidden" name="XepH5e2CRbF7659fCcSQo9DaYvQs" value="research">
-    <input type="hidden" name="XepH5e2CRbF7659fCcSQo9DaYvQs" value="events">
-    <input type="hidden" name="XepH5e2CRbF7659fCcSQo9DaYvQs" value="thirdparty">
-    <input type="hidden" name="XepH5e2CRbF7659fCcSQo9DaYvQs" value="all">
-    <input type="hidden" name="XcpTxeTGaqcJXDVg_IrArFOlC3dU" value="">
+    <input type="hidden" name="XwUxiiRD44tfkRSK1Cko4OSQPOGQ" value="PL">
+    <input type="hidden" name="X3kxiiRD44tfkRSK1CsMh:EgZD58" value="ip_address">
+    <input type="hidden" name="XxkFoiw3g9drPQz:iufb8jlk_8qs" value="sitewide">
+    <input type="hidden" name="XxkFoiw3g9drPQz:iufb8jlk_8qs" value="research">
+    <input type="hidden" name="XxkFoiw3g9drPQz:iufb8jlk_8qs" value="events">
+    <input type="hidden" name="XxkFoiw3g9drPQz:iufb8jlk_8qs" value="thirdparty">
+    <input type="hidden" name="XxkFoiw3g9drPQz:iufb8jlk_8qs" value="all">
+    <input type="hidden" name="XzkRgiajmPrffctOASGaGWN7S4Gs" value="">
     
   <input type="hidden" name="_visit_cookie" value=""/>
-    <input type='hidden' name='timestamp' value='1468527719'/>
-    <input type='hidden' name='spinner' value='Xcf:cDBP9CSqOgqWxU0OIHO8XQIU'/>
-    <p class='Ob01a35b65de71f804cf093ce901bdae5c70abe91'><label for='XdpfzYnaEOBqs5QVZisx1kp7k440'>You seem to have CSS turned off.
-             Please don't fill out this field.</label><input id='XdpfzYnaEOBqs5QVZisx1kp7k440' name='Xd5fzYnaEOQjpIk1o3L4GbRy0SIM' type=
+    <input type='hidden' name='timestamp' value='1468603470'/>
+    <input type='hidden' name='spinner' value='XzS8N_H6MkK67Jk3Rb5xSlz1rbPo'/>
+    <p class='D3b17590fd6337370205d4180951b126c3cbfb1e3'><label for='Xykdikhv1oZ5tTOPIC8jMxhqRuDU'>You seem to have CSS turned off.
+             Please don't fill out this field.</label><input id='Xykdikhv1oZ5tTOPIC8jMxhqRuDU' name='Xy0dikhv1oHjRiFS1OwIDsMe_oxk' type=
              'text'/></p>
-    <p class='Ob01a35b65de71f804cf093ce901bdae5c70abe91'><label for='XdpfzYnaEOBus5QVZisx1kp7k440'>You seem to have CSS turned off.
-             Please don't fill out this field.</label><input id='XdpfzYnaEOBus5QVZisx1kp7k440' name='Xd5fzYnaEOAjpIk1o3L4GbRy0SIM' type=
+    <p class='D3b17590fd6337370205d4180951b126c3cbfb1e3'><label for='Xykdikhv1oZ9tTOPIC8jMxhqRuDU'>You seem to have CSS turned off.
+             Please don't fill out this field.</label><input id='Xykdikhv1oZ9tTOPIC8jMxhqRuDU' name='Xy0dikhv1oXjRiFS1OwIDsMe_oxk' type=
              'text'/></p>
 </form>
 

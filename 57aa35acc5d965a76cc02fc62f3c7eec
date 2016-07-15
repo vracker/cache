@@ -127,6 +127,268 @@
     </p>
   </li>
 
+
+
+
+  <li><b>22 June 2016 -- BusyBox 1.25.0 (unstable)</b>
+    <p><a href="http://busybox.net/downloads/busybox-1.25.0.tar.bz2">BusyBox 1.25.0</a>.
+    (<a href="http://git.busybox.net/busybox/tree/?h=1_25_stable">git</a>,
+    <a href="http://busybox.net/downloads/fixes-1.25.0/">patches</a>,
+    <a href="http://busybox.net/fix.html">how to add a patch</a>)</p>
+
+    <p>Sizes of busybox-1.24.2 and busybox-1.25.0 (with equivalent config, static uclibc build):<pre>
+   text    data     bss     dec     hex filename
+ 894406     494    7420  902320   dc4b0 busybox-1.24.2
+ 893717     489    7304  901510   dc186 busybox-1.25.0</pre>
+    </p>
+
+    <p>Changes since previous release:
+<pre>Aaro Koskinen (5):
+      cpio: implement -R/--owner
+      xargs: make -I imply -r
+      gunzip: add support for long options
+      gzip: add support for --no-name long option
+      nandwrite: implement -n (read/write without ecc)
+
+Ari Sundholm (2):
+      blkdiscard: new applet
+      truncate: always set mode when opening file to avoid fortify errors
+
+Arnout Vandecappelle (Essensium/Mind) (1):
+      taskset: fix non-fancy cpuset printing on big-endian
+
+Bartosz Golaszewski (7):
+      i2cdetect: fix address skipping in auto mode
+      i2cdump: don't read block data in non-block modes
+      i2cdump: use I2C block mode for the 'i' mode parameter
+      i2cdump: bail-out if block read fails
+      i2cdump: display the numeric value for block read ioctl() errors
+      unshare: new applet
+      nsenter: new applet
+
+Bjørn Forsman (1):
+      kconfig/lxdialog: get ncurses CFLAGS with pkg-config
+
+Chris Renshaw (1):
+      Resolve linker issues with Android API 21 (dprintf, tcdrain)
+
+Christian Lindeberg (1):
+      udhcpd: keep expired leases at startup
+
+Curt Brune (1):
+      networking: add 'ip neigh' command
+
+Denys Vlasenko:
+      make MKPASSWD a separate config option, not an automatic alias to cryptpw
+      rename FEATURE_INITRD to LINUXRC and make it separate, not an alias to init
+      fixes for problems found by bionic build
+      build system: finer-grained selection of search speedup table
+      build system: fix generate_BUFSIZ.sh to not alternate 1k and malloc builds
+      scripts/trylink: fix bit-rotted linker option verification
+      scripts/trylink: libbusybox fix
+      scripts/trylink: remove $CPPFLAGS
+      scripts/trylink: on failure, print a hint about CONFIG_EXTRA_LDLIBS
+      generate_BUFSIZ.sh: catch BUFSIZE &lt; 1024 also on "big" builds
+      libbb: constify *bb_common_bufsiz1 (if it is compiled to be a pointer)
+      libbb: factor out code which queries screen width
+      libbb: get_uidgid() always called with allow_numeric=1
+      libbb: make "COMMON_BUFSIZE = 1024 bytes, the buffer will be malloced" work
+      libbb: make bb_common_bufsiz1 1 kbyte, add capability to use bss tail for it
+      libbb: make parse_chown_usergroup_or_die() set unspecified uid/gid to -1
+      libbb: speed up error_msg functions
+      libbb: two new functions: wait_for_exitstatus(pid), xfchdir(fd)
+      libarchive: fix open_zipped()
+      libarchive: fix xmalloc_open_zipped_read_close()
+      networking: allow dot at the end of the domain name in dhcp response
+      arping: avoid use of ether_ntoa(). Closes 8926
+      ash: fix command -- crash
+      cp: add -u/--update and --remove-destination
+      dos2unix: try to preserve ownership. closes 8311
+      du: extra compat: with -k and -m, round sizes up
+      dumpleases: make host names sanitized to shell-friendly condition
+      find_applet_by_name: add an example of faster linear search code
+      flock: fix -c; improve error handling of fork+exec
+      flock: merge spawn_and_wait() code patchs for -c and sans-c uses
+      fsck: do not use statics
+      fsck: use printf for message, not bb_info_msg
+      ftpd: make DIR parameter work for non-root too: chdir to it instead of chroot
+      grep: make errors other than "not found" result in exit code 2. Closes 8796
+      httpd: fix heap buffer overflow. Closes 8426
+      i2c_tools: suppress "'blen' may be used uninitialized in this function"
+      ifupdowm: fix "warning: unused variable 'iface_list'"
+      inotifyd: swap meaning of 'y' and 'm' events in help text. Closes 8726
+      iproute: support "scope". Closes 8561
+      libiproute: make rt_addr_n2a() and format_host() return auto strings
+      libiproute: rename invarg(a,b) to invarg_1_to_2(a,b)
+      login: add commented-out PAM double password avoidance from BZ 4003
+      ls: fix columnar output. Closes 8731
+      lzop: eliminate variable, use "int" as return type
+      mkfs_vfat: use bb_error_msg for logging, not bb_info_msg
+      modinfo: fix "-F firmware", add "intree" field display
+      modprobe-small: fix bogus handling of unpack errors
+      modprobe: skip non-.conf files only in subdirectories
+      modutils: fix build error with !DEPMOD
+      mount: support "nofail" option. Closes 8551
+      nmeter: convert field list to bit list
+      nmeter: fix a bug with unterminated varargs
+      nmeter: reinstate and document -d-1
+      nmeter: remove undocumented %NNNd specifier
+      ntpd: do not use a peer more than once (say, if two peers resolve to the same IP)
+      ntpd: if peer does not reply anymore, try re-resolving its hostname
+      ntpd: more informative poll lowering message
+      ntpd: print packet delay in clock update message
+      ntpd: retry initial DNS resolution (forever, no timeout for now)
+      ntpd: step when |offset| &gt; 1 sec, not 0.125 sec
+      od: get rid of (almost all) statics
+      patch: correctly handle "patch FILE_TO_PATCH" form. Closes 7736
+      pmap: fix bogus {no such process} comm field text
+      rmmod: fix bad error message
+      sed: fix append command to match GNU sed 4.2.1
+      sed: make 's///w FILE' actually write to FILE. Closes 8251
+      sed: support "-f -" idiom
+      sed: understand \n, \r and \t in i and a commands. Closes 8871
+      setarch: add support for '-R' (disable randomization)
+      setfiles: switch bb_info_msg to printf
+      setsid: implement -c
+      sort: fix ENDCHAR handling in "-kSTART,N.ENDCHAR"
+      sort: fix key with delimiters breakage
+      stat: make -f optional. This allows to build stat for non-linux systems
+      sulogin: drop incorrect comment about suid-ness
+      sulogin: remove suid paranoia code, explain why it's not necessary
+      sulogin: use bb_error_msg instead of bb_info_msg; better message
+      tar: add a test that we don't write into symlinks
+      tar: add support for --strip-components=N
+      tar: fix files skipped with --strip_components not resetting selinux context
+      tar: implement --version for buildroot
+      tar: shrink hardlink name handling code
+      top: make sort field for 's' mode less confusing
+      udhcp: add setup_common_bufsiz() as needed
+      udhcp: fix a SEGV on malformed RFC1035-encoded domain name
+      udhcp: get rid of bb_info_msg()
+      udhcpc: do not use -t NUM for counting "select" packets, use 3
+      udhcpc: fix OPTION_6RD parsing (could overflow its malloced buffer)
+      umount: build fix for older glibc
+      unzip: better match for "standard" unzip's output; string shrinkage
+      unzip: fix a case where we find wrong CDE. Closes 8821
+      unzip: fix percent overflow; show "stored" files properly
+      unzip: shorter code for date/time generation
+      unzip: test for bad archive SEGVing
+      wget: if stderr is not a tty, progress bar shouldn't use tty-tricks
+      wget: make -T timeout work on header reads too. Closes 8636
+      wget: make Bartosz's "wget --passive-ftp -nd -t 3" work
+      zcip: do not query current time if we won't use the result
+      zcip: use bb_error_msg for logging, not bb_info_msg
+
+Felix Fietkau (1):
+      busybox: fix uninitialized memory when displaying IPv6 addresses
+
+Hans Dedecker (1):
+      dhcpc: Use client IP address as source address for DHCP renew/rebind messages
+
+Isaac Dunham (1):
+      dumpleases: new option -d to show time in seconds
+
+Jean Delvare (1):
+      kbuild: Fix gcc -x syntax
+
+Junio C Hamano (1):
+      kconfig: fix menuconfig on debian lenny
+
+Justin Lecher (1):
+      menuconfig: optionally use pkg-config to detect ncurses libs
+
+Krzysztof Mazur (1):
+      menuconfig: fix extended colors ncurses support
+
+Kylie McClain (1):
+      Fix compiling with musl's utmp stubs
+
+Michal Marek (1):
+      kbuild: Make scripts executable
+
+Mike Frysinger (12):
+      trylink: include LDFLAGS when checking linkage
+      swapon/swapoff: refine the -e (ifexists) option
+      blkid: add bcache support
+      truncate: use O_WRONLY|O_NONBLOCK
+      build: add a sanitizer debug option
+      modprobe: only parse files that end in .conf
+      ash_test: printenv: fix missing includes
+      ash_test: ignore generated files
+      Revert "lxdialog: fix ncursesw include detection"
+      syslogd: minor tweaks to text
+      undeb: clean up
+      unrpm: clean up
+
+Natanael Copa (2):
+      ifupdown: use -x hostname:NAME with udhcpc
+      libbb: fix time parsing of [[CC]YY]MMDDhhmm[.SS]. Closes 8951
+
+Nicolas Carrier (1):
+      init: make the command-line rewrite optional
+
+Nicolas Cavallari (1):
+      ifupdown: allow duplicate interface definitions
+
+Pascal Bach (1):
+      chpasswd: support -c argument and respect DEFAULT_PASSWD_ALGO
+
+Rafał Miłecki (1):
+      dd: support iflag=skip_bytes
+
+Richard Genoud (1):
+      tr: support octal ranges
+
+Ron Yorston (26):
+      Rewrite iteration through applet names to save a few bytes
+      libbb: move common code into run_applet_and_exit
+      lineedit: search applets as well as PATH for tab completion
+      ash: add tests for failures of the exec and command builtins
+      ash: fix EXEXEC status clobbering
+      ash: allow popredir to be called if the stack is empty
+      ash: copy function tests from hush testsuite
+      ash: add support for bash 'function' keyword
+      ash: add test for issue with here document
+      ash: allow newline after variable name in for loop
+      ash: save a few bytes in code to parse case statements
+      ash: respect -p flag when command builtin is run with -v/-V
+      ash: only allow local variables in functions
+      ash: fix error during recursive processing of here document
+      ash: simplify EOF/newline handling in list parser
+      ash: fix corruption of ${#var} if $var contains UTF-8 characters
+      ash: bash-compatible $'...' shouldn't expand in double quotes
+      busybox: alter help message in standalone shell mode
+      busybox: make busybox an optional applet
+      Allow "busybox APPLET" to work when busybox is disabled
+      wget: shrink code if https isn't supported
+      libiproute: use if_nametoindex
+      printf: short-circuit output when argument to %b includes \c
+      applet_tables: save space by removing applet name offsets
+      find_applet_by_name: loop index should be signed
+
+Sven Eisenberg (2):
+      ubirename: new applet
+      ubirmvol: implement -N switch for ubirmvol
+
+Szabolcs Nagy (1):
+      ip: fix problem on mips64 n64 big endian musl systems
+
+Timo Teräs (4):
+      ifupdown: pass interface device name for ipv6 route commands
+      fbsplash: use virtual y size in mmap size calculations
+      modutils: merge module_entry and module_info to common
+      networking: properly initialize ipv6 scope id for printing it
+
+Yaakov Selkowitz (2):
+      kconfig: check ncursesw headers first in check-lxdialog
+      kconfig: fix check-lxdialog for DLL platforms
+
+Yann E. MORIN (1):
+      kconfig/lxdialog: rationalise the include paths where to find {.n}curses{,w}.h
+</pre>
+    </p>
+  </li>
+
   <li><b>25 March 2016 -- Building on an Android tablet.</b>
     <p>Android is based on Linux kernel, but sadly and unexplicably,
     Android userspace is not Unix-friendly: in many cases,

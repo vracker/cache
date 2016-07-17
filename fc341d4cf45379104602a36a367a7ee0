@@ -345,7 +345,7 @@ on PA-RISC. On Itanium there are no problems.
 ac_cv_prog_cc_c99= to configure if using Sun Studio.
 </p>
 
-<h2>Licensing</h2>
+<h2 id="licensing">Licensing</h2>
 <p>
 The most interesting parts of XZ Utils (e.g. liblzma) are in the
 public domain. You can do whatever you want with the public domain parts.
@@ -354,6 +354,11 @@ public domain. You can do whatever you want with the public domain parts.
 Some parts of XZ Utils (e.g. build system and some utilities) are under
 different free software licenses such as GNU LGPLv2.1, GNU GPLv2,
 or GNU GPLv3.
+</p>
+<p>
+See the file
+<a href="http://git.tukaani.org/?p=xz.git;a=blob;f=COPYING">COPYING</a>
+for more details.
 </p>
 
 </div>

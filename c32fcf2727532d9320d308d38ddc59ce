@@ -8,7 +8,7 @@
     <head>
         <meta charset="utf-8">
         
-            <script type="text/javascript" src="//a.fsdn.com/con/js/sftheme/vendor/prebid-0.9.2-dev.js" async></script>
+            <script type="text/javascript" src="//a.fsdn.com/con/js/sftheme/vendor/prebid-0.10.0-dev.js" async></script>
         
         
         
@@ -137,8 +137,8 @@
                         performance.mark(bid.bidder + '-' + bid.placementCode + '-start');
                     }
                 });
-                pbjs.onEvent('bidResponse', function (adunit, bid) {
-                    var name = bid.bidder + '-' + adunit;
+                pbjs.onEvent('bidResponse', function (bid) {
+                    var name = bid.bidder + '-' + bid.adUnitCode;
                     performance.mark(name + '-end');
                     performance.measure(name, name+'-start', name+'-end');
                 });
@@ -158,6 +158,13 @@
                 },
                 
                 
+                rubicon: {
+                    bidCpmAdjustment: function(bidCpm) {
+                        return bidCpm * 0.825;
+                    }
+                },
+                
+                
                 
             };
 
@@ -166,6 +173,7 @@
                     bids: [{'params': {'tagid': '364648'}, 'bidder': 'sovrn'},
                             {'params': {'cp': 558092, 'cf': '728x90', 'ct': '472223'}, 'bidder': 'pulsepoint'},
                             {'params': {'placementId': 8841121}, 'bidder': 'brealtime'},
+                            {'params': {'siteId': '103240', 'position': 'atf', 'sizes': [2], 'accountId': '15680', 'zoneId': '486110'}, 'bidder': 'rubicon'},
                             ],
                     code: 'div-gpt-ad-1393435113147-0',
                     sizes: [728, 90]
@@ -174,6 +182,7 @@
                     bids: [{'params': {'tagid': '364646'}, 'bidder': 'sovrn'},
                             {'params': {'cp': 558092, 'cf': '300x250', 'ct': '472221'}, 'bidder': 'pulsepoint'},
                             {'params': {'placementId': 8829467}, 'bidder': 'brealtime'},
+                            {'params': {'siteId': '103240', 'position': 'atf', 'sizes': [15, 10, 54], 'accountId': '15680', 'zoneId': '486110'}, 'bidder': 'rubicon'},
                             ],
                     code: 'div-gpt-ad-1392147725721-0',
                     sizes: [[300, 250], [300, 600], [300, 1050]]
@@ -182,6 +191,7 @@
                     bids: [{'params': {'tagid': '364647'}, 'bidder': 'sovrn'},
                             {'params': {'cp': 558092, 'cf': '300x250', 'ct': '472222'}, 'bidder': 'pulsepoint'},
                             {'params': {'placementId': 8829468}, 'bidder': 'brealtime'},
+                            {'params': {'siteId': '103240', 'sizes': [15], 'accountId': '15680', 'zoneId': '486112'}, 'bidder': 'rubicon'},
                             ],
                     code: 'div-gpt-ad-1392148208789-0',
                     sizes: [300, 250]
@@ -782,7 +792,6 @@ try {
         <h3>Recommended Projects</h3>
         </header>
     <ul class="vertical">
-        
 
         
 
@@ -927,16 +936,16 @@ if (!SF.adblock) {
             <a href="#" id="btn-blockthis-close">X</a>
             
   <input type="hidden" name="_visit_cookie" value=""/>
-                <input type='hidden' name='timestamp' value='1468869613'/>
-                <input type='hidden' name='spinner' value='XESWhtK8tI6f5AMvW:8tGK4obIi8'/>
-                <p class='Lb8242d5f6640a4fdc6878e55a3c3d7f70df52134'><label for='XFk3O2spUE5fy2bcWr6K8BOMrr78'>You seem to have CSS turned off.
-             Please don't fill out this field.</label><input id='XFk3O2spUE5fy2bcWr6K8BOMrr78' name='XF03O2spUE6wgfAuCkjFpQrqWsis' type=
+                <input type='hidden' name='timestamp' value='1469048662'/>
+                <input type='hidden' name='spinner' value='XNH8LdSNab5Rfv3sXK6bxUofrnes'/>
+                <p class='I1719cfdf528776a6583103e760f1616e6fcc0843'><label for='XMxdkG0YjX6T_CaYLb0ScZ8rNYHU'>You seem to have CSS turned off.
+             Please don't fill out this field.</label><input id='XMxdkG0YjX6T_CaYLb0ScZ8rNYHU' name='XMhdkG0YjXzTpYmdTycvEH6EWA8c' type=
              'text'/></p>
-                <p class='Lb8242d5f6640a4fdc6878e55a3c3d7f70df52134'><label for='XFk3O2spUE5by2bcWr6K8BOMrr78'>You seem to have CSS turned off.
-             Please don't fill out this field.</label><input id='XFk3O2spUE5by2bcWr6K8BOMrr78' name='XF03O2spUEqwgfAuCkjFpQrqWsis' type=
+                <p class='I1719cfdf528776a6583103e760f1616e6fcc0843'><label for='XMxdkG0YjX6X_CaYLb0ScZ8rNYHU'>You seem to have CSS turned off.
+             Please don't fill out this field.</label><input id='XMxdkG0YjX6X_CaYLb0ScZ8rNYHU' name='XMhdkG0YjXjTpYmdTycvEH6EWA8c' type=
              'text'/></p>
             <p>Briefly describe the problem (required):
-            <input name="XGkHEx8xfSteNaaS48BI6695y2AA" type="text" required>
+            <input name="XPxtuBkAoBuQr1hR5ixAsTsMJ8N4" type="text" required>
             </p>
 
             <div class="upload-text">Upload screenshot of ad (required):</div>
@@ -958,9 +967,9 @@ if (!SF.adblock) {
             </div>
             <p></p>
             <p>Please provide the ad click URL, if possible:
-            <input name="XGEbN3cxGfNKLbMAPhwsSQnA0Sx8" type="url">
+            <input name="XPRxnHEAxMOEt09uh9rq1sOre0M0" type="url">
             </p>
-            <textarea id="gpt-info" name="XFUHAwM4m:ts5VKIs1KJ2phofv_g"></textarea>
+            <textarea id="gpt-info" name="XMBtqAUL62UlD:5l6HuvXrxnHJPY"></textarea>
             <input type="submit" id="btn-blockthis-submit" value="Submit Report">
         </form>
     </div>
@@ -1016,7 +1025,7 @@ if (!SF.adblock) {
     <p>Sign up for the SourceForge newsletter:</p>
     <form action="/user/newsletters/subscribe" method="post">
     <div class="form">
-        <input type="email" name="XFEDM1cZBKH6FwJ:_AeQvGweLJrI"  placeholder="email@address.com" value="">
+        <input type="email" name="XMRpmFEo2zyKCoz_1RpO8dHp1sVI"  placeholder="email@address.com" value="">
     <input type="submit" value="Subscribe" class="bt">
     </div>
     <div class="fielderror"></div>
@@ -1024,29 +1033,29 @@ if (!SF.adblock) {
     <p class="details">
     <span class="fielderror"></span>
     <label>
-        <input type="checkbox" required name="XFkbO2txITdPy2bcWr6K8BOMrr78" value="true" >I agree to receive quotes, newsletters and other information from sourceforge.net and its partners regarding IT services and products. I understand that I can withdraw my consent at any time. Please refer to our <a href="https://slashdotmedia.com/privacy-statement/">Privacy Policy</a> or <a href="/support">Contact Us</a> for more details
-        <input type="hidden" name="XHEvE0ctefMSWbrizlb9N8vbbdkY" value="true">
+        <input type="checkbox" required name="XMxxkG1A_AeD_CaYLb0ScZ8rNYHU" value="true" >I agree to receive quotes, newsletters and other information from sourceforge.net and its partners regarding IT services and products. I understand that I can withdraw my consent at any time. Please refer to our <a href="https://slashdotmedia.com/privacy-statement/">Privacy Policy</a> or <a href="/support">Contact Us</a> for more details
+        <input type="hidden" name="XORFuEEcpMPcw0QhyRdJR5Fr32Qk" value="true">
     </label>
     </p>
 
     <input type="hidden" name="source" value="floating">
-    <input type="hidden" name="XHUbOwcFZUd6mY6SynsCfV0pPS9U" value="PL">
-    <input type="hidden" name="XAkbOwcFZUd6mY6SynpQ1RP9pQUo" value="ip_address">
-    <input type="hidden" name="XGkvEw9xBRtONZbml8BI6695y2AA" value="sitewide">
-    <input type="hidden" name="XGkvEw9xBRtONZbml8BI6695y2AA" value="research">
-    <input type="hidden" name="XGkvEw9xBRtONZbml8BI6695y2AA" value="events">
-    <input type="hidden" name="XGkvEw9xBRtONZbml8BI6695y2AA" value="thirdparty">
-    <input type="hidden" name="XGkvEw9xBRtONZbml8BI6695y2AA" value="all">
-    <input type="hidden" name="XEk7MwaT0X2etaTH5kvvLu46G9QM" value="">
+    <input type="hidden" name="XOBxkAE0uHe0A3BRzTgZHj5uvf4Y" value="PL">
+    <input type="hidden" name="XJxxkAE0uHe0A3BRzTvmCPfKZ_o4" value="ip_address">
+    <input type="hidden" name="XPxFuAlA2CuAr2glkixAsTsMJ8N4" value="sitewide">
+    <input type="hidden" name="XPxFuAlA2CuAr2glkixAsTsMJ8N4" value="research">
+    <input type="hidden" name="XPxFuAlA2CuAr2glkixAsTsMJ8N4" value="events">
+    <input type="hidden" name="XPxFuAlA2CuAr2glkixAsTsMJ8N4" value="thirdparty">
+    <input type="hidden" name="XPxFuAlA2CuAr2glkixAsTsMJ8N4" value="all">
+    <input type="hidden" name="XNxRmAIPssogbXRYiZoAMzKtSgJE" value="">
     
   <input type="hidden" name="_visit_cookie" value=""/>
-    <input type='hidden' name='timestamp' value='1468869613'/>
-    <input type='hidden' name='spinner' value='XESWhtK8tI6f5AMvW:8tGK4obIi8'/>
-    <p class='Lb8242d5f6640a4fdc6878e55a3c3d7f70df52134'><label for='XFk3O2spUEpfy2bcWr6K8BOMrr78'>You seem to have CSS turned off.
-             Please don't fill out this field.</label><input id='XFk3O2spUEpfy2bcWr6K8BOMrr78' name='XF03O2spUE6wgfAuCkjFpQrqWsis' type=
+    <input type='hidden' name='timestamp' value='1469048662'/>
+    <input type='hidden' name='spinner' value='XNH8LdSNab5Rfv3sXK6bxUofrnes'/>
+    <p class='I1719cfdf528776a6583103e760f1616e6fcc0843'><label for='XMxdkG0YjXqT_CaYLb0ScZ8rNYHU'>You seem to have CSS turned off.
+             Please don't fill out this field.</label><input id='XMxdkG0YjXqT_CaYLb0ScZ8rNYHU' name='XMhdkG0YjXzTpYmdTycvEH6EWA8c' type=
              'text'/></p>
-    <p class='Lb8242d5f6640a4fdc6878e55a3c3d7f70df52134'><label for='XFk3O2spUEpby2bcWr6K8BOMrr78'>You seem to have CSS turned off.
-             Please don't fill out this field.</label><input id='XFk3O2spUEpby2bcWr6K8BOMrr78' name='XF03O2spUEqwgfAuCkjFpQrqWsis' type=
+    <p class='I1719cfdf528776a6583103e760f1616e6fcc0843'><label for='XMxdkG0YjXqX_CaYLb0ScZ8rNYHU'>You seem to have CSS turned off.
+             Please don't fill out this field.</label><input id='XMxdkG0YjXqX_CaYLb0ScZ8rNYHU' name='XMhdkG0YjXjTpYmdTycvEH6EWA8c' type=
              'text'/></p>
 </form>
 

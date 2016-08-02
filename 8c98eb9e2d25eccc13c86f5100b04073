@@ -41,24 +41,6 @@
         }, 
         {
             "iseol": false, 
-            "version": "4.5.7", 
-            "moniker": "stable", 
-            "source": "https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.5.7.tar.xz", 
-            "pgp": "https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.5.7.tar.sign", 
-            "released": {
-                "timestamp": 1465348852, 
-                "isodate": "2016-06-08"
-            }, 
-            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/log/?id=refs/tags/v4.5.7", 
-            "changelog": "https://www.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.5.7", 
-            "diffview": "https://git.kernel.org/cgit/linux/kernel/git/stable/linux-stable.git/diff/?id=v4.5.7&id2=v4.5.6&dt=2", 
-            "patch": {
-                "full": "https://www.kernel.org/pub/linux/kernel/v4.x/patch-4.5.7.xz", 
-                "incremental": "https://www.kernel.org/pub/linux/kernel/v4.x/incr/patch-4.5.6-7.xz"
-            }
-        }, 
-        {
-            "iseol": false, 
             "version": "4.4.16", 
             "moniker": "longterm", 
             "source": "https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.4.16.tar.xz", 
@@ -221,15 +203,15 @@
         }, 
         {
             "iseol": false, 
-            "version": "next-20160729", 
+            "version": "next-20160802", 
             "moniker": "linux-next", 
             "source": null, 
             "pgp": null, 
             "released": {
-                "timestamp": 1469767383, 
-                "isodate": "2016-07-29"
+                "timestamp": 1470110371, 
+                "isodate": "2016-08-02"
             }, 
-            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/next/linux-next.git/log/?id=refs/tags/next-20160729", 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/next/linux-next.git/log/?id=refs/tags/next-20160802", 
             "changelog": null, 
             "diffview": null, 
             "patch": {

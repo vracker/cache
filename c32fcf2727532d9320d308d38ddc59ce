@@ -6,7 +6,6 @@
 <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]>--> <html lang="en" class="no-js"> <!--<![endif]-->
     <head>
-        <meta charset="utf-8">
         
         
         
@@ -24,6 +23,8 @@
 
         
         
+
+
 <!--[if lt IE 7 ]>
 <![endif]-->
 
@@ -48,12 +49,13 @@
     <body id="pg_files" class="
     user
      bluesteel
- anonymous">
+ anonymous ">
         
         
 
         <div id="busy-spinner"></div>
         
+
 
 
 
@@ -281,11 +283,16 @@
 
         
 
+
+
         
+
+
         
 <div id="newsletter-floating" class="goth-form">
     <h2>Get latest updates about Open Source Projects, Conferences and News.</h2>
-    <form action="/user/newsletters/subscribe" method="post">
+    
+<form action="/user/newsletters/subscribe" method="post">
     <div class="form">
     </div>
     <div class="fielderror"></div>

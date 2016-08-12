@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /releases</title>
+ </head>
+ <body>
+<h1>Index of /releases</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkg-config-0.18.1.tar.gz">pkg-config-0.18.1.tar.gz</a></td><td align="right">2005-06-29 11:12  </td><td align="right">946K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkg-config-0.19.tar.gz">pkg-config-0.19.tar.gz</a></td><td align="right">2005-07-16 10:25  </td><td align="right">946K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkg-config-0.20.tar.gz">pkg-config-0.20.tar.gz</a></td><td align="right">2005-10-17 05:02  </td><td align="right">947K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkg-config-0.21.tar.gz">pkg-config-0.21.tar.gz</a></td><td align="right">2006-08-16 19:12  </td><td align="right">1.0M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkg-config-0.22.tar.gz">pkg-config-0.22.tar.gz</a></td><td align="right">2007-06-18 21:38  </td><td align="right">1.0M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkg-config-0.23.tar.gz">pkg-config-0.23.tar.gz</a></td><td align="right">2008-01-16 22:54  </td><td align="right">1.0M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkg-config-0.24.tar.gz">pkg-config-0.24.tar.gz</a></td><td align="right">2010-05-23 21:33  </td><td align="right">970K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkg-config-0.25.tar.gz">pkg-config-0.25.tar.gz</a></td><td align="right">2010-05-28 16:12  </td><td align="right">966K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkg-config-0.26.tar.gz">pkg-config-0.26.tar.gz</a></td><td align="right">2011-05-15 12:35  </td><td align="right">387K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkg-config-0.27.1.tar.gz">pkg-config-0.27.1.tar.gz</a></td><td align="right">2012-08-24 12:57  </td><td align="right">1.8M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkg-config-0.27.tar.gz">pkg-config-0.27.tar.gz</a></td><td align="right">2012-07-11 12:30  </td><td align="right">1.8M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkg-config-0.28.tar.gz">pkg-config-0.28.tar.gz</a></td><td align="right">2013-01-24 13:47  </td><td align="right">1.8M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkg-config-0.29.1.tar.gz">pkg-config-0.29.1.tar.gz</a></td><td align="right">2016-03-01 19:43  </td><td align="right">1.9M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="pkg-config-0.29.1.tar.gz.asc">pkg-config-0.29.1.tar.gz.asc</a></td><td align="right">2016-03-04 14:27  </td><td align="right">819 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkg-config-0.29.tar.gz">pkg-config-0.29.tar.gz</a></td><td align="right">2015-09-27 14:08  </td><td align="right">1.9M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="pkg-config-0.29.tar.gz.asc">pkg-config-0.29.tar.gz.asc</a></td><td align="right">2015-09-27 14:11  </td><td align="right">819 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkgconfig-0.3.0.tar.gz">pkgconfig-0.3.0.tar.gz</a></td><td align="right">2003-09-15 13:01  </td><td align="right"> 34K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkgconfig-0.3.1.tar.gz">pkgconfig-0.3.1.tar.gz</a></td><td align="right">2003-09-15 13:01  </td><td align="right"> 34K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkgconfig-0.3.2.tar.gz">pkgconfig-0.3.2.tar.gz</a></td><td align="right">2003-09-15 13:01  </td><td align="right"> 34K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkgconfig-0.3.5.tar.gz">pkgconfig-0.3.5.tar.gz</a></td><td align="right">2003-09-15 13:01  </td><td align="right"> 35K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkgconfig-0.4.0.tar.gz">pkgconfig-0.4.0.tar.gz</a></td><td align="right">2003-09-15 13:01  </td><td align="right">525K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkgconfig-0.4.1.tar.gz">pkgconfig-0.4.1.tar.gz</a></td><td align="right">2003-09-15 13:01  </td><td align="right">526K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkgconfig-0.5.0.tar.gz">pkgconfig-0.5.0.tar.gz</a></td><td align="right">2003-09-15 13:01  </td><td align="right">527K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkgconfig-0.6.0.tar.gz">pkgconfig-0.6.0.tar.gz</a></td><td align="right">2003-09-15 13:01  </td><td align="right">572K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkgconfig-0.7.0.tar.gz">pkgconfig-0.7.0.tar.gz</a></td><td align="right">2003-09-15 13:01  </td><td align="right">571K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkgconfig-0.8.0.tar.gz">pkgconfig-0.8.0.tar.gz</a></td><td align="right">2003-09-15 13:01  </td><td align="right">572K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkgconfig-0.9.0.tar.gz">pkgconfig-0.9.0.tar.gz</a></td><td align="right">2003-09-15 13:01  </td><td align="right">594K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkgconfig-0.10.0.tar.gz">pkgconfig-0.10.0.tar.gz</a></td><td align="right">2003-09-15 13:01  </td><td align="right">588K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkgconfig-0.11.0.tar.gz">pkgconfig-0.11.0.tar.gz</a></td><td align="right">2003-09-15 13:01  </td><td align="right">587K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkgconfig-0.12.0.tar.gz">pkgconfig-0.12.0.tar.gz</a></td><td align="right">2003-09-15 13:01  </td><td align="right">589K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkgconfig-0.13.0.tar.gz">pkgconfig-0.13.0.tar.gz</a></td><td align="right">2003-09-15 13:01  </td><td align="right">597K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkgconfig-0.14.0.tar.gz">pkgconfig-0.14.0.tar.gz</a></td><td align="right">2003-09-15 13:01  </td><td align="right">598K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkgconfig-0.15.0.tar.gz">pkgconfig-0.15.0.tar.gz</a></td><td align="right">2003-09-15 13:01  </td><td align="right">596K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkgconfig-0.16.0.tar.gz">pkgconfig-0.16.0.tar.gz</a></td><td align="right">2005-03-26 16:36  </td><td align="right">936K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkgconfig-0.17.1.tar.gz">pkgconfig-0.17.1.tar.gz</a></td><td align="right">2005-04-12 21:11  </td><td align="right">942K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkgconfig-0.17.2.tar.gz">pkgconfig-0.17.2.tar.gz</a></td><td align="right">2005-04-14 08:41  </td><td align="right">943K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkgconfig-0.17.tar.gz">pkgconfig-0.17.tar.gz</a></td><td align="right">2005-04-12 11:10  </td><td align="right">942K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="pkgconfig-0.18.tar.gz">pkgconfig-0.18.tar.gz</a></td><td align="right">2005-06-27 20:12  </td><td align="right">946K</td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.10 (Debian) Server at pkg-config.freedesktop.org Port 443</address>
+</body></html>

@@ -8,7 +8,7 @@
 <pre><a href="?C=N;O=D">Name</a>                            <a href="?C=M;O=A">Last modified</a>      <a href="?C=S;O=A">Size</a>  <hr><a href="/pub/software/scm/">Parent Directory</a>                                     -   
 <a href="RPMS/">RPMS/</a>                           03-Dec-2010 01:58    -   
 <a href="debian/">debian/</a>                         24-Dec-2005 08:56    -   
-<a href="docs/">docs/</a>                           15-Jul-2016 22:02    -   
+<a href="docs/">docs/</a>                           12-Aug-2016 20:02    -   
 <a href="testing/">testing/</a>                        07-Jun-2016 05:54    -   
 <a href="git-0.01.tar.gz">git-0.01.tar.gz</a>                 07-Apr-2005 21:25   40K  
 <a href="git-0.01.tar.sign">git-0.01.tar.sign</a>               08-Aug-2013 19:44  665   
@@ -889,6 +889,6 @@
 <a href="git-manpages-2.9.3.tar.gz">git-manpages-2.9.3.tar.gz</a>       12-Aug-2016 19:49  615K  
 <a href="git-manpages-2.9.3.tar.sign">git-manpages-2.9.3.tar.sign</a>     12-Aug-2016 19:49  543   
 <a href="git-manpages-2.9.3.tar.xz">git-manpages-2.9.3.tar.xz</a>       12-Aug-2016 19:49  383K  
-<a href="sha256sums.asc">sha256sums.asc</a>                  15-Jul-2016 21:22   53K  
+<a href="sha256sums.asc">sha256sums.asc</a>                  12-Aug-2016 20:07   53K  
 <hr></pre>
 </body></html>

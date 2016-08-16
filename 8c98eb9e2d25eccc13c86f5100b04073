@@ -5,19 +5,19 @@
     "releases": [
         {
             "iseol": false, 
-            "version": "4.8-rc1", 
+            "version": "4.8-rc2", 
             "moniker": "mainline", 
-            "source": "https://www.kernel.org/pub/linux/kernel/v4.x/testing/linux-4.8-rc1.tar.xz", 
-            "pgp": "https://www.kernel.org/pub/linux/kernel/v4.x/testing/linux-4.8-rc1.tar.sign", 
+            "source": "https://www.kernel.org/pub/linux/kernel/v4.x/testing/linux-4.8-rc2.tar.xz", 
+            "pgp": "https://www.kernel.org/pub/linux/kernel/v4.x/testing/linux-4.8-rc2.tar.sign", 
             "released": {
-                "timestamp": 1470619095, 
-                "isodate": "2016-08-08"
+                "timestamp": 1471227109, 
+                "isodate": "2016-08-15"
             }, 
-            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/log/?id=refs/tags/v4.8-rc1", 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/log/?id=refs/tags/v4.8-rc2", 
             "changelog": null, 
-            "diffview": "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/diff/?id=v4.8-rc1&id2=v4.7&dt=2", 
+            "diffview": "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/diff/?id=v4.8-rc2&id2=v4.8-rc1&dt=2", 
             "patch": {
-                "full": "https://www.kernel.org/pub/linux/kernel/v4.x/testing/patch-4.8-rc1.xz", 
+                "full": "https://www.kernel.org/pub/linux/kernel/v4.x/testing/patch-4.8-rc2.xz", 
                 "incremental": null
             }
         }, 
@@ -221,15 +221,15 @@
         }, 
         {
             "iseol": false, 
-            "version": "next-20160812", 
+            "version": "next-20160816", 
             "moniker": "linux-next", 
             "source": null, 
             "pgp": null, 
             "released": {
-                "timestamp": 1470974425, 
-                "isodate": "2016-08-12"
+                "timestamp": 1471319974, 
+                "isodate": "2016-08-16"
             }, 
-            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/next/linux-next.git/log/?id=refs/tags/next-20160812", 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/next/linux-next.git/log/?id=refs/tags/next-20160816", 
             "changelog": null, 
             "diffview": null, 
             "patch": {

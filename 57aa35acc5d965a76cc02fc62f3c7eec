@@ -835,20 +835,6 @@ Vladislav Grishenko (1):
     </p>
   </li>
 
-  <li><b>23 March 2015 -- BusyBox 1.23.2 (stable)</b>
-    <p><a href="http://busybox.net/downloads/busybox-1.23.2.tar.bz2">BusyBox 1.23.2</a>.
-    (<a href="http://git.busybox.net/busybox/tree/?h=1_23_stable">git</a>,
-    <a href="http://busybox.net/downloads/fixes-1.23.2/">patches</a>,
-    <a href="http://busybox.net/fix.html">how to add a patch</a>)</p>
-
-    <p>Bug fix release. 1.23.2 has fixes for
-    dc (more tolerant to lack of whitespace),
-    modinfo (was not ignoring directory component of path names in a few places),
-    modprobe (better compatibility for "rmmod" alias),
-    wget (--header now overrides built-in headers, not appends to).
-    </p>
-  </li>
-
   <li><b>27 January 2015 -- BusyBox 1.23.1 (stable)</b>
     <p><a href="http://busybox.net/downloads/busybox-1.23.1.tar.bz2">BusyBox 1.23.1</a>.
     (<a href="http://git.busybox.net/busybox/tree/?h=1_23_stable">git</a>,

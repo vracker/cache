@@ -1,72 +1,31 @@
 <!doctype html>
-
 <!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
 <!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
 <!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
 <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]>--> <html lang="en" class="no-js"> <!--<![endif]-->
     <head>
-        
-        
-        
-        
-        
-        
         <meta id="project_name" name="project_name" content="expect">
-        
         <meta name="description" content="Expect is a tool for automating interactive applications such as telnet, ftp, passwd, fsck, rlogin, tip, etc. Expect is also useful for testing these …">
         <meta name="keywords" content="Software Development, Systems Administration,  Open Source, Open Source Software, Development, Community, Source Code, Secure,  Downloads, Free Software">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Expect -  Browse /Expect at SourceForge.net</title>
         <link rel="shortcut icon" href="//a.fsdn.com/con/img/sftheme/favicon.ico">
-        
 <!-- CCM Tag -->
 <!-- End CCM Tag -->
-
-        
-        
-
-
 <!--[if lt IE 7 ]>
 <![endif]-->
-
 <link href='//fonts.googleapis.com/css?family=Ubuntu:regular' rel='stylesheet' type='text/css'>
  <link rel="stylesheet" href="//a.fsdn.com/con/css/sf.css" type="text/css">
-
-
-
-        
-
-
-
    <!-- GPT Slot Definitions -->
-
-        
-
-        
-
-
     </head>
     <body id="pg_files" class="
     user
      bluesteel
  anonymous ">
-        
-        
-
         <div id="busy-spinner"></div>
-        
-
-
-
-
-
-        
 <div id="messages">
 </div>
-
-
-
         <div id="page-body">
     <div id="files">
       <div class="download-bar">Looking for the latest version? <strong>
@@ -76,19 +35,12 @@
             </strong>
         </div><div class="files-breadcrumb">
             <span class="actions"><a href="/projects/expect/rss?path=/Expect" title="Monitor this project's files using RSS" data-icon="f" class="ico ico-feed"></a></span>
-            
                 <a id="home" href="/projects/expect/files/" title="Files root directory">
-            
             Home
-            
                 </a>
                 /
-            
-            
             <span class="current-dir">Expect</span>
-
         </div>
-
         <table id="files_list" title="This is a list of the files for this project">
             <col class="name-column">
             <col class="date-column">
@@ -103,11 +55,9 @@
                     <th title="The weekly download count" id="files_downloads_h" class="opt">Downloads / Week</th>
                     <th title="A snapshot of the file or folder's status" id="files_status_h" class="typesort">Status</th>
                 </tr>
-                
                     <tr>
                         <th colspan="5" class="first" id="parent_folder"><a href=".." title="One level up"><span data-icon="{" class="onelevup ico ico-uparrow"></span>Parent folder</a></th>
                     </tr>
-                
             </thead>
             <tfoot>
                 <tr>
@@ -115,16 +65,12 @@
                     <td class="opt">&nbsp;</td>
                     <td headers="files_size_h" class="opt"></td>
                     <td headers="files_status_h">
-                        
                     </td>
                 </tr>
             </tfoot>
             <tbody>
-                
                 <tr title="5.45" class="folder ">
                     <th scope="row" headers="files_name_h"><span data-icon="o" class="ico ico-folder"></span>
-                        
-                        
                         <a href="/projects/expect/files/Expect/5.45/"
                            title="Click to enter 5.45"
                            class="name">
@@ -135,8 +81,6 @@
                 </tr>
                 <tr title="5.44.1.15" class="folder ">
                     <th scope="row" headers="files_name_h"><span data-icon="o" class="ico ico-folder"></span>
-                        
-                        
                         <a href="/projects/expect/files/Expect/5.44.1.15/"
                            title="Click to enter 5.44.1.15"
                            class="name">
@@ -150,43 +94,22 @@
         <div id="files-drawer" class="fs-widget fs-drawer consumer">
         </div>
     </div>
-
-    
     <div id="files-sidebar" class="scroll-fixable" data-floor-compensate="145">
         <div class="sterling">
-        
-
-
-
-
-    
-    
-
-
-
 <div id="SF_ProjectFiles_300x250_A_wrapped" class="draper multisize  " data-unit="SF_ProjectFiles_300x250_A">
 </div>
-
-
         </div>
                 <aside class="sidebar-widget">
     <ul class="vertical">
-
-        
-
-            
                 <li class="item odd">
                 <a href="/projects/e2fsprogs/?source=recommended" title="Ext2 Filesystems Utilities"><img alt="Icon" src="//a.fsdn.com/con/img/project_default.png" /></a>
                 <div class="pinfo-content recommended">
                 <a class="project-name" href="/projects/e2fsprogs/?source=recommended"
                         title="Learn more about Ext2 Filesystems Utilities ">Ext2 Filesystems Utilities</a>
                         <div class="summary">
-                        
                         </div>
                     </div>
-
             </li>
-            
                 <li class="item even">
                 <a href="/projects/psmisc/?source=recommended" title="psmisc"><img alt="Icon" src="//a.fsdn.com/con/img/project_default.png" /></a>
                 <div class="pinfo-content recommended">
@@ -196,72 +119,28 @@
                         Old location for psmisc
                         </div>
                     </div>
-
             </li>
-            
                 <li class="item odd last">
                 <a href="/projects/tcl/?source=recommended" title="Tcl"><img alt="Icon" src="//a.fsdn.com/allura/p/tcl/icon" /></a>
                 <div class="pinfo-content recommended">
                 <a class="project-name" href="/projects/tcl/?source=recommended"
                         title="Learn more about Tcl ">Tcl</a>
                         <div class="summary">
-                        
                         </div>
                     </div>
-
             </li>
-            
-        
     </ul>
 </aside>
-
-
-        
-
-
-
-
-    
-
-
-
 <div id="SF_ProjectFiles_300x250_B_wrapped" class="draper medrec  " data-unit="SF_ProjectFiles_300x250_B">
 </div>
-
-
-
-        
                 <div class="sterling" id="deals-widget">
-                    
     <aside class="sidebar-widget stackcommerce-widget">
-            
-
-
-
-
-    
-
-
-
 <div id="SF-300x250_wrapped" class="draper medrec  " data-unit="SF-300x250">
 </div>
-
-
     </aside>
-    
-
                 </div>
-            
-        
     </div>
-    
-    
-
         </div>
-        
-
-        
-            
     <div id="overlay-blockthis-wrapper">
     <div id="overlay-blockthis">
         <div class="instructions">
@@ -270,17 +149,13 @@
         </div>
         <form class="dropzone" action="/api/instrumentation/gpt" id="blockthisForm" method="POST">
             <a href="#" id="btn-blockthis-close">X</a>
-            
-
             <div class="upload-text">Upload screenshot of ad (required):</div>
             <div id='upload-it'>
                 <a href="#" onclick="return false">Select a file</a>, or drag & drop file here.
             </div>
             <div id="upload-it-placeholder"></div> 
-
             <div class="dropzone-previews" style="display: none"></div>
             <div class="dz-message" style="display: none"></div> 
-            
             <div id="dropzone-preview-template" style="display: none">
                 <div class="dz-preview dz-file-preview">
                     <img data-dz-thumbnail src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt=""/>
@@ -292,39 +167,14 @@
         </form>
     </div>
     </div>
-
-        
-
-
-
-        
-
-
-        
 <div id="newsletter-floating" class="goth-form">
     <h2>Get latest updates about Open Source Projects, Conferences and News.</h2>
-    
 <form action="/user/newsletters/subscribe" method="post">
     <div class="form">
     </div>
     <div class="fielderror"></div>
-
-
-    
 </form>
-
     <a id="btn-float-close">No, thanks</a>
 </div>
-
-        
-
-        
-
-
-
-
-
-        
       </body>
 </html>
-

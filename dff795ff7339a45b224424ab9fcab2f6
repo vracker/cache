@@ -156,7 +156,7 @@ More news? Let gerald@pfeifer.com know!
 
 
 </td><td class="status" valign="top">
-<h2>Releases</h2>
+<h2>Supported Releases</h2>
 <dl>
 
 <dt><span class="version"><a href="gcc-6/">GCC 6.2</a></span>
@@ -373,7 +373,7 @@ permitted in any medium, provided this notice is preserved.</p>
 
 <p>These pages are
 <a href="https://gcc.gnu.org/about.html">maintained by the GCC team</a>.
-Last modified 2016-08-25<!-- IGNORE DIFF
+Last modified 2016-09-30<!-- IGNORE DIFF
 --><a href="http://validator.w3.org/check/referer">.</a></p>
 
 </div>

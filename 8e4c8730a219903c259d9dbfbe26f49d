@@ -30,7 +30,7 @@ var g_onload = function() {};
       <div class='hdrlink black'>
         <a href='download.php'>
         <div class='hdrtop white'>DOWNLOAD REAPER</div>
-        <div class='hdrbottom'>Version 5.25: September 20, 2016</div>
+        <div class='hdrbottom'>Version 5.26: October 6, 2016</div>
         </a>
       </div>
       <div style='height:11px;'></div>
@@ -110,7 +110,7 @@ var g_onload = function() {};
         <p>The Windows version also works well with <a href="https://www.winehq.org/" target="_blank" rel="noopener noreferrer">WINE</a>.
       </div>
       <div style='width:320px; float:right;'>
-        <p>REAPER supports all OS X versions from 10.5<span onmouseover='document.getElementById("r475").style.display = "inline";' style='vertical-align:super; font-size:7pt; font-weight:lighter;'>*</span> to 10.11.</p> 
+        <p>REAPER supports all macOS X versions from 10.5<span onmouseover='document.getElementById("r475").style.display = "inline";' style='vertical-align:super; font-size:7pt; font-weight:lighter;'>*</span> to 10.12.</p> 
         <div style='display:none;' id='r475'>Some features may require OS X 10.7+. For OS X 10.4 and PPC support, use <a href="download-old.php?ver=4x#r475">REAPER v4.75</a>.</div>
       </div>
   </div>
@@ -129,24 +129,24 @@ var g_onload = function() {};
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>Windows 32-bit</div>
   <div class='downloadinfo'>
-REAPER v5.25 - 9MB<br>
+REAPER v5.26 - 9MB<br>
 Windows XP/Vista/7/8/10<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper525-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper526-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
       <div style='background-color:#313131;height:1px;margin-bottom:20px;'></div>
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>Windows 64-bit</div>
   <div class='downloadinfo'>
-REAPER v5.25 - 11MB<br>
+REAPER v5.26 - 11MB<br>
 Windows XP/Vista/7/8/10 x64<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper525_x64-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper526_x64-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
     </div>
@@ -155,31 +155,31 @@ Windows XP/Vista/7/8/10 x64<br>
   <div style='width:480px; float:right; margin-top:40px; background-color:#1F1F1F;'>
     <div style='width:165px; float:left; margin-top:39px; text-align:center;'>
       <img src="v5img/dl_osx.jpg">
-      <div class="heading">OS X</div>
+      <div class="heading">macOS</div>
     </div>
 
     <div style='width:300px; float:right; margin-top:20px;'>
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>OS X 32-bit</div>
   <div class='downloadinfo'>
-REAPER v5.25 - 14MB<br>
-OS X 10.5-10.11<br>
+REAPER v5.26 - 14MB<br>
+OS X 10.5-10.12<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper525_i386.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper526_i386.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
       <div style='background-color:#313131;height:1px;margin-bottom:20px;'></div>
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>OS X 64-bit</div>
   <div class='downloadinfo'>
-REAPER v5.25 - 16MB<br>
-OS X 10.5-10.11<br>
+REAPER v5.26 - 16MB<br>
+OS X 10.5-10.12<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper525_x86_64.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper526_x86_64.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
     </div> 
@@ -190,138 +190,78 @@ OS X 10.5-10.11<br>
 <div class='dark strip'>
   <div style='background-color:#4E5454;height:1px;margin-top:40px;'></div>
   <div style='margin-top:30px;margin-bottom:30px;'>
-    <div class='heading'>REAPER 5.25: We are great programmers, folks. We make the best software. Really terrific software.  Everybody says it's the best.  (applause)</div>
+    <div class='heading'>REAPER 5.26: We are great programmers, folks. We make the best software. Really terrific software.  Everybody says it's the best.  (applause)</div>
     <div style='width:1000px; -webkit-column-count: 3; -moz-column-count: 3; column-count: 3;'><a name="whatsnew"></a>
 <div class='avoidbreak'>
-<div class='bold'>FX</div><ul class='bullet'>
-<li> add option to ignore FX chain keyboard shortcuts and send keys to main window
-<li> increase channel count as needed on copy/paste of FX, FX chains
-<li> increase channel count as needed on drag and drop FX to item take FX
-<li> improve bypass checkbox positioning <a href="http://forum.cockos.com/showpost.php?p=1727082" target="blank"><span class='whatsnewdot'>.</span></a>
-<li> store comments in FX chains, copy/paste <a href="http://forum.cockos.com/showthread.php?t=181190" target="blank"><span class='whatsnewdot'>.</span></a>
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Timestretch</div><ul class='bullet'>
-<li> fix potential glitch on source loop <a href="http://forum.cockos.com/showpost.php?p=1727604" target="blank"><span class='whatsnewdot'>.</span></a>
-<li> improve media explorer timestretch behavior with looped preview
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>VST</div><ul class='bullet'>
-<li> fix udetection of used channels
-<li> improve behavior when initializing resizeable VST3 UIs <a href="http://forum.cockos.com/showthread.php?t=181147" target="blank"><span class='whatsnewdot'>.</span></a>
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>MIDI</div><ul class='bullet'>
-<li> improve behavior when stopping overdub/replace recording with held notes <a href="http://forum.cockos.com/showthread.php?t=180453" target="blank"><span class='whatsnewdot'>.</span></a>
-<li> fix overdub/replace recording to MIDI items that ignore project tempo
-<li> restore 5.1x behavior of preserving overlapping notes that have different selection/mute states
-<li> add option to export project markers as either MIDI cue or MIDI marker event type <a href="http://forum.cockos.com/showthread.php?t=181236" target="blank"><span class='whatsnewdot'>.</span></a>
-<li> support export of tempo/time signature information to type 0 MIDI files <a href="http://forum.cockos.com/showthread.php?t=181260" target="blank"><span class='whatsnewdot'>.</span></a>
-<li> on multitrack import, do not import events from the header track into the first imported media item
-<li> allow resizing pooled MIDI via API using PCM_SOURCE_EXT_SETSIZE by using flags
-<li> fix copy/paste of notes with large PPQN values
-<li> fix incorrect parsing of multiple note-ons in a row <a href="http://forum.cockos.com/showthread.php?t=181338" target="blank"><span class='whatsnewdot'>.</span></a>
-</ul>
-</div>
-<div class='avoidbreak'>
 <div class='bold'>MIDI editor</div><ul class='bullet'>
-<li> draw events at their precise integer MIDI tick location in piano roll view <a href="http://forum.cockos.com/showpost.php?p=1726217" target="blank"><span class='whatsnewdot'>.</span></a>
-<li> fix CC display with multiple overlapping channels <a href="http://forum.cockos.com/showthread.php?t=177453" target="blank"><span class='whatsnewdot'>.</span></a>
-<li> prevent drawing zero-length MIDI notes
-<li> fix resizing CC lanes when many lanes are displayed
-<li> fix duplicate messages when editing bank/program event channel <a href="http://forum.cockos.com/showthread.php?t=180005" target="blank"><span class='whatsnewdot'>.</span></a>
-<li> fix marquee selection drawing when many CC lanes are displayed <a href="http://forum.cockos.com/showthread.php?t=181235" target="blank"><span class='whatsnewdot'>.</span></a>
-<li> improve move cursor left/right actions for items which do not start on grid <a href="http://forum.cockos.com/showthread.php?t=181575" target="blank"><span class='whatsnewdot'>.</span></a>
-<li> properly round event position when editing via list view or event properties dialog <a href="http://forum.cockos.com/showpost.php?p=1726314" target="blank"><span class='whatsnewdot'>.</span></a>
-<li> restore track list, notation, and other displayed data when bringing file-based MIDI online after switching focus away <a href="http://forum.cockos.com/showthread.php?t=181327" target="blank"><span class='whatsnewdot'>.</span></a>
+<li> fix bug in action to adjust event via mousewheel <a href="http://forum.cockos.com/showthread.php?t=136953" target="blank"><span class='whatsnewdot'>.</span></a>
+<li> fix inline CC lane resizing <a href="http://forum.cockos.com/showthread.php?t=182225" target="blank"><span class='whatsnewdot'>.</span></a>
+<li> fix timeline context menu and behavior when displaying project markers but not regions
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Notation editor</div><ul class='bullet'>
-<li> add actions to explicitly minimize or un-minimize ties for selected notes <a href="http://forum.cockos.com/showthread.php?t=180345" target="blank"><span class='whatsnewdot'>.</span></a>
-<li> add preference to minimize ties for all notes by default <a href="http://forum.cockos.com/showthread.php?t=180345" target="blank"><span class='whatsnewdot'>.</span></a>
-<li> automatically position digits for beamed tuplets, improve bracket positioning for non-beamed tuplets <a href="http://forum.cockos.com/showpost.php?p=1726081" target="blank"><span class='whatsnewdot'>.</span></a>
-<li> change voice for selected notes if appropriate when creating/modifying tuplets <a href="http://forum.cockos.com/showpost.php?p=1726071" target="blank"><span class='whatsnewdot'>.</span></a>
+<div class='bold'>MIDI export</div><ul class='bullet'>
+<li> fix error reporting when export fails
+<li> fix time selection export of tempo changes and project markers <a href="http://forum.cockos.com/showpost.php?p=1733871" target="blank"><span class='whatsnewdot'>.</span></a>
+<li> optionally write SMPTE offset
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>JSFX</div><ul class='bullet'>
-<li> add fft_real/ifft_real (thanks Tale)
-<li> fix used-channel detection for MIDI-only processors
-<li> update many stock plug-ins to define their I/O
+<div class='bold'>MIDI import</div><ul class='bullet'>
+<li> display SMPTE offset in media source properties, use offset when running "move items to source preferred position" action
+<li> improve support for type 1 MIDI files that contain one track
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Actions</div><ul class='bullet'>
-<li> support importing/exporting OSC bindings to ReaperKeyMap files
+<div class='bold'>MusicXML</div><ul class='bullet'>
+<li> support importing/exporting multi-layer music
+<li> fix export positioning of music following dynamic or pedal notation
+<li> fix import when default MIDI ppq has been customized
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Automation</div><ul class='bullet'>
-<li> improve point paste edge case behavior <a href="http://forum.cockos.com/showthread.php?t=180798" target="blank"><span class='whatsnewdot'>.</span></a>
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Control surfaces</div><ul class='bullet'>
-<li> fix potential MCU crash when managing selection state
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Dynamic split</div><ul class='bullet'>
-<li> improve handling of existing stretch markers
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Media import</div><ul class='bullet'>
-<li> if imported media contains title information, use this to name the track rather than "title - filename" <a href="http://forum.cockos.com/showpost.php?p=1730090" target="blank"><span class='whatsnewdot'>.</span></a>
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Performance meter</div><ul class='bullet'>
-<li> fix some display arrangement issues when changing view options
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>ReaSurround</div><ul class='bullet'>
-<li> allow adjusting speaker parameters en masse using ctrl+alt+slider
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Render</div><ul class='bullet'>
-<li> clear transport button state when rendering <a href="http://forum.cockos.com/showthread.php?t=181231" target="blank"><span class='whatsnewdot'>.</span></a>
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Take lanes</div><ul class='bullet'>
-<li> add option for clicking take lane changes active take for multiple selected items <a href="http://forum.cockos.com/showpost.php?p=1727092" target="blank"><span class='whatsnewdot'>.</span></a>
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Tracks</div><ul class='bullet'>
-<li> improve reordering of tracks when dragging tracks upwards in place <a href="http://forum.cockos.com/showpost.php?p=1728883" target="blank"><span class='whatsnewdot'>.</span></a>
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Transient guides</div><ul class='bullet'>
-<li> avoid adding duplicate stretch markers to self, grouped items
+<div class='bold'>Notation</div><ul class='bullet'>
+<li> add action to select all notes in staff
+<li> fix crash with automatically detected triplets and certain display quantization settings <a href="http://forum.cockos.com/showpost.php?p=1735141" target="blank"><span class='whatsnewdot'>.</span></a>
+<li> fix duplicate notation events when editing after glue <a href="http://forum.cockos.com/showpost.php?p=1736942" target="blank"><span class='whatsnewdot'>.</span></a>
 </ul>
 </div>
 <div class='avoidbreak'>
 <div class='bold'>Undo</div><ul class='bullet'>
-<li> do not add undo point when dragging does not result in reordering tracks <a href="http://forum.cockos.com/showpost.php?p=1728883" target="blank"><span class='whatsnewdot'>.</span></a>
+<li> preserve selected envelope on undo/redo
+<li> update UI while audio threads locked, for faster response on heavy projects
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Wave</div><ul class='bullet'>
-<li> support reading incomplete .wav files with 0-length data chunk
+<div class='bold'>VST</div><ul class='bullet'>
+<li> fix various VST3 UI bugs <a href="http://forum.cockos.com/showthread.php?t=181801" target="blank"><span class='whatsnewdot'>.</span></a> <a href="http://forum.cockos.com/showthread.php?t=182045" target="blank"><span class='whatsnewdot'>.</span></a>
+<li> reduce preset change undo points with certain VST3 plug-ins <a href="http://forum.cockos.com/showthread.php?t=181659" target="blank"><span class='whatsnewdot'>.</span></a>
+<li> improve handling of duplicate program names
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Windows</div><ul class='bullet'>
-<li> improve behavior of single track send, media item properties windows with large fonts/scrollbars
+<div class='bold'>FX</div><ul class='bullet'>
+<li> increase media item take channel count when inserting multichannel FX on multichannel track <a href="http://forum.cockos.com/showpost.php?p=1732931" target="blank"><span class='whatsnewdot'>.</span></a>
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>macOS</div><ul class='bullet'>
+<li> improve CoreAudio MIDI hardware input/output timing
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Project cleanup</div><ul class='bullet'>
+<li> fix issue with some UTF-8 filenames <a href="http://forum.cockos.com/showthread.php?t=181692" target="blank"><span class='whatsnewdot'>.</span></a>
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Transport</div><ul class='bullet'>
+<li> use minimum height for transport text edit fields <a href="http://forum.cockos.com/showthread.php?t=181835" target="blank"><span class='whatsnewdot'>.</span></a>
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Video</div><ul class='bullet'>
+<li> fix gfx_str_draw FX color
 </ul>
 </div>
     </div>

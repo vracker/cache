@@ -130,6 +130,20 @@
 
 
 
+  <li><b>7 October 2016 -- BusyBox 1.25.1 (stable)</b>
+    <p><a href="http://busybox.net/downloads/busybox-1.25.1.tar.bz2">BusyBox 1.25.1</a>.
+    (<a href="http://git.busybox.net/busybox/tree/?h=1_25_stable">git</a>,
+    <a href="http://busybox.net/downloads/fixes-1.25.1/">patches</a>,
+    <a href="http://busybox.net/fix.html">how to add a patch</a>)</p>
+
+    <p>Bug fix release. 1.25.1 has fixes for
+    hush (newer glibc has different behavior on fflush; fix use-after-free for exported variables),
+    gunzip (incorrect handling of -N "compression level" options),
+    ip route (scope "Universe", numerical value zero, wasn't always set properly),
+    ntpd (check type of incoming packet, respond only to client requests).
+    </p>
+  </li>
+
   <li><b>22 June 2016 -- BusyBox 1.25.0 (unstable)</b>
     <p><a href="http://busybox.net/downloads/busybox-1.25.0.tar.bz2">BusyBox 1.25.0</a>.
     (<a href="http://git.busybox.net/busybox/tree/?h=1_25_stable">git</a>,
@@ -428,7 +442,7 @@ Yann E. MORIN (1):
 
     <p>Bug fix release. 1.24.2 has fixes for
     build system (static build with glibc fixed),
-    truncate, gunzin and unzip.
+    truncate, gunzip and unzip.
     </p>
   </li>
 

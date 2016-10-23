@@ -40,7 +40,7 @@
             }
         }, 
         {
-            "iseol": false, 
+            "iseol": true, 
             "version": "4.7.10", 
             "moniker": "stable", 
             "source": "https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.7.10.tar.xz", 

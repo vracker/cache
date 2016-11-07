@@ -5,6 +5,49 @@
 <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]>--> <html lang="en" class="no-js"> <!--<![endif]-->
     <head>
+            SF.Ads.prebidOptions = {
+                showIndicators: false,
+                analytics: true
+            };
+            SF.Ads.prebidUnits = [{
+                    bids: [{'params': {'siteId': '103240', 'position': 'atf', 'sizes': [2], 'accountId': '15680', 'zoneId': '486110'}, 'bidder': 'rubicon'},
+                            {'params': {'placementId': 8841121}, 'bidder': 'brealtime'},
+                            {'params': {'tagid': '364648'}, 'bidder': 'sovrn'},
+                            {'params': {'placement': 4224498, 'network': '10676.1'}, 'bidder': 'aol'},
+                            {'params': {'cp': 558092, 'cf': '728x90', 'ct': '472223'}, 'bidder': 'pulsepoint'},
+                            {'params': {'placementId': 9265078}, 'bidder': 'appnexus'},
+                            ],
+                    code: 'div-gpt-ad-1393435113147-0',
+                    sizes: [728, 90],
+                    tag: 'SF_ProjectFiles_728x90_A'
+                },
+            {
+                    bids: [{'params': {'placement': 4224505, 'network': '10676.1'}, 'bidder': 'aol'},
+                            {'params': {'tagid': '364646'}, 'bidder': 'sovrn'},
+                            {'params': {'placementId': 9265076}, 'bidder': 'appnexus'},
+                            {'params': {'placementId': 9319285}, 'bidder': 'brealtime'},
+                            {'params': {'siteId': '103240', 'position': 'atf', 'sizes': [15, 10], 'accountId': '15680', 'zoneId': '486110'}, 'bidder': 'rubicon'},
+                            {'params': {'cp': 558092, 'cf': '300x250', 'ct': '472221'}, 'bidder': 'pulsepoint'},
+                            ],
+                    code: 'div-gpt-ad-1392147725721-0',
+                    sizes: [[300, 250], [300, 600], [300, 1050]],
+                    tag: 'SF_ProjectFiles_300x250_A'
+                },
+            {
+                    bids: [{'params': {'placementId': 8829468}, 'bidder': 'brealtime'},
+                            {'params': {'placement': 4224503, 'network': '10676.1'}, 'bidder': 'aol'},
+                            {'params': {'siteId': '103240', 'sizes': [15], 'accountId': '15680', 'zoneId': '486112'}, 'bidder': 'rubicon'},
+                            {'params': {'cp': 558092, 'cf': '300x250', 'ct': '472222'}, 'bidder': 'pulsepoint'},
+                            {'params': {'tagid': '364647'}, 'bidder': 'sovrn'},
+                            {'params': {'placementId': 9265082}, 'bidder': 'appnexus'},
+                            ],
+                    code: 'div-gpt-ad-1392148208789-0',
+                    sizes: [300, 250],
+                    tag: 'SF_ProjectFiles_300x250_B'
+                }
+            ];
+            SF.Ads.prebidAdjustments = {"bidder_deflations": {"sovrn": 1.015, "aardvark": 0.0099, "aol": 0.79, "brealtime": 0.875, "rubicon": 0.985, "pulsepoint": 0.975, "appnexus": 0.93}, "inflation": 1.15};
+        </script>
         <meta id="project_name" name="project_name" content="expect">
         <meta name="description" content="Expect is a tool for automating interactive applications such as telnet, ftp, passwd, fsck, rlogin, tip, etc. Expect is also useful for testing these …">
         <meta name="keywords" content="Software Development, Systems Administration,  Open Source, Open Source Software, Development, Community, Source Code, Secure,  Downloads, Free Software">

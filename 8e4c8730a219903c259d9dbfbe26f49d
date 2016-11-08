@@ -25,7 +25,7 @@ function hidebanner() {
 var g_onload = function() {
 
   var t = document.getElementById("banner");
-  if (t) { 
+  if (t && (new Date) < (new Date(2016,10,8,19,0,0))) { 
     var s = '';
 //     s += '<div style="float: right; background: #ffd; margin-top:12px; margin-right:8px; padding: 8px; padding-left: 11px; padding-right: 11px;" onclick="hidebanner();">X</div>';
    s+= '<div width=100% style="blackground:black; padding:3px;"></div>';

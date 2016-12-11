@@ -17,37 +17,8 @@ function showHeaderMenu(nm) {
   return false;
 }
 
-function hidebanner() {
-  document.cookie="nov6ok=-1"; 
-  document.getElementById("banner").innerHTML="";
-}
 
 var g_onload = function() {
-
-  var t = document.getElementById("banner");
-  if (t && (new Date) < (new Date(2016,10,8,19,0,0))) { 
-    var s = '';
-//     s += '<div style="float: right; background: #ffd; margin-top:12px; margin-right:8px; padding: 8px; padding-left: 11px; padding-right: 11px;" onclick="hidebanner();">X</div>';
-   s+= '<div width=100% style="blackground:black; padding:3px;"></div>';
-     s += '<div width=100% style="background: white; text-align: center; padding:5px; font-size:20px;">PLEASE VOTE!</div><div style="background: white; padding-bottom: 7px; text-align:center; font-size:12px;">';
-    var urls =  [
-"http://www.nytimes.com/2016/09/25/opinion/sunday/hillary-clinton-for-president.html",
-"http://www.theatlantic.com/magazine/archive/2016/11/the-case-for-hillary-clinton-and-against-donald-trump/501161/",
-"https://www.washingtonpost.com/opinions/hillary-clinton-for-president/2016/10/12/665f9698-8caf-11e6-bf8a-3d26847eeed4_story.html",
-"http://www.usatoday.com/story/opinion/2016/09/29/dont-vote-for-donald-trump-editorial-board-editorials-debates/91295020/",
-"https://www.wired.com/2016/08/wired-endorses-hillary-clinton/",
-"http://www.newyorker.com/magazine/2016/10/31/the-new-yorker-endorses-hillary-clinton",
-"https://www.bostonglobe.com/opinion/editorials/2016/10/08/hillary-clinton-for-president/FskxtCff9ErrN3TW4OJb6O/story.html",
-"https://www.scientificamerican.com/article/donald-trump-s-lack-of-respect-for-science-is-alarming/",
-"http://yalerecord.org/2016/10/26/the-yale-record-does-not-endorse-hillary-clinton/",
-    ];
-    for (var x in urls) {
-      s += '&nbsp;<a href="' + urls[x] + '" target="_blank" rel=nofollow>&bull;</a>';
-    }
-
-    s += '</div>';
-    t.innerHTML = s;
-  }
 
 
 };
@@ -56,7 +27,7 @@ var g_onload = function() {
 
 </head>
 <body onLoad="g_onload();">
-<div id="banner"></div>
+
 <div class='black'>
   <div class='strip'>
 
@@ -64,7 +35,7 @@ var g_onload = function() {
       <div class='hdrlink black'>
         <a href='download.php'>
         <div class='hdrtop white'>DOWNLOAD REAPER</div>
-        <div class='hdrbottom'>Version 5.28: November 7, 2016</div>
+        <div class='hdrbottom'>Version 5.29: November 26, 2016</div>
         </a>
       </div>
       <div style='height:11px;'></div>
@@ -163,24 +134,24 @@ var g_onload = function() {
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>Windows 32-bit</div>
   <div class='downloadinfo'>
-REAPER v5.28 - 9MB<br>
+REAPER v5.29 - 9MB<br>
 Windows XP/Vista/7/8/10<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper528-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper529-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
       <div style='background-color:#313131;height:1px;margin-bottom:20px;'></div>
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>Windows 64-bit</div>
   <div class='downloadinfo'>
-REAPER v5.28 - 11MB<br>
+REAPER v5.29 - 11MB<br>
 Windows XP/Vista/7/8/10 x64<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper528_x64-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper529_x64-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
     </div>
@@ -196,24 +167,24 @@ Windows XP/Vista/7/8/10 x64<br>
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>OS X 32-bit</div>
   <div class='downloadinfo'>
-REAPER v5.28 - 14MB<br>
+REAPER v5.29 - 14MB<br>
 OS X 10.5-10.12<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper528_i386.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper529_i386.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
       <div style='background-color:#313131;height:1px;margin-bottom:20px;'></div>
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>OS X 64-bit</div>
   <div class='downloadinfo'>
-REAPER v5.28 - 16MB<br>
+REAPER v5.29 - 16MB<br>
 OS X 10.5-10.12<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper528_x86_64.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper529_x86_64.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
     </div> 
@@ -224,130 +195,111 @@ OS X 10.5-10.12<br>
 <div class='dark strip'>
   <div style='background-color:#4E5454;height:1px;margin-top:40px;'></div>
   <div style='margin-top:30px;margin-bottom:30px;'>
-    <div class='heading'>REAPER 5.28: It's Got What Plants Crave!</div>
+    <div class='heading'>REAPER 5.29: It's Got What Plants Crave!</div>
     <div style='width:1000px; -webkit-column-count: 3; -moz-column-count: 3; column-count: 3;'><a name="whatsnew"></a>
 <div class='avoidbreak'>
-<div class='bold'>MIDI editor</div><ul class='bullet'>
-<li> fix actions to set event channel with multiple editable MIDI items <a href="http://forum.cockos.com/showthread.php?t=182789" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> add actions to quantize note positions to specific divisions
-<li> add actions to select CC events under selected notes
-<li> add actions to select next note with lower or higher pitch <a href="http://forum.cockos.com/showthread.php?t=177142" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> consistently display and mouse-select selected/unselected notes in multiple channels
-<li> display CC events for active channel in front of other events <a href="http://forum.cockos.com/showthread.php?t=177453" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> do not extend item length on paste when configured not to auto-extend
-<li> do not select note when clicking on velocity bar with edit or ramp mouse modifier engaged <a href="http://forum.cockos.com/showthread.php?t=182044" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> edit only active channel CC events when mouse modifier set to edit+draw <a href="http://forum.cockos.com/showthread.php?t=181946" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> ensure that 1-pixel-wide notes are visible regardless of coloring preferences <a href="http://forum.cockos.com/showthread.php?t=182044" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> fix incorrect display of 14-bit bank select messages in list view <a href="http://forum.cockos.com/showthread.php?t=182997" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> preserve overlapping notes after closing/reopening editor when option is enabled <a href="http://forum.cockos.com/showthread.php?t=182416" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> respect channel dropdown (including "all channels") when editing or marquee selecting CC events <a href="http://forum.cockos.com/showpost.php?p=1746820" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> respect option to select CC with notes during all mouse selection actions <a href="http://forum.cockos.com/showthread.php?t=177723" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> restore keyboard focus to docked editor after clicking MIDI toolbar button <a href="http://forum.cockos.com/showpost.php?p=1747327" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> return focus to editor after closing grid/note length dropdown
-<li> support editing notes that start or end beyond the edge of a trimmed media item <a href="http://forum.cockos.com/showthread.php?t=171700" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>FX</div><ul class='bullet'>
-<li> copy/move all track FX via drag and drop of track/mixer FX button
-<li> avoid auto-resizing chain window too small <a href="http://forum.cockos.com/showthread.php?t=175788" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> fix parameter modulation with inverted range parameters <a href="http://forum.cockos.com/showthread.php?t=182298" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> improve VST/AU generic UI auto-resize behavior
-<li> improve parameter learn soft takeover behavior <a href="http://forum.cockos.com/showthread.php?t=182969" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> reduce CPU use of MIDI learn assignments
+<div class='bold'>Development IDEs</div><ul class='bullet'>
+<li> (ReaScript, Video Processor, JSFX)
+<li> improve context-sensitive function information in top line
+<li> show function list on right click in some IDEs (Ctrl+right click for watch behavior)
+<li> allow peeking values via Ctrl+K
+<li> user configurable colors (in theme tweak window, though not theme dependent)
+<li> highlight known API functions, variables
+<li> allow searching APIs via watch filter
+<li> doubleclicking item in watch list copies name
+<li> improve performance of Lua IDE syntax highlighting
+<li> show errors and highlight source code error when applicable when saving via Ctrl+S
 </ul>
 </div>
 <div class='avoidbreak'>
 <div class='bold'>Notation editor</div><ul class='bullet'>
-<li> improve lyric editing
-<li> preserve notation data when editing note channel <a href="http://forum.cockos.com/showthread.php?t=181914" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> support mouse click modifiers that are actions from the action list <a href="http://forum.cockos.com/showthread.php?t=177142" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> target the active item when displaying multiple overlapping items on the same track <a href="http://forum.cockos.com/showthread.php?t=183011" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> when displaying a single track on multiple rows, show time signature only when it changes
-<li> when exporting a single track to PDF, print both the project name and track name
+<li> fix detached flags at certain zoom levels
+<li> add option to position dynamics below the staff by default
+<li> prevent copied phrases from spanning multiple tracks <a href="http://forum.cockos.com/showthread.php?t=183905" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> properly undo edits on secondary tracks <a href="http://forum.cockos.com/showthread.php?t=183871" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> support two articulations plus one ornament per note
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Actions</div><ul class='bullet'>
-<li> fix soft takeover reset action
-<li> improve soft takeover behavior for various actions <a href="http://forum.cockos.com/showthread.php?t=182969" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> automatically convert various key bindings between Windows and macOS encodings <a href="http://forum.cockos.com/showthread.php?t=183038" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> add actions to toggle or set MIDI input quantize amount for all tracks, selected tracks, or last touched track
+<div class='bold'>Video</div><ul class='bullet'>
+<li> avoid flicker when using monitoring FX and repositioning edit cursor
+<li> improve behavior changing FX presets (restore scroll, reposition cursor)
+<li> improve edge case handling of various presets
+<li> improve render frame timing <a href="http://forum.cockos.com/showthread.php?t=183901" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> add tempo/time signature processor access (project_tempo, project_ts_num, project_time_qn, etc)
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>JSFX</div><ul class='bullet'>
+<li> add __denormal_likely() and __denormal_unlikely() optimization hint metafunctions
+<li> add new analysis effect gain_reduction_scope
+<li> avoid heap fragmentation when using PDC+pin mapper on multichannel tracks
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>MIDI editor</div><ul class='bullet'>
+<li> add option to display note name and velocity information on secondary media items <a href="http://forum.cockos.com/showthread.php?t=183867" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> improve velocity lane behavior with non-zoom-dependent CC density <a href="http://forum.cockos.com/showpost.php?p=1755319" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> smoother velocity lane editing <a href="http://forum.cockos.com/showpost.php?p=1755319" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>MusicXML</div><ul class='bullet'>
+<li> export hollow and filled diamond noteheads properly <a href="http://forum.cockos.com/showthread.php?t=183905" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> fix vertical positioning of exported dynamics <a href="http://forum.cockos.com/showthread.php?t=183905" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> properly export mixed accidentals <a href="http://forum.cockos.com/showthread.php?t=183905" target="blank"><span class='whatsnewdot'>&bull;</span></a> and enharmonics <a href="http://forum.cockos.com/showthread.php?t=183479" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Playback</div><ul class='bullet'>
+<li> fix potential hang issue with 'flush FX on loop' option enabled <a href="http://forum.cockos.com/showthread.php?t=183740" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> improve anticipative FX corner case on loop with sends and PDC
+<li> fix potential glitch when changing track channel count or flushing FX on loop
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>ASIO</div><ul class='bullet'>
+<li> support device names up to 256 characters long <a href="http://forum.cockos.com/showthread.php?t=183951" target="blank"><span class='whatsnewdot'>&bull;</span></a>
 </ul>
 </div>
 <div class='avoidbreak'>
 <div class='bold'>Automation</div><ul class='bullet'>
-<li> update volume/pan/width fader positions when hiding/disarming envelopes in touch mode
-<li> optimized envelope undo state handling
-<li> avoid crash when copying/moving take envelope to empty media item <a href="http://forum.cockos.com/showpost.php?p=1745214" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> drag+drop take envelope targets take lane under mouse cursor rather than active take
-<li> support drag+drop of take envelope button to items on same track
+<li> obey beats timebase when moving or pasting multiple envelope points <a href="http://forum.cockos.com/showthread.php?t=182703" target="blank"><span class='whatsnewdot'>&bull;</span></a>
 </ul>
 </div>
 <div class='avoidbreak'>
 <div class='bold'>macOS</div><ul class='bullet'>
-<li> show file type option in all save-as/export windows when multiple types are available
-<li> avoid changing toolbar focus on click
-<li> preserve top position of FX chains when switching FX
-<li> restore action window position properly when reopening
+<li> fix 10.12 text drawing when showing some modal windows (such as project load warnings)
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Virtual MIDI keyboard</div><ul class='bullet'>
-<li> toggle (not just set) option when running action to send all input to keyboard <a href="http://forum.cockos.com/showthread.php?t=183451" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> allow text field input even when using send all input to keyboard
-<li> pass through unbound keys when using send all input to keyboard and VKB lacks focus
+<div class='bold'>Mixer</div><ul class='bullet'>
+<li> fix double-click to add track when the last visible track is a folder, tracks in folder are hidden, and folder is closed <a href="http://forum.cockos.com/showthread.php?t=165423" target="blank"><span class='whatsnewdot'>&bull;</span></a>
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>JSFX/ReaScript EEL</div><ul class='bullet'>
-<li> add mem_get_values(offset,...) and mem_set_values(offset,...)
+<div class='bold'>Notation PDF export</div><ul class='bullet'>
+<li> fix detached flags at certain zoom levels
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Media item properties</div><ul class='bullet'>
-<li> improve layout, scrollbar behavior, and support for large fonts
+<div class='bold'>Reascript</div><ul class='bullet'>
+<li> add MIDI lyrics viewer script, action to launch it
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>MIDI</div><ul class='bullet'>
-<li> fix intermittent missing notes when pasting MIDI directly into the arrange view <a href="http://forum.cockos.com/showthread.php?t=179571" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<div class='bold'>Stretch markers</div><ul class='bullet'>
+<li> improve auto-add of markers on tempo map edits, moving across tempo changes <a href="http://forum.cockos.com/showthread.php?t=183667" target="blank"><span class='whatsnewdot'>&bull;</span></a>
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>MusicXML import</div><ul class='bullet'>
-<li> import enharmonics correctly <a href="http://forum.cockos.com/showthread.php?t=183479" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<div class='bold'>Virtual MIDI Keyboard</div><ul class='bullet'>
+<li> fix keyboard behaviors <a href="http://forum.cockos.com/showpost.php?p=1759540" target="blank"><span class='whatsnewdot'>&bull;</span></a>
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Project</div><ul class='bullet'>
-<li> do not load template project after failing to load requested project
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Super8</div><ul class='bullet'>
-<li> fix bug when starting playback of channel that has note yet been recorded
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Tempo map</div><ul class='bullet'>
-<li> adjust beat-based (MIDI) media items correctly when editing around a time signature marker that creates a partial measure <a href="http://forum.cockos.com/showthread.php?t=183281" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Track manager</div><ul class='bullet'>
-<li> update layout colors when changing track colors <a href="http://forum.cockos.com/showpost.php?p=1749290" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Undo</div><ul class='bullet'>
-<li> updated RPP-UNDO format, earlier REAPER versions may warn, not use track envelope state from new undo histories
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>API</div><ul class='bullet'>
-<li> allow more precision in CSurf_OnVolumeChange
-<li> update layouts when setting track color <a href="http://forum.cockos.com/showpost.php?p=1749290" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<div class='bold'>VST</div><ul class='bullet'>
+<li> fix soft takeover with bridged plug-ins <a href="http://forum.cockos.com/showthread.php?t=183749" target="blank"><span class='whatsnewdot'>&bull;</span></a>
 </ul>
 </div>
     </div>

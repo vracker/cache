@@ -10,24 +10,26 @@
                 analytics: true
             };
             SF.Ads.prebidUnits = [{
-                    bids: [{'params': {'siteId': '103240', 'position': 'atf', 'sizes': [2], 'accountId': '15680', 'zoneId': '486110'}, 'bidder': 'rubicon'},
-                            {'params': {'placement': 4224498, 'network': '10676.1'}, 'bidder': 'aol'},
-                            {'params': {'tagid': '364648'}, 'bidder': 'sovrn'},
+                    bids: [{'params': {'tagid': '364648'}, 'bidder': 'sovrn'},
                             {'params': {'cp': 558092, 'cf': '728x90', 'ct': '472223'}, 'bidder': 'pulsepoint'},
                             {'params': {'placementId': 8841121}, 'bidder': 'brealtime'},
+                            {'params': {'siteId': '103240', 'position': 'atf', 'sizes': [2], 'accountId': '15680', 'zoneId': '486110'}, 'bidder': 'rubicon'},
                             {'params': {'placementId': 9265078}, 'bidder': 'appnexus'},
+                            {'params': {'placement': 4224498, 'network': '10676.1'}, 'bidder': 'aol'},
+                            {'params': {'placementId': 9726874}, 'bidder': 'springserve'},
                             ],
                     code: 'div-gpt-ad-1393435113147-0',
                     sizes: [728, 90],
                     tag: 'SF_ProjectFiles_728x90_A'
                 },
             {
-                    bids: [{'params': {'siteId': '103240', 'position': 'atf', 'sizes': [15, 10], 'accountId': '15680', 'zoneId': '486110'}, 'bidder': 'rubicon'},
-                            {'params': {'placement': 4224505, 'network': '10676.1'}, 'bidder': 'aol'},
-                            {'params': {'tagid': '364646'}, 'bidder': 'sovrn'},
-                            {'params': {'placementId': 9319285}, 'bidder': 'brealtime'},
+                    bids: [{'params': {'tagid': '364646'}, 'bidder': 'sovrn'},
                             {'params': {'cp': 558092, 'cf': '300x250', 'ct': '472221'}, 'bidder': 'pulsepoint'},
+                            {'params': {'placementId': 9319285}, 'bidder': 'brealtime'},
+                            {'params': {'siteId': '103240', 'position': 'atf', 'sizes': [15, 10], 'accountId': '15680', 'zoneId': '486110'}, 'bidder': 'rubicon'},
                             {'params': {'placementId': 9265076}, 'bidder': 'appnexus'},
+                            {'params': {'placement': 4224505, 'network': '10676.1'}, 'bidder': 'aol'},
+                            {'params': {'placementId': 9726868}, 'bidder': 'springserve'},
                             ],
                     code: 'div-gpt-ad-1392147725721-0',
                     sizes: [[300, 250], [300, 600], [300, 1050]],
@@ -35,18 +37,19 @@
                 },
             {
                     bids: [{'params': {'tagid': '364647'}, 'bidder': 'sovrn'},
-                            {'params': {'placementId': 9265082}, 'bidder': 'appnexus'},
-                            {'params': {'siteId': '103240', 'sizes': [15], 'accountId': '15680', 'zoneId': '486112'}, 'bidder': 'rubicon'},
-                            {'params': {'placementId': 8829468}, 'bidder': 'brealtime'},
-                            {'params': {'placement': 4224503, 'network': '10676.1'}, 'bidder': 'aol'},
                             {'params': {'cp': 558092, 'cf': '300x250', 'ct': '472222'}, 'bidder': 'pulsepoint'},
+                            {'params': {'placementId': 8829468}, 'bidder': 'brealtime'},
+                            {'params': {'siteId': '103240', 'sizes': [15], 'accountId': '15680', 'zoneId': '486112'}, 'bidder': 'rubicon'},
+                            {'params': {'placementId': 9265082}, 'bidder': 'appnexus'},
+                            {'params': {'placement': 4224503, 'network': '10676.1'}, 'bidder': 'aol'},
+                            {'params': {'placementId': 9726871}, 'bidder': 'springserve'},
                             ],
                     code: 'div-gpt-ad-1392148208789-0',
                     sizes: [300, 250],
                     tag: 'SF_ProjectFiles_300x250_B'
                 }
             ];
-            SF.Ads.prebidAdjustments = {"bidder_deflations": {"sovrn": 0.8, "aardvark": 0.0099, "aol": 1.015, "brealtime": 0.875, "rubicon": 0.985, "pulsepoint": 0.975, "appnexus": 0.89}, "inflation": 1.15};
+            SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "sovrn": 0.57, "aardvark": 0.99, "aol": 0.86, "brealtime": 0.71, "rubiconlite": 0.9, "pulsepoint": 0.81, "rubicon": 0.83, "appnexus": 0.75, "springserve": 0.007}, "inflation": 1.2, "floor": 0.02};
         </script>
         <meta id="project_name" name="project_name" content="expect">
         <meta name="description" content="Expect is a tool for automating interactive applications such as telnet, ftp, passwd, fsck, rlogin, tip, etc. Expect is also useful for testing these …">
@@ -58,7 +61,74 @@
 <![endif]-->
 <link href='//fonts.googleapis.com/css?family=Ubuntu:regular' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="//a.fsdn.com/con/css/sf-files.css" type="text/css">
-   <!-- GPT Slot Definitions -->
+           /*global googletag, bizxPrebid */
+       var gptadslots=[];
+       var gptadHandlers={};
+       googletag.cmd.push(function() {
+           //prebid_log('GPT push define slots and targeting');
+            gptadslots.push(googletag.defineSlot('/41014381/Sourceforge/SF_ProjectFiles_728x90_A', [728, 90], 'div-gpt-ad-1393435113147-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])
+                                                        .setTargeting('shortname', 'expect')
+                                                        .setTargeting('aud', ['developers', 'endusers', 'sysadmins'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'https://sourceforge.net/projects/expect/files/Expect/5.45/')
+                                                        .setTargeting('sz', '728x90')
+                                                        .setTargeting('page_type', 'pg_files'));
+            gptadslots.push(googletag.defineSlot('/41014381/Sourceforge/SF_ProjectFiles_300x250_A', [[300, 250], [300, 600], [300, 1050]], 'div-gpt-ad-1392147725721-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])
+                                                        .setTargeting('shortname', 'expect')
+                                                        .setTargeting('aud', ['developers', 'endusers', 'sysadmins'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'https://sourceforge.net/projects/expect/files/Expect/5.45/')
+                                                        .setTargeting('sz', '300x250,300x600,300x1050')
+                                                        .setTargeting('page_type', 'pg_files'));
+            gptadslots.push(googletag.defineSlot('/41014381/Sourceforge/SF_ProjectFiles_300x250_B', [300, 250], 'div-gpt-ad-1392148208789-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])
+                                                        .setTargeting('shortname', 'expect')
+                                                        .setTargeting('aud', ['developers', 'endusers', 'sysadmins'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'https://sourceforge.net/projects/expect/files/Expect/5.45/')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_files'));
+            gptadslots.push(googletag.defineSlot('/41014381/Sourceforge/SF_ProjectFiles_HubIcon_200x90_A', [200, 90], 'div-gpt-ad-1392148098424-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])
+                                                        .setTargeting('shortname', 'expect')
+                                                        .setTargeting('aud', ['developers', 'endusers', 'sysadmins'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'https://sourceforge.net/projects/expect/files/Expect/5.45/')
+                                                        .setTargeting('sz', '200x90')
+                                                        .setTargeting('page_type', 'pg_files'));
+            gptadslots.push(googletag.defineSlot('/7346874/SF-300x250', [300, 250], 'div-gpt-ad-1392148208795-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])
+                                                        .setTargeting('shortname', 'expect')
+                                                        .setTargeting('aud', ['developers', 'endusers', 'sysadmins'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'https://sourceforge.net/projects/expect/files/Expect/5.45/')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_files'));
+            googletag.pubads().setTargeting('requestSource', 'GPT');
+            googletag.pubads().enableAsyncRendering();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+                var unitName = event.slot.getName();
+                if ( unitName in gptadHandlers ) {
+                   try {
+                       SF.Ads.RenderHandlers[gptadHandlers[unitName]].call(this, event);
+                   } catch (e) {
+                   }
+                }
+            });
+            googletag.pubads().addEventListener('impressionViewable', SF.Ads.RenderHandlers.viewabilityInstrumentation);
+            googletag.pubads().addEventListener('slotRenderEnded', SF.Ads.listenerForBlockThis);
+            bizxPrebid.Ads.pushToGoogle();
+            googletag.enableServices();
+        });
+   </script> 
 <!-- CCM Tag -->
 <!-- End CCM Tag -->
     </head>
@@ -167,12 +237,12 @@
 </aside>
 <div id="SF_ProjectFiles_300x250_B_wrapped" class="draper medrec  " data-unit="SF_ProjectFiles_300x250_B">
 </div>
-                <div class="sterling" id="deals-widget">
+            <div class="sterling" id="deals-widget">
     <aside class="sidebar-widget stackcommerce-widget">
 <div id="SF-300x250_wrapped" class="draper medrec  " data-unit="SF-300x250">
 </div>
     </aside>
-                </div>
+            </div>
     </div>
         </div>
     <div id="overlay-blockthis-wrapper">

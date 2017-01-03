@@ -68,7 +68,7 @@ var g_onload = function() {
             <a href="langpack">Language Packs</a>
             <BR><a href="http://stash.reaper.fm/tag/Themes" target='_blank' rel='noopener noreferrer'>Themes</a>
             <BR><a href="http://stash.reaper.fm/" target='_blank' rel='noopener noreferrer'>REAPER Stash</a>
-            <BR><a href="http://http://www.sws-extension.org/" target='_blank' rel='noopener noreferrer'>SWS REAPER Extension</a>
+            <BR><a href="http://www.sws-extension.org/" target='_blank' rel='noopener noreferrer'>SWS REAPER Extension</a>
             <BR><a href="http://reaperblog.net" target='_blank' rel='noopener noreferrer'>The (unofficial) REAPER Blog</a>
           </div>
         </div>

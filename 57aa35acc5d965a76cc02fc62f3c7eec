@@ -120,15 +120,294 @@
         <a href="http://blackfin.uclinux.org/">http://blackfin.uclinux.org/</a>
         for more information.
         </li>
-        <li><a href="http://www.aoe.com/">
-        AOE - Open Source Web Development</a> contributes financially.
-        </li>
       </ul>
     </p>
   </li>
 
 
 
+
+  <li><b>2 January 2017 -- BusyBox 1.26.1 (stable)</b>
+    <p><a href="http://busybox.net/downloads/busybox-1.26.1.tar.bz2">BusyBox 1.26.1</a>.
+    (<a href="http://git.busybox.net/busybox/tree/?h=1_26_stable">git</a>,
+    <a href="http://busybox.net/downloads/fixes-1.26.1/">patches</a>,
+    <a href="http://busybox.net/fix.html">how to add a patch</a>)</p>
+
+    <p>Bug fix release. 1.26.1 has fixes for
+    single-applet builds (all applets are verified to successfully build when individually selected),
+    a few tweaks to defconfig were made.
+    </p>
+    <p>Static binaries are available for downloads, with each individual applet
+    enabled separately, as well as the binary with almost all applets selected,
+    and helper binaries (ssl_helper for HTTPS wget support, index.cgi,
+    post_upload.cgi and httpd_ssi for HTTP server).
+    </p>
+  </li>
+
+  <li><b>20 December 2016 -- BusyBox 1.26.0 (unstable)</b>
+    <p><a href="http://busybox.net/downloads/busybox-1.26.0.tar.bz2">BusyBox 1.26.0</a>.
+    (<a href="http://git.busybox.net/busybox/tree/?h=1_26_stable">git</a>,
+    <a href="http://busybox.net/downloads/fixes-1.26.0/">patches</a>,
+    <a href="http://busybox.net/fix.html">how to add a patch</a>)</p>
+
+    <p>Sizes of busybox-1.25.0 and busybox-1.26.0 (with equivalent config, static uclibc build):<pre>
+   text	   data	    bss	    dec	    hex	filename
+ 942170	    491	   7496	 950157	  e7f8d	busybox-1.25.0
+ 944982	    491	   7504	 952977	  e8a91	busybox-1.26.0</pre>
+    </p>
+
+    <p>Changes since previous release:
+<pre>Aaro Koskinen (3):
+      cpio: add ownership (-R) test cases
+      patch: fix debug log failure
+      patch: fix matching failure
+
+Bartosz Golaszewski (1):
+      i2cdump: don't use common_bufsiz1
+
+Brian Foley (2):
+      awk: fix segfault on for loop syntax error
+      udhcpc: check read of option length byte to be within packet
+
+Denys Vlasenko:
+      build system: fix a few warnings for allnoconfig build
+      build system: fix include/NUM_APPLETS.h generation
+      build system: make CONFIG_FEATURE_USE_BSS_TAIL less funky
+      examples/var_service/fw: optionally flush all netdevs; optionally prefer one 0/0 routing
+      examples/var_service/fw do not ruin $if[], use different name
+      examples/var_service/supplicant_if: new service example
+      examples: add a useful "see abridged log" script for ntpd service example
+      examples: add example of a DHCP server
+      examples: update var_service/README
+      config: disentangle PREFER_APPLETS from SH_STANDALONE and SH_NOFORK
+      trylink: use "mktemp tmp.XXXXXXXXXX" to placate OS X
+      getopt32: add new syntax of 'o:+' and 'o:*' for -o NUM and -o LIST
+      libbb/speed_table.c: survive B115200 and B230400 not fitting into 16 bits
+      libbb/xwrite: print errno on "short write" errors
+      libbb: do not use fflush_unlocked, musl does not like fflush_unlocked(NULL)
+      libbb: handle \S in /etc/issue
+      libbb: make xmalloc_sockaddr2dotted use NI_NUMERICSCOPE
+      libbb: send_to_from: do not require that "to" should have the same AF. Closes 9146
+      lineedit: fix completion with applet names. Closes 9361
+      lineedit: fix two bugs in SIGWINCH signal handling
+      libiproute: eliminate some redundant zero stores
+      ash: [EXPAND] Do not split quoted VSLENGTH and VSTRIM
+      ash: [EXPAND] Fix ifsfirst/ifslastp leak
+      ash: [EXPAND] Optimise nulonly away and just use quoted as before
+      ash: [EXPAND] Removed herefd hack
+      ash: [EXPAND] Split unquoted $@/$* correctly when IFS is set but empty
+      ash: [JOBS] Fix dowait signal race
+      ash: [MEMALLOC] Add pushstackmark
+      ash: [MEMALLOC] Made grabstackblock an inline wrapper for stalloc
+      ash: [PARSER] Add nlprompt/nlnoprompt helpers
+      ash: [PARSER] Do not show prompts in expandstr
+      ash: [PARSER] Fix parsing of ${##1}
+      ash: [PARSER] Handle backslash newlines properly after dollar sign
+      ash: [PARSER] Recognise here-doc delimiters terminated by EOF
+      ash: [PARSER] Report substition errors at expansion time
+      ash: [PARSER] Size optimisations in parameter expansion parser
+      ash: [REDIR] Move null redirect checks into caller
+      ash: [REDIR] Remove EMFILE special case
+      ash: [REDIR] Remove redundant CLOEXEC calls
+      ash: [REDIR] Replace copyfd by savefd and use dup2 elsewhere
+      ash: [SHELL] Expand ENV before using it
+      ash: [SHELL] Move flushall to the point just before _exit
+      ash: [SIGNAL] Remove EXSIG
+      ash: [VAR] Initialise OPTIND after importing environment
+      ash: [VAR] Remove setvarsafe
+      ash: [VAR] Sanitise environment variable names on entry
+      ash: add a FIXME for bug 9246
+      ash: add comment explaining "set -e; $(cmd)" discrepancy
+      ash: all blocks in function node copying must be SHELL_ALIGNed
+      ash: comment out free(p) just before _exit, tweak some outdated comments
+      ash: delete leftovers from "simplify EOF/newline handling in list parser" commit
+      ash: do not leave SIGQUIT ignored on "exec CMD"
+      ash: eval: Return status in eval functions
+      ash: expand: Fixed "$@" expansion when EXP_FULL is false
+      ash: explain EXP_REDIR and why we (dont) glob redir filenames
+      ash: fix "duplicate local" code (forgot to re-enable interrupts)
+      ash: fix "return N" not setting $? in loop conditionals
+      ash: fix arithmetic closing )) split by backslash-newline
+      ash: fix globbing bugs when using glibc glob()
+      ash: fix handling of ${VAR: -2}
+      ash: fix handling of NULs in $'abc\000def\x00asd'. Closes 9286
+      ash: fix handling of bashism $'xxx' with high-bit chars. Closes 9236
+      ash: fix interactive "command eval STRING" exiting on errors
+      ash: fix return_in_trap1.tests failure
+      ash: get rid of two global data variables
+      ash: if using libc glob(), skip it if no metachars are in word
+      ash: in heredoc code, fix access past the end of allocated memory. Closes 9276
+      ash: input: Allow two consecutive calls to pungetc
+      ash: jobs: Don't attempt to access job table for job %0
+      ash: make internal globbing code selectable from config
+      ash: make popfile() anfter popallfiles() safe
+      ash: move ifsbreakup() and ifsfree() up
+      ash: open-code blocking_dowait_with_raise_on_sig()
+      ash: optimize tryexec(): avoid one allocation
+      ash: partially sync with dash on "fork if traps are set" logic
+      ash: placate gcc: "warning: ! is only applied to the left hand side of =="
+      ash: reduce code differences from upstream
+      ash: remove dead stores and unused variables
+      ash: remove unused EXSHELLPROC
+      ash: return to DOWAIT_* constants similar to dash, no logic changes
+      ash: support "--" in "source" builtin
+      ash: undo "tokname hack"
+      ash: use glob() from libc
+      ash: use pause(), not sigsuspend(), in wait builtin
+      ash: use shellparam.optind/optoff in getopts() directly, not through pointers
+      ash: while (!got_sig) pause() is not reliable, use sigsuspend()
+      hush: "wait $!; echo $?" should return 127 if $! already exited
+      hush: 'return' should have effect earlier
+      hush: G.user_input_buf[] is needed only if line editing is enabled
+      hush: `cmd` and arithmetic also need the fix for FILE rewind
+      hush: add commented-out debug printouts in "memleak" built-in
+      hush: add func6.tests
+      hush: add var4.tests, var5.tests
+      hush: allow { cmd } to not be terminated by semicolon in some cases
+      hush: do not allow sh -c '{ echo boo }'
+      hush: do not leak script fds into NOEXEC children
+      hush: document better where bad redirect syntax is detected
+      hush: enable "msh is deprecated" message in msh stub
+      hush: factor out %jobspec parsing
+      hush: fix "(sleep 1; exit 3) & sleep 2; echo $?; wait $!; echo $?"
+      hush: fix ". EMPTY_LINE" not setting $? to 0
+      hush: fix "redirects can close script fd" bug
+      hush: fix "wait PID"
+      hush: fix 'eval ""' handling
+      hush: fix a bug in FEATURE_SH_STANDALONE=y config. Closes 9186
+      hush: fix a memory corruption when exported variable is modified
+      hush: fix exitcode on exec failure with EACCES - should be 126
+      hush: fix handling of by backslash-newline in $((arith)) and $(cmd)
+      hush: fix interactive input handling of backslash+newline
+      hush: fix var3.tests
+      hush: implement "wait %jobspec"
+      hush: make "wait %1" less likely to play with signal mask
+      hush: make getch/peek functions directly called
+      hush: non-matching "case" statement sets $? to 0
+      hush: rework "wait %jobspec" to work in non-interactive shells too
+      hush: rework input char buffering to allow more than one-deep peek
+      hush: simplify insert_bg_jobs
+      cp: fix -i for POSIX mode. Closes 9106
+      cp: make verbose cp show symlink copies too
+      cpio: fix restoration of file ownership, closes 9306
+      df: implement -B n&lt;suff&gt; and -B &lt;suff&gt; formats of -B option
+      dhcp: merge files.c into dhcpd.c
+      dhcp: merge leases.c and static_leases.c into dhcpd.c
+      dhcp: merge most of static_leases.c into dhcpd.c
+      dnsdomainname: split it from "hostname", make it independently selectable
+      dpkg-deb: remove unused FEATURE_DPKG_DEB_EXTRACT_ONLY config option
+      fdisk: fix CONFIG_FEATURE_SUN_LABEL=y build
+      fdisk: print much less cryptic partition table
+      fdisk: sanitize partition name printing; drop "Code" column; get rid of one static var
+      fdisk_gpt: simplify GPT partition name printing
+      find: fix handling of trailing slashes in -name PATTERN comparisons
+      hexdump: fix numerous bugs in handling of backslashes
+      httpd: explain why we use sprintf and why it should be fine
+      ifplugd: if SIOCSIFFLAGS fails with ENODEV, don't die
+      ifupdown: rewrite state file atomically
+      ifupdown: when flushing addresses with "ip", add label %label%
+      init: fix for FreeBSD console opening. Closes 9031
+      install: fix musl problem with dirname
+      ip: fix an improper optimization: req.r.rtm_scope may be nonzero here
+      ipneigh: add this shortcur similar to other "ip &lt;CMD&gt;" shortcuts
+      less: fall back to using fd #1 for keyboard reading. Closes 9231
+      less: fix SEGV
+      less: fix bracket search to match behavior of less 481
+      less: switch off nonblock on kbd_fd before exit
+      loadfont: 32k size limit is not enough
+      makedevs: make special node creation idempotent
+      man: allow nroff and tbl commands be overridden; unmangle writing to files
+      man: fix parsing of "DEFINE pager xyz". Closes 8976
+      man: make width selection more thorough; explain how to override it
+      man: remove -Tascii from nroff invocation
+      mdev: create devices from /sys/dev
+      more: accept and ignore a bunch of options
+      mount: for cifs, dont insert "ip=ADDR" option if user gave it explicitly
+      mount: tweak "IPv6 scoped addr" commit
+      ntpd: daemonize before DNS resolution
+      sed: fix "sed n (flushes pattern space, terminates early)" testcase failure
+      sendmail: make it possible to pause after connection helper is started
+      sha3: fix to conform to final SHA3 padding standard, add -a BITS option
+      su: expand help; simplify passing of -c CMD to run_shell()
+      svc: new applet (daemontools-compatible version of "sv")
+      tar: handle pax-encoded utf8 filenames and link names. Closes 9406
+      tc: consolidate its disabled bits
+      tcpsvd: don't keep shared fd open if fd limit is reached. Closes 9331
+      telnetd: fix a corner case where CRLF-&gt;CR translation can misbehave
+      telnetd: fix corner case of input processing of 0xff bytes
+      telnetd: fix handling of short writes to pty
+      telnetd: ifdef out a buggy error handling code path
+      telnetd: treat all 2-byte IACs in 240..249 range as NOPs
+      test: make [ and [[ forms individually selectable
+      test: memory leak: free group id list
+      top: move free(prev_hist) out of signal path
+      traceroute: cleanup and fixes for packet size calculations
+      udhcpc: check read of overload option data byte to be within packet
+      udhcpc: run "deconfig" script in manual renew state too. Closes 9061
+      unshare: --network should be --net. Closes 9116
+      vi: fix '' command (goto to prev context)
+      vi: make "g&lt;key&gt;" error message less likely to show garbage
+      wget/ssl_helper: update to wolfssl-3.9.8
+      wget/ssl_helper: strip was invoked incorrectly
+      wget: run s_client helper with -servername HOST
+      wget: there is no -s option in GNU Wget 1.18, we should be compatible
+      wget: treat 201,202,203 as success codes too. Closes 9211
+      whois: implement -i
+      whois: make it actually work
+      {md5,shaN}sum: make -c EMPTY fail
+
+Francis Rounds (1):
+      svlogd: strip leading '!' from processor lines
+
+Hauke Mehrtens (1):
+      libnetlink: fix alignment of netlink messages
+
+Jonas Danielsson (1):
+      ping: populate icmp_id field for "simple" ping too
+
+Kang-Che Sung (1):
+      docs: Update filenames in keep_data_small.txt
+
+Linus Walleij (1):
+      AUTHORS: Add myself to AUTHORS
+
+Lukasz Nowak (1):
+      libiproute: handle table ids larger than 255
+
+Mike Frysinger (4):
+      modutils: support finit_module syscall
+      mdev.conf: rename hw_random to hwrng
+      setfiles: fix build failure after common_bufsiz change
+      selinux: drop deprecated headers
+
+Miroslav Lichvar (1):
+      ntpd: respond only to client and symmetric active packets
+
+Natanael Copa (4):
+      df: use f_frsize instead of f_bsize for correct sizes
+      lineedit: trivial codeshrink for vi-mode
+      gzip: fix compression level bug. Closes 9131
+      gzip: add test that checks that -9 compresses better than -1
+
+Peter Korsgaard (1):
+      udhcpc: Unconditionally call deconfig script, not only if lease is active
+
+Ron Yorston (2):
+      libbb: suppress warning about run_applet_and_exit
+      ash: return exit status of nofork applets
+
+Rostislav Skudnov (2):
+      ash: exit after subshell error when errexit option is set
+      lineedit: fix handling of repeating Alt-b, Alt-f, Alt-d, Alt-Backspace
+
+Serj Kalichev (1):
+      volume_id: Add support for UBIFS
+
+Tito Ragusa (1):
+      strings: implement -t radix
+</pre>
+    </p>
+  </li>
 
   <li><b>7 October 2016 -- BusyBox 1.25.1 (stable)</b>
     <p><a href="http://busybox.net/downloads/busybox-1.25.1.tar.bz2">BusyBox 1.25.1</a>.
@@ -217,7 +496,7 @@ Denys Vlasenko:
       arping: avoid use of ether_ntoa(). Closes 8926
       ash: fix command -- crash
       cp: add -u/--update and --remove-destination
-      dos2unix: try to preserve ownership. closes 8311
+      dos2unix: try to preserve ownership. Closes 8311
       du: extra compat: with -k and -m, round sizes up
       dumpleases: make host names sanitized to shell-friendly condition
       find_applet_by_name: add an example of faster linear search code
@@ -669,7 +948,7 @@ Denys Vlasenko:
       dpkg: update supported compression methods
       find: support "find . -delete" idiom - do not try rmdir(".")
       ftpd: change_identity() must be after chroot()
-      ftpd: prevent zombies. closes 7832
+      ftpd: prevent zombies. Closes 7832
       gzip: speed up and shrink put_16bit()
       ifconfig: fix double free fatal error in INET_sprint
       ifplugd: discovered why it needed net/ethernet.h: just for ETH_ALEN
@@ -691,7 +970,7 @@ Denys Vlasenko:
       ntpd: get rid of G.initial_poll_complete
       patch: segfault fix. Closes 7916
       ping: fix recently introduced build breakage for non-optimizing builds
-      ps: fix SEGV on narrow screens. closes 8176
+      ps: fix SEGV on narrow screens. Closes 8176
       remove global "jmp_buf die_jmp" from !FEATURE_PREFER_APPLETS builds
       route: fix bogus read error when route table is empty
       route: improve -A inet6

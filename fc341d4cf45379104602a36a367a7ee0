@@ -68,43 +68,15 @@ file for a summary of changes between versions.
 
 <h3>Stable</h3>
 <p>
-5.2.2 was released on 2015-09-29.
+5.2.3 was released on 2016-12-30.
 </p>
 <p>
-<b>Cygwin users</b> should note that XZ Utils 5.2.x can <b>lose data</b>
-on Cygwin 1.7.34 or older. The bugs have been fixed in Cygwin 1.7.35
-and thus XZ Utils 5.2.x works correctly on Cygwin 1.7.35 and later.
-You can check your Cygwin version with <tt>cygcheck -V</tt>.
-If you cannot upgrade to new enough Cygwin, you should stick to
-XZ Utils 5.0.x which is fine and safe to use on older Cygwin versions.
-</p>
-<p>
-<a href="xz-5.2.2.tar.gz">xz-5.2.2.tar.gz</a> (1430 KiB)
-	<a href="xz-5.2.2.tar.gz.sig">signature</a>
-<br><a href="xz-5.2.2.tar.bz2">xz-5.2.2.tar.bz2</a> (1165 KiB)
-	<a href="xz-5.2.2.tar.bz2.sig">signature</a>
-<br><a href="xz-5.2.2.tar.xz">xz-5.2.2.tar.xz</a> (993 KiB)
-	<a href="xz-5.2.2.tar.xz.sig">signature</a>
-</p>
-
-<h3>Old stable</h3>
-<p>
-5.0.8 was released on 2014-12-21.
-</p>
-<p>
-The 5.0.x branch is no longer maintained.
-As of 2015-09-29 there are no known major bugs and
-it is fine to keep using 5.0.8 for now if you don't want to upgrade to 5.2.x.
-The API and ABI in 5.2.x are backward compatible with 5.0.x
-so it should be straightforward to upgrade from 5.0.x to 5.2.x.
-</p>
-<p>
-<a href="xz-5.0.8.tar.gz">xz-5.0.8.tar.gz</a> (1298 KiB)
-	<a href="xz-5.0.8.tar.gz.sig">signature</a>
-<br><a href="xz-5.0.8.tar.bz2">xz-5.0.8.tar.bz2</a> (1060 KiB)
-	<a href="xz-5.0.8.tar.bz2.sig">signature</a>
-<br><a href="xz-5.0.8.tar.xz">xz-5.0.8.tar.xz</a> (923 KiB)
-	<a href="xz-5.0.8.tar.xz.sig">signature</a>
+<a href="xz-5.2.3.tar.gz">xz-5.2.3.tar.gz</a> (1456 KiB)
+	<a href="xz-5.2.3.tar.gz.sig">signature</a>
+<br><a href="xz-5.2.3.tar.bz2">xz-5.2.3.tar.bz2</a> (1179 KiB)
+	<a href="xz-5.2.3.tar.bz2.sig">signature</a>
+<br><a href="xz-5.2.3.tar.xz">xz-5.2.3.tar.xz</a> (1009 KiB)
+	<a href="xz-5.2.3.tar.xz.sig">signature</a>
 </p>
 
 <h3>Development</h3>
@@ -218,25 +190,10 @@ on Windows 98 and later out of the box.
 	of the command line tools are included also as PDF.</li>
 </ul>
 <p>
-5.2.2 was a minor update and there's nothing that would affect
-the Windows binaries compared to 5.2.1.
-</p>
-<p>
-<a href="xz-5.2.1-windows.zip">xz-5.2.1-windows.zip</a> (1352 KiB)
-	<a href="xz-5.2.1-windows.zip.sig">signature</a>
-<br><a href="xz-5.2.1-windows.7z">xz-5.2.1-windows.7z</a> (633 KiB)
-	<a href="xz-5.2.1-windows.7z.sig">signature</a>
-</p>
-<p>
-Old stable release is available below.
-Note that 5.0.6, 5.0.7, and 5.0.8 were very minor updates and there's
-nothing that would affect the Windows binaries compared to 5.0.5.
-</p>
-<p>
-<a href="xz-5.0.5-windows.zip">xz-5.0.5-windows.zip</a> (916 KiB)
-	<a href="xz-5.0.5-windows.zip.sig">signature</a>
-<br><a href="xz-5.0.5-windows.7z">xz-5.0.5-windows.7z</a> (552 KiB)
-	<a href="xz-5.0.5-windows.7z.sig">signature</a>
+<a href="xz-5.2.3-windows.zip">xz-5.2.3-windows.zip</a> (1365 KiB)
+	<a href="xz-5.2.3-windows.zip.sig">signature</a>
+<br><a href="xz-5.2.3-windows.7z">xz-5.2.3-windows.7z</a> (640 KiB)
+	<a href="xz-5.2.3-windows.7z.sig">signature</a>
 </p>
 
 <h3>Mac OS X</h3>

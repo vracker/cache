@@ -81,6 +81,10 @@ mission statement</a>.</p>
 <h2 id="news">News</h2>
 <dl>
 
+<dt><span><a href="gcc-6/">GCC 6.3</a> released</span>
+    <span class="date">[2016-12-21]</span></dt>
+    <dd></dd>
+
 <dt><span><a href="gcc-6/">GCC 6.2</a> released</span>
     <span class="date">[2016-08-22]</span></dt>
     <dd></dd>
@@ -135,7 +139,7 @@ mission statement</a>.</p>
 
 <dt><span>OpenMP 4.0 offloading support in GCC</span>
      <span class="date">[2015-01-14]</span></dt>
-     <dd><a href="http://www.openmp.org/mp-documents/OpenMP4.0.0.pdf">
+     <dd><a href="http://www.openmp.org/wp-content/uploads/OpenMP4.0.0.pdf">
      OpenMP 4.0</a> <a href="https://gcc.gnu.org/gcc-5/changes.html#offload">
      offloading support was added to GCC.</a>
      Contributed by Jakub Jelinek (Red Hat), Bernd Schmidt and
@@ -146,7 +150,7 @@ mission statement</a>.</p>
 
 <div >
 <a href="https://gcc.gnu.org/news.html">Older news</a> |
-<a href="http://developers.redhat.com/blog/author/nickclifton/">Nick's Blog</a> |
+<a href="https://developers.redhat.com/blog/author/nickclifton/">Nick's Blog</a> |
 <span class="smaller">
 More news? Let gerald@pfeifer.com know!
 </span>
@@ -158,20 +162,20 @@ More news? Let gerald@pfeifer.com know!
 <h2>Supported Releases</h2>
 <dl>
 
-<dt><span class="version"><a href="gcc-6/">GCC 6.2</a></span>
+<dt><span class="version"><a href="gcc-6/">GCC 6.3</a></span>
   (<a href="gcc-6/changes.html">changes</a>)
 </dt><dd>
   Status:
   <!--GCC 6 status below-->
-  <a href="https://gcc.gnu.org/ml/gcc/2016-12/msg00015.html">2016-12-06</a>
+  <a href="https://gcc.gnu.org/ml/gcc/2016-12/msg00133.html">2016-12-21</a>
   <!--GCC 6 status above-->
   (regression fixes &amp; docs only).
   <div class="regress">
   <a
-  href="https://gcc.gnu.org/bugzilla/buglist.cgi?query_format=advanced&amp;short_desc_type=regexp&amp;short_desc=%5C[([ 0-9.%2F]*[ %2F])*6[ %2F][ 0-9.%2F]*[Rr]egression *%5C]&amp;target_milestone=5.5&amp;target_milestone=6.3&amp;known_to_fail_type=allwordssubstr&amp;known_to_work_type=allwordssubstr&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;gcchost_type=allwordssubstr&amp;gcchost=&amp;gcctarget_type=allwordssubstr&amp;gcctarget=&amp;gccbuild_type=allwordssubstr&amp;gccbuild=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=SUSPENDED&amp;bug_status=WAITING&amp;bug_status=REOPENED&amp;priority=P1&amp;priority=P2&amp;priority=P3&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">Serious
+  href="https://gcc.gnu.org/bugzilla/buglist.cgi?query_format=advanced&amp;short_desc_type=regexp&amp;short_desc=%5C[([ 0-9.%2F]*[ %2F])*6[ %2F][ 0-9.%2F]*[Rr]egression *%5C]&amp;target_milestone=5.5&amp;target_milestone=6.4&amp;known_to_fail_type=allwordssubstr&amp;known_to_work_type=allwordssubstr&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;gcchost_type=allwordssubstr&amp;gcchost=&amp;gcctarget_type=allwordssubstr&amp;gcctarget=&amp;gccbuild_type=allwordssubstr&amp;gccbuild=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=SUSPENDED&amp;bug_status=WAITING&amp;bug_status=REOPENED&amp;priority=P1&amp;priority=P2&amp;priority=P3&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">Serious
   regressions</a>.
   <a
-  href="https://gcc.gnu.org/bugzilla/buglist.cgi?query_format=advanced&amp;short_desc_type=regexp&amp;short_desc=%5C[([ 0-9.%2F]*[ %2F])*6[ %2F][ 0-9.%2F]*[Rr]egression *%5C]&amp;target_milestone=5.5&amp;target_milestone=6.3&amp;known_to_fail_type=allwordssubstr&amp;known_to_work_type=allwordssubstr&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;gcchost_type=allwordssubstr&amp;gcchost=&amp;gcctarget_type=allwordssubstr&amp;gcctarget=&amp;gccbuild_type=allwordssubstr&amp;gccbuild=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=SUSPENDED&amp;bug_status=WAITING&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">All
+  href="https://gcc.gnu.org/bugzilla/buglist.cgi?query_format=advanced&amp;short_desc_type=regexp&amp;short_desc=%5C[([ 0-9.%2F]*[ %2F])*6[ %2F][ 0-9.%2F]*[Rr]egression *%5C]&amp;target_milestone=5.5&amp;target_milestone=6.4&amp;known_to_fail_type=allwordssubstr&amp;known_to_work_type=allwordssubstr&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;gcchost_type=allwordssubstr&amp;gcchost=&amp;gcctarget_type=allwordssubstr&amp;gcctarget=&amp;gccbuild_type=allwordssubstr&amp;gccbuild=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=SUSPENDED&amp;bug_status=WAITING&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">All
   regressions</a>.
   </div>
 </dd>
@@ -204,10 +208,10 @@ More news? Let gerald@pfeifer.com know!
   (general bugfixing, stage 3).
   <div class="regress">
   <a
-  href="https://gcc.gnu.org/bugzilla/buglist.cgi?query_format=advanced&amp;short_desc_type=regexp&amp;short_desc=%5C[([ 0-9.%2F]*[ %2F])*7[ %2F][ 0-9.%2F]*[Rr]egression *%5C]&amp;target_milestone=5.5&amp;target_milestone=6.3&amp;target_milestone=7.0&amp;known_to_fail_type=allwordssubstr&amp;known_to_work_type=allwordssubstr&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;gcchost_type=allwordssubstr&amp;gcchost=&amp;gcctarget_type=allwordssubstr&amp;gcctarget=&amp;gccbuild_type=allwordssubstr&amp;gccbuild=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=SUSPENDED&amp;bug_status=WAITING&amp;bug_status=REOPENED&amp;priority=P1&amp;priority=P2&amp;priority=P3&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">Serious
+  href="https://gcc.gnu.org/bugzilla/buglist.cgi?query_format=advanced&amp;short_desc_type=regexp&amp;short_desc=%5C[([ 0-9.%2F]*[ %2F])*7[ %2F][ 0-9.%2F]*[Rr]egression *%5C]&amp;target_milestone=5.5&amp;target_milestone=6.4&amp;target_milestone=7.0&amp;known_to_fail_type=allwordssubstr&amp;known_to_work_type=allwordssubstr&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;gcchost_type=allwordssubstr&amp;gcchost=&amp;gcctarget_type=allwordssubstr&amp;gcctarget=&amp;gccbuild_type=allwordssubstr&amp;gccbuild=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=SUSPENDED&amp;bug_status=WAITING&amp;bug_status=REOPENED&amp;priority=P1&amp;priority=P2&amp;priority=P3&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">Serious
   regressions</a>.
   <a
-  href="https://gcc.gnu.org/bugzilla/buglist.cgi?query_format=advanced&amp;short_desc_type=regexp&amp;short_desc=%5C[([ 0-9.%2F]*[ %2F])*7[ %2F][ 0-9.%2F]*[Rr]egression *%5C]&amp;target_milestone=5.5&amp;target_milestone=6.3&amp;target_milestone=7.0&amp;known_to_fail_type=allwordssubstr&amp;known_to_work_type=allwordssubstr&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;gcchost_type=allwordssubstr&amp;gcchost=&amp;gcctarget_type=allwordssubstr&amp;gcctarget=&amp;gccbuild_type=allwordssubstr&amp;gccbuild=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=SUSPENDED&amp;bug_status=WAITING&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">All
+  href="https://gcc.gnu.org/bugzilla/buglist.cgi?query_format=advanced&amp;short_desc_type=regexp&amp;short_desc=%5C[([ 0-9.%2F]*[ %2F])*7[ %2F][ 0-9.%2F]*[Rr]egression *%5C]&amp;target_milestone=5.5&amp;target_milestone=6.4&amp;target_milestone=7.0&amp;known_to_fail_type=allwordssubstr&amp;known_to_work_type=allwordssubstr&amp;long_desc_type=allwordssubstr&amp;long_desc=&amp;bug_file_loc_type=allwordssubstr&amp;bug_file_loc=&amp;gcchost_type=allwordssubstr&amp;gcchost=&amp;gcctarget_type=allwordssubstr&amp;gcctarget=&amp;gccbuild_type=allwordssubstr&amp;gccbuild=&amp;keywords_type=allwords&amp;keywords=&amp;bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=SUSPENDED&amp;bug_status=WAITING&amp;bug_status=REOPENED&amp;emailtype1=substring&amp;email1=&amp;emailtype2=substring&amp;email2=&amp;bugidtype=include&amp;bug_id=&amp;votes=&amp;chfieldfrom=&amp;chfieldto=Now&amp;chfieldvalue=&amp;cmdtype=doit&amp;order=Reuse+same+sort+as+last+time&amp;field0-0-0=noop&amp;type0-0-0=noop&amp;value0-0-0=">All
   regressions</a>.
   </div>
 </dd>
@@ -370,7 +374,7 @@ permitted in any medium, provided this notice is preserved.</p>
 
 <p>These pages are
 <a href="https://gcc.gnu.org/about.html">maintained by the GCC team</a>.
-Last modified 2016-12-06<!-- IGNORE DIFF
+Last modified 2016-12-29<!-- IGNORE DIFF
 --><a href="http://validator.w3.org/check/referer">.</a></p>
 
 </div>

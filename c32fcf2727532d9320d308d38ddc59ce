@@ -16,7 +16,7 @@
                             {'params': {'siteId': '103240', 'position': 'atf', 'sizes': [2], 'accountId': '15680', 'zoneId': '486110'}, 'bidder': 'rubicon'},
                             {'params': {'placementId': 9265078}, 'bidder': 'appnexus'},
                             {'params': {'placement': 4224498, 'network': '10676.1'}, 'bidder': 'aol'},
-                            {'params': {'placementId': 9726874}, 'bidder': 'springserve'},
+                            {'params': {'siteID': '188656', 'id': '7'}, 'bidder': 'indexExchange'},
                             ],
                     code: 'div-gpt-ad-1393435113147-0',
                     sizes: [728, 90],
@@ -29,7 +29,7 @@
                             {'params': {'siteId': '103240', 'position': 'atf', 'sizes': [15, 10], 'accountId': '15680', 'zoneId': '486110'}, 'bidder': 'rubicon'},
                             {'params': {'placementId': 9265076}, 'bidder': 'appnexus'},
                             {'params': {'placement': 4224505, 'network': '10676.1'}, 'bidder': 'aol'},
-                            {'params': {'placementId': 9726868}, 'bidder': 'springserve'},
+                            {'params': {'siteID': '188654', 'id': '5'}, 'bidder': 'indexExchange'},
                             ],
                     code: 'div-gpt-ad-1392147725721-0',
                     sizes: [[300, 250], [300, 600], [300, 1050]],
@@ -42,14 +42,14 @@
                             {'params': {'siteId': '103240', 'sizes': [15], 'accountId': '15680', 'zoneId': '486112'}, 'bidder': 'rubicon'},
                             {'params': {'placementId': 9265082}, 'bidder': 'appnexus'},
                             {'params': {'placement': 4224503, 'network': '10676.1'}, 'bidder': 'aol'},
-                            {'params': {'placementId': 9726871}, 'bidder': 'springserve'},
+                            {'params': {'siteID': '188655', 'id': '6'}, 'bidder': 'indexExchange'},
                             ],
                     code: 'div-gpt-ad-1392148208789-0',
                     sizes: [300, 250],
                     tag: 'SF_ProjectFiles_300x250_B'
                 }
             ];
-            SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "sovrn": 0.57, "aardvark": 0.99, "aol": 0.86, "brealtime": 0.71, "rubiconlite": 0.9, "pulsepoint": 0.81, "rubicon": 0.83, "appnexus": 0.75, "springserve": 0.007}, "inflation": 1.2, "floor": 0.02};
+            SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "sovrn": 0.85, "aardvark": 0.99, "aol": 0.91, "brealtime": 0.79, "rubiconlite": 0.9, "pulsepoint": 0.83, "rubicon": 0.9, "appnexus": 0.8, "springserve": 0.007}, "inflation": 1.2, "floor": 0.02};
         </script>
         <meta id="project_name" name="project_name" content="expect">
         <meta name="description" content="Expect is a tool for automating interactive applications such as telnet, ftp, passwd, fsck, rlogin, tip, etc. Expect is also useful for testing these …">

@@ -151,7 +151,7 @@ on Twitter.
 
 <h2>Current Versions</h2>
 
-<h3>Mainline - 1.1.15</h3>
+<h3>Mainline - 1.1.16</h3>
 
 <p><small><em>This series is actively developed but intended for use
 in production environments as long as appropriate testing is
@@ -159,21 +159,26 @@ performed.</em></small>
 
 
 
-<p><a href="releases/musl-1.1.15.tar.gz">musl-1.1.15.tar.gz</a>
-(<a href="releases/musl-1.1.15.tar.gz.asc">sig</a>)
-- July 5, 2016
+<p><a href="releases/musl-1.1.16.tar.gz">musl-1.1.16.tar.gz</a>
+(<a href="releases/musl-1.1.16.tar.gz.asc">sig</a>)
+- December 31, 2016
 
-<p>This release adds new 64-bit MIPS and PowerPC ports, soft-float ABI
-support for the 32-bit PowerPC arch, and support for revision 6 of the
-MIPS ISA (not backwards compatible with original MIPS). Serious bugs
-in memmem, ungetwc, and putenv have been fixed, as well as bug that
-could break thread-local storage on PowerPC depending on the compiler
-used to build musl, and a number of low-impact bugs in various
-interfaces. The pthread_tryjoin_np, pthread_timedjoin_np, and
-sched_getcpu extension functions, and header-level support for new
-Linux 4.5 and 4.6 features, have also been added, and the configure
-script now honors standard options for cross-compiling more correctly.
+<p>This release fixes a serious under-allocation bug in regexec due to
+integer overflow (CVE-2016-8859) and related issues.
+Implementation-defined regex anchoring behavior in BRE subexpressions
+has also been changed to match other implementations. A bug causing
+all static-pie binaries with initialized TLS to crash at startup has
+been fixed. Overflow handling in printf has been overhauled to
+correctly handle obscure corner cases. Additional noteworthy bugs have
+been fixed in swprintf, strtod, getopt_long_only, and time conversion
+and zone handling. A major MIPS-specific regression in 1.1.15 that
+prevented tcsetattr from working at all has also been fixed.
 
+<p>A new port to s390x (64-bit S/390), header-level support for Linux
+4.7, 4.8, and 4.9 features, and a facility to increase default thread
+stack size via pthread_setattr_default_np have also been added in this
+release, along with other minor features and compatibility
+improvements.
 
 
 

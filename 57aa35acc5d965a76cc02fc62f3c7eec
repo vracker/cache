@@ -127,6 +127,19 @@
 
 
 
+  <li><b>10 January 2017 -- BusyBox 1.26.2 (stable)</b>
+    <p><a href="http://busybox.net/downloads/busybox-1.26.2.tar.bz2">BusyBox 1.26.2</a>.
+    (<a href="http://git.busybox.net/busybox/tree/?h=1_26_stable">git</a>,
+    <a href="http://busybox.net/downloads/fixes-1.26.2/">patches</a>,
+    <a href="http://busybox.net/fix.html">how to add a patch</a>)</p>
+
+    <p>Bug fix release. 1.26.2 has fixes for
+    ash (redirect fds sometimes were not closed),
+    module utilities and tcpsvd (build fixes),
+    build system (IFUPDOWN_UDHCPC_CMD_OPTIONS option was not settable).
+    </p>
+  </li>
+
   <li><b>2 January 2017 -- BusyBox 1.26.1 (stable)</b>
     <p><a href="http://busybox.net/downloads/busybox-1.26.1.tar.bz2">BusyBox 1.26.1</a>.
     (<a href="http://git.busybox.net/busybox/tree/?h=1_26_stable">git</a>,

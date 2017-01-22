@@ -52,7 +52,7 @@
                     tag: 'SF_ProjectFiles_300x250_B'
                 }
             ];
-            SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "sovrn": 0.8, "aardvark": 0.99, "aol": 0.91, "brealtime": 0.81, "rubiconlite": 0.9, "appnexus": 0.825, "pulsepoint": 0.86, "rubicon": 0.92, "indexexchange": 0.86, "springserve": 0.87}, "inflation": 1.2, "floor": 0.02};
+            SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "sovrn": 0.81, "aardvark": 0.99, "aol": 0.92, "brealtime": 0.81, "rubiconlite": 0.9, "appnexus": 0.81, "pulsepoint": 0.86, "rubicon": 0.89, "indexexchange": 0.86, "springserve": 0.87}, "inflation": 1.2, "floor": 0.02};
         </script>
         <meta id="project_name" name="project_name" content="expect">
         <meta name="description" content="Expect is a tool for automating interactive applications such as telnet, ftp, passwd, fsck, rlogin, tip, etc. Expect is also useful for testing these …">
@@ -175,15 +175,6 @@
                         <th colspan="5" class="first" id="parent_folder"><a href=".." title="One level up"><span data-icon="{" class="onelevup ico ico-uparrow"></span>Parent folder</a></th>
                     </tr>
             </thead>
-            <tfoot>
-                <tr>
-                    <td id="totals"><span class="label">Totals: </span>2 Items</td>
-                    <td class="opt">&nbsp;</td>
-                    <td headers="files_size_h" class="opt"></td>
-                    <td headers="files_status_h">
-                    </td>
-                </tr>
-            </tfoot>
             <tbody>
                 <tr title="5.45" class="folder ">
                     <th scope="row" headers="files_name_h"><span data-icon="o" class="ico ico-folder"></span>
@@ -206,6 +197,15 @@
                     <td headers="files_status_h" class="status folder"></td>
                 </tr>
             </tbody>
+            <tfoot>
+                <tr>
+                    <td id="totals"><span class="label">Totals: </span>2 Items</td>
+                    <td class="opt">&nbsp;</td>
+                    <td headers="files_size_h" class="opt"></td>
+                    <td headers="files_status_h">
+                    </td>
+                </tr>
+            </tfoot>
         </table>
         <div id="files-drawer" class="fs-widget fs-drawer consumer">
         </div>

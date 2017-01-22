@@ -35,7 +35,7 @@ var g_onload = function() {
       <div class='hdrlink black'>
         <a href='download.php'>
         <div class='hdrtop white'>DOWNLOAD REAPER</div>
-        <div class='hdrbottom'>Version 5.311: December 28, 2016</div>
+        <div class='hdrbottom'>Version 5.32: January 17, 2017</div>
         </a>
       </div>
       <div style='height:11px;'></div>
@@ -134,24 +134,24 @@ var g_onload = function() {
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>Windows 32-bit</div>
   <div class='downloadinfo'>
-REAPER v5.311 - 9MB<br>
+REAPER v5.32 - 9MB<br>
 Windows XP/Vista/7/8/10<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper5311-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper532-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
       <div style='background-color:#313131;height:1px;margin-bottom:20px;'></div>
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>Windows 64-bit</div>
   <div class='downloadinfo'>
-REAPER v5.311 - 11MB<br>
+REAPER v5.32 - 11MB<br>
 Windows XP/Vista/7/8/10 x64<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper5311_x64-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper532_x64-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
     </div>
@@ -167,24 +167,24 @@ Windows XP/Vista/7/8/10 x64<br>
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>OS X 32-bit</div>
   <div class='downloadinfo'>
-REAPER v5.311 - 14MB<br>
+REAPER v5.32 - 14MB<br>
 OS X 10.5-10.12<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper5311_i386.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper532_i386.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
       <div style='background-color:#313131;height:1px;margin-bottom:20px;'></div>
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>OS X 64-bit</div>
   <div class='downloadinfo'>
-REAPER v5.311 - 16MB<br>
+REAPER v5.32 - 16MB<br>
 OS X 10.5-10.12<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper5311_x86_64.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper532_x86_64.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
     </div> 
@@ -195,152 +195,162 @@ OS X 10.5-10.12<br>
 <div class='dark strip'>
   <div style='background-color:#4E5454;height:1px;margin-top:40px;'></div>
   <div style='margin-top:30px;margin-bottom:30px;'>
-    <div class='heading'>REAPER 5.311: Laterally Stiff and Vertically Compliant</div>
+    <div class='heading'>REAPER 5.32: Laterally Stiff and Vertically Compliant</div>
     <div style='width:1000px; -webkit-column-count: 3; -moz-column-count: 3; column-count: 3;'><a name="whatsnew"></a>
 <div class='avoidbreak'>
-<div class='bold'>5.311</div><ul class='bullet'>
-<li> Media: fix creating empty MIDI items when inserting media with a time selection set
-<li> Peaks: use 5.15+ floating point peak format for lossy compressed files
+<div class='bold'>Peaks</div><ul class='bullet'>
+<li> add optional spectral peaks display, colored by pitch/tonal content
+<li> add peaks display settings window
+<li> add sinc interpolation display option for sample-level peaks
+<li> fix issue where rebuilding peaks would not rebuild when multiple peaks files are present
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>5.31</div><ul class='bullet'>
-<li> FX: ignore monitoring FX windows when cascading other FX windows
-<li> Lyrics: fix display in web remote with multiple lyrics per beat
-<li> Lyrics: fix initial size of lyrics.lua window <a href="http://forum.cockos.com/showpost.php?p=1772058" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> Lyrics: increase font size for current lyric in lyrics.lua
-<li> Lyrics: reduce lyrics.lua CPU usage
-<li> MIDI editor: update snap-to-key checkbox when switching MIDI items <a href="http://forum.cockos.com/showthread.php?t=183393" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> ReaScript: support ending multiple submenus at once <a href="http://forum.cockos.com/showthread.php?t=184858" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> Render: support $namecount wildcard when rendering media items <a href="http://forum.cockos.com/showthread.php?t=185365" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Control surfaces</div><ul class='bullet'>
-<li> add customizable Web Interface, easily accessed via http://rc.reaper.fm
-<li> do not prompt when recording via surface and no tracks armed
-<li> bring project media online when inactive and starting playback/record
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>ReaPlugs</div><ul class='bullet'>
-<li> improve analyzer display in ReaEQ/ReaXcomp (increased range, better integration behavior, interpolation bugs fixed)
-<li> resize ReaEQ/ReaFir/ReaXcomp to parent window
-<li> optionally log MIDI meta-messages in ReaControlMIDI
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Video</div><ul class='bullet'>
-<li> improve reverse item playback performance
+<div class='bold'>Metering</div><ul class='bullet'>
+<li> add preference for pre-fader track metering with action to toggle
 </ul>
 </div>
 <div class='avoidbreak'>
 <div class='bold'>Notation</div><ul class='bullet'>
-<li> add Note Properties to note context menu
-<li> add support for double and triple dotted notes
-<li> add support for tremolo ornament
-<li> make all visible tracks editable by default <a href="http://forum.cockos.com/showpost.php?p=1763657" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> enable various mouse cursors (copy, move horizontally/vertically, etc)
-<li> fix lost notation data when editing while using MIDI filter <a href="http://forum.cockos.com/showpost.php?p=1763923" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> fix mouse editing of manually positioned tuplet brackets
-<li> implement arpeggiate mouse modifiers (same behavior as piano roll)
-<li> improve default tuplet bracket positioning for quarter and half notes
-<li> make it slightly easier to enter a note at the start of a measure
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>ReaScript</div><ul class='bullet'>
-<li> extend gfx.drawstr() to support text justifying and clipping
-<li> add joystick API
-<li> optimize execution API functions added by extension plug-ins
-<li> improve function prototypes/documentation in watch list
-<li> make Lua/Python known-function detection/documentation case sensitive
-<li> run __startup.eel/__startup.lua on startup (hold shift to disable)
-<li> update Lua from 5.3.0 to 5.3.3
-<li> fix graphics overflow when scaling very large bitmaps <a href="http://forum.cockos.com/showthread.php?t=184258" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> add "remove" button to tuplet dialog
+<li> add action to identify chords on grid
+<li> add support for manually entering chord notation
+<li> include user-defined chords (loaded from MIDI editor key snap dropdown) when identifying chords
+<li> add support for more note ornaments, techniques, types of slur, and per-note text notation
+<li> reduce clutter when drawing voiced notes, rests, ties, and ornaments
+<li> actions to change or select note voice affect tuplets <a href="http://forum.cockos.com/showpost.php?p=1776813" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> fix chord notation sometimes not being visible immediately after entering
+<li> fix crescendo/diminuendo that spans multiple rows
+<li> fix erratic tuplet bracket positioning on grand staff <a href="http://forum.cockos.com/showpost.php?p=1775774" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> fix potential hang in MusicXML export <a href="http://forum.cockos.com/showthread.php?t=185288" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> fix setting one half of grand staff to +/- 8/15 va/vb (up or down one or two octaves)
+<li> hopefully less intrusive edit cursor drawing
+<li> improve tuplet autodetection
+<li> increase space between staves
+<li> note notation events may follow notes rather than preceding, may affect user scripts/plugins that read notation messages, best script practice would be not to assume any ordering
+<li> prevent grabbing the note edge when the note is very small
+<li> support "chart" clef (no notes, just beat markings and chord/other notation)
+<li> support copying/dragging notes to another staff row or track
+<li> support track notation that applies to a length of time (drag right hand edge of notation)
+<li> tuplet dialog remembers previous settings
+<li> when creating tuplets in a voice, set selected note voice to match even if not modifying note positions <a href="http://forum.cockos.com/showpost.php?p=1777017" target="blank"><span class='whatsnewdot'>&bull;</span></a>
 </ul>
 </div>
 <div class='avoidbreak'>
 <div class='bold'>MIDI</div><ul class='bullet'>
-<li> prevent re-selecting CC and text events when moving notes via action <a href="http://forum.cockos.com/showpost.php?p=1767700" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> fix selection/editing of selected velocity and CC events when intermixed with unselected events <a href="http://forum.cockos.com/showthread.php?t=184204" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> prevent drawing note names/velocity when notes are too close together <a href="http://forum.cockos.com/showthread.php?t=184595" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> set default shift+alt+drag mouse modifier to no action (to avoid conflict with default shift+alt+click to select all notes in measure)
-<li> update editor display when recording into secondary items <a href="http://forum.cockos.com/showthread.php?t=184736" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> chase notation messages when seeking
+<li> add action to set length for next inserted note to grid
+<li> add mouse modifiers to insert note ignoring scale/key <a href="http://forum.cockos.com/showpost.php?p=1776708" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> add option to edit velocity only when mouse is within velocity bar <a href="http://forum.cockos.com/showthread.php?t=185372" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> add some notation actions to piano roll note context menu
+<li> better support for cut/copy/paste of MIDI events from/to multiple tracks
+<li> display notation meta-events in a lane in the piano roll
+<li> edit text/sysex events on right-click, rather than deleting
+<li> faster loading of very large .reascale files
+<li> fix display of captured CC event value
+<li> fix various cases when note edits extend the media item
+<li> ignore double note-on or note-off messages when opening editor
+<li> improve .ins (patch/bank) file reading <a href="http://forum.cockos.com/showthread.php?t=185235" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> respect event filter and mark selected events in raw MIDI viewer window
+<li> show toolbar button feedback for actions to set next note length
+<li> support loading custom CC names from note name map
+<li> don't play back notation for muted notes
+<li> preserve muted events during glue
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>ReaFIR</div><ul class='bullet'>
+<li> add new improved default quality mode (previous behavior is now legacy 2007-2016 mode)
+<li> decreased CPU use
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>ReaScript</div><ul class='bullet'>
+<li> allow up to 32M memory slots for each EEL script
+<li> ensure IDE is not completely offscreen when opening
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Recording</div><ul class='bullet'>
+<li> fix issue when recording in background tab and record preroll in the active tab
+<li> fix varispeed item recording quirks
+<li> fix corner case with time selection autopunch recording <a href="http://forum.cockos.com/showthread.php?t=186068" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Transport</div><ul class='bullet'>
+<li> do not apply unedited text fields when enter is not pressed <a href="http://forum.cockos.com/showthread.php?t=185813" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> improve behavior when adding tempo markers from BPM field <a href="http://forum.cockos.com/showthread.php?t=185813" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Video</div><ul class='bullet'>
+<li> improve behavior of video processor bypass automation
+<li> include fullscreen state in screensets
+<li> restore fullscreen state on re-open if window not docked
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>WavPack</div><ul class='bullet'>
+<li> upgrade to WavPack 5.0
+<li> improve large file reading support
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Windows</div><ul class='bullet'>
+<li> support configurable HiDPI behavior in prefs/general/advanced, new default behavior prevents plug-ins from enabling HiDPI
+<li> fix knob issues on Win10 HiDPI displays <a href="http://forum.cockos.com/showthread.php?t=168589" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> improve knob behavior when adjusted from touch input
 </ul>
 </div>
 <div class='avoidbreak'>
 <div class='bold'>Actions</div><ul class='bullet'>
-<li> add actions to insert or extend MIDI to fill time selection
-<li> add actions to import or export track MIDI lyrics
+<li> ignore item/track/envelope focus in 'Item: Select all items' <a href="http://forum.cockos.com/showthread.php?t=186406" target="blank"><span class='whatsnewdot'>&bull;</span></a>
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Development IDEs</div><ul class='bullet'>
-<li> add support for shift+click text selection
-<li> support load/save of color presets in theme tweaker
-<li> open ReaScript help directly to the language currently being edited
+<div class='bold'>Automute</div><ul class='bullet'>
+<li> fix auto-mute detection on high channels when multichannel track metering is enabled
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>FX</div><ul class='bullet'>
-<li> support on-the-fly Audio Units PDC changes <a href="http://forum.cockos.com/showthread.php?t=184278" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> avoid close/re-open of FX UIs in certain instances (fixes potential macOS Melda crash)
+<div class='bold'>Configuration import/export</div><ul class='bullet'>
+<li> support web interface pages
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Project tabs</div><ul class='bullet'>
-<li> respect 'offline background project media' when restoring application focus
-<li> add default option to force project tabs visible when monitoring FX are in use
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Action list</div><ul class='bullet'>
-<li> add context menu item to copy action text <a href="http://forum.cockos.com/showthread.php?t=139984" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Big Clock</div><ul class='bullet'>
-<li> improve count-in beats-only display at negative times
+<div class='bold'>Free item positioning</div><ul class='bullet'>
+<li> reposition items after dragging in new media items or gluing <a href="http://forum.cockos.com/showthread.php?t=183298" target="blank"><span class='whatsnewdot'>&bull;</span></a>
 </ul>
 </div>
 <div class='avoidbreak'>
 <div class='bold'>JSFX</div><ul class='bullet'>
-<li> extend gfx.drawstr() to support text justifying and clipping
+<li> improve retina/hidpi support for various analysis plug-ins
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>LTC/MTC sync</div><ul class='bullet'>
-<li> add options to automatically stop recording on timecode loss and/or discontinuity
+<div class='bold'>Mouse</div><ul class='bullet'>
+<li> add option to improve knob behavior with pen/tablet/absolute pointing devices
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Lyrics</div><ul class='bullet'>
-<li> update Lyrics.lua to support lyric input and editing as well as display
+<div class='bold'>MusicXML</div><ul class='bullet'>
+<li> fix parsing of elements containing HTML entities <a href="http://forum.cockos.com/showthread.php?t=185242" target="blank"><span class='whatsnewdot'>&bull;</span></a>
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Mixer</div><ul class='bullet'>
-<li> fix FX copy/paste menu items sometimes inserting FX instead <a href="http://forum.cockos.com/showthread.php?t=184632" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<div class='bold'>Project tabs</div><ul class='bullet'>
+<li> allow setting media online when switching tabs and background projects are playing
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Peaks</div><ul class='bullet'>
-<li> allow bringing media project online while building peaks
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Preferences</div><ul class='bullet'>
-<li> combine volume handle range preference with handle/knob preference
+<div class='bold'>Undo</div><ul class='bullet'>
+<li> include modified envelopes in undo states when modifying time map <a href="http://forum.cockos.com/showthread.php?t=186284" target="blank"><span class='whatsnewdot'>&bull;</span></a>
 </ul>
 </div>
 <div class='avoidbreak'>
 <div class='bold'>API</div><ul class='bullet'>
-<li> treat volume as dB rather than 1% of fader range in CSurf_OnVolumeChange relative mode
-<li> add SetTrackMIDILyrics, GetTrackMIDILyrics, GetTrackName
-<li> add MIDI_GetAllEvts, MIDI_SetAllEvts <a href="http://forum.cockos.com/showpost.php?p=1761049" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> make APIExists() only return true for functions accessible via script (not C++-only APIs)
+<li> add PCM_Source_GetPeaks, GetMediaItemTake_Peaks
+<li> add an additional sorting step to MIDI_Sort and other functions that sort MIDI from API <a href="http://forum.cockos.com/showthread.php?t=184459" target="blank"><span class='whatsnewdot'>&bull;</span></a>
 </ul>
 </div>
     </div>

@@ -199,7 +199,7 @@ OS X 10.5-10.12<br>
     <div style='width:1000px; -webkit-column-count: 3; -moz-column-count: 3; column-count: 3;'><a name="whatsnew"></a>
 <div class='avoidbreak'>
 <div class='bold'>Peaks</div><ul class='bullet'>
-<li> add optional spectral peaks display, colored by pitch/tonal content
+<li> add optional spectral peaks display, colored by pitch/tonal content  - <a href="videos.php#ASm_mmkum2M" target="blank"><span class='whatsnewdot'>video</span></a>
 <li> add peaks display settings window
 <li> add sinc interpolation display option for sample-level peaks
 <li> fix issue where rebuilding peaks would not rebuild when multiple peaks files are present
@@ -229,7 +229,7 @@ OS X 10.5-10.12<br>
 <li> increase space between staves
 <li> note notation events may follow notes rather than preceding, may affect user scripts/plugins that read notation messages, best script practice would be not to assume any ordering
 <li> prevent grabbing the note edge when the note is very small
-<li> support "chart" clef (no notes, just beat markings and chord/other notation)
+<li> support "chart" clef (no notes, just beat markings and chord/other notation  - <a href="videos.php#ss7HBw6V_lk" target="blank"><span class='whatsnewdot'>video</span></a>
 <li> support copying/dragging notes to another staff row or track
 <li> support track notation that applies to a length of time (drag right hand edge of notation)
 <li> tuplet dialog remembers previous settings
@@ -243,7 +243,7 @@ OS X 10.5-10.12<br>
 <li> add option to edit velocity only when mouse is within velocity bar <a href="http://forum.cockos.com/showthread.php?t=185372" target="blank"><span class='whatsnewdot'>&bull;</span></a>
 <li> add some notation actions to piano roll note context menu
 <li> better support for cut/copy/paste of MIDI events from/to multiple tracks
-<li> display notation meta-events in a lane in the piano roll
+<li> display notation meta-events in a lane in the piano roll  - <a href="videos.php#o8mVhWXhN4w" target="blank"><span class='whatsnewdot'>video</span></a>
 <li> edit text/sysex events on right-click, rather than deleting
 <li> faster loading of very large .reascale files
 <li> fix display of captured CC event value

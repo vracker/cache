@@ -81,6 +81,25 @@ mission statement</a>.</p>
 <h2 id="news">News</h2>
 <dl>
 
+<dt><span>RISC-V support</span>
+     <span class="date">[2017-02-02]</span></dt>
+     <dd>Support for the <a href="http://riscv.org">RISC-V ISA</a> was added, contributed by Palmer Dabbelt and Andrew Waterman.</dd>
+
+<dt><span>BRIG/HSAIL (Heterogeneous Systems Architecture Intermediate Language) frontend added</span>
+     <span class="date">[2017-02-01]</span></dt>
+     <dd><a href="http://www.hsafoundation.com/"> Heterogeneous Systems
+     Architecture 1.0</a> BRIG (HSAIL)
+     <a href="gcc-7/changes.html#brig">frontend was added to GCC</a>,
+     enabling HSAIL finalization for gcc-supported
+     targets. The code was developed by
+     <a href="http://parmance.com">Parmance</a> with sponsorship from
+     <a href="http://www.generalprocessortech.com/">General Processor Technologies</a>.</dd>
+
+<dt><span>Fuchsia OS support</span>
+     <span class="date">[2017-01-10]</span></dt>
+     <dd><a href="https://fuchsia.googlesource.com/">Fuchsia OS</a>
+     support was added to GCC, contributed by Google.</dd>
+
 <dt><span><a href="gcc-6/">GCC 6.3</a> released</span>
     <span class="date">[2016-12-21]</span></dt>
     <dd></dd>
@@ -115,36 +134,6 @@ mission statement</a>.</p>
 <dt><span><a href="gcc-5/">GCC 5.3</a> released</span>
     <span class="date">[2015-12-04]</span></dt>
     <dd></dd>
-
-<dt><span><a href="gcc-5/">GCC 5.2</a> released</span>
-    <span class="date">[2015-07-16]</span></dt>
-    <dd></dd>
-
-<dt><span><a href="gcc-4.9/">GCC 4.9.3</a> released</span>
-    <span class="date">[2015-06-26]</span></dt>
-    <dd></dd>
-
-<dt><span><a href="gcc-4.8/">GCC 4.8.5</a> released</span>
-    <span class="date">[2015-06-23]</span></dt>
-    <dd></dd>
-
-<dt><span><a href="gcc-5/">GCC 5.1</a> released</span>
-    <span class="date">[2015-04-22]</span></dt>
-    <dd></dd>
-
-<dt><span>MIPS Release 6 architecture support</span>
-     <span class="date">[2015-01-20]</span></dt>
-     <dd>Support for MIPS Release 6 (r6) has been contributed by Imagination
-     Technologies.</dd>
-
-<dt><span>OpenMP 4.0 offloading support in GCC</span>
-     <span class="date">[2015-01-14]</span></dt>
-     <dd><a href="http://www.openmp.org/wp-content/uploads/OpenMP4.0.0.pdf">
-     OpenMP 4.0</a> <a href="https://gcc.gnu.org/gcc-5/changes.html#offload">
-     offloading support was added to GCC.</a>
-     Contributed by Jakub Jelinek (Red Hat), Bernd Schmidt and
-     Thomas Schwinge (CodeSourcery), Andrey Turetskiy,
-     Ilya Verbin and Kirill Yukhin (Intel).</dd>
 
 </dl>
 
@@ -374,7 +363,7 @@ permitted in any medium, provided this notice is preserved.</p>
 
 <p>These pages are
 <a href="https://gcc.gnu.org/about.html">maintained by the GCC team</a>.
-Last modified 2017-01-20<!-- IGNORE DIFF
+Last modified 2017-02-03<!-- IGNORE DIFF
 --><a href="http://validator.w3.org/check/referer">.</a></p>
 
 </div>

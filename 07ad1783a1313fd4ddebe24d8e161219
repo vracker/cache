@@ -64,6 +64,8 @@
 <tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="sed-4.2.tar.gz.sig">sed-4.2.tar.gz.sig</a></td><td align="right">2009-04-30 05:26  </td><td align="right"> 65 </td><td>&nbsp;</td></tr>
 <tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="sed-4.3.tar.xz">sed-4.3.tar.xz</a></td><td align="right">2017-01-04 03:44  </td><td align="right">1.1M</td><td>&nbsp;</td></tr>
 <tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="sed-4.3.tar.xz.sig">sed-4.3.tar.xz.sig</a></td><td align="right">2017-01-04 03:44  </td><td align="right">801 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="sed-4.4.tar.xz">sed-4.4.tar.xz</a></td><td align="right">2017-02-03 20:27  </td><td align="right">1.1M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="sed-4.4.tar.xz.sig">sed-4.4.tar.xz.sig</a></td><td align="right">2017-02-03 20:27  </td><td align="right">801 </td><td>&nbsp;</td></tr>
    <tr><th colspan="5"><hr></th></tr>
 </table>
 <address>Apache/2.4.7 (Trisquel_GNU/Linux) Server at ftp.gnu.org Port 80</address>

@@ -21,7 +21,7 @@
                             ],
                     code: 'div-gpt-ad-1393435113147-0',
                     sizes: [728, 90],
-                    tag: 'SF_ProjectFiles_728x90_A'
+                    tag: 'SF_ProjectFiles_728x90_A',
                 },
             {
                     bids: [{'params': {'tagid': '364646'}, 'bidder': 'sovrn'},
@@ -35,7 +35,7 @@
                             ],
                     code: 'div-gpt-ad-1392147725721-0',
                     sizes: [[300, 250], [300, 600], [300, 1050]],
-                    tag: 'SF_ProjectFiles_300x250_A'
+                    tag: 'SF_ProjectFiles_300x250_A',
                 },
             {
                     bids: [{'params': {'tagid': '364647'}, 'bidder': 'sovrn'},
@@ -49,7 +49,7 @@
                             ],
                     code: 'div-gpt-ad-1392148208789-0',
                     sizes: [300, 250],
-                    tag: 'SF_ProjectFiles_300x250_B'
+                    tag: 'SF_ProjectFiles_300x250_B',
                 }
             ];
             SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "sovrn": 0.8, "aardvark": 0.99, "aol": 0.75, "brealtime": 0.8, "rubiconlite": 0.9, "appnexus": 0.79, "pulsepoint": 0.86, "rubicon": 0.87, "indexexchange": 0.88, "springserve": 0.82}, "inflation": 1.2, "floor": 0.02};
@@ -64,11 +64,19 @@
 <![endif]-->
 <link href='//fonts.googleapis.com/css?family=Ubuntu:regular' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="//a.fsdn.com/con/css/sf-files.css" type="text/css">
+       /*global Foundation */
            /*global googletag, bizxPrebid */
        var gptadslots=[];
        var gptadHandlers={};
+       var gptadRenderers=[];
+       var gptadComplements={};
        googletag.cmd.push(function() {
-           //prebid_log('GPT push define slots and targeting');
+           var leaderboard = googletag.sizeMapping()
+               .addSize([1024, 200], [728, 90]) // Tablet
+               .addSize([1280, 200], [[970, 250], [728, 90]]) // Tablet
+               .addSize([0, 0], [300, 250]) // Tablet
+               .build();
+            //prebid_log('GPT push define slots and targeting');
             gptadslots.push(googletag.defineSlot('/41014381/Sourceforge/SF_ProjectFiles_728x90_A', [728, 90], 'div-gpt-ad-1393435113147-0')
                                                     .addService(googletag.pubads())
                                                         .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])

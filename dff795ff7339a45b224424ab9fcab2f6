@@ -83,7 +83,7 @@ mission statement</a>.</p>
 
 <dt><span>RISC-V support</span>
      <span class="date">[2017-02-02]</span></dt>
-     <dd>Support for the <a href="http://riscv.org">RISC-V ISA</a> was added, contributed by Palmer Dabbelt and Andrew Waterman.</dd>
+     <dd>Support for the <a href="https://riscv.org">RISC-V ISA</a> was added, contributed by Palmer Dabbelt and Andrew Waterman.</dd>
 
 <dt><span>BRIG/HSAIL (Heterogeneous Systems Architecture Intermediate Language) frontend added</span>
      <span class="date">[2017-02-01]</span></dt>
@@ -363,7 +363,7 @@ permitted in any medium, provided this notice is preserved.</p>
 
 <p>These pages are
 <a href="https://gcc.gnu.org/about.html">maintained by the GCC team</a>.
-Last modified 2017-02-03<!-- IGNORE DIFF
+Last modified 2017-02-08<!-- IGNORE DIFF
 --><a href="http://validator.w3.org/check/referer">.</a></p>
 
 </div>

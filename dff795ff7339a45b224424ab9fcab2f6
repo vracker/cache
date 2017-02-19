@@ -210,27 +210,29 @@ More news? Let gerald@pfeifer.com know!
 
 <h2>Search our site</h2>
 
-<div style="font-size:90%;">
+<div >
 
 <form method="get" action="https://gcc.gnu.org/cgi-bin/search.cgi">
-<input type="text" size="30" name="q" value="" style="font-size:90%;" />
+<input type="text" size="30" name="q" value="" class="smaller" />
 <input type="hidden" name="cmd" value="Search" />
-<input type="submit" value="Search" style="font-size:90%;" />
+<input type="submit" value="Search" class="smaller" />
 <br />
-<span>Match: <select name="m" style="font-size:90%;">
+<span class="smaller">Match: <select name="m" class="smaller">
   <option value="all">All words</option>
   <option value="any">Any word</option>
   <option value="bool">Boolean expression</option>
   </select></span>
-<span>Sort by: <select name="s" style="font-size:90%;">
+<span class="smaller">Sort by: <select name="s" class="smaller">
   <option value="DRP">Newest</option>
   <option value="RPD">Best Match</option>
   </select></span>
 </form>
 
+<p class="smaller">There is also a
+<a href="search.html">detailed search form</a>.</p>
+
 </div>
 
-<p>There is also a <a href="search.html">detailed search form</a>.</p>
 
 
 <h2>Get our announcements</h2>
@@ -363,7 +365,7 @@ permitted in any medium, provided this notice is preserved.</p>
 
 <p>These pages are
 <a href="https://gcc.gnu.org/about.html">maintained by the GCC team</a>.
-Last modified 2017-02-08<!-- IGNORE DIFF
+Last modified 2017-02-18<!-- IGNORE DIFF
 --><a href="http://validator.w3.org/check/referer">.</a></p>
 
 </div>

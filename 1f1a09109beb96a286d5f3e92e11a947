@@ -211,7 +211,8 @@
     </div>
     <div id="files-sidebar" class="scroll-fixable" data-floor-compensate="145">
         <div class="sterling">
-<div id="SF_ProjectFiles_300x250_A_wrapped" class="draper multisize  " data-unit="SF_ProjectFiles_300x250_A">
+<div id="SF_ProjectFiles_300x250_A_wrapped" class="draper multisize  "
+data-unit="SF_ProjectFiles_300x250_A">
 </div>
         </div>
                 <aside class="sidebar-widget">
@@ -246,11 +247,13 @@
             </li>
     </ul>
 </aside>
-<div id="SF_ProjectFiles_300x250_B_wrapped" class="draper medrec  " data-unit="SF_ProjectFiles_300x250_B">
+<div id="SF_ProjectFiles_300x250_B_wrapped" class="draper medrec  "
+data-unit="SF_ProjectFiles_300x250_B">
 </div>
             <div class="sterling" id="deals-widget">
     <aside class="sidebar-widget stackcommerce-widget">
-<div id="SF-300x250_wrapped" class="draper medrec  " data-unit="SF-300x250">
+<div id="SF-300x250_wrapped" class="draper medrec  "
+data-unit="SF-300x250">
 </div>
     </aside>
             </div>

@@ -124,17 +124,6 @@ mission statement</a>.</p>
     <span class="date">[2016-04-27]</span></dt>
     <dd></dd>
 
-<dt><span> Heterogeneous Systems Architecture support</span>
-     <span class="date">[2016-01-27]</span></dt>
-     <dd><a href="http://www.hsafoundation.com/"> Heterogeneous Systems
-     Architecture 1.0</a> <a href="https://gcc.gnu.org/gcc-6/changes.html#hsa">
-     support was added to GCC</a>, contributed by Martin Jambor, Martin Liška
-     and Michael Matz from SUSE.</dd>
-
-<dt><span><a href="gcc-5/">GCC 5.3</a> released</span>
-    <span class="date">[2015-12-04]</span></dt>
-    <dd></dd>
-
 </dl>
 
 <div >
@@ -254,10 +243,10 @@ More news? Let gerald@pfeifer.com know!
 
   </td>                                            <!-- end of main frame -->
 
-  <td valign="top" style="padding-left: 36px;">            <!-- nav frame -->
-  <table border="0" cellspacing="0" cellpadding="2" width="10em">
+  <td valign="top">                                        <!-- nav frame -->
+  <table class="nav" border="0" cellpadding="2" width="10em">
 
-  <tr><td><table class="navitem" cellspacing="0" width="100%">
+  <tr><td><table class="navitem" width="100%">
   <tr><td>About GCC</td></tr>
   <tr><td>
   <a href="gccmission.html">Mission Statement</a><br />
@@ -266,20 +255,22 @@ More news? Let gerald@pfeifer.com know!
   <a href="lists.html">Mailing lists</a><br />
   <a href="https://gcc.gnu.org/onlinedocs/gcc/Contributors.html">Contributors</a><br />
   <a href="steering.html">Steering Committee</a><br />
+  <div align="center">
   <a href="https://twitter.com/gnutools">
     <img src="twitter-bird-light-bgs.png"
       height="42" width="42" align="middle" alt="@gnutools on Twitter"
-      style="border:0px" />@gnutools</a>
+      />@gnutools</a>
+  </div>
   <div align="center">
   <a href="https://plus.google.com/108467477471815191158">
     <img src="gplus-32.png"
       height="24" width="24" align="middle" alt="gnutools on Google+"
-      style="border:0px" />  gnutools</a>
+      />  gnutools</a>
   </div>
   </td></tr>
   </table></td></tr>
 
-  <tr><td><table class="navitem" cellspacing="0" width="100%">
+  <tr><td><table class="navitem" width="100%">
   <tr><td>Documentation</td></tr>
   <tr><td>
   <a href="https://gcc.gnu.org/install/">Installation</a><br />
@@ -291,7 +282,7 @@ More news? Let gerald@pfeifer.com know!
   </td></tr>
   </table></td></tr>
  
-  <tr><td><table class="navitem" cellspacing="0" width="100%">
+  <tr><td><table class="navitem" width="100%">
   <tr><td>Download</td></tr>
   <tr><td>
   <a href="mirrors.html">Mirrors</a><br />
@@ -299,7 +290,7 @@ More news? Let gerald@pfeifer.com know!
   </td></tr>
   </table></td></tr>
 
-  <tr><td><table class="navitem" cellspacing="0" width="100%">
+  <tr><td><table class="navitem" width="100%">
   <tr><td>Sources</td></tr>
   <tr><td>
   <a href="svn.html">SVN read access</a><br />
@@ -309,7 +300,7 @@ More news? Let gerald@pfeifer.com know!
   </td></tr>
   </table></td></tr>
 
-  <tr><td><table class="navitem" cellspacing="0" width="100%">
+  <tr><td><table class="navitem" width="100%">
   <tr><td>Development</td></tr>
   <tr><td>
   <a href="develop.html">Development Plan</a><br />
@@ -326,7 +317,7 @@ More news? Let gerald@pfeifer.com know!
   </td></tr>
   </table></td></tr>
 
-  <tr><td><table class="navitem" cellspacing="0" width="100%">
+  <tr><td><table class="navitem" width="100%">
   <tr><td>Bugs</td></tr>
   <tr><td>
   <a href="bugs/#known">Known bugs</a><br />
@@ -365,7 +356,7 @@ permitted in any medium, provided this notice is preserved.</p>
 
 <p>These pages are
 <a href="https://gcc.gnu.org/about.html">maintained by the GCC team</a>.
-Last modified 2017-02-18<!-- IGNORE DIFF
+Last modified 2017-02-26<!-- IGNORE DIFF
 --><a href="http://validator.w3.org/check/referer">.</a></p>
 
 </div>

@@ -328,6 +328,9 @@
 <a href="git-2.11.1.tar.gz">git-2.11.1.tar.gz</a>               02-Feb-2017 22:48  6.0M  
 <a href="git-2.11.1.tar.sign">git-2.11.1.tar.sign</a>             02-Feb-2017 22:48  543   
 <a href="git-2.11.1.tar.xz">git-2.11.1.tar.xz</a>               02-Feb-2017 22:48  4.0M  
+<a href="git-2.12.0.tar.gz">git-2.12.0.tar.gz</a>               24-Feb-2017 19:28  6.1M  
+<a href="git-2.12.0.tar.sign">git-2.12.0.tar.sign</a>             24-Feb-2017 19:28  543   
+<a href="git-2.12.0.tar.xz">git-2.12.0.tar.xz</a>               24-Feb-2017 19:28  4.1M  
 <a href="git-core-0.99.4.tar.gz">git-core-0.99.4.tar.gz</a>          12-Aug-2005 07:02  329K  
 <a href="git-core-0.99.4.tar.sign">git-core-0.99.4.tar.sign</a>        08-Aug-2013 19:44  665   
 <a href="git-core-0.99.5.tar.gz">git-core-0.99.5.tar.gz</a>          25-Aug-2005 02:48  364K  
@@ -634,6 +637,9 @@
 <a href="git-htmldocs-2.11.1.tar.gz">git-htmldocs-2.11.1.tar.gz</a>      02-Feb-2017 22:48  2.5M  
 <a href="git-htmldocs-2.11.1.tar.sign">git-htmldocs-2.11.1.tar.sign</a>    02-Feb-2017 22:48  543   
 <a href="git-htmldocs-2.11.1.tar.xz">git-htmldocs-2.11.1.tar.xz</a>      02-Feb-2017 22:48  1.0M  
+<a href="git-htmldocs-2.12.0.tar.gz">git-htmldocs-2.12.0.tar.gz</a>      24-Feb-2017 19:28  2.5M  
+<a href="git-htmldocs-2.12.0.tar.sign">git-htmldocs-2.12.0.tar.sign</a>    24-Feb-2017 19:28  543   
+<a href="git-htmldocs-2.12.0.tar.xz">git-htmldocs-2.12.0.tar.xz</a>      24-Feb-2017 19:28  1.0M  
 <a href="git-manpages-1.8.3.1.tar.bz2">git-manpages-1.8.3.1.tar.bz2</a>    10-Jun-2013 21:01  371K  
 <a href="git-manpages-1.8.3.1.tar.gz">git-manpages-1.8.3.1.tar.gz</a>     10-Jun-2013 21:01  530K  
 <a href="git-manpages-1.8.3.1.tar.sign">git-manpages-1.8.3.1.tar.sign</a>   10-Jun-2013 21:01  543   
@@ -934,6 +940,9 @@
 <a href="git-manpages-2.11.1.tar.gz">git-manpages-2.11.1.tar.gz</a>      02-Feb-2017 22:48  632K  
 <a href="git-manpages-2.11.1.tar.sign">git-manpages-2.11.1.tar.sign</a>    02-Feb-2017 22:48  543   
 <a href="git-manpages-2.11.1.tar.xz">git-manpages-2.11.1.tar.xz</a>      02-Feb-2017 22:48  391K  
-<a href="sha256sums.asc">sha256sums.asc</a>                  02-Feb-2017 23:02   56K  
+<a href="git-manpages-2.12.0.tar.gz">git-manpages-2.12.0.tar.gz</a>      24-Feb-2017 19:28  638K  
+<a href="git-manpages-2.12.0.tar.sign">git-manpages-2.12.0.tar.sign</a>    24-Feb-2017 19:28  543   
+<a href="git-manpages-2.12.0.tar.xz">git-manpages-2.12.0.tar.xz</a>      24-Feb-2017 19:28  394K  
+<a href="sha256sums.asc">sha256sums.asc</a>                  24-Feb-2017 19:33   56K  
 <hr></pre>
 </body></html>

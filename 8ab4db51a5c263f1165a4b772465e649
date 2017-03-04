@@ -119,6 +119,10 @@
 <tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="binutils-2.27.tar.bz2.sig">binutils-2.27.tar.bz2.sig</a></td><td align="right">2016-08-03 05:27  </td><td align="right">194 </td><td>&nbsp;</td></tr>
 <tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="binutils-2.27.tar.gz">binutils-2.27.tar.gz</a></td><td align="right">2016-08-03 05:27  </td><td align="right"> 34M</td><td>&nbsp;</td></tr>
 <tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="binutils-2.27.tar.gz.sig">binutils-2.27.tar.gz.sig</a></td><td align="right">2016-08-03 05:27  </td><td align="right">194 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="binutils-2.28.tar.bz2">binutils-2.28.tar.bz2</a></td><td align="right">2017-03-02 04:21  </td><td align="right"> 25M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="binutils-2.28.tar.bz2.sig">binutils-2.28.tar.bz2.sig</a></td><td align="right">2017-03-02 04:21  </td><td align="right">194 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="binutils-2.28.tar.gz">binutils-2.28.tar.gz</a></td><td align="right">2017-03-02 04:21  </td><td align="right"> 35M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="binutils-2.28.tar.gz.sig">binutils-2.28.tar.gz.sig</a></td><td align="right">2017-03-02 04:21  </td><td align="right">194 </td><td>&nbsp;</td></tr>
    <tr><th colspan="5"><hr></th></tr>
 </table>
 <address>Apache/2.4.7 (Trisquel_GNU/Linux) Server at ftp.gnu.org Port 80</address>

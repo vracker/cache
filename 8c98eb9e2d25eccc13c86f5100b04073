@@ -5,19 +5,19 @@
     "releases": [
         {
             "iseol": false, 
-            "version": "4.10", 
+            "version": "4.11-rc1", 
             "moniker": "mainline", 
-            "source": "https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.10.tar.xz", 
-            "pgp": "https://www.kernel.org/pub/linux/kernel/v4.x/linux-4.10.tar.sign", 
+            "source": "https://www.kernel.org/pub/linux/kernel/v4.x/testing/linux-4.11-rc1.tar.xz", 
+            "pgp": "https://www.kernel.org/pub/linux/kernel/v4.x/testing/linux-4.11-rc1.tar.sign", 
             "released": {
-                "timestamp": 1487543648, 
-                "isodate": "2017-02-19"
+                "timestamp": 1488747610, 
+                "isodate": "2017-03-05"
             }, 
-            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/log/?id=refs/tags/v4.10", 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/log/?id=refs/tags/v4.11-rc1", 
             "changelog": null, 
-            "diffview": "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/diff/?id=v4.10&id2=v4.9&dt=2", 
+            "diffview": "https://git.kernel.org/cgit/linux/kernel/git/torvalds/linux.git/diff/?id=v4.11-rc1&id2=v4.10&dt=2", 
             "patch": {
-                "full": "https://www.kernel.org/pub/linux/kernel/v4.x/patch-4.10.xz", 
+                "full": "https://www.kernel.org/pub/linux/kernel/v4.x/testing/patch-4.11-rc1.xz", 
                 "incremental": null
             }
         }, 
@@ -203,15 +203,15 @@
         }, 
         {
             "iseol": false, 
-            "version": "next-20170303", 
+            "version": "next-20170306", 
             "moniker": "linux-next", 
             "source": null, 
             "pgp": null, 
             "released": {
-                "timestamp": 1488507189, 
-                "isodate": "2017-03-03"
+                "timestamp": 1488762001, 
+                "isodate": "2017-03-06"
             }, 
-            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/next/linux-next.git/log/?id=refs/tags/next-20170303", 
+            "gitweb": "https://git.kernel.org/cgit/linux/kernel/git/next/linux-next.git/log/?id=refs/tags/next-20170306", 
             "changelog": null, 
             "diffview": null, 
             "patch": {

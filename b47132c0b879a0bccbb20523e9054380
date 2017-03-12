@@ -1,70 +1,66 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <html>
- <head>
-  <title>Index of /pub/linux/docs/man-pages</title>
- </head>
- <body>
-<h1>Index of /pub/linux/docs/man-pages</h1>
-<pre><a href="?C=N;O=D">Name</a>                    <a href="?C=M;O=A">Last modified</a>      <a href="?C=S;O=A">Size</a>  <hr><a href="/pub/linux/docs/">Parent Directory</a>                             -   
-<a href="Archive/">Archive/</a>                12-Dec-2016 11:00    -   
-<a href="man-pages-posix/">man-pages-posix/</a>        19-Jan-2014 08:19    -   
-<a href="man-pages-3.50.tar.bz2">man-pages-3.50.tar.bz2</a>  15-Mar-2013 07:42  1.2M  
-<a href="man-pages-3.51.tar.bz2">man-pages-3.51.tar.bz2</a>  19-Apr-2013 12:03  1.2M  
-<a href="man-pages-3.52.tar.bz2">man-pages-3.52.tar.bz2</a>  04-Jul-2013 11:13  1.2M  
-<a href="man-pages-3.53.tar.bz2">man-pages-3.53.tar.bz2</a>  31-Jul-2013 06:48  1.2M  
-<a href="man-pages-3.54.tar.bz2">man-pages-3.54.tar.bz2</a>  17-Sep-2013 07:03  1.2M  
-<a href="man-pages-3.55.tar.bz2">man-pages-3.55.tar.bz2</a>  12-Dec-2013 07:47  1.2M  
-<a href="man-pages-3.77.tar.gz">man-pages-3.77.tar.gz</a>   10-Jan-2015 15:08  2.0M  
-<a href="man-pages-3.77.tar.sign">man-pages-3.77.tar.sign</a> 10-Jan-2015 15:08  543   
-<a href="man-pages-3.77.tar.xz">man-pages-3.77.tar.xz</a>   10-Jan-2015 15:08  1.2M  
-<a href="man-pages-3.78.tar.gz">man-pages-3.78.tar.gz</a>   23-Jan-2015 06:07  2.0M  
-<a href="man-pages-3.78.tar.sign">man-pages-3.78.tar.sign</a> 23-Jan-2015 06:07  543   
-<a href="man-pages-3.78.tar.xz">man-pages-3.78.tar.xz</a>   23-Jan-2015 06:07  1.3M  
-<a href="man-pages-3.79.tar.gz">man-pages-3.79.tar.gz</a>   01-Feb-2015 16:18  2.0M  
-<a href="man-pages-3.79.tar.sign">man-pages-3.79.tar.sign</a> 01-Feb-2015 16:18  543   
-<a href="man-pages-3.79.tar.xz">man-pages-3.79.tar.xz</a>   01-Feb-2015 16:18  1.3M  
-<a href="man-pages-3.80.tar.gz">man-pages-3.80.tar.gz</a>   21-Feb-2015 12:49  2.0M  
-<a href="man-pages-3.80.tar.sign">man-pages-3.80.tar.sign</a> 21-Feb-2015 12:49  543   
-<a href="man-pages-3.80.tar.xz">man-pages-3.80.tar.xz</a>   21-Feb-2015 12:49  1.3M  
-<a href="man-pages-3.81.tar.gz">man-pages-3.81.tar.gz</a>   02-Mar-2015 15:17  2.0M  
-<a href="man-pages-3.81.tar.sign">man-pages-3.81.tar.sign</a> 02-Mar-2015 15:17  543   
-<a href="man-pages-3.81.tar.xz">man-pages-3.81.tar.xz</a>   02-Mar-2015 15:17  1.3M  
-<a href="man-pages-3.82.tar.gz">man-pages-3.82.tar.gz</a>   31-Mar-2015 06:55  2.1M  
-<a href="man-pages-3.82.tar.sign">man-pages-3.82.tar.sign</a> 31-Mar-2015 06:55  543   
-<a href="man-pages-3.82.tar.xz">man-pages-3.82.tar.xz</a>   31-Mar-2015 06:55  1.3M  
-<a href="man-pages-3.83.tar.gz">man-pages-3.83.tar.gz</a>   19-Apr-2015 09:24  2.1M  
-<a href="man-pages-3.83.tar.sign">man-pages-3.83.tar.sign</a> 19-Apr-2015 09:24  543   
-<a href="man-pages-3.83.tar.xz">man-pages-3.83.tar.xz</a>   19-Apr-2015 09:24  1.3M  
-<a href="man-pages-4.00.tar.gz">man-pages-4.00.tar.gz</a>   07-May-2015 06:35  2.1M  
-<a href="man-pages-4.00.tar.sign">man-pages-4.00.tar.sign</a> 07-May-2015 06:35  543   
-<a href="man-pages-4.00.tar.xz">man-pages-4.00.tar.xz</a>   07-May-2015 06:35  1.3M  
-<a href="man-pages-4.01.tar.gz">man-pages-4.01.tar.gz</a>   23-Jul-2015 18:07  2.1M  
-<a href="man-pages-4.01.tar.sign">man-pages-4.01.tar.sign</a> 23-Jul-2015 18:07  543   
-<a href="man-pages-4.01.tar.xz">man-pages-4.01.tar.xz</a>   23-Jul-2015 18:07  1.3M  
-<a href="man-pages-4.02.tar.gz">man-pages-4.02.tar.gz</a>   09-Aug-2015 12:57  2.1M  
-<a href="man-pages-4.02.tar.sign">man-pages-4.02.tar.sign</a> 09-Aug-2015 12:57  543   
-<a href="man-pages-4.02.tar.xz">man-pages-4.02.tar.xz</a>   09-Aug-2015 12:57  1.3M  
-<a href="man-pages-4.03.tar.gz">man-pages-4.03.tar.gz</a>   05-Dec-2015 12:43  2.1M  
-<a href="man-pages-4.03.tar.sign">man-pages-4.03.tar.sign</a> 05-Dec-2015 12:43  543   
-<a href="man-pages-4.03.tar.xz">man-pages-4.03.tar.xz</a>   05-Dec-2015 12:43  1.3M  
-<a href="man-pages-4.04.tar.gz">man-pages-4.04.tar.gz</a>   29-Dec-2015 15:49  2.2M  
-<a href="man-pages-4.04.tar.sign">man-pages-4.04.tar.sign</a> 29-Dec-2015 15:49  543   
-<a href="man-pages-4.04.tar.xz">man-pages-4.04.tar.xz</a>   29-Dec-2015 15:49  1.4M  
-<a href="man-pages-4.05.tar.gz">man-pages-4.05.tar.gz</a>   15-Mar-2016 08:02  2.2M  
-<a href="man-pages-4.05.tar.sign">man-pages-4.05.tar.sign</a> 15-Mar-2016 08:02  543   
-<a href="man-pages-4.05.tar.xz">man-pages-4.05.tar.xz</a>   15-Mar-2016 08:02  1.4M  
-<a href="man-pages-4.06.tar.gz">man-pages-4.06.tar.gz</a>   10-May-2016 05:30  2.2M  
-<a href="man-pages-4.06.tar.sign">man-pages-4.06.tar.sign</a> 10-May-2016 05:30  543   
-<a href="man-pages-4.06.tar.xz">man-pages-4.06.tar.xz</a>   10-May-2016 05:30  1.4M  
-<a href="man-pages-4.07.tar.gz">man-pages-4.07.tar.gz</a>   19-Jul-2016 14:48  2.2M  
-<a href="man-pages-4.07.tar.sign">man-pages-4.07.tar.sign</a> 19-Jul-2016 14:48  543   
-<a href="man-pages-4.07.tar.xz">man-pages-4.07.tar.xz</a>   19-Jul-2016 14:48  1.4M  
-<a href="man-pages-4.08.tar.gz">man-pages-4.08.tar.gz</a>   08-Oct-2016 11:54  2.2M  
-<a href="man-pages-4.08.tar.sign">man-pages-4.08.tar.sign</a> 08-Oct-2016 11:54  543   
-<a href="man-pages-4.08.tar.xz">man-pages-4.08.tar.xz</a>   08-Oct-2016 11:54  1.4M  
-<a href="man-pages-4.09.tar.gz">man-pages-4.09.tar.gz</a>   12-Dec-2016 10:59  2.3M  
-<a href="man-pages-4.09.tar.sign">man-pages-4.09.tar.sign</a> 12-Dec-2016 10:59  543   
-<a href="man-pages-4.09.tar.xz">man-pages-4.09.tar.xz</a>   12-Dec-2016 10:59  1.5M  
-<a href="sha256sums.asc">sha256sums.asc</a>          12-Dec-2016 11:20  4.3K  
-<hr></pre>
-</body></html>
+<head><title>Index of /pub/linux/docs/man-pages/</title></head>
+<body bgcolor="white">
+<h1>Index of /pub/linux/docs/man-pages/</h1><hr><pre><a href="../">../</a>
+<a href="Archive/">Archive/</a>                                           12-Dec-2016 11:00                   -
+<a href="man-pages-posix/">man-pages-posix/</a>                                   19-Jan-2014 08:19                   -
+<a href="man-pages-3.50.tar.bz2">man-pages-3.50.tar.bz2</a>                             15-Mar-2013 07:42             1259667
+<a href="man-pages-3.51.tar.bz2">man-pages-3.51.tar.bz2</a>                             19-Apr-2013 12:03             1266472
+<a href="man-pages-3.52.tar.bz2">man-pages-3.52.tar.bz2</a>                             04-Jul-2013 11:13             1283621
+<a href="man-pages-3.53.tar.bz2">man-pages-3.53.tar.bz2</a>                             31-Jul-2013 06:48             1288937
+<a href="man-pages-3.54.tar.bz2">man-pages-3.54.tar.bz2</a>                             17-Sep-2013 07:03             1292212
+<a href="man-pages-3.55.tar.bz2">man-pages-3.55.tar.bz2</a>                             12-Dec-2013 07:47             1297681
+<a href="man-pages-3.77.tar.gz">man-pages-3.77.tar.gz</a>                              10-Jan-2015 15:08             2078648
+<a href="man-pages-3.77.tar.sign">man-pages-3.77.tar.sign</a>                            10-Jan-2015 15:08                 543
+<a href="man-pages-3.77.tar.xz">man-pages-3.77.tar.xz</a>                              10-Jan-2015 15:08             1308048
+<a href="man-pages-3.78.tar.gz">man-pages-3.78.tar.gz</a>                              23-Jan-2015 06:07             2091984
+<a href="man-pages-3.78.tar.sign">man-pages-3.78.tar.sign</a>                            23-Jan-2015 06:07                 543
+<a href="man-pages-3.78.tar.xz">man-pages-3.78.tar.xz</a>                              23-Jan-2015 06:07             1315792
+<a href="man-pages-3.79.tar.gz">man-pages-3.79.tar.gz</a>                              01-Feb-2015 16:18             2100527
+<a href="man-pages-3.79.tar.sign">man-pages-3.79.tar.sign</a>                            01-Feb-2015 16:18                 543
+<a href="man-pages-3.79.tar.xz">man-pages-3.79.tar.xz</a>                              01-Feb-2015 16:18             1320688
+<a href="man-pages-3.80.tar.gz">man-pages-3.80.tar.gz</a>                              21-Feb-2015 12:49             2118590
+<a href="man-pages-3.80.tar.sign">man-pages-3.80.tar.sign</a>                            21-Feb-2015 12:49                 543
+<a href="man-pages-3.80.tar.xz">man-pages-3.80.tar.xz</a>                              21-Feb-2015 12:49             1332548
+<a href="man-pages-3.81.tar.gz">man-pages-3.81.tar.gz</a>                              02-Mar-2015 15:17             2135226
+<a href="man-pages-3.81.tar.sign">man-pages-3.81.tar.sign</a>                            02-Mar-2015 15:17                 543
+<a href="man-pages-3.81.tar.xz">man-pages-3.81.tar.xz</a>                              02-Mar-2015 15:17             1344848
+<a href="man-pages-3.82.tar.gz">man-pages-3.82.tar.gz</a>                              31-Mar-2015 06:55             2155249
+<a href="man-pages-3.82.tar.sign">man-pages-3.82.tar.sign</a>                            31-Mar-2015 06:55                 543
+<a href="man-pages-3.82.tar.xz">man-pages-3.82.tar.xz</a>                              31-Mar-2015 06:55             1357152
+<a href="man-pages-3.83.tar.gz">man-pages-3.83.tar.gz</a>                              19-Apr-2015 09:24             2166569
+<a href="man-pages-3.83.tar.sign">man-pages-3.83.tar.sign</a>                            19-Apr-2015 09:24                 543
+<a href="man-pages-3.83.tar.xz">man-pages-3.83.tar.xz</a>                              19-Apr-2015 09:24             1364196
+<a href="man-pages-4.00.tar.gz">man-pages-4.00.tar.gz</a>                              07-May-2015 06:35             2173692
+<a href="man-pages-4.00.tar.sign">man-pages-4.00.tar.sign</a>                            07-May-2015 06:35                 543
+<a href="man-pages-4.00.tar.xz">man-pages-4.00.tar.xz</a>                              07-May-2015 06:35             1368256
+<a href="man-pages-4.01.tar.gz">man-pages-4.01.tar.gz</a>                              23-Jul-2015 18:07             2216322
+<a href="man-pages-4.01.tar.sign">man-pages-4.01.tar.sign</a>                            23-Jul-2015 18:07                 543
+<a href="man-pages-4.01.tar.xz">man-pages-4.01.tar.xz</a>                              23-Jul-2015 18:07             1395072
+<a href="man-pages-4.02.tar.gz">man-pages-4.02.tar.gz</a>                              09-Aug-2015 12:57             2230119
+<a href="man-pages-4.02.tar.sign">man-pages-4.02.tar.sign</a>                            09-Aug-2015 12:57                 543
+<a href="man-pages-4.02.tar.xz">man-pages-4.02.tar.xz</a>                              09-Aug-2015 12:57             1403060
+<a href="man-pages-4.03.tar.gz">man-pages-4.03.tar.gz</a>                              05-Dec-2015 12:43             2243004
+<a href="man-pages-4.03.tar.sign">man-pages-4.03.tar.sign</a>                            05-Dec-2015 12:43                 543
+<a href="man-pages-4.03.tar.xz">man-pages-4.03.tar.xz</a>                              05-Dec-2015 12:43             1411908
+<a href="man-pages-4.04.tar.gz">man-pages-4.04.tar.gz</a>                              29-Dec-2015 15:49             2264315
+<a href="man-pages-4.04.tar.sign">man-pages-4.04.tar.sign</a>                            29-Dec-2015 15:49                 543
+<a href="man-pages-4.04.tar.xz">man-pages-4.04.tar.xz</a>                              29-Dec-2015 15:49             1426380
+<a href="man-pages-4.05.tar.gz">man-pages-4.05.tar.gz</a>                              15-Mar-2016 08:02             2305890
+<a href="man-pages-4.05.tar.sign">man-pages-4.05.tar.sign</a>                            15-Mar-2016 08:02                 543
+<a href="man-pages-4.05.tar.xz">man-pages-4.05.tar.xz</a>                              15-Mar-2016 08:02             1452936
+<a href="man-pages-4.06.tar.gz">man-pages-4.06.tar.gz</a>                              10-May-2016 05:30             2317275
+<a href="man-pages-4.06.tar.sign">man-pages-4.06.tar.sign</a>                            10-May-2016 05:30                 543
+<a href="man-pages-4.06.tar.xz">man-pages-4.06.tar.xz</a>                              10-May-2016 05:30             1461228
+<a href="man-pages-4.07.tar.gz">man-pages-4.07.tar.gz</a>                              19-Jul-2016 14:48             2343636
+<a href="man-pages-4.07.tar.sign">man-pages-4.07.tar.sign</a>                            19-Jul-2016 14:48                 543
+<a href="man-pages-4.07.tar.xz">man-pages-4.07.tar.xz</a>                              19-Jul-2016 14:48             1479536
+<a href="man-pages-4.08.tar.gz">man-pages-4.08.tar.gz</a>                              08-Oct-2016 11:54             2359180
+<a href="man-pages-4.08.tar.sign">man-pages-4.08.tar.sign</a>                            08-Oct-2016 11:54                 543
+<a href="man-pages-4.08.tar.xz">man-pages-4.08.tar.xz</a>                              08-Oct-2016 11:54             1489560
+<a href="man-pages-4.09.tar.gz">man-pages-4.09.tar.gz</a>                              12-Dec-2016 10:59             2408729
+<a href="man-pages-4.09.tar.sign">man-pages-4.09.tar.sign</a>                            12-Dec-2016 10:59                 543
+<a href="man-pages-4.09.tar.xz">man-pages-4.09.tar.xz</a>                              12-Dec-2016 10:59             1521560
+<a href="sha256sums.asc">sha256sums.asc</a>                                     12-Dec-2016 11:20                4411
+</pre><hr></body>
+</html>

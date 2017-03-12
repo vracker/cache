@@ -1,46 +1,42 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
 <html>
- <head>
-  <title>Index of /pub/linux/utils/util-linux/v2.29</title>
- </head>
- <body>
-<h1>Index of /pub/linux/utils/util-linux/v2.29</h1>
-<pre><a href="?C=N;O=D">Name</a>                         <a href="?C=M;O=A">Last modified</a>      <a href="?C=S;O=A">Size</a>  <hr><a href="/pub/linux/utils/util-linux/">Parent Directory</a>                                  -   
-<a href="libblkid-docs/">libblkid-docs/</a>               22-Feb-2017 15:19    -   
-<a href="libfdisk-docs/">libfdisk-docs/</a>               22-Feb-2017 15:20    -   
-<a href="libmount-docs/">libmount-docs/</a>               22-Feb-2017 15:22    -   
-<a href="libsmartcols-docs/">libsmartcols-docs/</a>           22-Feb-2017 15:24    -   
-<a href="sha256sums.asc">sha256sums.asc</a>               22-Feb-2017 15:37  2.4K  
-<a href="util-linux-2.29-rc1.tar.gz">util-linux-2.29-rc1.tar.gz</a>   30-Sep-2016 09:55  8.7M  
-<a href="util-linux-2.29-rc1.tar.sign">util-linux-2.29-rc1.tar.sign</a> 30-Sep-2016 09:55  819   
-<a href="util-linux-2.29-rc1.tar.xz">util-linux-2.29-rc1.tar.xz</a>   30-Sep-2016 09:55  4.0M  
-<a href="util-linux-2.29-rc2.tar.gz">util-linux-2.29-rc2.tar.gz</a>   19-Oct-2016 13:13  8.7M  
-<a href="util-linux-2.29-rc2.tar.sign">util-linux-2.29-rc2.tar.sign</a> 19-Oct-2016 13:13  819   
-<a href="util-linux-2.29-rc2.tar.xz">util-linux-2.29-rc2.tar.xz</a>   19-Oct-2016 13:13  4.0M  
-<a href="util-linux-2.29.1.tar.gz">util-linux-2.29.1.tar.gz</a>     20-Jan-2017 14:02  8.8M  
-<a href="util-linux-2.29.1.tar.sign">util-linux-2.29.1.tar.sign</a>   20-Jan-2017 14:02  819   
-<a href="util-linux-2.29.1.tar.xz">util-linux-2.29.1.tar.xz</a>     20-Jan-2017 14:02  4.1M  
-<a href="util-linux-2.29.2.tar.gz">util-linux-2.29.2.tar.gz</a>     22-Feb-2017 15:26  8.8M  
-<a href="util-linux-2.29.2.tar.sign">util-linux-2.29.2.tar.sign</a>   22-Feb-2017 15:26  819   
-<a href="util-linux-2.29.2.tar.xz">util-linux-2.29.2.tar.xz</a>     22-Feb-2017 15:26  4.1M  
-<a href="util-linux-2.29.tar.gz">util-linux-2.29.tar.gz</a>       08-Nov-2016 11:23  8.7M  
-<a href="util-linux-2.29.tar.sign">util-linux-2.29.tar.sign</a>     08-Nov-2016 11:23  819   
-<a href="util-linux-2.29.tar.xz">util-linux-2.29.tar.xz</a>       08-Nov-2016 11:23  4.1M  
-<a href="v2.29-ChangeLog">v2.29-ChangeLog</a>              08-Nov-2016 11:23   28K  
-<a href="v2.29-ChangeLog.sign">v2.29-ChangeLog.sign</a>         08-Nov-2016 11:23  819   
-<a href="v2.29-ReleaseNotes">v2.29-ReleaseNotes</a>           08-Nov-2016 11:24   26K  
-<a href="v2.29-ReleaseNotes.sign">v2.29-ReleaseNotes.sign</a>      08-Nov-2016 11:24  819   
-<a href="v2.29-rc1-ChangeLog">v2.29-rc1-ChangeLog</a>          30-Sep-2016 09:55  219K  
-<a href="v2.29-rc1-ChangeLog.sign">v2.29-rc1-ChangeLog.sign</a>     30-Sep-2016 09:55  819   
-<a href="v2.29-rc2-ChangeLog">v2.29-rc2-ChangeLog</a>          19-Oct-2016 13:13   19K  
-<a href="v2.29-rc2-ChangeLog.sign">v2.29-rc2-ChangeLog.sign</a>     19-Oct-2016 13:13  819   
-<a href="v2.29.1-ChangeLog">v2.29.1-ChangeLog</a>            20-Jan-2017 14:02   47K  
-<a href="v2.29.1-ChangeLog.sign">v2.29.1-ChangeLog.sign</a>       20-Jan-2017 14:02  819   
-<a href="v2.29.1-ReleaseNotes">v2.29.1-ReleaseNotes</a>         20-Jan-2017 14:02  4.9K  
-<a href="v2.29.1-ReleaseNotes.sign">v2.29.1-ReleaseNotes.sign</a>    20-Jan-2017 14:02  819   
-<a href="v2.29.2-ChangeLog">v2.29.2-ChangeLog</a>            22-Feb-2017 15:26   14K  
-<a href="v2.29.2-ChangeLog.sign">v2.29.2-ChangeLog.sign</a>       22-Feb-2017 15:26  819   
-<a href="v2.29.2-ReleaseNotes">v2.29.2-ReleaseNotes</a>         22-Feb-2017 15:26  2.0K  
-<a href="v2.29.2-ReleaseNotes.sign">v2.29.2-ReleaseNotes.sign</a>    22-Feb-2017 15:26  819   
-<hr></pre>
-</body></html>
+<head><title>Index of /pub/linux/utils/util-linux/v2.29/</title></head>
+<body bgcolor="white">
+<h1>Index of /pub/linux/utils/util-linux/v2.29/</h1><hr><pre><a href="../">../</a>
+<a href="libblkid-docs/">libblkid-docs/</a>                                     22-Feb-2017 15:20                   -
+<a href="libfdisk-docs/">libfdisk-docs/</a>                                     22-Feb-2017 15:22                   -
+<a href="libmount-docs/">libmount-docs/</a>                                     22-Feb-2017 15:24                   -
+<a href="libsmartcols-docs/">libsmartcols-docs/</a>                                 22-Feb-2017 15:26                   -
+<a href="sha256sums.asc">sha256sums.asc</a>                                     22-Feb-2017 15:37                2480
+<a href="util-linux-2.29-rc1.tar.gz">util-linux-2.29-rc1.tar.gz</a>                         30-Sep-2016 09:55             9089037
+<a href="util-linux-2.29-rc1.tar.sign">util-linux-2.29-rc1.tar.sign</a>                       30-Sep-2016 09:55                 819
+<a href="util-linux-2.29-rc1.tar.xz">util-linux-2.29-rc1.tar.xz</a>                         30-Sep-2016 09:55             4202752
+<a href="util-linux-2.29-rc2.tar.gz">util-linux-2.29-rc2.tar.gz</a>                         19-Oct-2016 13:13             9087383
+<a href="util-linux-2.29-rc2.tar.sign">util-linux-2.29-rc2.tar.sign</a>                       19-Oct-2016 13:13                 819
+<a href="util-linux-2.29-rc2.tar.xz">util-linux-2.29-rc2.tar.xz</a>                         19-Oct-2016 13:13             4200664
+<a href="util-linux-2.29.1.tar.gz">util-linux-2.29.1.tar.gz</a>                           20-Jan-2017 14:02             9182306
+<a href="util-linux-2.29.1.tar.sign">util-linux-2.29.1.tar.sign</a>                         20-Jan-2017 14:02                 819
+<a href="util-linux-2.29.1.tar.xz">util-linux-2.29.1.tar.xz</a>                           20-Jan-2017 14:02             4278756
+<a href="util-linux-2.29.2.tar.gz">util-linux-2.29.2.tar.gz</a>                           22-Feb-2017 15:26             9183018
+<a href="util-linux-2.29.2.tar.sign">util-linux-2.29.2.tar.sign</a>                         22-Feb-2017 15:26                 819
+<a href="util-linux-2.29.2.tar.xz">util-linux-2.29.2.tar.xz</a>                           22-Feb-2017 15:26             4277668
+<a href="util-linux-2.29.tar.gz">util-linux-2.29.tar.gz</a>                             08-Nov-2016 11:23             9161747
+<a href="util-linux-2.29.tar.sign">util-linux-2.29.tar.sign</a>                           08-Nov-2016 11:23                 819
+<a href="util-linux-2.29.tar.xz">util-linux-2.29.tar.xz</a>                             08-Nov-2016 11:23             4249020
+<a href="v2.29-ChangeLog">v2.29-ChangeLog</a>                                    08-Nov-2016 11:23               28557
+<a href="v2.29-ChangeLog.sign">v2.29-ChangeLog.sign</a>                               08-Nov-2016 11:23                 819
+<a href="v2.29-ReleaseNotes">v2.29-ReleaseNotes</a>                                 08-Nov-2016 11:24               26488
+<a href="v2.29-ReleaseNotes.sign">v2.29-ReleaseNotes.sign</a>                            08-Nov-2016 11:24                 819
+<a href="v2.29-rc1-ChangeLog">v2.29-rc1-ChangeLog</a>                                30-Sep-2016 09:55              224243
+<a href="v2.29-rc1-ChangeLog.sign">v2.29-rc1-ChangeLog.sign</a>                           30-Sep-2016 09:55                 819
+<a href="v2.29-rc2-ChangeLog">v2.29-rc2-ChangeLog</a>                                19-Oct-2016 13:13               19074
+<a href="v2.29-rc2-ChangeLog.sign">v2.29-rc2-ChangeLog.sign</a>                           19-Oct-2016 13:13                 819
+<a href="v2.29.1-ChangeLog">v2.29.1-ChangeLog</a>                                  20-Jan-2017 14:02               47933
+<a href="v2.29.1-ChangeLog.sign">v2.29.1-ChangeLog.sign</a>                             20-Jan-2017 14:02                 819
+<a href="v2.29.1-ReleaseNotes">v2.29.1-ReleaseNotes</a>                               20-Jan-2017 14:02                5067
+<a href="v2.29.1-ReleaseNotes.sign">v2.29.1-ReleaseNotes.sign</a>                          20-Jan-2017 14:02                 819
+<a href="v2.29.2-ChangeLog">v2.29.2-ChangeLog</a>                                  22-Feb-2017 15:26               14557
+<a href="v2.29.2-ChangeLog.sign">v2.29.2-ChangeLog.sign</a>                             22-Feb-2017 15:26                 819
+<a href="v2.29.2-ReleaseNotes">v2.29.2-ReleaseNotes</a>                               22-Feb-2017 15:26                2012
+<a href="v2.29.2-ReleaseNotes.sign">v2.29.2-ReleaseNotes.sign</a>                          22-Feb-2017 15:26                 819
+</pre><hr></body>
+</html>

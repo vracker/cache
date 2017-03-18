@@ -81,6 +81,10 @@ mission statement</a>.</p>
 <h2 id="news">News</h2>
 <dl>
 
+<dt><span>GNU Toolchain Fund</span>
+     <span class="date">[2017-03-09]</span></dt>
+     <dd>A fund under the auspices of the Free Software Foundation specifically to benefit the components of the GNU Toolchain (GCC, GDB, GLIBC, Binutils, etc.) now <a href="https://www.fsf.org/news/gnu-toolchain-now-accepting-donations-with-the-support-of-the-free-software-foundation">accepting donations</a>.</dd>
+
 <dt><span>RISC-V support</span>
      <span class="date">[2017-02-02]</span></dt>
      <dd>Support for the <a href="https://riscv.org">RISC-V ISA</a> was added, contributed by Palmer Dabbelt and Andrew Waterman.</dd>
@@ -177,11 +181,11 @@ More news? Let gerald@pfeifer.com know!
 </dd>
 
 <dt><span class="version">Development:</span>
-  GCC 7.0 (<a href="gcc-7/criteria.html">release criteria</a>, <a href="gcc-7/changes.html">changes</a>)
+  GCC 7.0.1 (<a href="gcc-7/criteria.html">release criteria</a>, <a href="gcc-7/changes.html">changes</a>)
 </dt><dd>
   Status:
   <!--GCC 7 status below-->
-  <a href="https://gcc.gnu.org/ml/gcc/2017-01/msg00181.html">2017-01-20</a>
+  <a href="https://gcc.gnu.org/ml/gcc/2017-03/msg00066.html">2017-03-14</a>
   <!--GCC 7 status above-->
   (regression fixes &amp; docs only).
   <div class="regress">
@@ -356,7 +360,7 @@ permitted in any medium, provided this notice is preserved.</p>
 
 <p>These pages are
 <a href="https://gcc.gnu.org/about.html">maintained by the GCC team</a>.
-Last modified 2017-02-26<!-- IGNORE DIFF
+Last modified 2017-03-15<!-- IGNORE DIFF
 --><a href="http://validator.w3.org/check/referer">.</a></p>
 
 </div>

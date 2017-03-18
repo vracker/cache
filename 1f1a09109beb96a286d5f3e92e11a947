@@ -9,7 +9,9 @@
                 showIndicators: false,
                 analytics: true
             };
-            SF.Ads.prebidUnits = [{
+            SF.Ads.prebidUnits = [];
+            if (SF.initial_breakpoints_visible.leaderboard) {
+                SF.Ads.prebidUnits.push({
                     bids: [{'params': {'tagid': '364648'}, 'bidder': 'sovrn'},
                             {'params': {'cp': 558092, 'cf': '728x90', 'ct': '472223'}, 'bidder': 'pulsepoint'},
                             {'params': {'placementId': 8841121}, 'bidder': 'brealtime'},
@@ -22,8 +24,10 @@
                     code: 'div-gpt-ad-1393435113147-0',
                     sizes: [728, 90],
                     tag: 'SF_ProjectFiles_728x90_A',
-                },
-            {
+                });
+            }
+            if (true) {
+                SF.Ads.prebidUnits.push({
                     bids: [{'params': {'tagid': '364646'}, 'bidder': 'sovrn'},
                             {'params': {'cp': 558092, 'cf': '300x250', 'ct': '472221'}, 'bidder': 'pulsepoint'},
                             {'params': {'placementId': 9319285}, 'bidder': 'brealtime'},
@@ -36,8 +40,10 @@
                     code: 'div-gpt-ad-1392147725721-0',
                     sizes: [[300, 250], [300, 600], [300, 1050]],
                     tag: 'SF_ProjectFiles_300x250_A',
-                },
-            {
+                });
+            }
+            if (true) {
+                SF.Ads.prebidUnits.push({
                     bids: [{'params': {'tagid': '364647'}, 'bidder': 'sovrn'},
                             {'params': {'cp': 558092, 'cf': '300x250', 'ct': '472222'}, 'bidder': 'pulsepoint'},
                             {'params': {'placementId': 8829468}, 'bidder': 'brealtime'},
@@ -50,8 +56,8 @@
                     code: 'div-gpt-ad-1392148208789-0',
                     sizes: [300, 250],
                     tag: 'SF_ProjectFiles_300x250_B',
-                }
-            ];
+                });
+            }
             SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "sovrn": 0.84, "aardvark": 0.99, "aol": 0.75, "brealtime": 0.9, "rubiconlite": 0.9, "appnexus": 0.86, "pulsepoint": 0.85, "rubicon": 0.92, "indexexchange": 0.93, "springserve": 0.84}, "inflation": 1.2, "floor": 0.02};
         </script>
         <meta id="project_name" name="project_name" content="expect">
@@ -72,9 +78,8 @@
        var gptadComplements={};
        googletag.cmd.push(function() {
            var leaderboard = googletag.sizeMapping()
-               .addSize([1024, 200], [728, 90]) // Tablet
-               .addSize([1280, 200], [[970, 250], [728, 90]]) // Tablet
-               .addSize([0, 0], [300, 250]) // Tablet
+               .addSize([970, 200], [[970, 250], [728, 90]])
+               .addSize([728, 200], [728, 90])
                .build();
             //prebid_log('GPT push define slots and targeting');
             gptadslots.push(googletag.defineSlot('/41014381/Sourceforge/SF_ProjectFiles_728x90_A', [728, 90], 'div-gpt-ad-1393435113147-0')
@@ -221,7 +226,7 @@
     <div id="files-sidebar" class="scroll-fixable" data-floor-compensate="145">
         <div class="sterling">
 <div id="SF_ProjectFiles_300x250_A_wrapped" class="draper multisize  "
-data-unit="SF_ProjectFiles_300x250_A">
+>
 </div>
         </div>
                 <aside class="sidebar-widget">
@@ -257,12 +262,12 @@ data-unit="SF_ProjectFiles_300x250_A">
     </ul>
 </aside>
 <div id="SF_ProjectFiles_300x250_B_wrapped" class="draper medrec  "
-data-unit="SF_ProjectFiles_300x250_B">
+>
 </div>
             <div class="sterling" id="deals-widget">
     <aside class="sidebar-widget stackcommerce-widget">
 <div id="SF-300x250_wrapped" class="draper medrec  "
-data-unit="SF-300x250">
+>
 </div>
     </aside>
             </div>

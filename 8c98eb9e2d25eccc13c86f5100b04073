@@ -5,19 +5,19 @@
     "releases": [
         {
             "iseol": false, 
-            "version": "4.11-rc2", 
+            "version": "4.11-rc3", 
             "moniker": "mainline", 
-            "source": "https://www.kernel.org/pub/linux/kernel/v4.x/testing/linux-4.11-rc2.tar.xz", 
-            "pgp": "https://www.kernel.org/pub/linux/kernel/v4.x/testing/linux-4.11-rc2.tar.sign", 
+            "source": "https://www.kernel.org/pub/linux/kernel/v4.x/testing/linux-4.11-rc3.tar.xz", 
+            "pgp": "https://www.kernel.org/pub/linux/kernel/v4.x/testing/linux-4.11-rc3.tar.sign", 
             "released": {
-                "timestamp": 1489355234, 
-                "isodate": "2017-03-12"
+                "timestamp": 1489975790, 
+                "isodate": "2017-03-20"
             }, 
-            "gitweb": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/log/?id=refs/tags/v4.11-rc2", 
+            "gitweb": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/log/?id=refs/tags/v4.11-rc3", 
             "changelog": null, 
-            "diffview": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/diff/?id=v4.11-rc2&id2=v4.11-rc1&dt=2", 
+            "diffview": "https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/diff/?id=v4.11-rc3&id2=v4.11-rc2&dt=2", 
             "patch": {
-                "full": "https://www.kernel.org/pub/linux/kernel/v4.x/testing/patch-4.11-rc2.xz", 
+                "full": "https://www.kernel.org/pub/linux/kernel/v4.x/testing/patch-4.11-rc3.xz", 
                 "incremental": null
             }
         }, 
@@ -185,15 +185,15 @@
         }, 
         {
             "iseol": false, 
-            "version": "next-20170310", 
+            "version": "next-20170320", 
             "moniker": "linux-next", 
             "source": null, 
             "pgp": null, 
             "released": {
-                "timestamp": 1489114274, 
-                "isodate": "2017-03-10"
+                "timestamp": 1489988983, 
+                "isodate": "2017-03-20"
             }, 
-            "gitweb": "https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/log/?id=refs/tags/next-20170310", 
+            "gitweb": "https://git.kernel.org/pub/scm/linux/kernel/git/next/linux-next.git/log/?id=refs/tags/next-20170320", 
             "changelog": null, 
             "diffview": null, 
             "patch": {

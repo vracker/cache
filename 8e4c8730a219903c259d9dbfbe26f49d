@@ -35,7 +35,7 @@ var g_onload = function() {
       <div class='hdrlink black'>
         <a href='download.php'>
         <div class='hdrtop white'>DOWNLOAD REAPER</div>
-        <div class='hdrbottom'>Version 5.35: March 1, 2017</div>
+        <div class='hdrbottom'>Version 5.40: March 24, 2017</div>
         </a>
       </div>
       <div style='height:11px;'></div>
@@ -134,24 +134,24 @@ var g_onload = function() {
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>Windows 32-bit</div>
   <div class='downloadinfo'>
-REAPER v5.35 - 9MB<br>
+REAPER v5.40 - 9MB<br>
 Windows XP/Vista/7/8/10<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper535-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper540-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
       <div style='background-color:#313131;height:1px;margin-bottom:20px;'></div>
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>Windows 64-bit</div>
   <div class='downloadinfo'>
-REAPER v5.35 - 11MB<br>
+REAPER v5.40 - 11MB<br>
 Windows XP/Vista/7/8/10 x64<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper535_x64-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper540_x64-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
     </div>
@@ -167,24 +167,24 @@ Windows XP/Vista/7/8/10 x64<br>
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>OS X 32-bit</div>
   <div class='downloadinfo'>
-REAPER v5.35 - 14MB<br>
+REAPER v5.40 - 14MB<br>
 OS X 10.5-10.12<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper535_i386.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper540_i386.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
       <div style='background-color:#313131;height:1px;margin-bottom:20px;'></div>
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>OS X 64-bit</div>
   <div class='downloadinfo'>
-REAPER v5.35 - 16MB<br>
+REAPER v5.40 - 16MB<br>
 OS X 10.5-10.12<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper535_x86_64.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper540_x86_64.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
     </div> 
@@ -195,91 +195,100 @@ OS X 10.5-10.12<br>
 <div class='dark strip'>
   <div style='background-color:#4E5454;height:1px;margin-top:40px;'></div>
   <div style='margin-top:30px;margin-bottom:30px;'>
-    <div class='heading'>REAPER 5.35: Mr. F</div>
+    <div class='heading'>REAPER 5.40: The night is dark and full of terrors</div>
     <div style='width:1000px; margin-bottom:20px;'>
        <span style='font-size:9px'>Changelog items below may include </span><span class='whatsnewdot'>&bull;</span><span style='font-size:9px'> links to more information.</span>
     </div>
     <div style='width:1000px; -webkit-column-count: 3; -moz-column-count: 3; column-count: 3;'><a name="whatsnew"></a>
 <div class='avoidbreak'>
-<div class='bold'>5.35</div><ul class='bullet'>
-<li> Control surfaces: send metronome state to MCU devices
-<li> ReaScript: fix gfx.getchar('f1') on win64 <a href="http://forum.cockos.com/showthread.php?t=188496" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> Smooth seek: fix potential hang <a href="http://forum.cockos.com/showthread.php?t=188498" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> Subprojects: do not try/fail auto-rerendering on load subprojects that do not exist
-<li> Take envelopes: fix 'edit envelope point at cursor' positioning
-<li> VST: improve touch/latch behavior for ReaPlugs on playback stop/restart
-<li> macOS: fix color displays in track/region managers
+<div class='bold'>Peaks</div><ul class='bullet'>
+<li> add spectrogram display mode, per-item spectrogram option  - <a href="videos.php#TmkhJgtgxCg" target="blank"><span class='whatsnewdot'>video</span></a>
+<li> improve support for editing media items containing .wav files which are being recorded in a separate tab
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>FX</div><ul class='bullet'>
-<li> adjust parameter aliases when removing ReaEQ/ReaXcomp/etc bands
-<li> fix bug where offline plugins could have their first/second parameter automation converted to bypass/wet automation
-<li> preserve parameter aliases when offlining plugins <a href="http://forum.cockos.com/showpost.php?p=1803096" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<div class='bold'>Grid</div><ul class='bullet'>
+<li> support swing grid in arrange view, optionally synchronized with MIDI editor grid  - <a href="videos.php#ZY3fiDV8hIE" target="blank"><span class='whatsnewdot'>video</span></a>
+<li> allow grid/snap window to stay open if enabled in advanced preferences
+<li> move grid appearance options from grid/snap window to preferences/appearance
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>MIDI</div><ul class='bullet'>
+<li> allow absolute MIDI CC control of swing grid strength
+<li> create new take on "open item copy in built-in MIDI editor" action <a href="http://forum.cockos.com/showthread.php?t=188950" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> set MIDI clock properly when exporting to .mid file <a href="http://forum.cockos.com/showthread.php?t=188300" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> support ".midi" as an importable file extension, in addition to the usual ".mid"
+<li> fix "paint straight line of notes" mouse modifier when grid is set to greater than or equal to measure length <a href="http://forum.cockos.com/showthread.php?t=188264" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Theming</div><ul class='bullet'>
+<li> support item_*_hidpi.png on Windows/HiDPI themes
+<li> use common dialog font for various elements in envelope, send windows
+<li> allow themes to override global UI scaling using rtconfig.txt global_scale line
+<li> better logic for knob large/small background selection
+</ul>
+</div>
+<div class='avoidbreak'>
+<div class='bold'>Anticipative FX</div><ul class='bullet'>
+<li> improve behavior when stopping
+<li> reduce memory use when smooth seek enabled
 </ul>
 </div>
 <div class='avoidbreak'>
 <div class='bold'>macOS</div><ul class='bullet'>
-<li> improve drawing CPU use on Retina displays
-<li> improve 10.11+ mouse event filtering
-<li> remove UI-update options, always use most optimal update mode
+<li> fix reading slider zero-line colors from theme <a href="http://forum.cockos.com/showthread.php?t=188770" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> add retina support for track panels/etc using beta HiDPI/Retina theme
+<li> improve handling of large theme fonts
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>MIDI editor</div><ul class='bullet'>
-<li> fix pasting or duplicating events when the media item has a start offset <a href="http://forum.cockos.com/showthread.php?t=187507" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> fix quantize behavior when grid is a full measure or greater
+<div class='bold'>Notation editor</div><ul class='bullet'>
+<li> automatically scroll view when entering lyrics
+<li> ignore muted notes in PDF and MusicXML export
 </ul>
 </div>
 <div class='avoidbreak'>
 <div class='bold'>ReaScript</div><ul class='bullet'>
-<li> prevent potential crash from Lua scripts that create excessive recursive tables <a href="http://forum.cockos.com/showthread.php?t=187415" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> update GetFocusedFX() to include take number <a href="http://forum.cockos.com/showthread.php?t=187292" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> add Track/TakeFX_Get/SetNamedConfigParm
+<li> include latent preset changes in Undo_EndBlock() <a href="http://forum.cockos.com/showthread.php?t=179533" target="blank"><span class='whatsnewdot'>&bull;</span></a>
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Envelopes</div><ul class='bullet'>
-<li> prevent possible crash when clearing FX parameter envelope while envelope list is open <a href="http://forum.cockos.com/showthread.php?t=188055" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<div class='bold'>Windows</div><ul class='bullet'>
+<li> improve ASIO cleanup after initialization error
+<li> improve HiDPI support (including Windows 7 DPI detection), support beta HiDPI/Retina theme
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Heal splits</div><ul class='bullet'>
-<li> fix potential crash when healing take automation <a href="http://forum.cockos.com/showthread.php?t=187901" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<div class='bold'>Media explorer</div><ul class='bullet'>
+<li> fix folder icon display error on macOS 10.10
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Render</div><ul class='bullet'>
-<li> add $samplerate wildcard
+<div class='bold'>Project load</div><ul class='bullet'>
+<li> add recovery mode checkbox to optional choose-project-on-open dialog
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Smooth seek</div><ul class='bullet'>
-<li> improve anticipative FX behavior and performance when seeking
+<div class='bold'>ReaSamplomatic</div><ul class='bullet'>
+<li> support TrackFX_SetNamedConfigParm and similar API functions with FILE, FILExx, -FILExx, +FILExx, -FILE*, DONE, RSMODE, MODE
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Snap</div><ul class='bullet'>
-<li> improve behavior when adjusting a cut point and only one item is selected
+<div class='bold'>ReaVerb</div><ul class='bullet'>
+<li> support TrackFX_SetNamedConfigParm and similar API functions with ITEMx, DONE
 </ul>
 </div>
 <div class='avoidbreak'>
 <div class='bold'>Undo</div><ul class='bullet'>
-<li> add undo point when extending time selection via shift+click <a href="http://forum.cockos.com/showthread.php?t=187261" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> improve undo behavior for various editing actions
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Video</div><ul class='bullet'>
-<li> improve YUY2/YV12 filtering
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Web control</div><ul class='bullet'>
-<li> fix bug using GET/TRACK/x/B_PARM etc
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>API</div><ul class='bullet'>
-<li> GetTrackInfo/GetTrackState functions include TCP/MCP visibility flags
+<div class='bold'>VST</div><ul class='bullet'>
+<li> fix resolving VST3 by UID on first scan
 </ul>
 </div>
     </div>

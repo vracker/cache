@@ -22,8 +22,8 @@
                             {'params': {'siteID': '188656', 'id': '7'}, 'bidder': 'indexExchange'},
                             ],
                     code: 'div-gpt-ad-1393435113147-0',
-                    sizes: [728, 90],
                     tag: 'SF_ProjectFiles_728x90_A',
+                    sizes: [728, 90]
                 });
             }
             if (true) {
@@ -38,8 +38,8 @@
                             {'params': {'siteID': '188654', 'id': '5'}, 'bidder': 'indexExchange'},
                             ],
                     code: 'div-gpt-ad-1392147725721-0',
-                    sizes: [[300, 250], [300, 600], [300, 1050]],
                     tag: 'SF_ProjectFiles_300x250_A',
+                    sizes: [[300, 250], [300, 600], [300, 1050]]
                 });
             }
             if (true) {
@@ -54,11 +54,11 @@
                             {'params': {'siteID': '188655', 'id': '6'}, 'bidder': 'indexExchange'},
                             ],
                     code: 'div-gpt-ad-1392148208789-0',
-                    sizes: [300, 250],
                     tag: 'SF_ProjectFiles_300x250_B',
+                    sizes: [300, 250]
                 });
             }
-            SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "sovrn": 0.85, "aardvark": 0.99, "aol": 0.78, "brealtime": 0.87, "rubiconlite": 0.9, "appnexus": 0.86, "pulsepoint": 0.85, "rubicon": 0.94, "indexexchange": 0.93, "springserve": 0.86}, "inflation": 1.2, "floor": 0.02};
+            SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "sovrn": 0.87, "aardvark": 0.99, "aol": 0.78, "brealtime": 0.87, "rubiconlite": 0.9, "appnexus": 0.86, "pulsepoint": 0.86, "rubicon": 0.95, "indexexchange": 0.93, "springserve": 0.86}, "inflation": 1.2, "floor": 0.02};
         </script>
         <meta id="project_name" name="project_name" content="expect">
         <meta name="description" content="Expect is a tool for automating interactive applications such as telnet, ftp, passwd, fsck, rlogin, tip, etc. Expect is also useful for testing these …">
@@ -79,10 +79,10 @@
        googletag.cmd.push(function() {
            var leaderboard = googletag.sizeMapping()
                .addSize([970, 200], [[970, 250], [728, 90]])
-               .addSize([728, 200], [728, 90])
+               .addSize([728, 200], [[728, 90]])
                .build();
             //prebid_log('GPT push define slots and targeting');
-            gptadslots.push(googletag.defineSlot('/41014381/Sourceforge/SF_ProjectFiles_728x90_A', [728, 90], 'div-gpt-ad-1393435113147-0')
+            gptadslots.push(googletag.defineSlot('/41014381/Sourceforge/SF_ProjectFiles_728x90_A',[728, 90],'div-gpt-ad-1393435113147-0')
                                                     .addService(googletag.pubads())
                                                         .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])
                                                         .setTargeting('shortname', 'expect')
@@ -91,7 +91,7 @@
                                                         .setTargeting('dc_ref', 'https://sourceforge.net/projects/expect/files/Expect/')
                                                         .setTargeting('sz', '728x90')
                                                         .setTargeting('page_type', 'pg_files'));
-            gptadslots.push(googletag.defineSlot('/41014381/Sourceforge/SF_ProjectFiles_300x250_A', [[300, 250], [300, 600], [300, 1050]], 'div-gpt-ad-1392147725721-0')
+            gptadslots.push(googletag.defineSlot('/41014381/Sourceforge/SF_ProjectFiles_300x250_A',[[300, 250], [300, 600], [300, 1050]],'div-gpt-ad-1392147725721-0')
                                                     .addService(googletag.pubads())
                                                         .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])
                                                         .setTargeting('shortname', 'expect')
@@ -100,7 +100,7 @@
                                                         .setTargeting('dc_ref', 'https://sourceforge.net/projects/expect/files/Expect/')
                                                         .setTargeting('sz', '300x250,300x600,300x1050')
                                                         .setTargeting('page_type', 'pg_files'));
-            gptadslots.push(googletag.defineSlot('/41014381/Sourceforge/SF_ProjectFiles_300x250_B', [300, 250], 'div-gpt-ad-1392148208789-0')
+            gptadslots.push(googletag.defineSlot('/41014381/Sourceforge/SF_ProjectFiles_300x250_B',[300, 250],'div-gpt-ad-1392148208789-0')
                                                     .addService(googletag.pubads())
                                                         .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])
                                                         .setTargeting('shortname', 'expect')
@@ -109,7 +109,7 @@
                                                         .setTargeting('dc_ref', 'https://sourceforge.net/projects/expect/files/Expect/')
                                                         .setTargeting('sz', '300x250')
                                                         .setTargeting('page_type', 'pg_files'));
-            gptadslots.push(googletag.defineSlot('/41014381/Sourceforge/SF_ProjectFiles_HubIcon_200x90_A', [200, 90], 'div-gpt-ad-1392148098424-0')
+            gptadslots.push(googletag.defineSlot('/41014381/Sourceforge/SF_ProjectFiles_HubIcon_200x90_A',[200, 90],'div-gpt-ad-1392148098424-0')
                                                     .addService(googletag.pubads())
                                                         .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])
                                                         .setTargeting('shortname', 'expect')
@@ -118,7 +118,7 @@
                                                         .setTargeting('dc_ref', 'https://sourceforge.net/projects/expect/files/Expect/')
                                                         .setTargeting('sz', '200x90')
                                                         .setTargeting('page_type', 'pg_files'));
-            gptadslots.push(googletag.defineSlot('/7346874/SF-300x250', [300, 250], 'div-gpt-ad-1392148208795-0')
+            gptadslots.push(googletag.defineSlot('/7346874/SF-300x250',[300, 250],'div-gpt-ad-1392148208795-0')
                                                     .addService(googletag.pubads())
                                                         .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])
                                                         .setTargeting('shortname', 'expect')

@@ -124,8 +124,15 @@
     </p>
   </li>
 
-
-
+  <li><b>31 March 2017 -- Note for users of Linux kernels older than 2.6.27</b>
+    <p>If you are stuck with a kernel from July 2008 or earlier (2.6.26 or less),
+    and you are using mdev, device scan wouldn't work correctly due to an
+    incompatibility in /sys structure. You can work around it by reverting this
+    <a href="http://busybox.net/0001-mdev-create-devices-from-sys-dev.patch">patch</a>
+    in 1.26.x BusyBox sources.
+    (You also probably need to plan migration to a less ancient kernel).
+    </p>
+  </li>
 
   <li><b>10 January 2017 -- BusyBox 1.26.2 (stable)</b>
     <p><a href="http://busybox.net/downloads/busybox-1.26.2.tar.bz2">BusyBox 1.26.2</a>.

@@ -58,10 +58,10 @@
                     sizes: [300, 250]
                 });
             }
-            SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "sovrn": 0.87, "aardvark": 0.99, "aol": 0.78, "brealtime": 0.87, "rubiconlite": 0.9, "appnexus": 0.86, "pulsepoint": 0.86, "rubicon": 0.95, "indexexchange": 0.93, "springserve": 0.86}, "inflation": 1.2, "floor": 0.02};
+            SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "sovrn": 0.89, "aardvark": 0.99, "aol": 0.88, "brealtime": 0.86, "rubiconlite": 0.9, "appnexus": 0.86, "pulsepoint": 0.87, "rubicon": 0.95, "indexexchange": 0.93, "springserve": 0.87}, "inflation": 1.2, "floor": 0.02};
         </script>
         <meta id="project_name" name="project_name" content="expect">
-        <meta name="description" content="Expect is a tool for automating interactive applications such as telnet, ftp, passwd, fsck, rlogin, tip, etc. Expect is also useful for testing these …">
+        <meta name="description" content="Expect is a tool for automating interactive applications such as telnet, ftp, passwd, fsck, rlogin, tip, etc. Expect is also useful for testing …">
         <meta name="keywords" content="Software Development, Systems Administration,  Open Source, Open Source Software, Development, Community, Source Code, Secure,  Downloads, Free Software">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Expect -  Browse /Expect/5.45 at SourceForge.net</title>

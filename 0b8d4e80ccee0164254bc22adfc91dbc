@@ -87,8 +87,8 @@ pkg-config
 
 <p>pkg-config is a helper tool used when compiling applications and
 libraries. It helps you insert the correct compiler options on the
-command line so an application can use <code>gcc -o test test.c</code>pkg-config
---libs --cflags glib-2.0<code></code> for instance, rather than hard-coding values
+command line so an application can use <code>gcc -o test test.c `pkg-config
+--libs --cflags glib-2.0`</code> for instance, rather than hard-coding values
 on where to find glib (or other libraries). It is language-agnostic, so
 it can be used for defining the location of documentation tools, for
 instance.</p>
@@ -108,16 +108,16 @@ pkg-config to compile and work properly.)</p>
 Later, it was rewritten in C by Havoc Pennington. It also grew an
 autoconf macro written by Tim Janik, later rewritten by Scott James
 Remnant. The current maintainers are
-<a href="mailto:tfheen@err.no">Tollef Fog Heen <a href="&#x6D;&#97;il&#116;&#111;:&#116;f&#x68;e&#101;&#x6E;&#64;&#x65;&#114;&#x72;&#46;&#x6E;&#111;">&#116;f&#x68;e&#101;&#x6E;&#64;&#x65;&#114;&#x72;&#46;&#x6E;&#111;</a></a> and
-<a href="mailto:dbn.lists@gmail.com">Dan Nicholson <a href="&#x6D;&#97;&#105;&#x6C;&#x74;&#x6F;:&#100;&#98;&#110;&#46;&#x6C;&#x69;&#115;&#x74;&#115;&#64;&#103;&#109;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#109;">&#100;&#98;&#110;&#46;&#x6C;&#x69;&#115;&#x74;&#115;&#64;&#103;&#109;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#109;</a></a>.</p>
+<a href="mailto:tfheen@err.no">Tollef Fog Heen <a href="&#x6D;&#x61;&#x69;&#x6C;&#116;&#x6F;:&#x74;&#102;he&#101;&#x6E;&#64;&#x65;r&#x72;&#x2E;n&#x6F;">&#x74;&#102;he&#101;&#x6E;&#64;&#x65;r&#x72;&#x2E;n&#x6F;</a></a> and
+<a href="mailto:dbn.lists@gmail.com">Dan Nicholson <a href="&#109;&#97;&#x69;&#108;&#116;&#x6F;:&#x64;b&#x6E;&#46;l&#105;&#115;&#x74;&#x73;&#64;&#x67;m&#97;&#105;&#x6C;.&#x63;o&#109;">&#x64;b&#x6E;&#46;l&#105;&#115;&#x74;&#x73;&#64;&#x67;m&#97;&#105;&#x6C;.&#x63;o&#109;</a></a>.</p>
 
 <p>The current release of pkg-config is version
-<a href="https://lists.freedesktop.org/archives/pkg-config/2016-March/001043.html">0.29.1</a>
+<a href="https://lists.freedesktop.org/archives/pkg-config/2017-March/001084.html">0.29.2</a>
 and can be found in
 <a href="http://pkgconfig.freedesktop.org/releases/">/releases</a>.</p>
 
 <p>pkg-config is available from the <a href="http://git-scm.com/">git</a> repository
-at git://anongit.freedesktop.org/pkg-config</p>
+at <a href="git://anongit.freedesktop.org/pkg-config">git://anongit.freedesktop.org/pkg-config</a> <a href="https://cgit.freedesktop.org/pkg-config">(browse)</a></p>
 
 <p>Bugs can be filed in the
 <a href="https://bugs.freedesktop.org/enter_bug.cgi">Freedesktop.org bug tracker</a></p>
@@ -165,8 +165,8 @@ Links:
 
 
 <div class="pagedate">
-Last edited <span class="date">Fri Mar  4 06:41:29 2016</span>
-<!-- Created <span class="date">Fri May 17 22:33:46 2013</span> -->
+Last edited <span class="date">Wed Apr  5 14:07:05 2017</span>
+<!-- Created <span class="date">Sat May 18 05:33:46 2013</span> -->
 </div>
 
 </div>

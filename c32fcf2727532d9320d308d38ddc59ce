@@ -7,8 +7,9 @@
     <head>
             SF.Ads.prebidOptions = {
                 showIndicators: false,
-                analytics: true
-            };
+                analytics: true,
+                timeout: 650,
+                };
             SF.Ads.prebidUnits = [];
             if (SF.initial_breakpoints_visible.leaderboard) {
                 SF.Ads.prebidUnits.push({
@@ -58,7 +59,7 @@
                     sizes: [300, 250]
                 });
             }
-            SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "sovrn": 0.89, "aardvark": 0.99, "aol": 0.92, "brealtime": 0.84, "rubiconlite": 0.9, "appnexus": 0.86, "pulsepoint": 0.87, "rubicon": 0.96, "indexexchange": 0.93, "springserve": 0.87}, "inflation": 1.2, "floor": 0.02};
+            SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "sovrn": 0.89, "aardvark": 0.99, "aol": 0.94, "brealtime": 0.84, "rubiconlite": 0.9, "appnexus": 0.86, "pulsepoint": 0.87, "rubicon": 0.96, "indexexchange": 0.93, "springserve": 0.87}, "inflation": 1.2, "floor": 0.02};
         </script>
         <meta id="project_name" name="project_name" content="expect">
         <meta name="description" content="Expect is a tool for automating interactive applications such as telnet, ftp, passwd, fsck, rlogin, tip, etc. Expect is also useful for testing …">
@@ -79,6 +80,10 @@
        googletag.cmd.push(function() {
            var leaderboard = googletag.sizeMapping()
                .addSize([970, 200], [[970, 250], [728, 90]])
+               .addSize([728, 200], [[728, 90]])
+               .build();
+           var leaderboardInContent = googletag.sizeMapping()
+               .addSize([1280, 200], [[970, 250], [728, 90]])
                .addSize([728, 200], [[728, 90]])
                .build();
             //prebid_log('GPT push define slots and targeting');

@@ -62,7 +62,7 @@ The files have been signed with
 </p>
 <p>
 See the
-<a href="http://git.tukaani.org/?p=xz.git;a=blob;f=NEWS;hb=HEAD">NEWS</a>
+<a href="https://git.tukaani.org/?p=xz.git;a=blob;f=NEWS;hb=HEAD">NEWS</a>
 file for a summary of changes between versions.
 </p>
 
@@ -99,8 +99,8 @@ There currently are no development releases.
 -->
 
 <h3>Git repository</h3>
-<p><tt>git clone http://git.tukaani.org/xz.git</tt></p>
-<p><a href="http://git.tukaani.org/?p=xz.git">Gitweb</a></p>
+<p><tt>git clone https://git.tukaani.org/xz.git</tt></p>
+<p><a href="https://git.tukaani.org/?p=xz.git">Gitweb</a></p>
 <p>
 Branches:
 </p>
@@ -126,7 +126,7 @@ latest versions is strongly recommended:
 <h3>Python</h3>
 <p>
 Python 3.3 includes
-<a href="http://docs.python.org/3/library/lzma">bindings for liblzma</a>.
+<a href="https://docs.python.org/3/library/lzma">bindings for liblzma</a>.
 A backport of these bindings are available for Python 2 in the
 <a href="https://pypi.python.org/pypi/backports.lzma">backports.lzma</a>
 package.
@@ -314,7 +314,7 @@ or GNU GPLv3.
 </p>
 <p>
 See the file
-<a href="http://git.tukaani.org/?p=xz.git;a=blob;f=COPYING">COPYING</a>
+<a href="https://git.tukaani.org/?p=xz.git;a=blob;f=COPYING">COPYING</a>
 for more details.
 </p>
 
@@ -328,7 +328,7 @@ for more details.
 	<li>General
 	<ul class="subnavi">
 		<li><a href="/" title="tukaani.org front page">Front page</a></li>
-		<li><a href="http://git.tukaani.org/" title="Gitweb">Git repositories</a></li>
+		<li><a href="https://git.tukaani.org/" title="Gitweb">Git repositories</a></li>
 		<li><a href="/artwork.html" title="Various version of the logo">Artwork</a></li>
 		<li><a href="/about.html" title="People behind the Tukaani project">About</a></li>
 		<li><a href="/contact.html" title="Contact information">Contact</a></li>
@@ -339,7 +339,7 @@ for more details.
 		<li><a href="/xz/embedded.html" title="Size-optimized decompressor for the .xz file format">XZ Embedded</a></li>
 		<li><a href="/xz/java.html" title="Java implementation of the .xz format">XZ for Java</a></li>
 		<li><a href="/xz/format.html" title="Specification and other information about the .xz file format">.xz file format</a></li>
-		<li><a href="http://sourceforge.net/p/lzmautils/discussion/708858" title="Discussion forum on SourceForge.net">Forum</a></li>
+		<li><a href="https://sourceforge.net/p/lzmautils/discussion/708858" title="Discussion forum on SourceForge.net">Forum</a></li>
 		<li><a href="/xz/lists.html" title="XZ related mailing lists">Mailing lists</a>
 	</ul></li>
 	<li>Miscellaneous

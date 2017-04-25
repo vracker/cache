@@ -9,6 +9,7 @@
                 showIndicators: false,
                 analytics: true,
                 timeout: 650,
+                timeouts_by_bids: {650: 3, 2000: 1, 3000: 0},
                 };
             SF.Ads.prebidUnits = [];
             if (SF.initial_breakpoints_visible.leaderboard) {
@@ -59,7 +60,7 @@
                     sizes: [300, 250]
                 });
             }
-            SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "sovrn": 0.89, "aardvark": 0.99, "aol": 0.94, "brealtime": 0.84, "rubiconlite": 0.9, "appnexus": 0.86, "pulsepoint": 0.87, "rubicon": 0.96, "indexexchange": 0.93, "springserve": 0.87}, "inflation": 1.2, "floor": 0.02};
+            SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "sovrn": 0.89, "aardvark": 0.99, "aol": 0.94, "brealtime": 0.84, "rubiconlite": 0.9, "appnexus": 0.86, "pulsepoint": 0.82, "rubicon": 0.96, "indexexchange": 0.93, "springserve": 0.87}, "inflation": 1.2, "floor": 0.02};
         </script>
         <meta id="project_name" name="project_name" content="expect">
         <meta name="description" content="Expect is a tool for automating interactive applications such as telnet, ftp, passwd, fsck, rlogin, tip, etc. Expect is also useful for testing …">

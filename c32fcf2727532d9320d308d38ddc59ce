@@ -20,7 +20,6 @@
                             {'params': {'siteId': '103240', 'position': 'atf', 'sizes': [2], 'accountId': '15680', 'zoneId': '486110'}, 'bidder': 'rubicon'},
                             {'params': {'placementId': 9265078}, 'bidder': 'appnexus'},
                             {'params': {'placement': 4224498, 'network': '10676.1'}, 'bidder': 'aol'},
-                            {'params': {'placementId': 9726874}, 'bidder': 'springserve'},
                             {'params': {'siteID': '188656', 'id': '7'}, 'bidder': 'indexExchange'},
                             ],
                     code: 'div-gpt-ad-1393435113147-0',
@@ -36,7 +35,6 @@
                             {'params': {'siteId': '103240', 'position': 'atf', 'sizes': [15, 10], 'accountId': '15680', 'zoneId': '486110'}, 'bidder': 'rubicon'},
                             {'params': {'placementId': 9265076}, 'bidder': 'appnexus'},
                             {'params': {'placement': 4224505, 'network': '10676.1'}, 'bidder': 'aol'},
-                            {'params': {'placementId': 9726868}, 'bidder': 'springserve'},
                             {'params': {'siteID': '188654', 'id': '5'}, 'bidder': 'indexExchange'},
                             ],
                     code: 'div-gpt-ad-1392147725721-0',
@@ -52,7 +50,6 @@
                             {'params': {'siteId': '103240', 'sizes': [15], 'accountId': '15680', 'zoneId': '486112'}, 'bidder': 'rubicon'},
                             {'params': {'placementId': 9265082}, 'bidder': 'appnexus'},
                             {'params': {'placement': 4224503, 'network': '10676.1'}, 'bidder': 'aol'},
-                            {'params': {'placementId': 9726871}, 'bidder': 'springserve'},
                             {'params': {'siteID': '188655', 'id': '6'}, 'bidder': 'indexExchange'},
                             ],
                     code: 'div-gpt-ad-1392148208789-0',
@@ -60,7 +57,7 @@
                     sizes: [300, 250]
                 });
             }
-            SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "sovrn": 0.89, "aardvark": 0.99, "aol": 0.94, "brealtime": 0.84, "rubiconlite": 0.9, "appnexus": 0.86, "pulsepoint": 0.82, "rubicon": 0.96, "indexexchange": 0.93, "springserve": 0.87}, "inflation": 1.2, "floor": 0.02};
+            SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "sovrn": 0.89, "aardvark": 0.99, "aol": 0.94, "brealtime": 0.84, "rubiconlite": 0.9, "appnexus": 0.86, "pulsepoint": 0.82, "rubicon": 0.96, "indexexchange": 0.93, "springserve": 0.001}, "inflation": 1.2, "floor": 0.02};
         </script>
         <meta id="project_name" name="project_name" content="expect">
         <meta name="description" content="Expect is a tool for automating interactive applications such as telnet, ftp, passwd, fsck, rlogin, tip, etc. Expect is also useful for testing …">
@@ -139,9 +136,11 @@
             googletag.pubads().addEventListener('slotRenderEnded', function(event) {
                 var unitName = event.slot.getName();
                 if ( unitName in gptadHandlers ) {
-                   try {
-                       SF.Ads.RenderHandlers[gptadHandlers[unitName]].call(this, event);
-                   } catch (e) {
+                   for (var i = 0; i < gptadHandlers[unitName].length; i++) {
+                       try {
+                           SF.Ads.RenderHandlers[gptadHandlers[unitName][i]].call(this, event);
+                       } catch (e) {
+                       }
                    }
                 }
             });
@@ -263,7 +262,8 @@
 </div>
             <div class="sterling" id="deals-widget">
     <aside class="sidebar-widget stackcommerce-widget">
-<div id="SF-300x250_wrapped" class="draper medrec  "
+<div id="SF-300x250_wrapped" class="draper medrec  visibility_rules
+ v_300_large "
 >
 </div>
     </aside>

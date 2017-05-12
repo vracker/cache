@@ -21,6 +21,7 @@
                             {'params': {'placementId': 9265078}, 'bidder': 'appnexus'},
                             {'params': {'placement': 4224498, 'network': '10676.1'}, 'bidder': 'aol'},
                             {'params': {'siteID': '188656', 'id': '7'}, 'bidder': 'indexExchange'},
+                            {'params': {'placementId': '65725'}, 'bidder': 'rhythmone'},
                             ],
                     code: 'div-gpt-ad-1393435113147-0',
                     tag: 'SF_ProjectFiles_728x90_A',
@@ -36,6 +37,7 @@
                             {'params': {'placementId': 9265076}, 'bidder': 'appnexus'},
                             {'params': {'placement': 4224505, 'network': '10676.1'}, 'bidder': 'aol'},
                             {'params': {'siteID': '188654', 'id': '5'}, 'bidder': 'indexExchange'},
+                            {'params': {'placementId': '65725'}, 'bidder': 'rhythmone'},
                             ],
                     code: 'div-gpt-ad-1392147725721-0',
                     tag: 'SF_ProjectFiles_300x250_A',
@@ -51,13 +53,14 @@
                             {'params': {'placementId': 9265082}, 'bidder': 'appnexus'},
                             {'params': {'placement': 4224503, 'network': '10676.1'}, 'bidder': 'aol'},
                             {'params': {'siteID': '188655', 'id': '6'}, 'bidder': 'indexExchange'},
+                            {'params': {'placementId': '65725'}, 'bidder': 'rhythmone'},
                             ],
                     code: 'div-gpt-ad-1392148208789-0',
                     tag: 'SF_ProjectFiles_300x250_B',
                     sizes: [300, 250]
                 });
             }
-            SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "sovrn": 0.89, "aardvark": 0.99, "aol": 0.94, "brealtime": 0.84, "rubiconlite": 0.9, "appnexus": 0.86, "pulsepoint": 0.82, "rubicon": 0.96, "indexexchange": 0.93, "springserve": 0.001}, "inflation": 1.2, "floor": 0.02};
+            SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "sovrn": 0.89, "aardvark": 0.99, "aol": 0.94, "brealtime": 0.85, "rubiconlite": 0.9, "appnexus": 0.86, "pulsepoint": 0.78, "rubicon": 0.96, "indexexchange": 0.92, "springserve": 0.001}, "inflation": 1.2, "floor": 0.02};
         </script>
         <meta id="project_name" name="project_name" content="expect">
         <meta name="description" content="Expect is a tool for automating interactive applications such as telnet, ftp, passwd, fsck, rlogin, tip, etc. Expect is also useful for testing …">

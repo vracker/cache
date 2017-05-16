@@ -1,21 +1,16 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
-<head>	<title>Download Tcl/Tk Sources</title>
-	<link rel="stylesheet" href="/devsite.css" type="text/css" media="all">
+<head> <title>Download Tcl/Tk Sources</title>
+<link rel="stylesheet" href="/devsite.css" type="text/css" media="all">
 </head>
 <body bgcolor="white" text="black">
-
-	<table border="0" cellpadding="0" cellspacing="0" width="780">
-	    <tr>
-	    <td valign="top" align="left"><a href="/"><img src="/images/plume.png" width="60" height="55"
-	border="0" alt="Tcl Home" /><img src="/images/Developer.gif" width="355" height="55"
-	border="0" alt="Tcl Home" title="Tcl Developer Xchange" /></a></td>
-	    <td valign="top" align="right"><a href="siteinfo.html"><font size=1>hosted by</font></a><br><a href="http://www.ActiveState.com/Tcl"><img src="/images/aslogo.gif"
-	border="0" alt="ActiveState"
-	title="This site is hosted by ActiveState" /></a></td>
-	    </tr>
-	</table>
-    <div id="globalnav"><ul>
+<table border="0" cellpadding="0" cellspacing="0" width="780">
+<tr>
+<td valign="top" align="left"><a href="/"><img src="/images/plume.png" width="60" height="55" border="0" alt="Tcl Home"/><img src="/images/Developer.gif" width="355" height="55" border="0" alt="Tcl Home" title="Tcl Developer Xchange"/></a></td>
+<td valign="top" align="right"><a href="siteinfo.html"><font size=1>hosted by</font></a><br><a href="http://www.ActiveState.com/Tcl"><img src="/images/aslogo.gif" border="0" alt="ActiveState" title="This site is hosted by ActiveState"/></a></td>
+</tr>
+</table>
+<div id="globalnav"><ul>
 <li><a href="/">HOME</a></li>
 <li><a href="/about/">ABOUT TCL/TK</a></li>
 <li><a href="/software/tcltk/" class="here">SOFTWARE</a></li>
@@ -23,15 +18,14 @@
 <li><a href="/community/">COMMUNITY</a></li>
 <li><a href="/doc/">DOCUMENTATION</a></li>
 </ul></div>
-<br clear="all" />
+<br clear="all"/>
 <DIV style="border-top: 2px solid #3163CE; width: 780px"></DIV>
 <table border="0" cellpadding="2" cellspacing="0" width="780">
-	    <tr><td align="left" valign="middle">
-<!-- SiteSearch Google -->
-	<div style="display:table-cell; vertical-align:middle; margin:0px">
-<FORM method="GET" action="http://www.google.com/search">
-<A HREF="http://www.google.com/"><IMG src="/images/Search.gif" border="0"
-ALT="Google SiteSearch" /></A>
+<tr><td align="left" valign="middle">
+ 
+<div style="display:table-cell; vertical-align:middle; margin:0px">
+<FORM method="GET" action="https://www.google.com/search">
+<A HREF="https://www.google.com/"><IMG src="/images/Search.gif" border="0" ALT="Google SiteSearch"/></A>
 <INPUT TYPE="text" name="q" size="20" maxlength="255" value="">
 <INPUT type="image" value="submit" name="btnG" src="/images/Go.gif">
 <input type="hidden" name="ie" value="UTF-8">
@@ -39,159 +33,100 @@ ALT="Google SiteSearch" /></A>
 <input type="hidden" name="domains" value="tcl.tk">
 <input type="hidden" name="sitesearch" value="tcl.tk">
 </FORM></div>
-<!-- SiteSearch Google -->
-</td><td 
-	    align="right"><p class="bannerlong">Download Tcl/Tk Sources</p></td></tr></table>
-	<DIV style="border-top: 1px solid #FFCE00; margin-bottom: 2px; width: 780px"></DIV><table border="0" cellpadding="0" cellspacing="0" width="780">
-	<tr><td>
-
+ 
+</td><td align="right"><p class="bannerlong">Download Tcl/Tk Sources</p></td></tr></table>
+<DIV style="border-top: 1px solid #FFCE00; margin-bottom: 2px; width: 780px"></DIV><table border="0" cellpadding="0" cellspacing="0" width="780">
+<tr><td>
 <h3><a name=binary>Binary Releases</a></h3>
-
 <p>
 For other ways to obtain Tcl/Tk (such as binary distributions), see the
 main <a href="./">Tcl/Tk</a> page.
 </p>
-
 <h3><a name=source>Source Releases</a></h3>
-
 <p> Each of these files is explained in more detail below.
 </p>
-
 <table id="downloads">
 <tr class=even><th colspan=3>Tcl 8.6.6 Sources</th>
 <th colspan=3>Tk 8.6.6 Sources</th>
 </tr>
 <tr>
-<td><b><a href="http://prdownloads.sourceforge.net/tcl/tcl8.6.6-src.tar.gz">tcl8.6.6-src.tar.gz</a></b></td>
-<td>Gzip format</td><td>  </td>
-
-<td><b><a href="http://prdownloads.sourceforge.net/tcl/tk8.6.6-src.tar.gz">tk8.6.6-src.tar.gz</a></b></td>
-<td>Gzip format</td><td>  </td>
-
+<td><b><a href="https://prdownloads.sourceforge.net/tcl/tcl8.6.6-src.tar.gz">tcl8.6.6-src.tar.gz</a></b></td>
+<td>Gzip format</td><td> </td>
+<td><b><a href="https://prdownloads.sourceforge.net/tcl/tk8.6.6-src.tar.gz">tk8.6.6-src.tar.gz</a></b></td>
+<td>Gzip format</td><td> </td>
 </tr>
 <tr>
-<td><b><a href="http://prdownloads.sourceforge.net/tcl/tcl866-src.zip">tcl866-src.zip</a></b></td>
-<td>Zip format</td><td>  </td>
-
-<td><b><a href="http://prdownloads.sourceforge.net/tcl/tk866-src.zip">tk866-src.zip</a></b></td>
-<td>Zip format</td><td>  </td>
-
+<td><b><a href="https://prdownloads.sourceforge.net/tcl/tcl866-src.zip">tcl866-src.zip</a></b></td>
+<td>Zip format</td><td> </td>
+<td><b><a href="https://prdownloads.sourceforge.net/tcl/tk866-src.zip">tk866-src.zip</a></b></td>
+<td>Zip format</td><td> </td>
 </tr>
 </table>
-
 <table id="downloads">
 <tr class=even><th colspan=3>Tcl 8.5.19 Sources</th>
 <th colspan=3>Tk 8.5.19 Sources</th>
 </tr>
 <tr>
-<td><b><a href="http://prdownloads.sourceforge.net/tcl/tcl8.5.19-src.tar.gz">tcl8.5.19-src.tar.gz</a></b></td>
-<td>Gzip format</td><td>  </td>
-
-<td><b><a href="http://prdownloads.sourceforge.net/tcl/tk8.5.19-src.tar.gz">tk8.5.19-src.tar.gz</a></b></td>
-<td>Gzip format</td><td>  </td>
-
+<td><b><a href="https://prdownloads.sourceforge.net/tcl/tcl8.5.19-src.tar.gz">tcl8.5.19-src.tar.gz</a></b></td>
+<td>Gzip format</td><td> </td>
+<td><b><a href="https://prdownloads.sourceforge.net/tcl/tk8.5.19-src.tar.gz">tk8.5.19-src.tar.gz</a></b></td>
+<td>Gzip format</td><td> </td>
 </tr>
 <tr>
-<td><b><a href="http://prdownloads.sourceforge.net/tcl/tcl8519-src.zip">tcl8519-src.zip</a></b></td>
-<td>Zip format</td><td>  </td>
-
-<td><b><a href="http://prdownloads.sourceforge.net/tcl/tk8519-src.zip">tk8519-src.zip</a></b></td>
-<td>Zip format</td><td>  </td>
-
+<td><b><a href="https://prdownloads.sourceforge.net/tcl/tcl8519-src.zip">tcl8519-src.zip</a></b></td>
+<td>Zip format</td><td> </td>
+<td><b><a href="https://prdownloads.sourceforge.net/tcl/tk8519-src.zip">tk8519-src.zip</a></b></td>
+<td>Zip format</td><td> </td>
 </tr>
 </table>
-
-<!-- <table id="downloads">
-<tr class=even><th colspan=3>Tcl 8.4.20 Sources</th>
-<th colspan=3>Tk 8.4.20 Sources</th>
-</tr>
-<tr>
-<td><b><a href="http://prdownloads.sourceforge.net/tcl/tcl8.4.20-src.tar.gz">tcl8.4.20-src.tar.gz</a></b></td>
-<td>Gzip format</td><td>  </td>
-
-<td><b><a href="http://prdownloads.sourceforge.net/tcl/tk8.4.20-src.tar.gz">tk8.4.20-src.tar.gz</a></b></td>
-<td>Gzip format</td><td>  </td>
-
-</tr>
-<tr>
-<td><b><a href="http://prdownloads.sourceforge.net/tcl/tcl8420-src.zip">tcl8420-src.zip</a></b></td>
-<td>Zip format</td><td>  </td>
-
-<td><b><a href="http://prdownloads.sourceforge.net/tcl/tk8420-src.zip">tk8420-src.zip</a></b></td>
-<td>Zip format</td><td>  </td>
-
-</tr>
-</table> -->
-
+ 
 <p>
 Other versions of the source distributions are available at
-<a href="http://sourceforge.net/projects/tcl/files/Tcl/">SourceForge</a>.
+<a href="https://sourceforge.net/projects/tcl/files/Tcl/">SourceForge</a>.
 </p>
-
 <p> If for some reason those links fail, you may also download Tcl and
 Tk source code distributions from:</p>
 <ul>
 <li> <a href="ftp://ftp.tcl.tk/pub/tcl/">ftp.tcl.tk<a>
 </ul>
 or from one of its <a href=mirror.html>mirror sites</a>.
-
 <p>
 The source releases include make files for Windows, Unix and Xcode project
 files for Mac OS X.
-
 <p> Once you've retrieved the sources, click below for instructions on
 how to configure, compile, and install Tcl/Tk.
-
 <p>
 <a href="/doc/howto/compile.html">How to Compile Tcl Source Releases</a>
-
 <h4>Unix (including Mac OS X)</h4>
-
 <p> You'll want both Tcl and Tk sources; choose the
 gzipped tar format. The files listed under the Windows sources
 contain the same information but are in ZIP format.
-
 <h5>Gzip'ed Tar Files</h5>
-
 <p>
-Extract gzip'ed archives with this UNIX command line: 
+Extract gzip'ed archives with this UNIX command line:
 </p>
-
 <pre>    gunzip &lt; <i>file</i>.tar.gz | tar xvf -</pre>
-
 <h4>Windows </h4>
-
 <p> If you have downloaded the Unix version of these files, there is
 no need to also download these versions since these files are
 identical but in <a href=http://www.winzip.com> ZIP format </a>
 instead of compressed tar.
-
-<!--
-<h3>Mirror Sites </h3>
-
-<p> There are many Web sites around the world that mirror Tcl and Tk
-releases, plus additional Tcl information. You may find it more
-convenient to download Tcl/Tk from a mirror site that is close to you.
-
-<p>
-<a href="mirror.html">List of mirror sites.</a>
--->
-<br clear="all" />
+ 
+<br clear="all"/>
 <p align="center" class="footer">
-		    <small><b>
-		    This is the main Tcl Developer Xchange site,
-		    www.tcl.tk .
-		    </b></small>
-		&nbsp;&nbsp;
+<small><b>
+This is the main Tcl Developer Xchange site,
+www.tcl.tk .
+</b></small>
+&nbsp;&nbsp;
 <a href="/siteinfo.html">About this Site</a> |
-<a href="mailto:webmaster@-SPAM-.tcl.tk">webmaster@-SPAM-.tcl.tk</a>
+<a href="/cdn-cgi/l/email-protection#1a6d7f78777b696e7f685a37494a5b5737346e7976346e71">webmaster@-SPAM-.tcl.tk</a>
 <br>
-<a href="/">Home</a> | 
+<a href="/">Home</a> |
 <a href="/about/">About Tcl/Tk</a> |
-<a href="/software/tcltk/">Software</a> | 
+<a href="/software/tcltk/">Software</a> |
 <a href="/community/coreteam/">Core Development</a> |
 <a href="/community/">Community</a> |
 <a href="/doc/">Documentation</a>
 </p>
-</td></tr></table></body></html>
- 
+</td></tr></table><script>/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/\>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body></html>

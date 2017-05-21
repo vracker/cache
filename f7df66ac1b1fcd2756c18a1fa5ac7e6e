@@ -34,6 +34,8 @@
 <tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="diffutils-3.4.tar.xz.sig">diffutils-3.4.tar.xz.sig</a></td><td align="right">2016-08-08 13:32  </td><td align="right">801 </td><td>&nbsp;</td></tr>
 <tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="diffutils-3.5.tar.xz">diffutils-3.5.tar.xz</a></td><td align="right">2016-08-21 01:35  </td><td align="right">1.3M</td><td>&nbsp;</td></tr>
 <tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="diffutils-3.5.tar.xz.sig">diffutils-3.5.tar.xz.sig</a></td><td align="right">2016-08-21 01:35  </td><td align="right">801 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="diffutils-3.6.tar.xz">diffutils-3.6.tar.xz</a></td><td align="right">2017-05-21 16:33  </td><td align="right">1.3M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="diffutils-3.6.tar.xz.sig">diffutils-3.6.tar.xz.sig</a></td><td align="right">2017-05-21 16:33  </td><td align="right">801 </td><td>&nbsp;</td></tr>
    <tr><th colspan="5"><hr></th></tr>
 </table>
 <address>Apache/2.4.7 (Trisquel_GNU/Linux) Server at ftp.gnu.org Port 80</address>

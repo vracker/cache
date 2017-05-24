@@ -5,20 +5,20 @@
     "releases": [
         {
             "iseol": false, 
-            "version": "4.12-rc1", 
+            "version": "4.12-rc2", 
             "moniker": "mainline", 
-            "source": "https://git.kernel.org/torvalds/t/linux-4.12-rc1.tar.gz", 
+            "source": "https://git.kernel.org/torvalds/t/linux-4.12-rc2.tar.gz", 
             "pgp": null, 
             "released": {
-                "timestamp": 1494706800, 
-                "isodate": "2017-05-13"
+                "timestamp": 1495420230, 
+                "isodate": "2017-05-22"
             }, 
-            "gitweb": "https://git.kernel.org/torvalds/h/v4.12-rc1", 
+            "gitweb": "https://git.kernel.org/torvalds/h/v4.12-rc2", 
             "changelog": null, 
-            "diffview": "https://git.kernel.org/torvalds/ds/v4.12-rc1/v4.11", 
+            "diffview": "https://git.kernel.org/torvalds/ds/v4.12-rc2/v4.12-rc1", 
             "patch": {
-                "full": "https://git.kernel.org/torvalds/p/v4.12-rc1/v4.11", 
-                "incremental": null
+                "full": "https://git.kernel.org/torvalds/p/v4.12-rc2/v4.11", 
+                "incremental": "https://git.kernel.org/torvalds/p/v4.12-rc2/v4.12-rc1"
             }
         }, 
         {
@@ -40,7 +40,7 @@
             }
         }, 
         {
-            "iseol": false, 
+            "iseol": true, 
             "version": "4.10.17", 
             "moniker": "stable", 
             "source": "https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.10.17.tar.xz", 
@@ -221,15 +221,15 @@
         }, 
         {
             "iseol": false, 
-            "version": "next-20170519", 
+            "version": "next-20170524", 
             "moniker": "linux-next", 
             "source": null, 
             "pgp": null, 
             "released": {
-                "timestamp": 1495170098, 
-                "isodate": "2017-05-19"
+                "timestamp": 1495596091, 
+                "isodate": "2017-05-24"
             }, 
-            "gitweb": "https://git.kernel.org/next/linux-next/h/next-20170519", 
+            "gitweb": "https://git.kernel.org/next/linux-next/h/next-20170524", 
             "changelog": null, 
             "diffview": null, 
             "patch": {

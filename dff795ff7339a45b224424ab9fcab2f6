@@ -81,6 +81,10 @@ mission statement</a>.</p>
 <h2 id="news">News</h2>
 <dl>
 
+<dt><span>Weekly snapshots now use xz compression</span>
+    <span class="date">[2017-05-24]</span></dt>
+    <dd>...instead of bzip2.</dd>
+
 <dt><span><a href="gcc-7/">GCC 7.1</a> released</span>
     <span class="date">[2017-05-02]</span></dt>
     <dd></dd>
@@ -388,7 +392,7 @@ permitted in any medium, provided this notice is preserved.</p>
 
 <p>These pages are
 <a href="https://gcc.gnu.org/about.html">maintained by the GCC team</a>.
-Last modified 2017-05-09<!-- IGNORE DIFF
+Last modified 2017-05-24<!-- IGNORE DIFF
 --><a href="http://validator.w3.org/check/referer">.</a></p>
 
 </div>

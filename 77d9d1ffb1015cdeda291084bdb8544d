@@ -4,7 +4,7 @@
 <h1>Index of /pub/software/scm/git/</h1><hr><pre><a href="../">../</a>
 <a href="RPMS/">RPMS/</a>                                              03-Dec-2010 01:58                   -
 <a href="debian/">debian/</a>                                            24-Dec-2005 08:56                   -
-<a href="docs/">docs/</a>                                              18-Apr-2017 18:50                   -
+<a href="docs/">docs/</a>                                              05-Jun-2017 03:31                   -
 <a href="testing/">testing/</a>                                           04-May-2017 15:14                   -
 <a href="git-0.01.tar.gz">git-0.01.tar.gz</a>                                    07-Apr-2005 21:25               41317
 <a href="git-0.01.tar.sign">git-0.01.tar.sign</a>                                  08-Aug-2013 19:44                 665
@@ -183,6 +183,9 @@
 <a href="git-2.13.0.tar.gz">git-2.13.0.tar.gz</a>                                  09-May-2017 23:59             6902610
 <a href="git-2.13.0.tar.sign">git-2.13.0.tar.sign</a>                                09-May-2017 23:59                 543
 <a href="git-2.13.0.tar.xz">git-2.13.0.tar.xz</a>                                  09-May-2017 23:59             4744388
+<a href="git-2.13.1.tar.gz">git-2.13.1.tar.gz</a>                                  05-Jun-2017 01:24             6910847
+<a href="git-2.13.1.tar.sign">git-2.13.1.tar.sign</a>                                05-Jun-2017 01:24                 543
+<a href="git-2.13.1.tar.xz">git-2.13.1.tar.xz</a>                                  05-Jun-2017 01:24             4746640
 <a href="git-2.2.0.tar.gz">git-2.2.0.tar.gz</a>                                   26-Nov-2014 23:05             5157176
 <a href="git-2.2.0.tar.sign">git-2.2.0.tar.sign</a>                                 26-Nov-2014 23:05                 543
 <a href="git-2.2.0.tar.xz">git-2.2.0.tar.xz</a>                                   26-Nov-2014 23:05             3588600
@@ -528,6 +531,9 @@
 <a href="git-htmldocs-2.13.0.tar.gz">git-htmldocs-2.13.0.tar.gz</a>                         10-May-2017 00:01             2669688
 <a href="git-htmldocs-2.13.0.tar.sign">git-htmldocs-2.13.0.tar.sign</a>                       10-May-2017 00:01                 543
 <a href="git-htmldocs-2.13.0.tar.xz">git-htmldocs-2.13.0.tar.xz</a>                         10-May-2017 00:01             1107480
+<a href="git-htmldocs-2.13.1.tar.gz">git-htmldocs-2.13.1.tar.gz</a>                         05-Jun-2017 01:24             2672103
+<a href="git-htmldocs-2.13.1.tar.sign">git-htmldocs-2.13.1.tar.sign</a>                       05-Jun-2017 01:24                 543
+<a href="git-htmldocs-2.13.1.tar.xz">git-htmldocs-2.13.1.tar.xz</a>                         05-Jun-2017 01:24             1108536
 <a href="git-htmldocs-2.2.0.tar.gz">git-htmldocs-2.2.0.tar.gz</a>                          26-Nov-2014 23:05             2360869
 <a href="git-htmldocs-2.2.0.tar.sign">git-htmldocs-2.2.0.tar.sign</a>                        26-Nov-2014 23:05                 543
 <a href="git-htmldocs-2.2.0.tar.xz">git-htmldocs-2.2.0.tar.xz</a>                          26-Nov-2014 23:05              974584
@@ -867,6 +873,9 @@
 <a href="git-manpages-2.13.0.tar.gz">git-manpages-2.13.0.tar.gz</a>                         10-May-2017 00:02              659556
 <a href="git-manpages-2.13.0.tar.sign">git-manpages-2.13.0.tar.sign</a>                       10-May-2017 00:02                 543
 <a href="git-manpages-2.13.0.tar.xz">git-manpages-2.13.0.tar.xz</a>                         10-May-2017 00:02              407460
+<a href="git-manpages-2.13.1.tar.gz">git-manpages-2.13.1.tar.gz</a>                         05-Jun-2017 01:24              661156
+<a href="git-manpages-2.13.1.tar.sign">git-manpages-2.13.1.tar.sign</a>                       05-Jun-2017 01:24                 543
+<a href="git-manpages-2.13.1.tar.xz">git-manpages-2.13.1.tar.xz</a>                         05-Jun-2017 01:24              407700
 <a href="git-manpages-2.2.0.tar.gz">git-manpages-2.2.0.tar.gz</a>                          26-Nov-2014 23:05              589020
 <a href="git-manpages-2.2.0.tar.sign">git-manpages-2.2.0.tar.sign</a>                        26-Nov-2014 23:05                 543
 <a href="git-manpages-2.2.0.tar.xz">git-manpages-2.2.0.tar.xz</a>                          26-Nov-2014 23:05              369716

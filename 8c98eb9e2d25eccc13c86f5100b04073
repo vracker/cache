@@ -131,20 +131,20 @@
         }, 
         {
             "iseol": false, 
-            "version": "3.16.43", 
+            "version": "3.16.44", 
             "moniker": "longterm", 
-            "source": "https://cdn.kernel.org/pub/linux/kernel/v3.x/linux-3.16.43.tar.xz", 
-            "pgp": "https://cdn.kernel.org/pub/linux/kernel/v3.x/linux-3.16.43.tar.sign", 
+            "source": "https://cdn.kernel.org/pub/linux/kernel/v3.x/linux-3.16.44.tar.xz", 
+            "pgp": "https://cdn.kernel.org/pub/linux/kernel/v3.x/linux-3.16.44.tar.sign", 
             "released": {
-                "timestamp": 1491340930, 
-                "isodate": "2017-04-04"
+                "timestamp": 1496693851, 
+                "isodate": "2017-06-05"
             }, 
-            "gitweb": "https://git.kernel.org/stable/linux-stable/h/v3.16.43", 
-            "changelog": "https://cdn.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.16.43", 
-            "diffview": "https://git.kernel.org/stable/linux-stable/ds/v3.16.43/v3.16.42", 
+            "gitweb": "https://git.kernel.org/stable/linux-stable/h/v3.16.44", 
+            "changelog": "https://cdn.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.16.44", 
+            "diffview": "https://git.kernel.org/stable/linux-stable/ds/v3.16.44/v3.16.43", 
             "patch": {
-                "full": "https://cdn.kernel.org/pub/linux/kernel/v3.x/patch-3.16.43.xz", 
-                "incremental": "https://cdn.kernel.org/pub/linux/kernel/v3.x/incr/patch-3.16.42-43.xz"
+                "full": "https://cdn.kernel.org/pub/linux/kernel/v3.x/patch-3.16.44.xz", 
+                "incremental": "https://cdn.kernel.org/pub/linux/kernel/v3.x/incr/patch-3.16.43-44.xz"
             }
         }, 
         {
@@ -203,33 +203,33 @@
         }, 
         {
             "iseol": false, 
-            "version": "3.2.88", 
+            "version": "3.2.89", 
             "moniker": "longterm", 
-            "source": "https://cdn.kernel.org/pub/linux/kernel/v3.x/linux-3.2.88.tar.xz", 
-            "pgp": "https://cdn.kernel.org/pub/linux/kernel/v3.x/linux-3.2.88.tar.sign", 
+            "source": "https://cdn.kernel.org/pub/linux/kernel/v3.x/linux-3.2.89.tar.xz", 
+            "pgp": "https://cdn.kernel.org/pub/linux/kernel/v3.x/linux-3.2.89.tar.sign", 
             "released": {
-                "timestamp": 1491340716, 
-                "isodate": "2017-04-04"
+                "timestamp": 1496693785, 
+                "isodate": "2017-06-05"
             }, 
-            "gitweb": "https://git.kernel.org/stable/linux-stable/h/v3.2.88", 
-            "changelog": "https://cdn.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.2.88", 
-            "diffview": "https://git.kernel.org/stable/linux-stable/ds/v3.2.88/v3.2.87", 
+            "gitweb": "https://git.kernel.org/stable/linux-stable/h/v3.2.89", 
+            "changelog": "https://cdn.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.2.89", 
+            "diffview": "https://git.kernel.org/stable/linux-stable/ds/v3.2.89/v3.2.88", 
             "patch": {
-                "full": "https://cdn.kernel.org/pub/linux/kernel/v3.x/patch-3.2.88.xz", 
-                "incremental": "https://cdn.kernel.org/pub/linux/kernel/v3.x/incr/patch-3.2.87-88.xz"
+                "full": "https://cdn.kernel.org/pub/linux/kernel/v3.x/patch-3.2.89.xz", 
+                "incremental": "https://cdn.kernel.org/pub/linux/kernel/v3.x/incr/patch-3.2.88-89.xz"
             }
         }, 
         {
             "iseol": false, 
-            "version": "next-20170605", 
+            "version": "next-20170606", 
             "moniker": "linux-next", 
             "source": null, 
             "pgp": null, 
             "released": {
-                "timestamp": 1496646891, 
-                "isodate": "2017-06-05"
+                "timestamp": 1496728114, 
+                "isodate": "2017-06-06"
             }, 
-            "gitweb": "https://git.kernel.org/next/linux-next/h/next-20170605", 
+            "gitweb": "https://git.kernel.org/next/linux-next/h/next-20170606", 
             "changelog": null, 
             "diffview": null, 
             "patch": {

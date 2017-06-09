@@ -148,24 +148,6 @@
             }
         }, 
         {
-            "iseol": true, 
-            "version": "3.12.74", 
-            "moniker": "longterm", 
-            "source": "https://cdn.kernel.org/pub/linux/kernel/v3.x/linux-3.12.74.tar.xz", 
-            "pgp": "https://cdn.kernel.org/pub/linux/kernel/v3.x/linux-3.12.74.tar.sign", 
-            "released": {
-                "timestamp": 1494335709, 
-                "isodate": "2017-05-09"
-            }, 
-            "gitweb": "https://git.kernel.org/stable/linux-stable/h/v3.12.74", 
-            "changelog": "https://cdn.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.12.74", 
-            "diffview": "https://git.kernel.org/stable/linux-stable/ds/v3.12.74/v3.12.73", 
-            "patch": {
-                "full": "https://cdn.kernel.org/pub/linux/kernel/v3.x/patch-3.12.74.xz", 
-                "incremental": "https://cdn.kernel.org/pub/linux/kernel/v3.x/incr/patch-3.12.73-74.xz"
-            }
-        }, 
-        {
             "iseol": false, 
             "version": "3.10.105", 
             "moniker": "longterm", 
@@ -221,15 +203,15 @@
         }, 
         {
             "iseol": false, 
-            "version": "next-20170607", 
+            "version": "next-20170609", 
             "moniker": "linux-next", 
             "source": null, 
             "pgp": null, 
             "released": {
-                "timestamp": 1496815491, 
-                "isodate": "2017-06-07"
+                "timestamp": 1496990272, 
+                "isodate": "2017-06-09"
             }, 
-            "gitweb": "https://git.kernel.org/next/linux-next/h/next-20170607", 
+            "gitweb": "https://git.kernel.org/next/linux-next/h/next-20170609", 
             "changelog": null, 
             "diffview": null, 
             "patch": {

@@ -315,7 +315,7 @@
         <label class="input-set">
             <span class="label">Country</span>
             <span class="input">
-<select id="country-floating" name="XTMcKcEpaBUufMS5DUdx:RSSO0nA" required >
+<select id="country-floating" name="X32fSzbLMD1poWptkgzI5VszpSFs" required >
     <option value=""></option>
     <option value="AF">Afghanistan</option>
     <option value="AX">Aland Islands</option>
@@ -391,7 +391,6 @@
     <option value="FJ">Fiji</option>
     <option value="FI">Finland</option>
     <option value="FR">France</option>
-    <option value="FX">France, Metropolitan</option>
     <option value="GF">French Guiana</option>
     <option value="PF">French Polynesia</option>
     <option value="TF">French Southern Territories</option>
@@ -571,7 +570,7 @@
         <label class="input-set" style="display:none">
             <span class="label">State</span>
             <span class="input">
-<select id="state-floating" name="XTtcRZFBLgAxihCdmH7xJrNQv5so"  >
+<select id="state-floating" name="X3XfJ2ajdvUUwzNrxyEB0_1GFVGQ"  >
     <option value=""></option>
     <option value="AL">Alabama</option>
     <option value="AK">Alaska</option>

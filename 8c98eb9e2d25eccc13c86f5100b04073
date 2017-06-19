@@ -1,6 +1,6 @@
 {
     "latest_stable": {
-        "version": "4.11.4"
+        "version": "4.11.6"
     }, 
     "releases": [
         {
@@ -23,20 +23,20 @@
         }, 
         {
             "iseol": false, 
-            "version": "4.11.4", 
+            "version": "4.11.6", 
             "moniker": "stable", 
-            "source": "https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.11.4.tar.xz", 
-            "pgp": "https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.11.4.tar.sign", 
+            "source": "https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.11.6.tar.xz", 
+            "pgp": "https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.11.6.tar.sign", 
             "released": {
-                "timestamp": 1496830240, 
-                "isodate": "2017-06-07"
+                "timestamp": 1497674853, 
+                "isodate": "2017-06-17"
             }, 
-            "gitweb": "https://git.kernel.org/stable/linux-stable/h/v4.11.4", 
-            "changelog": "https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.11.4", 
-            "diffview": "https://git.kernel.org/stable/linux-stable/ds/v4.11.4/v4.11.3", 
+            "gitweb": "https://git.kernel.org/stable/linux-stable/h/v4.11.6", 
+            "changelog": "https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.11.6", 
+            "diffview": "https://git.kernel.org/stable/linux-stable/ds/v4.11.6/v4.11.5", 
             "patch": {
-                "full": "https://cdn.kernel.org/pub/linux/kernel/v4.x/patch-4.11.4.xz", 
-                "incremental": "https://cdn.kernel.org/pub/linux/kernel/v4.x/incr/patch-4.11.3-4.xz"
+                "full": "https://cdn.kernel.org/pub/linux/kernel/v4.x/patch-4.11.6.xz", 
+                "incremental": "https://cdn.kernel.org/pub/linux/kernel/v4.x/incr/patch-4.11.5-6.xz"
             }
         }, 
         {
@@ -59,74 +59,74 @@
         }, 
         {
             "iseol": false, 
-            "version": "4.9.31", 
+            "version": "4.9.33", 
             "moniker": "longterm", 
-            "source": "https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.9.31.tar.xz", 
-            "pgp": "https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.9.31.tar.sign", 
+            "source": "https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.9.33.tar.xz", 
+            "pgp": "https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.9.33.tar.sign", 
             "released": {
-                "timestamp": 1496830088, 
-                "isodate": "2017-06-07"
+                "timestamp": 1497674633, 
+                "isodate": "2017-06-17"
             }, 
-            "gitweb": "https://git.kernel.org/stable/linux-stable/h/v4.9.31", 
-            "changelog": "https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.9.31", 
-            "diffview": "https://git.kernel.org/stable/linux-stable/ds/v4.9.31/v4.9.30", 
+            "gitweb": "https://git.kernel.org/stable/linux-stable/h/v4.9.33", 
+            "changelog": "https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.9.33", 
+            "diffview": "https://git.kernel.org/stable/linux-stable/ds/v4.9.33/v4.9.32", 
             "patch": {
-                "full": "https://cdn.kernel.org/pub/linux/kernel/v4.x/patch-4.9.31.xz", 
-                "incremental": "https://cdn.kernel.org/pub/linux/kernel/v4.x/incr/patch-4.9.30-31.xz"
+                "full": "https://cdn.kernel.org/pub/linux/kernel/v4.x/patch-4.9.33.xz", 
+                "incremental": "https://cdn.kernel.org/pub/linux/kernel/v4.x/incr/patch-4.9.32-33.xz"
             }
         }, 
         {
             "iseol": false, 
-            "version": "4.4.71", 
+            "version": "4.4.73", 
             "moniker": "longterm", 
-            "source": "https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.4.71.tar.xz", 
-            "pgp": "https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.4.71.tar.sign", 
+            "source": "https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.4.73.tar.xz", 
+            "pgp": "https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.4.73.tar.sign", 
             "released": {
-                "timestamp": 1496829980, 
-                "isodate": "2017-06-07"
+                "timestamp": 1497674462, 
+                "isodate": "2017-06-17"
             }, 
-            "gitweb": "https://git.kernel.org/stable/linux-stable/h/v4.4.71", 
-            "changelog": "https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.4.71", 
-            "diffview": "https://git.kernel.org/stable/linux-stable/ds/v4.4.71/v4.4.70", 
+            "gitweb": "https://git.kernel.org/stable/linux-stable/h/v4.4.73", 
+            "changelog": "https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.4.73", 
+            "diffview": "https://git.kernel.org/stable/linux-stable/ds/v4.4.73/v4.4.72", 
             "patch": {
-                "full": "https://cdn.kernel.org/pub/linux/kernel/v4.x/patch-4.4.71.xz", 
-                "incremental": "https://cdn.kernel.org/pub/linux/kernel/v4.x/incr/patch-4.4.70-71.xz"
+                "full": "https://cdn.kernel.org/pub/linux/kernel/v4.x/patch-4.4.73.xz", 
+                "incremental": "https://cdn.kernel.org/pub/linux/kernel/v4.x/incr/patch-4.4.72-73.xz"
             }
         }, 
         {
             "iseol": false, 
-            "version": "4.1.40", 
+            "version": "4.1.41", 
             "moniker": "longterm", 
-            "source": "https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.1.40.tar.xz", 
-            "pgp": "https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.1.40.tar.sign", 
+            "source": "https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.1.41.tar.xz", 
+            "pgp": "https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.1.41.tar.sign", 
             "released": {
-                "timestamp": 1495967840, 
-                "isodate": "2017-05-28"
+                "timestamp": 1497533559, 
+                "isodate": "2017-06-15"
             }, 
-            "gitweb": "https://git.kernel.org/stable/linux-stable/h/v4.1.40", 
-            "changelog": "https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.1.40", 
-            "diffview": "https://git.kernel.org/stable/linux-stable/ds/v4.1.40/v4.1.39", 
+            "gitweb": "https://git.kernel.org/stable/linux-stable/h/v4.1.41", 
+            "changelog": "https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.1.41", 
+            "diffview": "https://git.kernel.org/stable/linux-stable/ds/v4.1.41/v4.1.40", 
             "patch": {
-                "full": "https://cdn.kernel.org/pub/linux/kernel/v4.x/patch-4.1.40.xz", 
-                "incremental": "https://cdn.kernel.org/pub/linux/kernel/v4.x/incr/patch-4.1.39-40.xz"
+                "full": "https://cdn.kernel.org/pub/linux/kernel/v4.x/patch-4.1.41.xz", 
+                "incremental": "https://cdn.kernel.org/pub/linux/kernel/v4.x/incr/patch-4.1.40-41.xz"
             }
         }, 
         {
             "iseol": true, 
-            "version": "3.18.56", 
+            "version": "3.18.57", 
             "moniker": "longterm", 
-            "source": "https://cdn.kernel.org/pub/linux/kernel/v3.x/linux-3.18.56.tar.xz", 
-            "pgp": "https://cdn.kernel.org/pub/linux/kernel/v3.x/linux-3.18.56.tar.sign", 
+            "source": "https://cdn.kernel.org/pub/linux/kernel/v3.x/linux-3.18.57.tar.xz", 
+            "pgp": "https://cdn.kernel.org/pub/linux/kernel/v3.x/linux-3.18.57.tar.sign", 
             "released": {
-                "timestamp": 1496829801, 
-                "isodate": "2017-06-07"
+                "timestamp": 1497437689, 
+                "isodate": "2017-06-14"
             }, 
-            "gitweb": "https://git.kernel.org/stable/linux-stable/h/v3.18.56", 
-            "changelog": "https://cdn.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.18.56", 
-            "diffview": "https://git.kernel.org/stable/linux-stable/ds/v3.18.56/v3.18.55", 
+            "gitweb": "https://git.kernel.org/stable/linux-stable/h/v3.18.57", 
+            "changelog": "https://cdn.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.18.57", 
+            "diffview": "https://git.kernel.org/stable/linux-stable/ds/v3.18.57/v3.18.56", 
             "patch": {
-                "full": "https://cdn.kernel.org/pub/linux/kernel/v3.x/patch-3.18.56.xz", 
-                "incremental": "https://cdn.kernel.org/pub/linux/kernel/v3.x/incr/patch-3.18.55-56.xz"
+                "full": "https://cdn.kernel.org/pub/linux/kernel/v3.x/patch-3.18.57.xz", 
+                "incremental": "https://cdn.kernel.org/pub/linux/kernel/v3.x/incr/patch-3.18.56-57.xz"
             }
         }, 
         {
@@ -149,20 +149,20 @@
         }, 
         {
             "iseol": false, 
-            "version": "3.10.105", 
+            "version": "3.10.106", 
             "moniker": "longterm", 
-            "source": "https://cdn.kernel.org/pub/linux/kernel/v3.x/linux-3.10.105.tar.xz", 
-            "pgp": "https://cdn.kernel.org/pub/linux/kernel/v3.x/linux-3.10.105.tar.sign", 
+            "source": "https://cdn.kernel.org/pub/linux/kernel/v3.x/linux-3.10.106.tar.xz", 
+            "pgp": "https://cdn.kernel.org/pub/linux/kernel/v3.x/linux-3.10.106.tar.sign", 
             "released": {
-                "timestamp": 1486721885, 
-                "isodate": "2017-02-10"
+                "timestamp": 1497549414, 
+                "isodate": "2017-06-15"
             }, 
-            "gitweb": "https://git.kernel.org/stable/linux-stable/h/v3.10.105", 
-            "changelog": "https://cdn.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.10.105", 
-            "diffview": "https://git.kernel.org/stable/linux-stable/ds/v3.10.105/v3.10.104", 
+            "gitweb": "https://git.kernel.org/stable/linux-stable/h/v3.10.106", 
+            "changelog": "https://cdn.kernel.org/pub/linux/kernel/v3.x/ChangeLog-3.10.106", 
+            "diffview": "https://git.kernel.org/stable/linux-stable/ds/v3.10.106/v3.10.105", 
             "patch": {
-                "full": "https://cdn.kernel.org/pub/linux/kernel/v3.x/patch-3.10.105.xz", 
-                "incremental": "https://cdn.kernel.org/pub/linux/kernel/v3.x/incr/patch-3.10.104-105.xz"
+                "full": "https://cdn.kernel.org/pub/linux/kernel/v3.x/patch-3.10.106.xz", 
+                "incremental": "https://cdn.kernel.org/pub/linux/kernel/v3.x/incr/patch-3.10.105-106.xz"
             }
         }, 
         {
@@ -203,15 +203,15 @@
         }, 
         {
             "iseol": false, 
-            "version": "next-20170609", 
+            "version": "next-20170619", 
             "moniker": "linux-next", 
             "source": null, 
             "pgp": null, 
             "released": {
-                "timestamp": 1496990272, 
-                "isodate": "2017-06-09"
+                "timestamp": 1497860191, 
+                "isodate": "2017-06-19"
             }, 
-            "gitweb": "https://git.kernel.org/next/linux-next/h/next-20170609", 
+            "gitweb": "https://git.kernel.org/next/linux-next/h/next-20170619", 
             "changelog": null, 
             "diffview": null, 
             "patch": {

@@ -71,6 +71,15 @@ file for a summary of changes between versions.
 5.2.3 was released on 2016-12-30.
 </p>
 <p>
+The packages of the stable XZ Utils releases are hosted on Sourceforge
+and thus some of the links below redirect to the
+<a href="https://sourceforge.net/projects/lzmautils/files/">XZ Utils
+files section on Sourceforge</a>.
+This means that if you use a web browser (detected from the user agent),
+you will see the Sourceforge download page before the download starts.
+The redirection shouldn't affect users of GNU Wget and similar utilities.
+</p>
+<p>
 <a href="xz-5.2.3.tar.gz">xz-5.2.3.tar.gz</a> (1456 KiB)
 	<a href="xz-5.2.3.tar.gz.sig">signature</a>
 <br><a href="xz-5.2.3.tar.bz2">xz-5.2.3.tar.bz2</a> (1179 KiB)

@@ -66,8 +66,8 @@ var g_onload = function() {
         <div style='position:relative'>
           <div id='resourcesmenu' class='headermenu dark'>
             <a href="langpack">Language Packs</a>
-            <BR><a href="http://stash.reaper.fm/tag/Themes" target='_blank' rel='noopener noreferrer'>Themes</a>
-            <BR><a href="http://stash.reaper.fm/" target='_blank' rel='noopener noreferrer'>REAPER Stash</a>
+            <BR><a href="https://stash.reaper.fm/tag/Themes" target='_blank' rel='noopener noreferrer'>Themes</a>
+            <BR><a href="https://stash.reaper.fm/" target='_blank' rel='noopener noreferrer'>REAPER Stash</a>
             <BR><a href="http://www.sws-extension.org/" target='_blank' rel='noopener noreferrer'>SWS REAPER Extension</a>
             <BR><a href="http://reaperblog.net" target='_blank' rel='noopener noreferrer'>The (unofficial) REAPER Blog</a>
           </div>
@@ -85,7 +85,7 @@ var g_onload = function() {
       </div>
       <div style='height:11px;'></div>
       <div class='hdrlink black'>
-        <a href='http://forum.cockos.com/forumdisplay.php?f=20'>
+        <a href='https://forum.cockos.com/forumdisplay.php?f=20'>
         <div class='hdrtop'>FORUM</div>
         <div class='hdrbottom'>&nbsp;</div>
         </a>
@@ -336,8 +336,8 @@ OS X 10.5-10.12<br>
 <div class='foot'>&nbsp;&nbsp;Resources</div>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href='userguide.php'>User Guide</a><br>
 &nbsp;&nbsp;&nbsp;&nbsp;<a href='videos.php'>Videos</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href='http://stash.reaper.fm' target='_blank' rel='noopener noreferrer'>Stash</a><br>
-&nbsp;&nbsp;&nbsp;&nbsp;<a href='http://forum.cockos.com/forumdisplay.php?f=20'>Forum</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href='https://stash.reaper.fm' target='_blank' rel='noopener noreferrer'>Stash</a><br>
+&nbsp;&nbsp;&nbsp;&nbsp;<a href='https://forum.cockos.com/forumdisplay.php?f=20'>Forum</a><br>
 </div>
 
 </div>

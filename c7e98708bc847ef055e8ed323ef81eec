@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+ <head>
+  <title>Index of /gnu/gcc/gcc-6.4.0</title>
+ </head>
+ <body>
+<h1>Index of /gnu/gcc/gcc-6.4.0</h1>
+  <table>
+   <tr><th valign="top"><img src="/icons/blank.gif" alt="[ICO]"></th><th><a href="?C=N;O=D">Name</a></th><th><a href="?C=M;O=A">Last modified</a></th><th><a href="?C=S;O=A">Size</a></th><th><a href="?C=D;O=A">Description</a></th></tr>
+   <tr><th colspan="5"><hr></th></tr>
+<tr><td valign="top"><img src="/icons/back.gif" alt="[PARENTDIR]"></td><td><a href="/gnu/gcc/">Parent Directory</a></td><td>&nbsp;</td><td align="right">  - </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="gcc-6.3.0-6.4.0.diff.gz">gcc-6.3.0-6.4.0.diff.gz</a></td><td align="right">2017-07-04 06:07  </td><td align="right">3.3M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gcc-6.3.0-6.4.0.diff.gz.sig">gcc-6.3.0-6.4.0.diff.gz.sig</a></td><td align="right">2017-07-04 06:14  </td><td align="right">280 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/text.gif" alt="[TXT]"></td><td><a href="gcc-6.3.0-6.4.0.diff.xz">gcc-6.3.0-6.4.0.diff.xz</a></td><td align="right">2017-07-04 06:12  </td><td align="right">2.0M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gcc-6.3.0-6.4.0.diff.xz.sig">gcc-6.3.0-6.4.0.diff.xz.sig</a></td><td align="right">2017-07-04 06:14  </td><td align="right">280 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="gcc-6.4.0.tar.gz">gcc-6.4.0.tar.gz</a></td><td align="right">2017-07-04 06:12  </td><td align="right">127M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gcc-6.4.0.tar.gz.sig">gcc-6.4.0.tar.gz.sig</a></td><td align="right">2017-07-04 06:14  </td><td align="right">280 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gcc-6.4.0.tar.xz">gcc-6.4.0.tar.xz</a></td><td align="right">2017-07-04 06:14  </td><td align="right"> 73M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gcc-6.4.0.tar.xz.sig">gcc-6.4.0.tar.xz.sig</a></td><td align="right">2017-07-04 06:14  </td><td align="right">280 </td><td>&nbsp;</td></tr>
+   <tr><th colspan="5"><hr></th></tr>
+</table>
+<address>Apache/2.4.7 (Trisquel_GNU/Linux) Server at ftp.gnu.org Port 80</address>
+</body></html>

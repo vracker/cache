@@ -124,6 +124,288 @@
     </p>
   </li>
 
+  <li><b>18 July 2017 -- BusyBox 1.27.1 (stable)</b>
+    <p><a href="http://busybox.net/downloads/busybox-1.27.1.tar.bz2">BusyBox 1.27.1</a>.
+    (<a href="http://git.busybox.net/busybox/tree/?h=1_27_stable">git</a>,
+    <a href="http://busybox.net/downloads/fixes-1.27.1/">patches</a>,
+    <a href="http://busybox.net/fix.html">how to add a patch</a>)</p>
+
+    <p>Bug fix release. 1.27.1 has fixes for
+    uuencode (allow space instead of "`" as padding char),
+    dd (fixed status=none),
+    setpriv (option parsing should not eat options in PROG ARGS),
+    fix for "applet (for example halt) as login shell" use case,
+    a few fixes for less typical build environments.
+    </p>
+  </li>
+
+  <li><b>3 July 2017 -- BusyBox 1.27.0 (unstable)</b>
+    <p><a href="http://busybox.net/downloads/busybox-1.27.0.tar.bz2">BusyBox 1.27.0</a>.
+    (<a href="http://git.busybox.net/busybox/tree/?h=1_27_stable">git</a>,
+    <a href="http://busybox.net/downloads/fixes-1.27.0/">patches</a>,
+    <a href="http://busybox.net/fix.html">how to add a patch</a>)</p>
+
+    <p>Sizes of busybox-1.26.0 and busybox-1.27.0 (with equivalent config, static uclibc build):<pre>
+   text	   data	    bss	    dec	    hex	filename
+ 925769	    489	   7352	 933610	  e3eea	busybox-1.26.0
+ 927115	    489	   7352	 934956	  e442c busybox-1.27.0</pre>
+    </p>
+
+    <p>Changes since previous release:
+<pre>Andrei Gherzan:
+      switch_root: don't bail out when console doesn't exist
+
+Andrey Mozzhuhin:
+      ftpd: new option -a ANON_USER to allow anonymous logins
+
+André Draszik:
+      iproute: support for filtering by and printing of scope
+
+Assaf Gordon:
+      setpriv: new applet
+
+Ben Hutchings:
+      modprobe: read modules.builtin
+
+Cristian Ionescu-Idbohrn:
+      appletlib: avoid warning on unused function ingroup
+      unzip: remove now-pointless lseek which returns current position
+
+Denys Vlasenko:
+      fix "ifdef ENABLE_foo": should always be "#if ENABLE_foo"
+      fix "loginutils/Config.in:319 error: Overlong line"
+      make DPKG=y and DPKG_DEB=y by default
+      make FEATURE_USERNAME_COMPLETION=y by default
+      make INSMOD=y by default
+      make RMMOD=y by default
+      move FEATURE_AUTOWIDTH config option to two applets which use it
+      move FEATURE_USE_TERMIOS config option to two applets which use it
+      make_single_applets.sh: a tool to check single-applet builds
+      qemu_multiarch_testing: small improvements
+      archival: add option -k "keep" to gzip/bzip2/lzop, add -U "nokeep" to lzop
+      libbb: consolidate the code to set termios unbuffered mode
+      libbb: eliminate redundant variable in sha_crypt
+      libbb: fix "error: redefinition of 'is_tty_secure'"
+      libbb: make check_password() also return CHECKPASS_PW_HAS_EMPTY_PASSWORD
+      libbb: match_fstype() is unreadable in the extreme, fixing it
+      libbb: move isqrt from factor, use it in diff too
+      libbb: shrink dump.c
+      libbb: spawn_and_wait() fflushes before forking NOEXEC; child reinits logmode
+      libiproute: FACT_FUNCization
+      add/remove-shell: copy /etc/shells mode to new file
+      ash: 16-bit nprocs field is a pain for many CPUs
+      ash: add INT_OFF/ON around allocations
+      ash: commented-out possible fix for 7694
+      ash: error out if ASH_INTERNAL_GLOB is not selected on uClibc
+      ash: fix a bug in argv restoration after sourcing a file
+      ash: fix $HOME/.profile reading if !ASH_EXPAND_PRMT
+      ash: fix open fds leaking in redirects. Closes 9561
+      ash: fix 'trap - 65'
+      ash: implement "exec -a ARGV0 CMD ARGV1..."
+      ash: revert "make dot command search current directory first"
+      hush: conditionalize print_escaped() on EXPORT || TRAP
+      hush: correct exitcode for unterminated ')' - exitcode2.tests testcase
+      hush: fix a bug in argv restoration after sourcing a file
+      hush: fix 'defined but not used' warning
+      hush: fix kill builtin without jobs support
+      hush: global_args_malloced is used only if set builtin is enabled
+      hush: kill builtin and kill %jobspec support
+      hush: make echo builtin optional
+      hush: make export builtin optional
+      hush: make memleak builtin optional
+      hush: make read and trap builtins optional
+      hush: make set/unset builtins optional
+      hush: make umask builtin optional
+      hush: reinstate [[ builtin
+      hush: remove redundand test for ENABLE_HUSH_JOB
+      hush: reorder builtins (cd and pwd ought to be close, etc), no code changes
+      hush: support %%, %+ and % jobspec (meaning "current job")
+      ash,hush: fix SIGCHLD interrupting read builtin
+      ash,hush: move "config" blocks above their use in coditional includes
+      ash,hush: make hush test optional, rename ASH_BUILTIN_foo to ASH_foo
+      ash,hush: make it possible to select "sh" and "bash" aliases without selecting ash or hush
+      busybox: stop depending on FEATURE_AUTOWIDTH for applet list
+      catv: convert this bbox-specific applet into "cat -v"
+      cryptpw: support "rounds=NNNNNNN$" thing in salts
+      depmod: don't build it if MODPROBE_SMALL=y
+      diff: fix -N and nonexistent files. Closes 7454
+      factor: new applet
+      fallocate: new applet
+      fsfreeze: new applet
+      ftpd/ls: show directories first
+      grep: FEATURE_GREP_CONTEXT should be available for "fgrep only" too
+      httpd: defend against attempts to OOM us. Closes 9611
+      httpd: use "Content-Length", not "-length"
+      init: dont send "Sent SIGTERM to all" msg to syslog: we just TERMed it!
+      init: rename FEATURE_EXTRA_QUIET to FEATURE_INIT_QUIET
+      iplink: implement "set promisc on|off". Closes 4682
+      ip: make ip aliases individually selectable
+      iproute: add "a" command as a synonym to "add"
+      iproute: support advmss option
+      link: new applet
+      ls: -1 should be ignored by -l (and options which imply -l)
+      ls: convert DISP_DIRNAME to a bool variable
+      ls: get rid of opt_flags[], handle -l1c through option_mask32
+      ls: handle -a and -A through option_mask32
+      ls: handle all sort options through option_mask32
+      ls: handle -d and -R through option_mask32
+      ls: handle -i through option_mask32
+      ls: handle -p and -F through option_mask32
+      ls: handle -s through option_mask32
+      ls: handle -x through option_mask32, remove default -C from --help
+      ls: LIST_ID_NAME/ID_NUMERIC/LOPT/LONG are the same, merge as LONG
+      ls: LIST_NLINKS/SIZE/DATE_TIME/SYMLINK are always the same, merge as LIST_LOPT
+      ls: make -Z output compatible with GNU coreutils 8.25
+      ls: more correct handling of -c, -u
+      ls: replace -e with --full-time, add --group-directories-first, delete -K
+      modprobe: do not descend into /etc/modprobe.d/DIR/. Closes 8686
+      modprobe-small: fix "modprobe non-existing-module" exitcode (should be 1)
+      modprobe_small: if only MODPROBE and DEPMOD are selected, no need to test for them
+      modprobe-small: make applets individually selectable
+      more: hardcode FEATURE_USE_TERMIOS=y in this applet; code shrink
+      mount: create loop devices with LO_FLAGS_AUTOCLEAR flag
+      nc_bloaty: use poll() instead of select()
+      nc: use poll() instead of select()
+      nl: new applet; also implement cat -nb (similar functionality to nl)
+      nproc: new applet
+      ntpd: print result of hostname resolution
+      partprobe: new applet
+      paste: delimiter list use should restart for each new output line
+      pgrep: fix pgrep -flx "sleep 11" - saw "sleep 11" processes as "sleep 11 "
+      pgrep: implement -a
+      ps: avoid -o stat to contain spaces. Closes 9631
+      rdate: make it do something remotely sane, facing 32-bit time overflow
+      rdate: time(NULL) is shorter than time(&var)
+      runit: fix chpst -n -N -u USER
+      runsv: update to match version 2.1.2 of runit
+      sendmail: allow "+" symbol in recipient. Closes 9646
+      sha512: use larger constant table only if sha512 is in fact selected
+      shred: new applet
+      su: FEATURE_SU_BLANK_PW_NEEDS_SECURE_TTY
+      svlogd: support -ttt (dateTtime instead of date_time)
+      taskset: rewrite to be task size-agnostic
+      taskset: separate "current" and "new" strings
+      tcpudp: define SO_ORIGINAL_DST directly, not via include
+      time: inplement -f FMT
+      top: FEATURE_USE_TERMIOS shouldn't control reading of screen size
+      udhcpc6: fix problems found running against dnsmasq
+      udhcpc6: fix releasing
+      udhcpc6: move misplaced comment
+      udhcpc6: read_interface should save link-local ipv6 address
+      udhcpc6: add comments about option 39, no code changes
+      udhcpc6: add support for timezones
+      udhcpc6: make -O OPT work
+      udhcpc: do not accept --background on NOMMU (same as -b)
+      udhcpc: fix "udhcpc -x hostname:NAME" not working on nommu
+      udhcpc: make sure we do not overflow poll timeout
+      udhcp: do not clobber errno by signal handler
+      udhcp: use poll() instead of select()
+      unlzma: fix erroneous "while" instead of "if". Closes 4682
+      unzip: do not use CDF.extra_len, read local file header. Closes 9536
+      unzip: optional support for bzip2, lzma, xz
+      unzip: properly use CDF to find compressed files. Closes 9536
+      umount: revert "umount: make -d always active, add -D to suppress it"
+      vi: don't touch file with :x when modified_count == 0
+      vi: survive if stdin is nonblocking. closes 9851
+      vi,fsck: do not use build timestamp unconditionally. Closes 9626
+      tls: a tiny TLS1.2 code, wire it up for wget
+      ssl_client: TLStest applet
+      wget: add a big explanation what TLS code implements and what does not
+      wget: add support for -S --server-response
+      wget: fix for brain-damaged HTTP servers. Closes 9471
+      wget/tls: session_id of zero length is ok (arxiv.org responds with such)
+      w: new applet, alias to "who -H"
+      xxd: new applet
+
+Explorer09:
+      modprobe-small: optimizations for single applet build
+
+Felix Fietkau:
+      ash: improve / fix glob expansion
+
+Glenn Matthews:
+      reset: before calling execvp(), reset needs to flush stdout
+
+James Byrne:
+      sv: update to match version 2.1.2 of runit
+
+Jody Bruchon:
+      uniq: add -i option to ignore case
+      Add help text for 'uniq -i'
+
+Jörg Krause:
+      Fix dependency for IFUPDOWN_UDHCPC_CMD_OPTIONS
+
+Kaarle Ritvanen:
+      libbb: GETOPT_RESET macro
+      login: move check_securetty to libbb
+
+Kang-Che Sung:
+      Allow FAST_FUNC to be overridden at build time
+      build system: no longer prompt for PLATFORM_LINUX option
+      bunzip2: fix code bloat caused by zcat's seamless magic
+      Fix FEATURE_{GZIP,BZIP2}_DECOMPRESS link error
+      Allow 'gzip -d' and 'bzip2 -d' without gunzip or bunzip2
+      shell: clarify help text of CONFIG_{SH,BASH}_IS_* options
+      ash: explicitly group ash options
+      ash: fix "kill %1" not working if CONFIG_ASH is disabled
+      hush: split bash compatible extensions into separate defines. No code changes
+      kill: need not build kill.c when ash's job control is off
+      kill: optimizations for single-applet build
+      modutils: fix config options dependency
+      modprobe-small: move lsmod code out of modprobe_main()
+      modutils: remove redundant "select PLATFORM_LINUX" configs
+      cmdline module options can be disabled on "big" modutils
+      Reorder modutils config options & fix yet more dependency
+      modprobe-small: document '-n' in depmod usage
+      modprobe-small: define and use DEPMOD_OPT_n (option mask)
+      Update depmod & modprobe upstream help text in comments
+
+Laurent Bercot:
+      httpd: fix address family for reverse proxy client socket
+      ls: fix support for long options when FEATURE_LS_COLOR is deselected
+
+Markus Gothe:
+      lsscsi: new applet
+
+Maxime Coste:
+      paste: new applet
+
+Ming Liu:
+      tar: add IF_FEATURE_* checks
+
+Natanael Copa:
+      ntpd: improve postponed hostname resolution
+
+Ron Yorston:
+      ash: fix error code regression
+
+Rostislav Skudnov:
+      Replace int by uint to avoid signed integer overflow
+      dd: call fsync() only once before exiting if conv=fsync is specified
+
+Stefan Tomanek:
+      ip rule: add suppress_{prefixlength,ifgroup} options
+
+Tito Ragusa:
+      README_distro_proposal.txt: typo fixes
+
+Tommi Rantala:
+      time: document -p in usage
+      time: implement -a, -o FILE
+
+Waldemar Brodkorb:
+      modutils: remove special handling of uClibc
+
+Youfu Zhang:
+      ash: fix incorrect path in describe_command
+
+Yousong Zhou:
+      vi: avoid touching a new file with ZZ when no editing has been done
+</pre>
+    </p>
+  </li>
+
   <li><b>31 March 2017 -- Note for users of Linux kernels older than 2.6.27</b>
     <p>If you are stuck with a kernel from July 2008 or earlier (2.6.26 or less),
     and you are using mdev, device scan wouldn't work correctly due to an

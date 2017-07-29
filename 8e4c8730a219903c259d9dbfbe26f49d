@@ -6,7 +6,7 @@
 
 <title>REAPER | Download</title>
 
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
 <link href='main.css' rel='stylesheet' type='text/css'>
 
 <script>
@@ -139,7 +139,7 @@ Windows XP/Vista/7/8/10<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper540-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper540-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg" alt="download" title="Download REAPER for Windows 32-bit"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
       <div style='background-color:#313131;height:1px;margin-bottom:20px;'></div>
@@ -151,7 +151,7 @@ Windows XP/Vista/7/8/10 x64<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper540_x64-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper540_x64-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg" alt="download" title="Download REAPER for Windows 64-bit"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
     </div>
@@ -172,7 +172,7 @@ OS X 10.5-10.12<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper540_i386.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper540_i386.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg" alt="download" title="Download REAPER for OS X 32-bit"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
       <div style='background-color:#313131;height:1px;margin-bottom:20px;'></div>
@@ -184,7 +184,7 @@ OS X 10.5-10.12<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper540_x86_64.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg"></a>
+  <a href="files/5.x/reaper540_x86_64.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg" alt="download" title="Download REAPER for OS X 64-bit"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
     </div> 
@@ -216,10 +216,10 @@ OS X 10.5-10.12<br>
 <div class='avoidbreak'>
 <div class='bold'>MIDI</div><ul class='bullet'>
 <li> allow absolute MIDI CC control of swing grid strength
-<li> create new take on "open item copy in built-in MIDI editor" action <a href="http://forum.cockos.com/showthread.php?t=188950" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> set MIDI clock properly when exporting to .mid file <a href="http://forum.cockos.com/showthread.php?t=188300" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> create new take on "open item copy in built-in MIDI editor" action <a href="https://forum.cockos.com/showthread.php?t=188950" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> set MIDI clock properly when exporting to .mid file <a href="https://forum.cockos.com/showthread.php?t=188300" target="blank"><span class='whatsnewdot'>&bull;</span></a>
 <li> support ".midi" as an importable file extension, in addition to the usual ".mid"
-<li> fix "paint straight line of notes" mouse modifier when grid is set to greater than or equal to measure length <a href="http://forum.cockos.com/showthread.php?t=188264" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> fix "paint straight line of notes" mouse modifier when grid is set to greater than or equal to measure length <a href="https://forum.cockos.com/showthread.php?t=188264" target="blank"><span class='whatsnewdot'>&bull;</span></a>
 </ul>
 </div>
 <div class='avoidbreak'>
@@ -238,7 +238,7 @@ OS X 10.5-10.12<br>
 </div>
 <div class='avoidbreak'>
 <div class='bold'>macOS</div><ul class='bullet'>
-<li> fix reading slider zero-line colors from theme <a href="http://forum.cockos.com/showthread.php?t=188770" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> fix reading slider zero-line colors from theme <a href="https://forum.cockos.com/showthread.php?t=188770" target="blank"><span class='whatsnewdot'>&bull;</span></a>
 <li> add retina support for track panels/etc using beta HiDPI/Retina theme
 <li> improve handling of large theme fonts
 </ul>
@@ -252,7 +252,7 @@ OS X 10.5-10.12<br>
 <div class='avoidbreak'>
 <div class='bold'>ReaScript</div><ul class='bullet'>
 <li> add Track/TakeFX_Get/SetNamedConfigParm
-<li> include latent preset changes in Undo_EndBlock() <a href="http://forum.cockos.com/showthread.php?t=179533" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> include latent preset changes in Undo_EndBlock() <a href="https://forum.cockos.com/showthread.php?t=179533" target="blank"><span class='whatsnewdot'>&bull;</span></a>
 </ul>
 </div>
 <div class='avoidbreak'>

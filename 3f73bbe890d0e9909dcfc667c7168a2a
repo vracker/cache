@@ -37,14 +37,21 @@
 </td><td align="right"><p class="bannerlong">Download Tcl/Tk Sources</p></td></tr></table>
 <DIV style="border-top: 1px solid #FFCE00; margin-bottom: 2px; width: 780px"></DIV><table border="0" cellpadding="0" cellspacing="0" width="780">
 <tr><td>
-<h3><a name=binary>Binary Releases</a></h3>
 <p>
-For other ways to obtain Tcl/Tk (such as binary distributions), see the
-main <a href="./">Tcl/Tk</a> page.
-</p>
-<h3><a name=source>Source Releases</a></h3>
-<p> Each of these files is explained in more detail below.
-</p>
+This page describes how to obtain a Tcl/Tk source release. See
+<a href="bindist.html"><b>Binary distributions</b></a> for
+obtaining pre-built binaries.
+<p>
+The main site for Tcl/Tk source distributions is
+<a href="https://sourceforge.net/projects/tcl/files/Tcl/"><b>SourceForge</b></a>.
+The files are also available from
+<a href="ftp://ftp.tcl.tk/pub/tcl/"><b>ftp.tcl.tk</b><a>
+or one of its <a href=mirror.html>mirrors</a>.
+<p>
+The latest downloads for the Tcl 8.6 and 8.5 release trains are
+shown in the table below. Older releases are also available from the
+above sites.
+<p>
 <table id="downloads">
 <tr class=even><th colspan=3>Tcl 8.6.6 Sources</th>
 <th colspan=3>Tk 8.6.6 Sources</th>
@@ -81,22 +88,11 @@ main <a href="./">Tcl/Tk</a> page.
 </table>
  
 <p>
-Other versions of the source distributions are available at
-<a href="https://sourceforge.net/projects/tcl/files/Tcl/">SourceForge</a>.
-</p>
-<p> If for some reason those links fail, you may also download Tcl and
-Tk source code distributions from:</p>
-<ul>
-<li> <a href="ftp://ftp.tcl.tk/pub/tcl/">ftp.tcl.tk<a>
-</ul>
-or from one of its <a href=mirror.html>mirror sites</a>.
-<p>
 The source releases include make files for Windows, Unix and Xcode project
 files for Mac OS X.
-<p> Once you've retrieved the sources, click below for instructions on
-how to configure, compile, and install Tcl/Tk.
 <p>
-<a href="/doc/howto/compile.html">How to Compile Tcl Source Releases</a>
+Once you've retrieved the sources, see
+<a href="/doc/howto/compile.html"><b>How to Compile Tcl Source Releases</b></a>.
 <h4>Unix (including Mac OS X)</h4>
 <p> You'll want both Tcl and Tk sources; choose the
 gzipped tar format. The files listed under the Windows sources
@@ -109,8 +105,7 @@ Extract gzip'ed archives with this UNIX command line:
 <h4>Windows </h4>
 <p> If you have downloaded the Unix version of these files, there is
 no need to also download these versions since these files are
-identical but in <a href=http://www.winzip.com> ZIP format </a>
-instead of compressed tar.
+identical but in ZIP format instead of compressed tar.
  
 <br clear="all"/>
 <p align="center" class="footer">
@@ -120,7 +115,7 @@ www.tcl.tk .
 </b></small>
 &nbsp;&nbsp;
 <a href="/siteinfo.html">About this Site</a> |
-<a href="/cdn-cgi/l/email-protection#037466616e6270776671432e5053424e2e2d77606f2d7768">webmaster@-SPAM-.tcl.tk</a>
+<a href="/cdn-cgi/l/email-protection#9aedfff8f7fbe9eeffe8dab7c9cadbd7b7b4eef9f6b4eef1">webmaster@-SPAM-.tcl.tk</a>
 <br>
 <a href="/">Home</a> |
 <a href="/about/">About Tcl/Tk</a> |

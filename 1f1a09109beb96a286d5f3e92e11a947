@@ -60,7 +60,7 @@
                     sizes: [300, 250]
                 });
             }
-            SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "sovrn": 0.91, "aardvark": 0.99, "aol": 0.93, "brealtime": 0.85, "rubiconlite": 0.9, "appnexus": 0.94, "pulsepoint": 0.88, "rubicon": 0.97, "springserve": 0.001, "indexexchange": 0.92, "rhythmone": 0.9}, "inflation": 1.2, "floor": 0.02};
+            SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "indexexchange": 0.92, "sovrn": 0.91, "aardvark": 0.99, "aol": 0.93, "brealtime": 0.86, "rubiconlite": 0.9, "pulsepoint": 0.89, "rubicon": 0.99, "indexex#hange": 0.99, "springserve": 0.001, "appnexus": 0.91, "rhythmone": 0.93}, "inflation": 1.2, "floor": 0.02};
         </script>
         <meta id="project_name" name="project_name" content="expect">
         <meta name="description" content="Expect is a tool for automating interactive applications such as telnet, ftp, passwd, fsck, rlogin, tip, etc. Expect is also useful for testing …">
@@ -233,7 +233,7 @@
     </div>
     <div id="files-sidebar" class="scroll-fixable" data-floor-compensate="145">
         <div class="sterling">
-<div id="SF_ProjectFiles_300x250_A_wrapped" class="draper multisize  "
+<div id="SF_ProjectFiles_300x250_A_wrapped" data-id="div-gpt-ad-1392147725721-0" class="draper multisize  "
 >
 </div>
         </div>
@@ -269,12 +269,12 @@
             </li>
     </ul>
 </aside>
-<div id="SF_ProjectFiles_300x250_B_wrapped" class="draper medrec  "
+<div id="SF_ProjectFiles_300x250_B_wrapped" data-id="div-gpt-ad-1392148208789-0" class="draper medrec  "
 >
 </div>
             <div class="sterling" id="deals-widget">
     <aside class="sidebar-widget stackcommerce-widget">
-<div id="SF-300x250_wrapped" class="draper medrec  visibility_rules
+<div id="SF-300x250_wrapped" data-id="div-gpt-ad-1392148208795-0" class="draper medrec  visibility_rules
  v_300_large "
 >
 </div>
@@ -315,7 +315,7 @@
         <label class="input-set">
             <span class="label">Country</span>
             <span class="input">
-<select id="country-floating" name="XfsBW10qIqHd9sySWWZH:3SlJmbg" required >
+<select id="country-floating" name="X_uK4lLHOxsPhfRMm3zZ2PovuaWM" required >
     <option value=""></option>
     <option value="AF">Afghanistan</option>
     <option value="AX">Aland Islands</option>
@@ -570,7 +570,7 @@
         <label class="input-set" style="display:none">
             <span class="label">State</span>
             <span class="input">
-<select id="state-floating" name="XfNBNw1CZHaLMI:w93LTisLWJUgk"  >
+<select id="state-floating" name="X_PKjgKvfDrdfWKLKvfSZ27cTlec"  >
     <option value=""></option>
     <option value="AL">Alabama</option>
     <option value="AK">Alaska</option>

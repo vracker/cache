@@ -4,7 +4,7 @@
 <h1>Index of /pub/software/scm/git/</h1><hr><pre><a href="../">../</a>
 <a href="RPMS/">RPMS/</a>                                              03-Dec-2010 01:58                   -
 <a href="debian/">debian/</a>                                            24-Dec-2005 08:56                   -
-<a href="docs/">docs/</a>                                              25-Jul-2017 22:01                   -
+<a href="docs/">docs/</a>                                              04-Aug-2017 16:49                   -
 <a href="testing/">testing/</a>                                           24-Jul-2017 22:43                   -
 <a href="git-0.01.tar.gz">git-0.01.tar.gz</a>                                    07-Apr-2005 21:25               41317
 <a href="git-0.01.tar.sign">git-0.01.tar.sign</a>                                  08-Aug-2013 19:44                 665
@@ -192,6 +192,12 @@
 <a href="git-2.13.3.tar.gz">git-2.13.3.tar.gz</a>                                  12-Jul-2017 23:01             6920457
 <a href="git-2.13.3.tar.sign">git-2.13.3.tar.sign</a>                                12-Jul-2017 23:01                 543
 <a href="git-2.13.3.tar.xz">git-2.13.3.tar.xz</a>                                  12-Jul-2017 23:01             4754532
+<a href="git-2.13.4.tar.gz">git-2.13.4.tar.gz</a>                                  01-Aug-2017 19:18             6922089
+<a href="git-2.13.4.tar.sign">git-2.13.4.tar.sign</a>                                01-Aug-2017 19:18                 543
+<a href="git-2.13.4.tar.xz">git-2.13.4.tar.xz</a>                                  01-Aug-2017 19:18             4755472
+<a href="git-2.14.0.tar.gz">git-2.14.0.tar.gz</a>                                  04-Aug-2017 16:49             6987666
+<a href="git-2.14.0.tar.sign">git-2.14.0.tar.sign</a>                                04-Aug-2017 16:49                 543
+<a href="git-2.14.0.tar.xz">git-2.14.0.tar.xz</a>                                  04-Aug-2017 16:49             4790932
 <a href="git-2.2.0.tar.gz">git-2.2.0.tar.gz</a>                                   26-Nov-2014 23:05             5157176
 <a href="git-2.2.0.tar.sign">git-2.2.0.tar.sign</a>                                 26-Nov-2014 23:05                 543
 <a href="git-2.2.0.tar.xz">git-2.2.0.tar.xz</a>                                   26-Nov-2014 23:05             3588600
@@ -546,6 +552,12 @@
 <a href="git-htmldocs-2.13.3.tar.gz">git-htmldocs-2.13.3.tar.gz</a>                         12-Jul-2017 23:01             2673620
 <a href="git-htmldocs-2.13.3.tar.sign">git-htmldocs-2.13.3.tar.sign</a>                       12-Jul-2017 23:01                 543
 <a href="git-htmldocs-2.13.3.tar.xz">git-htmldocs-2.13.3.tar.xz</a>                         12-Jul-2017 23:01             1109392
+<a href="git-htmldocs-2.13.4.tar.gz">git-htmldocs-2.13.4.tar.gz</a>                         01-Aug-2017 19:18             2674039
+<a href="git-htmldocs-2.13.4.tar.sign">git-htmldocs-2.13.4.tar.sign</a>                       01-Aug-2017 19:18                 543
+<a href="git-htmldocs-2.13.4.tar.xz">git-htmldocs-2.13.4.tar.xz</a>                         01-Aug-2017 19:18             1109720
+<a href="git-htmldocs-2.14.0.tar.gz">git-htmldocs-2.14.0.tar.gz</a>                         04-Aug-2017 16:49             2689130
+<a href="git-htmldocs-2.14.0.tar.sign">git-htmldocs-2.14.0.tar.sign</a>                       04-Aug-2017 16:49                 543
+<a href="git-htmldocs-2.14.0.tar.xz">git-htmldocs-2.14.0.tar.xz</a>                         04-Aug-2017 16:49             1114504
 <a href="git-htmldocs-2.2.0.tar.gz">git-htmldocs-2.2.0.tar.gz</a>                          26-Nov-2014 23:05             2360869
 <a href="git-htmldocs-2.2.0.tar.sign">git-htmldocs-2.2.0.tar.sign</a>                        26-Nov-2014 23:05                 543
 <a href="git-htmldocs-2.2.0.tar.xz">git-htmldocs-2.2.0.tar.xz</a>                          26-Nov-2014 23:05              974584
@@ -894,6 +906,12 @@
 <a href="git-manpages-2.13.3.tar.gz">git-manpages-2.13.3.tar.gz</a>                         12-Jul-2017 23:01              661189
 <a href="git-manpages-2.13.3.tar.sign">git-manpages-2.13.3.tar.sign</a>                       12-Jul-2017 23:01                 543
 <a href="git-manpages-2.13.3.tar.xz">git-manpages-2.13.3.tar.xz</a>                         12-Jul-2017 23:01              407640
+<a href="git-manpages-2.13.4.tar.gz">git-manpages-2.13.4.tar.gz</a>                         01-Aug-2017 19:19              661218
+<a href="git-manpages-2.13.4.tar.sign">git-manpages-2.13.4.tar.sign</a>                       01-Aug-2017 19:19                 543
+<a href="git-manpages-2.13.4.tar.xz">git-manpages-2.13.4.tar.xz</a>                         01-Aug-2017 19:19              407656
+<a href="git-manpages-2.14.0.tar.gz">git-manpages-2.14.0.tar.gz</a>                         04-Aug-2017 16:49              665143
+<a href="git-manpages-2.14.0.tar.sign">git-manpages-2.14.0.tar.sign</a>                       04-Aug-2017 16:49                 543
+<a href="git-manpages-2.14.0.tar.xz">git-manpages-2.14.0.tar.xz</a>                         04-Aug-2017 16:49              410364
 <a href="git-manpages-2.2.0.tar.gz">git-manpages-2.2.0.tar.gz</a>                          26-Nov-2014 23:05              589020
 <a href="git-manpages-2.2.0.tar.sign">git-manpages-2.2.0.tar.sign</a>                        26-Nov-2014 23:05                 543
 <a href="git-manpages-2.2.0.tar.xz">git-manpages-2.2.0.tar.xz</a>                          26-Nov-2014 23:05              369716
@@ -1074,6 +1092,6 @@
 <a href="git-manpages-2.9.4.tar.gz">git-manpages-2.9.4.tar.gz</a>                          10-May-2017 00:02              632259
 <a href="git-manpages-2.9.4.tar.sign">git-manpages-2.9.4.tar.sign</a>                        10-May-2017 00:02                 543
 <a href="git-manpages-2.9.4.tar.xz">git-manpages-2.9.4.tar.xz</a>                          10-May-2017 00:02              392612
-<a href="sha256sums.asc">sha256sums.asc</a>                                     12-Jul-2017 23:06               65699
+<a href="sha256sums.asc">sha256sums.asc</a>                                     04-Aug-2017 16:56               66779
 </pre><hr></body>
 </html>

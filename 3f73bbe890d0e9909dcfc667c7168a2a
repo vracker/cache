@@ -7,7 +7,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="780">
 <tr>
 <td valign="top" align="left"><a href="/"><img src="/images/plume.png" width="60" height="55" border="0" alt="Tcl Home"/><img src="/images/Developer.gif" width="355" height="55" border="0" alt="Tcl Home" title="Tcl Developer Xchange"/></a></td>
-<td valign="top" align="right"><a href="siteinfo.html"><font size=1>hosted by</font></a><br><a href="http://www.ActiveState.com/Tcl"><img src="/images/aslogo.gif" border="0" alt="ActiveState" title="This site is hosted by ActiveState"/></a></td>
+<td valign="top" align="right"><a href="/siteinfo.html"><font size=1>Hosted by</font></a><br><a href="http://www.ActiveState.com/Tcl"><img src="/images/aslogo.gif" border="0" alt="ActiveState" title="This site is hosted by ActiveState"/></a></td>
 </tr>
 </table>
 <div id="globalnav"><ul>
@@ -115,7 +115,7 @@ www.tcl.tk .
 </b></small>
 &nbsp;&nbsp;
 <a href="/siteinfo.html">About this Site</a> |
-<a href="/cdn-cgi/l/email-protection#9aedfff8f7fbe9eeffe8dab7c9cadbd7b7b4eef9f6b4eef1">webmaster@-SPAM-.tcl.tk</a>
+<a href="/cdn-cgi/l/email-protection#c6b1a3a4aba7b5b2a3b486eb9596878bebe8b2a5aae8b2ad">webmaster@-SPAM-.tcl.tk</a>
 <br>
 <a href="/">Home</a> |
 <a href="/about/">About Tcl/Tk</a> |

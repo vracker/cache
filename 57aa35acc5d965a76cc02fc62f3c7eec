@@ -124,6 +124,22 @@
     </p>
   </li>
 
+  <li><b>17 August 2017 -- BusyBox 1.27.2 (stable)</b>
+    <p><a href="http://busybox.net/downloads/busybox-1.27.2.tar.bz2">BusyBox 1.27.2</a>.
+    (<a href="http://git.busybox.net/busybox/tree/?h=1_27_stable">git</a>,
+    <a href="http://busybox.net/downloads/fixes-1.27.2/">patches</a>,
+    <a href="http://busybox.net/fix.html">how to add a patch</a>)</p>
+
+    <p>Bug fix release. 1.27.2 has fixes for
+    svc (work correctly with more than one option specified),
+    unzip (big-endian fix),
+    shuf (was always moving 1st line elsewhere),
+    tls code (asm compilation problem on x86),
+    NOFORK ("rm -i" and "yes" could not be interrupted),
+    a bit of support for Fedora build.
+    </p>
+  </li>
+
   <li><b>18 July 2017 -- BusyBox 1.27.1 (stable)</b>
     <p><a href="http://busybox.net/downloads/busybox-1.27.1.tar.bz2">BusyBox 1.27.1</a>.
     (<a href="http://git.busybox.net/busybox/tree/?h=1_27_stable">git</a>,

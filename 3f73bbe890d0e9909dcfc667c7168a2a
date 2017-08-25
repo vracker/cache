@@ -115,7 +115,7 @@ www.tcl.tk .
 </b></small>
 &nbsp;&nbsp;
 <a href="/siteinfo.html">About this Site</a> |
-<a href="/cdn-cgi/l/email-protection#fc8b999e919d8f88998ebcd1afacbdb1d1d2889f90d28897">webmaster@-SPAM-.tcl.tk</a>
+<a href="/cdn-cgi/l/email-protection#83f4e6e1eee2f0f7e6f1c3aed0d3c2ceaeadf7e0efadf7e8"><span class="__cf_email__" data-cfemail="4e392b2c232f3d3a2b3c0e631d1e0f0363603a2d22603a25">[email&#160;protected]</span></a>
 <br>
 <a href="/">Home</a> |
 <a href="/about/">About Tcl/Tk</a> |
@@ -124,4 +124,4 @@ www.tcl.tk .
 <a href="/community/">Community</a> |
 <a href="/doc/">Documentation</a>
 </p>
-</td></tr></table><script>/* <![CDATA[ */(function(d,s,a,i,j,r,l,m,t){try{l=d.getElementsByTagName('a');t=d.createElement('textarea');for(i=0;l.length-i;i++){try{a=l[i].href;s=a.indexOf('/cdn-cgi/l/email-protection');m=a.length;if(a&&s>-1&&m>28){j=28+s;s='';if(j<m){r='0x'+a.substr(j,2)|0;for(j+=2;j<m&&a.charAt(j)!='X';j+=2)s+='%'+('0'+('0x'+a.substr(j,2)^r).toString(16)).slice(-2);j++;s=decodeURIComponent(s)+a.substr(j,m-j)}t.innerHTML=s.replace(/</g,'&lt;').replace(/\>/g,'&gt;');l[i].href='mailto:'+t.value}}catch(e){}}}catch(e){}})(document);/* ]]> */</script></body></html>
+</td></tr></table><script>!function(e,t,r,a,n,c,l,o){function h(e,t,r,a){for(r='',a='0x'+e.substr(t,2)|0,t+=2;t<e.length;t+=2)r+=String.fromCharCode('0x'+e.substr(t,2)^a); return r}try{for(n=e.getElementsByTagName('a'),l='/cdn-cgi/l/email-protection#',o=l.length,a=0;a<n.length;a++)try{c=n[a],t=c.href.indexOf(l),t>-1&&(c.href='mailto:'+h(c.href,t+o))}catch(f){}for(n=Array.prototype.slice.apply(e.getElementsByClassName('__cf_email__')),a=0;a<n.length;a++)try{c=n[a],c.parentNode.replaceChild(e.createTextNode(h(c.getAttribute('data-cfemail'),0)),c)}catch(f){}}catch(f){}}(document)</script></body></html>

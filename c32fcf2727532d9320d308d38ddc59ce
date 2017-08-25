@@ -60,7 +60,7 @@
                     sizes: [300, 250]
                 });
             }
-            SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "indexexchange": 0.92, "sovrn": 0.93, "aardvark": 0.99, "aol": 0.95, "brealtime": 0.87, "rubiconlite": 0.9, "pulsepoint": 0.89, "rubicon": 0.99, "indexex#hange": 0.99, "springserve": 0.001, "appnexus": 0.95, "rhythmone": 0.93}, "inflation": 1.2, "floor": 0.02};
+            SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "indexexchange": 0.9, "sovrn": 0.93, "aardvark": 0.99, "aol": 0.95, "brealtime": 0.88, "rubiconlite": 0.9, "pulsepoint": 0.89, "rubicon": 0.97, "indexex#hange": 0.99, "springserve": 0.001, "appnexus": 0.97, "rhythmone": 0.95}, "inflation": 1.2, "floor": 0.02};
         </script>
         <meta id="project_name" name="project_name" content="expect">
         <meta name="description" content="Expect is a tool for automating interactive applications such as telnet, ftp, passwd, fsck, rlogin, tip, etc. Expect is also useful for testing …">
@@ -306,7 +306,7 @@
         <label class="input-set">
             <span class="label">Country</span>
             <span class="input">
-<select id="country-floating" name="XaY6:uCdTtE7Uwwg97N:NobOAoGI" required >
+<select id="country-floating" name="Xyd0XClKzxID:sZ84JuYpHezPkUc" required >
     <option value=""></option>
     <option value="AF">Afghanistan</option>
     <option value="AX">Aland Islands</option>
@@ -561,7 +561,7 @@
         <label class="input-set" style="display:none">
             <span class="label">State</span>
             <span class="input">
-<select id="state-floating" name="Xa56lrD1CHaGzfOfD7jpCA4j_KeE"  >
+<select id="state-floating" name="Xy80MHkiir4AO4TI1NAvnz0CjGpQ"  >
     <option value=""></option>
     <option value="AL">Alabama</option>
     <option value="AK">Alaska</option>

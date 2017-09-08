@@ -61,7 +61,7 @@
                     sizes: [300, 250]
                 });
             }
-            SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "indexexchange": 0.9, "sovrn": 0.93, "aardvark": 0.99, "aol": 0.95, "brealtime": 0.88, "rubiconlite": 0.9, "pulsepoint": 0.89, "rubicon": 0.97, "indexex#hange": 0.99, "springserve": 0.001, "appnexus": 0.97, "rhythmone": 0.95}, "inflation": 1.2, "floor": 0.02};
+            SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "indexexchange": 0.9, "sovrn": 0.9, "aardvark": 0.99, "aol": 0.95, "brealtime": 0.88, "rubiconlite": 0.9, "pulsepoint": 0.89, "rubicon": 0.98, "indexex#hange": 0.99, "springserve": 0.001, "appnexus": 0.97, "rhythmone": 0.95}, "inflation": 1.2, "floor": 0.02};
         </script>
         <meta id="project_name" name="project_name" content="expect">
         <meta name="description" content="Expect is a tool for automating interactive applications such as telnet, ftp, passwd, fsck, rlogin, tip, etc. Expect is also useful for testing …">
@@ -311,12 +311,16 @@
     </div>
 <div id="newsletter-floating" class="goth-form">
     <h2>Get latest updates about Open Source Projects, Conferences and News.</h2>
-<form action="/user/newsletters/subscribe" method="post" class="newsletter-subscribe-form"  >
+    <div class="teaser">
+    </div>
+    <div class="form-itself">
+<form action="/user/newsletters/subscribe" method="post" class="newsletter-subscribe-form compliance-form "  >
     <div class="form">
-        <label class="input-set">
+        <div class="fielderror"></div>
+        <label class="input-set stacked input-set-country">
             <span class="label">Country</span>
             <span class="input">
-<select id="country-floating" name="XGU2IxmM:jfPKlh4O57GKyHEG3u4" required >
+<select id="country-floating" name="Xn0XCB0NYp00:I7ljDxxdb66k8uc" required >
     <option value=""></option>
     <option value="AF">Afghanistan</option>
     <option value="AX">Aland Islands</option>
@@ -568,10 +572,10 @@
 </select>
 </span>
         </label>
-        <label class="input-set" style="display:none">
+        <label class="input-set stacked input-set-state">
             <span class="label">State</span>
             <span class="input">
-<select id="state-floating" name="XG12T0nkvK3:hvXM_RLZMMxpAlK4"  >
+<select id="state-floating" name="XnVXZE1lJ3Fgg_M8uR:Wua2OcctM"  >
     <option value=""></option>
     <option value="AL">Alabama</option>
     <option value="AK">Alaska</option>
@@ -628,6 +632,46 @@
 </select>
 </span>
         </label>
+<div class="gdpr-consent-requirement gdpr-consent-topics">
+    <h4>
+        Yes, also send me special offers about products &amp; services regarding:
+        </h4>
+<label class="input-set stacked inset">
+    <span class="checkbox-label">Artificial Intelligence</span>
+</label>
+<label class="input-set stacked inset">
+    <span class="checkbox-label">Cloud</span>
+</label>
+<label class="input-set stacked inset">
+    <span class="checkbox-label">Network Security</span>
+</label>
+<label class="input-set stacked inset">
+    <span class="checkbox-label">Hardware</span>
+</label>
+<label class="input-set stacked inset">
+    <span class="checkbox-label">Software Development</span>
+</label>
+</div>
+<div class="gdpr-consent-requirement gdpr-contact-methods">
+    <h4>
+    You can contact me via:
+    </h4>
+<label class="input-set stacked inset input-set-consent-email minimum-explicit-required">
+    <span class="checkbox-label">Email (required)</span>
+</label>
+<label class="input-set stacked inset prompt-phone">
+    <span class="checkbox-label">Phone</span>
+</label>
+<label class="input-set stacked inset prompt-phone">
+    <span class="checkbox-label">SMS</span>
+</label>
+    <label class="input-set inset input-phone hide ">
+        <span class="label">Phone</span>
+        <span class="input">
+        </span>
+        <span class="error-message"></span>
+    </label>
+</div>
     <div class="js-required fielderror">JavaScript is required for this form.</div>
     <div class="g-recaptcha"
           data-sitekey="6LeVgCEUAAAAACtawUTrPTBy0mTrGtjpPn_Xh-ZW"
@@ -635,8 +679,8 @@
           data-size="invisible">
     </div>
     </div>
-    <div class="fielderror"></div>
 </form>
+    </div>
     <a id="btn-float-close">No, thanks</a>
 </div>
       </body>

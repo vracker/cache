@@ -163,6 +163,10 @@
 <tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gdb-7.12.tar.gz.sig">gdb-7.12.tar.gz.sig</a></td><td align="right">2016-10-07 13:38  </td><td align="right"> 72 </td><td>&nbsp;</td></tr>
 <tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gdb-7.12.tar.xz">gdb-7.12.tar.xz</a></td><td align="right">2016-10-07 13:39  </td><td align="right"> 18M</td><td>&nbsp;</td></tr>
 <tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gdb-7.12.tar.xz.sig">gdb-7.12.tar.xz.sig</a></td><td align="right">2016-10-07 13:39  </td><td align="right"> 72 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="gdb-8.0.1.tar.gz">gdb-8.0.1.tar.gz</a></td><td align="right">2017-09-07 11:02  </td><td align="right"> 35M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gdb-8.0.1.tar.gz.sig">gdb-8.0.1.tar.gz.sig</a></td><td align="right">2017-09-07 11:02  </td><td align="right"> 72 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gdb-8.0.1.tar.xz">gdb-8.0.1.tar.xz</a></td><td align="right">2017-09-07 11:03  </td><td align="right"> 19M</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gdb-8.0.1.tar.xz.sig">gdb-8.0.1.tar.xz.sig</a></td><td align="right">2017-09-07 11:03  </td><td align="right"> 72 </td><td>&nbsp;</td></tr>
 <tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="gdb-8.0.tar.gz">gdb-8.0.tar.gz</a></td><td align="right">2017-06-04 12:21  </td><td align="right"> 35M</td><td>&nbsp;</td></tr>
 <tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gdb-8.0.tar.gz.sig">gdb-8.0.tar.gz.sig</a></td><td align="right">2017-06-04 12:21  </td><td align="right"> 72 </td><td>&nbsp;</td></tr>
 <tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="gdb-8.0.tar.xz">gdb-8.0.tar.xz</a></td><td align="right">2017-06-04 12:22  </td><td align="right"> 19M</td><td>&nbsp;</td></tr>

@@ -48,7 +48,7 @@ The files are also available from
 <a href="ftp://ftp.tcl.tk/pub/tcl/"><b>ftp.tcl.tk</b><a>
 or one of its <a href="mirror.html">mirrors</a>.
 <p>
-The latest downloads for the Tcl 8.6 and 8.5 release trains are
+The latest downloads for the Tcl 8.6 and 8.7 release sequences are
 shown in the table below. Older releases are also available from the
 above sites.
 <p>
@@ -70,19 +70,19 @@ above sites.
 </tr>
 </table>
 <table id="downloads">
-<tr class="even"><th colspan="3">Tcl 8.5.19 Sources</th>
-<th colspan="3">Tk 8.5.19 Sources</th>
+<tr class="even"><th colspan="3">Tcl 8.7a1 Sources</th>
+<th colspan="3">Tk 8.7a1 Sources</th>
 </tr>
 <tr>
-<td><b><a href="https://prdownloads.sourceforge.net/tcl/tcl8.5.19-src.tar.gz">tcl8.5.19-src.tar.gz</a></b></td>
+<td><b><a href="https://prdownloads.sourceforge.net/tcl/tcl8.7a1-src.tar.gz">tcl8.7a1-src.tar.gz</a></b></td>
 <td>Gzip format</td><td> </td>
-<td><b><a href="https://prdownloads.sourceforge.net/tcl/tk8.5.19-src.tar.gz">tk8.5.19-src.tar.gz</a></b></td>
+<td><b><a href="https://prdownloads.sourceforge.net/tcl/tk8.7a1-src.tar.gz">tk8.7a1-src.tar.gz</a></b></td>
 <td>Gzip format</td><td> </td>
 </tr>
 <tr>
-<td><b><a href="https://prdownloads.sourceforge.net/tcl/tcl8519-src.zip">tcl8519-src.zip</a></b></td>
+<td><b><a href="https://prdownloads.sourceforge.net/tcl/tcl87a1-src.zip">tcl87a1-src.zip</a></b></td>
 <td>Zip format</td><td> </td>
-<td><b><a href="https://prdownloads.sourceforge.net/tcl/tk8519-src.zip">tk8519-src.zip</a></b></td>
+<td><b><a href="https://prdownloads.sourceforge.net/tcl/tk87a1-src.zip">tk87a1-src.zip</a></b></td>
 <td>Zip format</td><td> </td>
 </tr>
 </table>
@@ -115,7 +115,7 @@ www.tcl.tk .
 </b></small>
 &nbsp;&nbsp;
 <a href="/siteinfo.html">About this Site</a> |
-<a href="/cdn-cgi/l/email-protection#a8dfcdcac5c9dbdccddae885fbf8e9e58586dccbc486dcc3"><span class="__cf_email__" data-cfemail="bfc8daddd2decccbdacdff92eceffef29291cbdcd391cbd4">[email&#160;protected]</span></a>
+<a href="/cdn-cgi/l/email-protection#7f081a1d121e0c0b1a0d3f522c2f3e3252510b1c13510b14"><span class="__cf_email__" data-cfemail="493e2c2b24283a3d2c3b09641a19080464673d2a25673d22">[email&#160;protected]</span></a>
 <br>
 <a href="/">Home</a> |
 <a href="/about/">About Tcl/Tk</a> |

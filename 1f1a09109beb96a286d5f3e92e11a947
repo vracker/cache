@@ -5,7 +5,6 @@
 <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]>--> <html lang="en" class="no-js"> <!--<![endif]-->
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
             SF.Ads.prebidOptions = {
                 showIndicators: false,
                 analytics: true,
@@ -93,7 +92,7 @@
                                                     .addService(googletag.pubads())
                                                         .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])
                                                         .setTargeting('shortname', 'expect')
-                                                        .setTargeting('aud', ['developers', 'endusers', 'sysadmins'])
+                                                        .setTargeting('aud', ['sysadmins', 'developers', 'endusers'])
                                                         .setTargeting('mirror', 'False')
                                                         .setTargeting('dc_ref', 'https://sourceforge.net/projects/expect/files/Expect/')
                                                         .setTargeting('sz', '728x90')
@@ -102,7 +101,7 @@
                                                     .addService(googletag.pubads())
                                                         .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])
                                                         .setTargeting('shortname', 'expect')
-                                                        .setTargeting('aud', ['developers', 'endusers', 'sysadmins'])
+                                                        .setTargeting('aud', ['sysadmins', 'developers', 'endusers'])
                                                         .setTargeting('mirror', 'False')
                                                         .setTargeting('dc_ref', 'https://sourceforge.net/projects/expect/files/Expect/')
                                                         .setTargeting('sz', '300x250,300x600,300x1050')
@@ -111,7 +110,7 @@
                                                     .addService(googletag.pubads())
                                                         .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])
                                                         .setTargeting('shortname', 'expect')
-                                                        .setTargeting('aud', ['developers', 'endusers', 'sysadmins'])
+                                                        .setTargeting('aud', ['sysadmins', 'developers', 'endusers'])
                                                         .setTargeting('mirror', 'False')
                                                         .setTargeting('dc_ref', 'https://sourceforge.net/projects/expect/files/Expect/')
                                                         .setTargeting('sz', '300x250')
@@ -120,7 +119,7 @@
                                                     .addService(googletag.pubads())
                                                         .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])
                                                         .setTargeting('shortname', 'expect')
-                                                        .setTargeting('aud', ['developers', 'endusers', 'sysadmins'])
+                                                        .setTargeting('aud', ['sysadmins', 'developers', 'endusers'])
                                                         .setTargeting('mirror', 'False')
                                                         .setTargeting('dc_ref', 'https://sourceforge.net/projects/expect/files/Expect/')
                                                         .setTargeting('sz', '200x90')
@@ -129,7 +128,7 @@
                                                     .addService(googletag.pubads())
                                                         .setTargeting('tpc', ['expect', 'development', 'sysadministration', 'c', 'system', 'tcl'])
                                                         .setTargeting('shortname', 'expect')
-                                                        .setTargeting('aud', ['developers', 'endusers', 'sysadmins'])
+                                                        .setTargeting('aud', ['sysadmins', 'developers', 'endusers'])
                                                         .setTargeting('mirror', 'False')
                                                         .setTargeting('dc_ref', 'https://sourceforge.net/projects/expect/files/Expect/')
                                                         .setTargeting('sz', '300x250')
@@ -320,7 +319,7 @@
         <label class="input-set stacked input-set-country">
             <span class="label">Country</span>
             <span class="input">
-<select id="country-floating" name="Xn0XCB0NYp00:I7ljDxxdb66k8uc" required >
+<select id="country-floating" name="XHXa7XFYUJ9TP4BeYTc_Br6zaKQM" required >
     <option value=""></option>
     <option value="AF">Afghanistan</option>
     <option value="AX">Aland Islands</option>
@@ -575,7 +574,7 @@
         <label class="input-set stacked input-set-state">
             <span class="label">State</span>
             <span class="input">
-<select id="state-floating" name="XnVXZE1lJ3Fgg_M8uR:Wua2OcctM"  >
+<select id="state-floating" name="XH2agSEwFubyOxRYRDOQ_5liVzCg"  >
     <option value=""></option>
     <option value="AL">Alabama</option>
     <option value="AK">Alaska</option>

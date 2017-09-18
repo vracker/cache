@@ -63,7 +63,7 @@
             SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "indexexchange": 0.9, "sovrn": 0.9, "aardvark": 0.99, "aol": 0.95, "brealtime": 0.88, "rubiconlite": 0.9, "pulsepoint": 0.89, "rubicon": 0.98, "indexex#hange": 0.99, "springserve": 0.001, "appnexus": 0.97, "rhythmone": 0.95}, "inflation": 1.2, "floor": 0.02};
         </script>
         <meta id="project_name" name="project_name" content="expect">
-        <meta name="description" content="Expect is a tool for automating interactive applications such as telnet, ftp, passwd, fsck, rlogin, tip, etc. Expect is also useful for testing …">
+        <meta name="description" content="Expect is a tool for automating interactive applications such as telnet, ftp, passwd, fsck, rlogin, tip, etc. Expect is also useful for testing…">
         <meta name="keywords" content="Software Development, Systems Administration,  Open Source, Open Source Software, Development, Community, Source Code, Secure,  Downloads, Free Software">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Expect -  Browse /Expect at SourceForge.net</title>
@@ -159,7 +159,7 @@
     <body id="pg_files" class="
     user
      bluesteel
- anonymous ">
+ anonymous  body_class">
         <div id="busy-spinner"></div>
 <div id="messages">
 </div>
@@ -233,7 +233,8 @@
     </div>
     <div id="files-sidebar" class="scroll-fixable" data-floor-compensate="145">
         <div class="sterling">
-<div id="SF_ProjectFiles_300x250_A_wrapped" data-id="div-gpt-ad-1392147725721-0" class="draper multisize  "
+<div id="SF_ProjectFiles_300x250_A_wrapped" data-id="div-gpt-ad-1392147725721-0" class="draper multisize  
+"
 >
 </div>
         </div>
@@ -269,12 +270,14 @@
             </li>
     </ul>
 </aside>
-<div id="SF_ProjectFiles_300x250_B_wrapped" data-id="div-gpt-ad-1392148208789-0" class="draper medrec  "
+<div id="SF_ProjectFiles_300x250_B_wrapped" data-id="div-gpt-ad-1392148208789-0" class="draper medrec  
+"
 >
 </div>
             <div class="sterling" id="deals-widget">
     <aside class="sidebar-widget stackcommerce-widget">
-<div id="SF-300x250_wrapped" data-id="div-gpt-ad-1392148208795-0" class="draper medrec  visibility_rules
+<div id="SF-300x250_wrapped" data-id="div-gpt-ad-1392148208795-0" class="draper medrec  
+visibility_rules 
  v_300_large "
 >
 </div>
@@ -319,7 +322,7 @@
         <label class="input-set stacked input-set-country">
             <span class="label">Country</span>
             <span class="input">
-<select id="country-floating" name="XHXa7XFYUJ9TP4BeYTc_Br6zaKQM" required >
+<select id="country-floating" name="X2EjARWJSuAC8PTumfpyyMVtIZ:E" required class="use-placeholder-color">
     <option value=""></option>
     <option value="AF">Afghanistan</option>
     <option value="AX">Aland Islands</option>
@@ -574,7 +577,7 @@
         <label class="input-set stacked input-set-state">
             <span class="label">State</span>
             <span class="input">
-<select id="state-floating" name="XH2agSEwFubyOxRYRDOQ_5liVzCg"  >
+<select id="state-floating" name="X2ljbUXhDWshld45KL0vXl52navI"  class="use-placeholder-color">
     <option value=""></option>
     <option value="AL">Alabama</option>
     <option value="AK">Alaska</option>

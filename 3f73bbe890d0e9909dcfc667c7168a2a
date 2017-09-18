@@ -6,8 +6,8 @@
 <body bgcolor="white" text="black">
 <table border="0" cellpadding="0" cellspacing="0" width="780">
 <tr>
-<td valign="top" align="left"><a href="/"><img src="/images/plume.png" width="60" height="55" border="0" alt="Tcl Home"/><img src="/images/Developer.gif" width="355" height="55" border="0" alt="Tcl Home" title="Tcl Developer Xchange"/></a></td>
-<td valign="top" align="right"><a href="/siteinfo.html"><font size="1">Hosted by</font></a><br><a href="http://www.ActiveState.com/Tcl"><img src="/images/aslogo.gif" border="0" alt="ActiveState" title="This site is hosted by ActiveState"/></a></td>
+<td valign="top" align="left"><a href="/"><img src="/images/plume.png" width="60" height="55" border="0" alt="Tcl Home" /><img src="/images/Developer.gif" width="355" height="55" border="0" alt="Tcl Home" title="Tcl Developer Xchange" /></a></td>
+<td valign="top" align="right"><a href="/siteinfo.html"><font size=1>Hosted by</font></a><br><a href="http://www.ActiveState.com/Tcl"><img src="/images/aslogo.gif" border="0" alt="ActiveState" title="This site is hosted by ActiveState" /></a></td>
 </tr>
 </table>
 <div id="globalnav"><ul>
@@ -18,15 +18,15 @@
 <li><a href="/community/">COMMUNITY</a></li>
 <li><a href="/doc/">DOCUMENTATION</a></li>
 </ul></div>
-<br clear="all"/>
+<br clear="all" />
 <DIV style="border-top: 2px solid #3163CE; width: 780px"></DIV>
 <table border="0" cellpadding="2" cellspacing="0" width="780">
 <tr><td align="left" valign="middle">
 
 <div style="display:table-cell; vertical-align:middle; margin:0px">
 <FORM method="GET" action="https://www.google.com/search">
-<A HREF="https://www.google.com/"><IMG src="/images/Search.gif" border="0" ALT="Google SiteSearch"/></A>
-<INPUT TYPE="text" name="q" size="20" maxlength="255" value>
+<A HREF="https://www.google.com/"><IMG src="/images/Search.gif" border="0" ALT="Google SiteSearch" /></A>
+<INPUT TYPE="text" name="q" size="20" maxlength="255" value="">
 <INPUT type="image" value="submit" name="btnG" src="/images/Go.gif">
 <input type="hidden" name="ie" value="UTF-8">
 <input type="hidden" name="oe" value="UTF-8">
@@ -46,15 +46,15 @@ The main site for Tcl/Tk source distributions is
 <a href="https://sourceforge.net/projects/tcl/files/Tcl/"><b>SourceForge</b></a>.
 The files are also available from
 <a href="ftp://ftp.tcl.tk/pub/tcl/"><b>ftp.tcl.tk</b><a>
-or one of its <a href="mirror.html">mirrors</a>.
+or one of its <a href=mirror.html>mirrors</a>.
 <p>
 The latest downloads for the Tcl 8.6 and 8.7 release sequences are
 shown in the table below. Older releases are also available from the
 above sites.
 <p>
 <table id="downloads">
-<tr class="even"><th colspan="3">Tcl 8.6.7 Sources</th>
-<th colspan="3">Tk 8.6.7 Sources</th>
+<tr class=even><th colspan=3>Tcl 8.6.7 Sources</th>
+<th colspan=3>Tk 8.6.7 Sources</th>
 </tr>
 <tr>
 <td><b><a href="https://prdownloads.sourceforge.net/tcl/tcl8.6.7-src.tar.gz">tcl8.6.7-src.tar.gz</a></b></td>
@@ -70,8 +70,8 @@ above sites.
 </tr>
 </table>
 <table id="downloads">
-<tr class="even"><th colspan="3">Tcl 8.7a1 Sources</th>
-<th colspan="3">Tk 8.7a1 Sources</th>
+<tr class=even><th colspan=3>Tcl 8.7a1 Sources</th>
+<th colspan=3>Tk 8.7a1 Sources</th>
 </tr>
 <tr>
 <td><b><a href="https://prdownloads.sourceforge.net/tcl/tcl8.7a1-src.tar.gz">tcl8.7a1-src.tar.gz</a></b></td>
@@ -107,7 +107,7 @@ Extract gzip'ed archives with this UNIX command line:
 no need to also download these versions since these files are
 identical but in ZIP format instead of compressed tar.
 
-<br clear="all"/>
+<br clear="all" />
 <p align="center" class="footer">
 <small><b>
 This is the main Tcl Developer Xchange site,
@@ -115,7 +115,7 @@ www.tcl.tk .
 </b></small>
 &nbsp;&nbsp;
 <a href="/siteinfo.html">About this Site</a> |
-<a href="/cdn-cgi/l/email-protection#136476717e7260677661533e4043525e3e3d67707f3d6778"><span class="__cf_email__" data-cfemail="99eefcfbf4f8eaedfcebd9b4cac9d8d4b4b7edfaf5b7edf2">[email&#160;protected]</span></a>
+<a href="/cdn-cgi/l/email-protection#bec9dbdcd3dfcdcadbccfe93edeefff39390caddd290cad5"><span class="__cf_email__" data-cfemail="215644434c4052554453610c7271606c0c0f55424d0f554a">[email&#160;protected]</span></a>
 <br>
 <a href="/">Home</a> |
 <a href="/about/">About Tcl/Tk</a> |

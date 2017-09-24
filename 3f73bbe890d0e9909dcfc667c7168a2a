@@ -115,7 +115,7 @@ www.tcl.tk .
 </b></small>
 &nbsp;&nbsp;
 <a href="/siteinfo.html">About this Site</a> |
-<a href="/cdn-cgi/l/email-protection#bec9dbdcd3dfcdcadbccfe93edeefff39390caddd290cad5"><span class="__cf_email__" data-cfemail="215644434c4052554453610c7271606c0c0f55424d0f554a">[email&#160;protected]</span></a>
+<a href="/cdn-cgi/l/email-protection#e69183848b8795928394a6cbb5b6a7abcbc892858ac8928d"><span class="__cf_email__" data-cfemail="601705020d0113140512204d3330212d4d4e14030c4e140b">[email&#160;protected]</span></a>
 <br>
 <a href="/">Home</a> |
 <a href="/about/">About Tcl/Tk</a> |
@@ -124,4 +124,4 @@ www.tcl.tk .
 <a href="/community/">Community</a> |
 <a href="/doc/">Documentation</a>
 </p>
-</td></tr></table><script>!function(e,t,r,n,c,h,o){function a(e,t,r,n){for(r='',n='0x'+e.substr(t,2)|0,t+=2;t<e.length;t+=2)r+=String.fromCharCode('0x'+e.substr(t,2)^n);return r}try{for(c=e.getElementsByTagName('a'),o='/cdn-cgi/l/email-protection#',n=0;n<c.length;n++)try{(t=(h=c[n]).href.indexOf(o))>-1&&(h.href='mailto:'+a(h.href,t+o.length))}catch(e){}for(c=e.querySelectorAll('.__cf_email__'),n=0;n<c.length;n++)try{(h=c[n]).parentNode.replaceChild(e.createTextNode(a(h.getAttribute('data-cfemail'),0)),h)}catch(e){}}catch(e){}}(document);</script></body></html>
+</td></tr></table><script>!function(e,t,r,n,c,a,l){function i(t,r){return r=e.createElement('div'),r.innerHTML='<a href="'+t.replace(/"/g,'&quot;')+'"></a>',r.childNodes[0].getAttribute('href')}function o(e,t,r,n){for(r='',n='0x'+e.substr(t,2)|0,t+=2;t<e.length;t+=2)r+=String.fromCharCode('0x'+e.substr(t,2)^n);return i(r)}try{for(c=e.getElementsByTagName('a'),l='/cdn-cgi/l/email-protection#',n=0;n<c.length;n++)try{(t=(a=c[n]).href.indexOf(l))>-1&&(a.href='mailto:'+o(a.href,t+l.length))}catch(e){}for(c=e.querySelectorAll('.__cf_email__'),n=0;n<c.length;n++)try{(a=c[n]).parentNode.replaceChild(e.createTextNode(o(a.getAttribute('data-cfemail'),0)),a)}catch(e){}}catch(e){}}(document);</script></body></html>

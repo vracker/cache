@@ -35,7 +35,7 @@ var g_onload = function() {
       <div class='hdrlink black'>
         <a href='download.php'>
         <div class='hdrtop white'>DOWNLOAD REAPER</div>
-        <div class='hdrbottom'>Version 5.51: September 29, 2017</div>
+        <div class='hdrbottom'>Version 5.52: October 4, 2017</div>
         </a>
       </div>
       <div style='height:11px;'></div>
@@ -115,7 +115,7 @@ var g_onload = function() {
         <p>The Windows version also works well with <a href="https://www.winehq.org/" target="_blank" rel="noopener noreferrer">WINE</a>.
       </div>
       <div style='width:320px; float:right;'>
-        <p>REAPER supports all macOS X versions from 10.5<span onmouseover='document.getElementById("r475").style.display = "inline";' style='vertical-align:super; font-size:7pt; font-weight:lighter;'>*</span> to 10.12.</p> 
+        <p>REAPER supports all macOS X versions from 10.5<span onmouseover='document.getElementById("r475").style.display = "inline";' style='vertical-align:super; font-size:7pt; font-weight:lighter;'>*</span> to 10.13.</p> 
         <div style='display:none;' id='r475'>Some features may require OS X 10.7+. For OS X 10.4 and PPC support, use <a href="download-old.php?ver=4x#r475">REAPER v4.75</a>.</div>
       </div>
   </div>
@@ -134,24 +134,24 @@ var g_onload = function() {
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>Windows 32-bit</div>
   <div class='downloadinfo'>
-REAPER v5.51 - 9MB<br>
+REAPER v5.52 - 9MB<br>
 Windows XP/Vista/7/8/10<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper551-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg" alt="download" title="Download REAPER for Windows 32-bit"></a>
+  <a href="files/5.x/reaper552-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg" alt="download" title="Download REAPER for Windows 32-bit"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
       <div style='background-color:#313131;height:1px;margin-bottom:20px;'></div>
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>Windows 64-bit</div>
   <div class='downloadinfo'>
-REAPER v5.51 - 11MB<br>
+REAPER v5.52 - 11MB<br>
 Windows XP/Vista/7/8/10 x64<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper551_x64-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg" alt="download" title="Download REAPER for Windows 64-bit"></a>
+  <a href="files/5.x/reaper552_x64-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg" alt="download" title="Download REAPER for Windows 64-bit"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
     </div>
@@ -167,24 +167,24 @@ Windows XP/Vista/7/8/10 x64<br>
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>OS X 32-bit</div>
   <div class='downloadinfo'>
-REAPER v5.51 - 14MB<br>
-OS X 10.5-10.12<br>
+REAPER v5.52 - 14MB<br>
+OS X 10.5-10.13<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper551_i386.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg" alt="download" title="Download REAPER for OS X 32-bit"></a>
+  <a href="files/5.x/reaper552_i386.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg" alt="download" title="Download REAPER for OS X 32-bit"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
       <div style='background-color:#313131;height:1px;margin-bottom:20px;'></div>
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>OS X 64-bit</div>
   <div class='downloadinfo'>
-REAPER v5.51 - 16MB<br>
-OS X 10.5-10.12<br>
+REAPER v5.52 - 16MB<br>
+OS X 10.5-10.13<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper551_x86_64.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg" alt="download" title="Download REAPER for OS X 64-bit"></a>
+  <a href="files/5.x/reaper552_x86_64.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg" alt="download" title="Download REAPER for OS X 64-bit"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
     </div> 
@@ -195,7 +195,7 @@ OS X 10.5-10.12<br>
 <div class='dark strip'>
   <div style='background-color:#4E5454;height:1px;margin-top:40px;'></div>
   <div style='margin-top:30px;margin-bottom:30px;'>
-    <div class='heading'>REAPER 5.51: The Price Is Right</div>
+    <div class='heading'>REAPER 5.52: My Money Is On User Error</div>
     <div style='width:1000px; margin-bottom:20px;'>
        <span style='font-size:9px'>Changelog items below may include </span><span class='whatsnewdot'>&bull;</span><span style='font-size:9px'> links to more information.</span>
     </div>
@@ -207,112 +207,28 @@ OS X 10.5-10.12<br>
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Automation items</div><ul class='bullet'>
-<li> improve threadsafety when removing/reordering automation items
-<li> improve editing multiple pooled instances of the same automation item at once via action or envelope control panel knob <a href="https://forum.cockos.com/showpost.php?p=1886201" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> prevent unintentional edge edits when automation item is very small
-<li> fix action to copy/cut automation when multiple automation items selected <a href="https://forum.cockos.com/showpost.php?p=1887014" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> support muting individual automation items
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>ReaTune</div><ul class='bullet'>
-<li> fix longstanding UI/audio thread locking performance issue
-<li> improve manual edit appearance, use MIDI editor theme colors
-<li> use arrange-view mousewheel mappings for manual edit window when possible
-<li> obey horizontal zoom center preference when zooming via mousewheel
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Elastique</div><ul class='bullet'>
-<li> enable Soloist speech mode
-<li> update to v3.23
-</ul>
-</div>
-<div class='avoidbreak'>
 <div class='bold'>Envelopes</div><ul class='bullet'>
-<li> fix changing envelope point shape after media item edit <a href="https://forum.cockos.com/showpost.php?p=1887187" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> avoid potential bad outcome when deleting all envelope points and automation items within time selection <a href="https://forum.cockos.com/showpost.php?p=1886055" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> fix snap behavior for doubleclick insert point mouse modifiers <a href="https://forum.cockos.com/showthread.php?t=196413" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>MIDI editor</div><ul class='bullet'>
-<li> label channel pressure messages consistently <a href="https://forum.cockos.com/showpost.php?p=1884306" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> preview note in key on first mouse down when key snap enabled <a href="https://forum.cockos.com/showthread.php?t=113708" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Undo</div><ul class='bullet'>
-<li> fix envelope point selection state undo/redo <a href="https://forum.cockos.com/showpost.php?p=1886806" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-<li> improve mute envelope automation recording behavior
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Web Interface</div><ul class='bullet'>
-<li> add More Me Personal Monitor Controller (more_me.html)
-<li> allow /more_me as a shorthand for /more_me.html, etc
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Windows</div><ul class='bullet'>
-<li> obey mousewheel focus preference for horizontal mousewheel when possible
-<li> improve support for logitech horizontal mousewheels
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Automation</div><ul class='bullet'>
-<li> fix potential incorrect memory access in write mode
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Batch converter</div><ul class='bullet'>
-<li> improve browse button default path on Windows
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Configuration import/export</div><ul class='bullet'>
-<li> allow toggling checkbox state with space key
+<li> fix activating receive envelopes from envelope dialog <a href="https://forum.cockos.com/showthread.php?t=188909" target="blank"><span class='whatsnewdot'>&bull;</span></a>
 </ul>
 </div>
 <div class='avoidbreak'>
 <div class='bold'>Media explorer</div><ul class='bullet'>
-<li> improve measure-synced tempo matching behavior for some tempos/blocksizes <a href="https://forum.cockos.com/showthread.php?t=195830" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> fix preview playback when not using start-at-measure <a href="https://forum.cockos.com/showthread.php?t=196614" target="blank"><span class='whatsnewdot'>&bull;</span></a>
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>MIDI export</div><ul class='bullet'>
-<li> avoid creating two tempo change events at the same time position <a href="https://forum.cockos.com/showthread.php?t=196112" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<div class='bold'>MIDI editor</div><ul class='bullet'>
+<li> fix inline editor insert note via left-click mousemap with main editor open <a href="https://forum.cockos.com/showthread.php?t=196099" target="blank"><span class='whatsnewdot'>&bull;</span></a>
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Notation editor</div><ul class='bullet'>
-<li> improve localization <a href="https://forum.cockos.com/showpost.php?p=1883539" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<div class='bold'>Opus</div><ul class='bullet'>
+<li> support reading opus files named .ogg <a href="https://forum.cockos.com/showthread.php?t=196664" target="blank"><span class='whatsnewdot'>&bull;</span></a>
 </ul>
 </div>
 <div class='avoidbreak'>
-<div class='bold'>Peaks display settings</div><ul class='bullet'>
-<li> fix UI glitch when items have spectrogram enabled <a href="https://forum.cockos.com/showthread.php?t=196088" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Region manager</div><ul class='bullet'>
-<li> properly import regions defined in absolute frames <a href="https://forum.cockos.com/showthread.php?t=196333" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Routing</div><ul class='bullet'>
-<li> increase destination track channel count when configuring multichannel send <a href="https://forum.cockos.com/showthread.php?t=195994" target="blank"><span class='whatsnewdot'>&bull;</span></a>
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>Routing matrix</div><ul class='bullet'>
-<li> support horizontal-wheel scroll
-</ul>
-</div>
-<div class='avoidbreak'>
-<div class='bold'>VST</div><ul class='bullet'>
-<li> prevent plug-ins from sizing window from other threads
+<div class='bold'>Routing windows</div><ul class='bullet'>
+<li> update destination UI when changing send channel count in certain instances
 </ul>
 </div>
     </div>

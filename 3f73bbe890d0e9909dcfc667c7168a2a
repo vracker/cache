@@ -115,7 +115,7 @@ www.tcl.tk .
 </b></small>
 &nbsp;&nbsp;
 <a href="/siteinfo.html">About this Site</a> |
-<a href="/cdn-cgi/l/email-protection#037466616e6270776671432e5053424e2e2d77606f2d7768"><span class="__cf_email__" data-cfemail="6f180a0d020e1c1b0a1d2f423c3f2e2242411b0c03411b04">[email&#160;protected]</span></a>
+<a href="/cdn-cgi/l/email-protection#d6a1b3b4bbb7a5a2b3a496fb8586979bfbf8a2b5baf8a2bd"><span class="__cf_email__" data-cfemail="c3b4a6a1aea2b0b7a6b183ee9093828eeeedb7a0afedb7a8">[email&#160;protected]</span></a>
 <br>
 <a href="/">Home</a> |
 <a href="/about/">About Tcl/Tk</a> |
@@ -124,4 +124,4 @@ www.tcl.tk .
 <a href="/community/">Community</a> |
 <a href="/doc/">Documentation</a>
 </p>
-</td></tr></table><script style="display: none !important;">!function(e,t,r,n,c,a,l){function i(t,r){return r=e.createElement('div'),r.innerHTML='<a href="'+t.replace(/"/g,'&quot;')+'"></a>',r.childNodes[0].getAttribute('href')}function o(e,t,r,n){for(r='',n='0x'+e.substr(t,2)|0,t+=2;t<e.length;t+=2)r+=String.fromCharCode('0x'+e.substr(t,2)^n);return i(r)}try{for(c=e.getElementsByTagName('a'),l='/cdn-cgi/l/email-protection#',n=0;n<c.length;n++)try{(t=(a=c[n]).href.indexOf(l))>-1&&(a.href='mailto:'+o(a.href,t+l.length))}catch(e){}for(c=e.querySelectorAll('.__cf_email__'),n=0;n<c.length;n++)try{(a=c[n]).parentNode.replaceChild(e.createTextNode(o(a.getAttribute('data-cfemail'),0)),a)}catch(e){}}catch(e){}}(document);</script></body></html>
+</td></tr></table><script src="https://ajax.cloudflare.com/cdn-cgi/scripts/78d64697/cloudflare-static/email-decode.min.js"></script></body></html>

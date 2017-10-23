@@ -46,6 +46,8 @@
 <tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="screen-4.6.0.tar.gz.sig">screen-4.6.0.tar.gz.sig</a></td><td align="right">2017-06-28 14:38  </td><td align="right">543 </td><td>&nbsp;</td></tr>
 <tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="screen-4.6.1.tar.gz">screen-4.6.1.tar.gz</a></td><td align="right">2017-07-10 15:31  </td><td align="right">829K</td><td>&nbsp;</td></tr>
 <tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="screen-4.6.1.tar.gz.sig">screen-4.6.1.tar.gz.sig</a></td><td align="right">2017-07-10 15:31  </td><td align="right">566 </td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/compressed.gif" alt="[   ]"></td><td><a href="screen-4.6.2.tar.gz">screen-4.6.2.tar.gz</a></td><td align="right">2017-10-23 08:22  </td><td align="right">825K</td><td>&nbsp;</td></tr>
+<tr><td valign="top"><img src="/icons/unknown.gif" alt="[   ]"></td><td><a href="screen-4.6.2.tar.gz.sig">screen-4.6.2.tar.gz.sig</a></td><td align="right">2017-10-23 08:22  </td><td align="right">566 </td><td>&nbsp;</td></tr>
    <tr><th colspan="5"><hr></th></tr>
 </table>
 <address>Apache/2.4.7 (Trisquel_GNU/Linux) Server at ftp.gnu.org Port 80</address>

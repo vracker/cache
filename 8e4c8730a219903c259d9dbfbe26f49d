@@ -35,7 +35,7 @@ var g_onload = function() {
       <div class='hdrlink black'>
         <a href='download.php'>
         <div class='hdrtop white'>DOWNLOAD REAPER</div>
-        <div class='hdrbottom'>Version 5.60: October 24, 2017</div>
+        <div class='hdrbottom'>Version 5.61: October 27, 2017</div>
         </a>
       </div>
       <div style='height:11px;'></div>
@@ -134,24 +134,24 @@ var g_onload = function() {
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>Windows 32-bit</div>
   <div class='downloadinfo'>
-REAPER v5.60 - 9MB<br>
+REAPER v5.61 - 9MB<br>
 Windows XP/Vista/7/8/10<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper560-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg" alt="download" title="Download REAPER for Windows 32-bit"></a>
+  <a href="files/5.x/reaper561-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg" alt="download" title="Download REAPER for Windows 32-bit"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
       <div style='background-color:#313131;height:1px;margin-bottom:20px;'></div>
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>Windows 64-bit</div>
   <div class='downloadinfo'>
-REAPER v5.60 - 11MB<br>
+REAPER v5.61 - 11MB<br>
 Windows XP/Vista/7/8/10 x64<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper560_x64-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg" alt="download" title="Download REAPER for Windows 64-bit"></a>
+  <a href="files/5.x/reaper561_x64-install.exe"><img class="downloadbutton" src="./v5img/dl_button.jpg" alt="download" title="Download REAPER for Windows 64-bit"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
     </div>
@@ -167,24 +167,24 @@ Windows XP/Vista/7/8/10 x64<br>
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>OS X 32-bit</div>
   <div class='downloadinfo'>
-REAPER v5.60 - 14MB<br>
+REAPER v5.61 - 14MB<br>
 OS X 10.5-10.13<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper560_i386.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg" alt="download" title="Download REAPER for OS X 32-bit"></a>
+  <a href="files/5.x/reaper561_i386.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg" alt="download" title="Download REAPER for OS X 32-bit"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
       <div style='background-color:#313131;height:1px;margin-bottom:20px;'></div>
       <div style='width:187px; float:left;'>
   <div class='downloadheading'>OS X 64-bit</div>
   <div class='downloadinfo'>
-REAPER v5.60 - 16MB<br>
+REAPER v5.61 - 16MB<br>
 OS X 10.5-10.13<br>
   </div>
 </div>
 <div style='width:86px; height:50px; float:right;margin-top:7px;margin-right:27px;background-color:#1CBF66;'>
-  <a href="files/5.x/reaper560_x86_64.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg" alt="download" title="Download REAPER for OS X 64-bit"></a>
+  <a href="files/5.x/reaper561_x86_64.dmg"><img class="downloadbutton" src="./v5img/dl_button.jpg" alt="download" title="Download REAPER for OS X 64-bit"></a>
 </div>
 <div style='clear:both; height:23px;'></div>
     </div> 
@@ -195,11 +195,23 @@ OS X 10.5-10.13<br>
 <div class='dark strip'>
   <div style='background-color:#4E5454;height:1px;margin-top:40px;'></div>
   <div style='margin-top:30px;margin-bottom:30px;'>
-    <div class='heading'>REAPER 5.60: Train Kept A Rollin</div>
+    <div class='heading'>REAPER 5.61: Identifying what we do best and finding more ways of doing less of it better.</div>
     <div style='width:1000px; margin-bottom:20px;'>
        <span style='font-size:9px'>Changelog items below may include </span><span class='whatsnewdot'>&bull;</span><span style='font-size:9px'> links to more information.</span>
     </div>
     <div style='width:1000px; -webkit-column-count: 3; -moz-column-count: 3; column-count: 3;'><a name="whatsnew"></a>
+<div class='avoidbreak'>
+<div class='bold'>5.61</div><ul class='bullet'>
+<li> DX: fix memory leak when scanning plug-ins
+<li> FX: improve TCP/MCP quick-add menu organization <a href="https://forum.cockos.com/showpost.php?p=1902034" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> ReaPlugs: fix localized pitch shifter mode display
+<li> ReaSurround: fix automation of LFE and influence parameters <a href="https://forum.cockos.com/showthread.php?t=197727" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> Routing window: fix potential crash with multiple windows open <a href="https://forum.cockos.com/showthread.php?t=192805" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> Solo: fix child-folder implied solo send behavior changed in 5.60 <a href="https://forum.cockos.com/showthread.php?t=197697" target="blank"><span class='whatsnewdot'>&bull;</span></a>
+<li> Undo: fix incorrect undo points when removing last track(s) from project
+<li> -- 5.60 changes follow --
+</ul>
+</div>
 <div class='avoidbreak'>
 <div class='bold'>Automation items</div><ul class='bullet'>
 <li> add option to disable envelope outside of automation items (automation-item-only mode) <a href="https://forum.cockos.com/showthread.php?t=196166" target="blank"><span class='whatsnewdot'>&bull;</span></a>

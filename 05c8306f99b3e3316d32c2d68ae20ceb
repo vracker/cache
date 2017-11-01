@@ -151,7 +151,7 @@ on Twitter.
 
 <h2>Current Versions</h2>
 
-<h3>Mainline - 1.1.17</h3>
+<h3>Mainline - 1.1.18</h3>
 
 <p><small><em>This series is actively developed but intended for use
 in production environments as long as appropriate testing is
@@ -159,22 +159,15 @@ performed.</em></small>
 
 
 
-<p><a href="releases/musl-1.1.17.tar.gz">musl-1.1.17.tar.gz</a>
-(<a href="releases/musl-1.1.17.tar.gz.asc">sig</a>)
-- October 19, 2017
+<p><a href="releases/musl-1.1.18.tar.gz">musl-1.1.18.tar.gz</a>
+(<a href="releases/musl-1.1.18.tar.gz.asc">sig</a>)
+- October 31, 2017
 
-<p>This release fixes numerous bugs affecting visible behavior and
-safety/internal consistency, including a stack-based buffer overflow
-in dns parsing and multiple sources of invalid memory accesses that
-may lead to crashes. See the release notes in WHATSNEW for details.
+<p>This release corrects regressions in glob() and armv4t build
+failure introduced in the previous release, and includes an important
+bug fix for posix_spawnp in the presence of a large PATH environment
+variable.
 
-<p>Many new features have also been added, including deferred symbol
-binding in the dynamic linker (RTLD_LAZY emulation), an option to
-overrid argv[0] when running ldso to execute a program, support for
-starting new sessions via posix_spawn (POSIX_SPAWN_SETSID, accepted
-for standardization), and ability to query the active thread-local
-locale (via _NL_LOCALE_NAME extension). Improvements in compatibility
-with applications, build tools, and platforms have also been made.
 
 
 

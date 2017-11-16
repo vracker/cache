@@ -5,7 +5,6 @@
 <!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
 <!--[if (gt IE 9)|!(IE)]>--> <html lang="en" class="no-js"> <!--<![endif]-->
     <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
             SF.Ads.prebidOptions = {
                 showIndicators: false,
                 analytics: true,
@@ -17,12 +16,11 @@
                 SF.Ads.prebidUnits.push({
                     bids: [{'params': {'tagid': '364648'}, 'bidder': 'sovrn'},
                             {'params': {'cp': 558092, 'cf': '728x90', 'ct': '472223'}, 'bidder': 'pulsepoint'},
-                            {'params': {'placementId': 8841121}, 'bidder': 'brealtime'},
+                            {'params': {'placementId': 12407703}, 'bidder': 'brealtime'},
                             {'params': {'siteId': '103240', 'position': 'atf', 'sizes': [2], 'accountId': '15680', 'zoneId': '486110'}, 'bidder': 'rubicon'},
                             {'params': {'placementId': 9265078}, 'bidder': 'appnexus'},
                             {'params': {'placement': 4224498, 'network': '10676.1'}, 'bidder': 'aol'},
                             {'params': {'siteID': '188656', 'id': '7'}, 'bidder': 'indexExchange'},
-                            {'params': {'placementId': '65725'}, 'bidder': 'rhythmone'},
                             {'params': {'placementId': 12059534}, 'bidder': 'oftmedia'},
                             {'params': {'id': 178241}, 'bidder': 'districtmDMX'},
                             ],
@@ -35,12 +33,11 @@
                 SF.Ads.prebidUnits.push({
                     bids: [{'params': {'tagid': '364646'}, 'bidder': 'sovrn'},
                             {'params': {'cp': 558092, 'cf': '300x250', 'ct': '472221'}, 'bidder': 'pulsepoint'},
-                            {'params': {'placementId': 9319285}, 'bidder': 'brealtime'},
+                            {'params': {'placementId': 12407713}, 'bidder': 'brealtime'},
                             {'params': {'siteId': '103240', 'position': 'atf', 'sizes': [15, 10], 'accountId': '15680', 'zoneId': '486110'}, 'bidder': 'rubicon'},
                             {'params': {'placementId': 9265076}, 'bidder': 'appnexus'},
                             {'params': {'placement': 4224505, 'network': '10676.1'}, 'bidder': 'aol'},
                             {'params': {'siteID': '188654', 'id': '5'}, 'bidder': 'indexExchange'},
-                            {'params': {'placementId': '65725'}, 'bidder': 'rhythmone'},
                             {'params': {'placementId': 12058146}, 'bidder': 'oftmedia'},
                             {'params': {'id': 178239}, 'bidder': 'districtmDMX'},
                             ],
@@ -53,12 +50,11 @@
                 SF.Ads.prebidUnits.push({
                     bids: [{'params': {'tagid': '364647'}, 'bidder': 'sovrn'},
                             {'params': {'cp': 558092, 'cf': '300x250', 'ct': '472222'}, 'bidder': 'pulsepoint'},
-                            {'params': {'placementId': 8829468}, 'bidder': 'brealtime'},
+                            {'params': {'placementId': 12407692}, 'bidder': 'brealtime'},
                             {'params': {'siteId': '103240', 'sizes': [15], 'accountId': '15680', 'zoneId': '486112'}, 'bidder': 'rubicon'},
                             {'params': {'placementId': 9265082}, 'bidder': 'appnexus'},
                             {'params': {'placement': 4224503, 'network': '10676.1'}, 'bidder': 'aol'},
                             {'params': {'siteID': '188655', 'id': '6'}, 'bidder': 'indexExchange'},
-                            {'params': {'placementId': '65725'}, 'bidder': 'rhythmone'},
                             {'params': {'placementId': 12058148}, 'bidder': 'oftmedia'},
                             {'params': {'id': 178240}, 'bidder': 'districtmDMX'},
                             ],
@@ -67,7 +63,7 @@
                     sizes: [300, 250]
                 });
             }
-            SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "indexexchange": 0.95, "sovrn": 0.95, "aardvark": 0.95, "aol": 0.97, "brealtime": 0.9, "districtmdmx": 0.82, "oftmedia": 0.9, "appnexus": 0.92, "pulsepoint": 0.91, "rubicon": 1.02, "indexex#hange": 0.99, "springserve": 0.001, "rubiconlite": 0.9, "rhythmone": 0.96}, "inflation": 1.2, "floor": 0.02};
+            SF.Ads.prebidAdjustments = {"bidder_deflations": {"komoona": 0.92, "onefiftytwo": 0.9, "indexexchange": 0.95, "sovrn": 0.95, "aardvark": 0.95, "aol": 0.97, "brealtime": 0.9, "districtmdmx": 0.79, "oftmedia": 0.9, "appnexus": 0.84, "pulsepoint": 0.9, "rubicon": 1.02, "indexex#hange": 0.98, "springserve": 0.001, "rubiconlite": 0.9, "rhythmone": 0.9}, "inflation": 1.2, "floor": 0.02};
         </script>
         <meta id="project_name" name="project_name" content="expect">
         <meta name="description" content="Expect is a tool for automating interactive applications such as telnet, ftp, passwd, fsck, rlogin, tip, etc. Expect is also useful for testing…">
@@ -352,7 +348,7 @@ visibility_rules
         <label class="input-set stacked input-set-country">
             <span class="label">Country</span>
             <span class="input">
-<select id="country-floating" name="XgOwn8cc5LTLoGq_rqu:vsjydZ5U" required class="use-placeholder-color">
+<select id="country-floating" name="XB:7:cyPsue76A_Ymq0_m9:rLC4I" required class="use-placeholder-color">
     <option value=""></option>
     <option value="AF">Afghanistan</option>
     <option value="AX">Aland Islands</option>
@@ -607,7 +603,7 @@ visibility_rules
         <label class="input-set stacked input-set-state">
             <span class="label">State</span>
             <span class="input">
-<select id="state-floating" name="Xgvw85d0oPjFouUWMu5wedg6gNEs"  class="use-placeholder-color">
+<select id="state-floating" name="XBf7lZzn93LEVbGL:euyH7gdT2GM"  class="use-placeholder-color">
     <option value=""></option>
     <option value="AL">Alabama</option>
     <option value="AK">Alaska</option>

@@ -95,20 +95,20 @@
         }, 
         {
             "iseol": false, 
-            "version": "4.1.46", 
+            "version": "4.1.47", 
             "moniker": "longterm", 
-            "source": "https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.1.46.tar.xz", 
-            "pgp": "https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.1.46.tar.sign", 
+            "source": "https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.1.47.tar.xz", 
+            "pgp": "https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.1.47.tar.sign", 
             "released": {
-                "timestamp": 1510112694, 
-                "isodate": "2017-11-08"
+                "timestamp": 1512614096, 
+                "isodate": "2017-12-07"
             }, 
-            "gitweb": "https://git.kernel.org/stable/linux-stable/h/v4.1.46", 
-            "changelog": "https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.1.46", 
-            "diffview": "https://git.kernel.org/stable/linux-stable/ds/v4.1.46/v4.1.45", 
+            "gitweb": "https://git.kernel.org/stable/linux-stable/h/v4.1.47", 
+            "changelog": "https://cdn.kernel.org/pub/linux/kernel/v4.x/ChangeLog-4.1.47", 
+            "diffview": "https://git.kernel.org/stable/linux-stable/ds/v4.1.47/v4.1.46", 
             "patch": {
-                "full": "https://cdn.kernel.org/pub/linux/kernel/v4.x/patch-4.1.46.xz", 
-                "incremental": "https://cdn.kernel.org/pub/linux/kernel/v4.x/incr/patch-4.1.45-46.xz"
+                "full": "https://cdn.kernel.org/pub/linux/kernel/v4.x/patch-4.1.47.xz", 
+                "incremental": "https://cdn.kernel.org/pub/linux/kernel/v4.x/incr/patch-4.1.46-47.xz"
             }
         }, 
         {
@@ -167,15 +167,15 @@
         }, 
         {
             "iseol": false, 
-            "version": "next-20171205", 
+            "version": "next-20171208", 
             "moniker": "linux-next", 
             "source": null, 
             "pgp": null, 
             "released": {
-                "timestamp": 1512440575, 
-                "isodate": "2017-12-05"
+                "timestamp": 1512708969, 
+                "isodate": "2017-12-08"
             }, 
-            "gitweb": "https://git.kernel.org/next/linux-next/h/next-20171205", 
+            "gitweb": "https://git.kernel.org/next/linux-next/h/next-20171208", 
             "changelog": null, 
             "diffview": null, 
             "patch": {

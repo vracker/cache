@@ -1,0 +1,9 @@
+HTTP/1.1 301 Moved Permanently
+
+HTTP/1.1 302 Found
+content-disposition: attachment; filename="tcl8.6.8-src.tar.gz"
+
+HTTP/1.1 200 OK
+Last-Modified: Fri, 22 Dec 2017 15:00:47 GMT
+Accept-Ranges: bytes
+

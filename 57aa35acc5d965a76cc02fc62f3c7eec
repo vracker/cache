@@ -124,6 +124,375 @@
     </p>
   </li>
 
+  <li><b>2 Jan 2018 -- BusyBox 1.28.0 (unstable)</b>
+    <p><a href="http://busybox.net/downloads/busybox-1.28.0.tar.bz2">BusyBox 1.28.0</a>.
+    (<a href="http://git.busybox.net/busybox/tree/?h=1_28_stable">git</a>,
+    <a href="http://busybox.net/downloads/fixes-1.28.0/">patches</a>,
+    <a href="http://busybox.net/fix.html">how to add a patch</a>)</p>
+
+    <p>Sizes of busybox-1.27.0 and busybox-1.28.0 (with equivalent config, static uclibc build):<pre>
+   text	   data	    bss	    dec	    hex	filename
+ 959831	    491	   7536	 967858	  ec4b2	busybox-1.27.0
+ 961456	    487	   7512	 969455	  ecaef	busybox-1.28.0</pre>
+    </p>
+
+    <p>Changes since previous release:
+<pre>Avi Fishman:
+      i2cset: fix 'i' & 's' modes (3 extra bytes were sent)
+
+Avi Halachmi:
+      lineedit: improve multiline PS1 - redraw using last PS1 line. Closes 10381
+
+Bartosz Golaszewski:
+      i2c-tools: remove unneeded include
+      i2c-tools: don't include linux/i2c-dev.h
+
+Denys Vlasenko:
+      stop using atexit in non-debug build: saves ~260 bytes in bss with musl
+      use %m printf specifier where appropriate
+      standalone shell / prefer_applets: fix "exe" in comm fields
+      change BB_EXTRA_VERSION: now it needs to contain any spaces/parenthesis
+      regularize format of source file headers, no code changes
+      move get_unaligned_le32() macros to platform.h
+      sparc: needs -fPIC
+      config: deindent all help texts
+      config: FEDORA_COMPAT option (so far only tweaks uname)
+      config: merge "Busybox Settings" and "Busybox Library Tuning" into one menu
+      config: more tweaking of help texts
+      config: reorder items in "Busybox Settings", improve help
+      config: trim/improve item names and help texts
+      build system: FEATURE_LIBBUSYBOX_STATIC - try to pull libc/libm into libbusybox
+      build system: fix "allnoconfig" to clear all options. Closes 10296
+      build system: remove unused CONFIG_FEATURE_HAVE_RPC
+      libarchive: do not extract unsafe symlinks unless $EXTRACT_UNSAFE_SYMLINKS=1
+      libarchive: FEATURE_LZMA_FAST should be visible if FEATURE_SEAMLESS_LZMA
+      libbb: avoid malloc/free in bb_unsetenv()
+      libbb: do not die if setgid/setuid(real_id) on startup fails
+      libbb/dump: allow skipping over stdin too
+      libbb/dump: fix a few broken commits and shrink code
+      libbb: hide getnetbyaddr() inside "#if ENABLE_FEATURE_ETC_NETWORKS" block
+      libbb: make trim() return pointer to terminating NUL
+      libbb: move capability names code to libbb
+      libbb: new function bb_getgroups() - allocating wrapper around getgroups()
+      libbb: safe_write should not return EINTR
+      libbb: use _exit, not exit, in bb_daemonize_or_rexec()
+      libbb: rearrange NOFORK/NOEXEC code, logic is not changed
+      libbb: simplify NOFORK/NOEXEC defines, move set_task_comm to libbb
+      lineedit: do not tab-complete any strings which have control characters
+      lineedit: get terminal width before printing prompt
+      lineedit: make read_line_input() not take timeout param
+      main: fix the case where user has "halt" as login shell. Closes 9986
+      networking/interface.c: remove superfluous "& 0377"
+      noexec: consolidate code
+      noexec: do GETOPT_RESET() before entering APPLET_main()
+      noexec: set comm field for noexecs
+      nofork: fix a bug uncovered by hush testsuite (forgotten fflush)
+      adjtimex,blkdiscard,free: make it NOFORK
+      clear,nproc,tty,uname,arch,unlink,which: make them NOFORK
+      pwdx,pivot_root,kill[all5],ttysize,realpath,readlink: make them NOFORK
+      add/remove-shell,add/deluser,add/delgroup: make them NOEXEC
+      make 17 state-changing execing applets (ex: "nice PROG ARGS") NOEXEC
+      blkid: make it NOEXEC, make FEATURE_BLKID_TYPE=y default
+      blockdev,fsfreeze,fstrim,mountpoint: make them NOEXEC
+      brctl,chattr,lsattr,tune2fs: make them NOEXEC
+      chvt,deallocvt,dumpkmap,fgconsole,loadkmap: make them NOEXEC
+      cryptpw,mkpasswd: make them NOEXEC
+      df,dnsdomainname,hostname,dumpleases,expr,fatattr: make them NOEXEC
+      freeramdisk,free,stat,getopt,ifenslave,ipcalc,rdev,ipcrm,ipcs: make them NOEXEC
+      ip,ip*: make them NOEXEC
+      kbd_more: make it NOEXEC, remove redundant opt clearing
+      loadfont,setfont,losetup,lspci,lsscsi,lsusb: make them NOEXEC
+      makedevs,mesg,mktemp,nameif: make ithem NOEXEC
+      modutils: make them NOEXEC except depmod
+      nbd-client: make it NOEXEC, stop using argc
+      date,resize,partprobe,ps,pstree,raidautorun,runlevel,setconsole: make them NOEXEC
+      setkeycodes: make it NOEXEC, better --help text
+      setlogcons: make it NOEXEC, better --help text
+      setserial,stty,sv,svc,sysctl,tunctl,umount: make them NOEXEC
+      users,w,who,uptime,renice,vconfig: make them NOEXEC
+      adjtimex: zero-fill whole structure, to be on the safe side
+      arch: new applet (same as uname -m). ~30 bytes
+      ash: align --login code with dash
+      ash: alloc slightly smaller buffer in cvtnum(); faster unsetvar()
+      ash: allow "trap NUM [SIG]..." syntax
+      ash: implement BASH_XTRACEFD bashism
+      ash: do not set a signal to SIG_DFL if it already is
+      ash: fix display of "&gt;&-" redirect in job strings
+      ash: fix matching of unicode greek letter rho (cf 81) and similar cases
+      ash: note which versions of glibc exhibit "rho bug"
+      ash: fix nofork bug where environment is not properly passed to a command
+      ash: fix redir_leak.tests if STANDALONE=y
+      ash: fix "unset OPTIND" throwing an error message
+      ash: force inlining of a trivial function
+      ash: if !ENABLE_ASH_EXPAND_PRMT, disable PSSYNTAX code
+      ash: improve set -x to quote strings as necessary
+      ash: INT_OFF/INT_ON around run_nofork_applet()
+      ash: less hackish implementation of evaltreenr()
+      ash: make tryexec(cmd) parameter const char
+      ash: more general format ${var:EXPR:EXPR}
+      ash: more s/error/perror/ for better error reporting
+      ash: one "current line = 1" might be missing, fix that
+      ash: [PARSER] Add FAKEEOFMARK for expandstr
+      ash: [PARSER] Catch variable length expansions on non-existant specials
+      ash: [PARSER] Removed noexpand/length check on eofmark
+      ash: [REDIR] Fix popredir on abnormal exit from built-in
+      ash: [REDIR] Replace GPL noclobberopen code with the FreeBSD version
+      ash: remove REDIR_SAVEFD2
+      ash: retain envvars with bad names in initial environment. Closes 10231
+      ash: revert previous implementation of "A=1 A=2 B=$A cmd" code
+      ash: [SHELL] Optimize dash -c "command" to avoid a fork
+      ash: significant overhaul of redirect saving logic
+      ash: stage backported LINENO support as a separate patch
+      ash: survive failures in $PS1 expansion. Closes 10371
+      ash: sync up with dash with respect to redirection escaping
+      ash: unset OPTARG if getopts exits 1, support OPTERR=0 behavior
+      ash: use mempcpy() where appropriate
+      ash: [VAR] Add localvars nesting
+      ash: [VAR] Do not poplocalvars prematurely on regular utilities
+      ash: [VAR] Fix loss of variables when hash collides
+      ash: [VAR] Fix poplocalvar leak
+      ash: [VAR] Fix poplocalvar on abnormal exit from function
+      ash: [VAR] Move unsetvar functionality into setvareq
+      ash: [VAR] Replace cmdenviron with localvars
+      ash,hush: "&gt;&10" redirects to script/tty fds should not work
+      hush: add a test which fails due to uclibc bug in getopt()
+      hush: add support for "set -e"
+      hush: add TODO for "set -e"
+      hush: convert exp/ro/local parameters to bitfields in one flag param
+      hush: correctly handle quoting in "case" even if !BASH_PATTERN_SUBST
+      hush: do not accept "if() { echo; }" function def
+      hush: do not assign to readonly VAR in "VAR=VAL CMD" syntax too
+      hush: explain why wait5.tests is failing
+      hush: fix a case when redirect to a closed fd #1 is not restoring (closing) it
+      hush: fix and_or_and_backgrounding.tests failure
+      hush: fix "cmd1 && cmd2 &" handling on NOMMU
+      hush: fix comment parsing in `cmd`, closes 10421
+      hush: fix ${##}, ${#?}, ${#!} handling
+      hush: fix handling of empty heredoc EOF marker
+      hush: fix quoted_punct.tests failure
+      hush: fix readonly2.tests failure
+      hush: fix redirect code (was using uninitialized variables)
+      hush: fix "(sleep 1; exit 3) & sleep 2; echo $?; wait $!; echo $?"
+      hush: fix "true | func_with_return" not allowing return
+      hush: fix two redirection testcase failures
+      hush: forgot to emit error on (failing) second "readonly VAR=VAL"
+      hush: functions have priority over builtins (!)
+      hush: implement "getopts" builtin
+      hush: implement "readonly" builtin
+      hush: implement "times" builtin
+      hush: implement -d DELIM option for "read"
+      hush: make SIGINT handling visually less confusing
+      hush: make "wait %1" work even if the job is dead
+      hush: massage redirect code to be slightly more like ash
+      hush: print error messages on "shift -1"
+      hush: remove redundant "G_flag_return_in_progress = -1"
+      hush: remove superfluous comparison
+      hush: rename a few functions
+      hush: simplify insert_job_into_table() a bit
+      hush: support ${VAR:N:-M}
+      hush: treat ${#?} as "length of $?"
+      hush: use mempcpy where useful
+      hush: if STANDALONE, close interactive fd for NOEXECed children
+      msh: delete this applet
+      shell: improve comments on signal handling
+      shell: add OPTARG poisoning to getopt_optarg.tests
+      shell: and_or_and_backgrounding.tests is no longer "UNFIXED BUG"
+      shell: make standalone shell tab-complete "busybox"
+      shell: more efficient check for EOL in read
+      shell: optional support for read -t N.NNN, closes 10101
+      awk: stop on first non-option, closes 9861
+      basename: do not use argc
+      beep: disallow FEATURE_BEEP_FREQ = 0 in configuration
+      blkdiscard: provide our own BLK[SEC]DISCARD if necessary
+      bunzip2: fix runCnt overflow from bug 10431
+      bzcat: compile bunzip2_main() if BZCAT
+      bzcat,zcat: simplify code if gunzip/bunzip2 is not selected
+      cat: fix "cat -An" ignoring -n; make numbering go througn all files
+      chat: do not die when HANGUP param is missing. Closes 10016
+      chattr: fix option parsing to accept more cryptic option combos
+      chown: fix a mistake in opt_complementary change
+      crond: allow $SHELL and starting user's shell override DEFAULT_SHELL. Closes 6458
+      crond: do not assume setenv() does not leak
+      crond: support @daily etc
+      date: maybe_set_utc only once
+      dd: fix status=none. Closes 10066
+      ed: fix --help and reorder functions, no code changes
+      ed: fix "\n" removal in command line; make "w" set "dirty = 0"
+      free: no longer include common_bufsiz.h
+      getopt32: factor out code to treat all args as options
+      getopt32: move support for "always treat first arg as option" to users (tar/ar)
+      getopt32: remove applet_long_options
+      getopt32: remove opt_complementary
+      hexedit: new applet
+      httpd: fix handling of range requests
+      httpd: skip "Status: " from CGI, including space. Closes 10291
+      inetd: fix for running by non-root
+      inetd,mount: do not die if uclibc without RPC is detected
+      init: reduce the window when init can lose reboot/poweroff signals
+      ipcalc: trim help text
+      ipcs: tweak output orer to match util-linux 2.28
+      kbd_mode: show "off" mode too
+      kbd_mode: try harder to find console device if -C TTY is not given
+      klibc-utils: add ipconfig.c work-in-progress
+      klibc-utils: new applets: resume, nuke, minips
+      less,microcom,lineedit: use common routine to set raw termios
+      makedevs: allow much longer filenames
+      microcom: require exactly one non-option
+      netcat: net applet (alias to nc)
+      ntpd: do run the script at least once in 11 minutes
+      ntpd: improve treatment of DNS resolution failures
+      ntpd: mention in help text that -d can be repeated
+      ntpd: perform DNS resolution out of send/receive loop. Closes 10466
+      ntpd: skip over setting next DNS resolution attempt if it is not needed
+      pgrep: fix "pgrep -v -P1"; also allow matching of comm. Closes 10086
+      ping: better config help text for FEATURE_FANCY_PING
+      ping: fix help text to show what parameter -p takes
+      pmap: tweak help text, show usage if no params are given
+      ps: implement -o sid
+      ps: improve TIME column for large times: showing "14453:50" is not good
+      ps: stop using AT_CLKTCK, there are more standard ways
+      readprofile: do not close/free just before exiting
+      rpm2cpio: handle LZMA compressed rpms. closes 10166
+      rpm2cpio: use rpm_gettags
+      rpm: prepare rpm_gettags for reuse in rpm2cpio
+      rpm,rpm2cpio: do not compile not-configured parts of rpm.c
+      rpm,rpm2cpio: INIT_G() was missing (it is a nop here so far)
+      rpm,rpm2cpio: put both sources into one file, no code changes
+      run-init: new applet
+      script: -f means "flush", not "fsync"
+      script: make -t[FILE] compatible with util-linux
+      script: make -t independent of scriptreplay
+      sed: in '/regexp/cmd1;//cmd2', cmd2 should use the same regexp as cmd1
+      sendmail allow "=" symbol in recipient, closes 10241
+      sendmail: fix segfault if "To: email1,email2" is used
+      setconsole: much better help text
+      setconsole: since SUSE version has no -r, nuke our --reset longopt
+      setfattr: new applet
+      setpriv: accept any case in capability names
+      setpriv: code shrink, and grouping capability code together
+      setpriv: dump user and group info
+      setpriv: factor out capability name printing
+      setpriv: placate "declaration of 'index' shadows a global declaration" warning
+      setpriv: remove dependency on libcap headers
+      shuf: fix random line selection. Closes 9971
+      stty: add cmspar, flusho, extproc attributes
+      stty: fix bb_common_bufsiz1 use in NOEXEC
+      svc: fix a case where with more than one option, getopt() state is not reset
+      svc: remove superfluout INIT_G()
+      swapon: do not use FEATURE_MOUNT_LABEL, have your own FEATURE_SWAPONOFF_LABEL
+      sysctl: fix file parsing, do not require -w for VAR=VAL
+      sysctl: recognize ";comment" and "&lt;whitespace&gt;#comment" lines
+      syslogd,logger: code shrink for musl
+      tar: postpone creation of symlinks with "suspicious" targets. Closes 8411
+      telnet: "-a" + "-l USER" should respect USER
+      test: fix 4-argument case
+      time: fix build for toolchains without O_CLOEXEC
+      tls: fix build problem on non-static i386
+      tls: fix pstm asm constraint problem
+      tls: remove last int16 local variables in pstm code
+      tls: use capped SNI len everywhere
+      top: switch to malloced "globals"
+      ttysize: if stdin is not tty, try stdout, then stderr
+      ubi_tools: a bit smaller applet resolution code
+      ubi_tools: ubiupdatevol supports "-" input and actually respects -s SIZE
+      ubiupdatevol: fix bug with -sSIZE: was ignoring IMAGE_FILE
+      udhcpc[6]: downgrade "adapter index N" messages to log2 level
+      udhcpc[6]: fix messages referring to select() while we use poll()
+      udhcpc[6]: initialize entire sockaddr_ll
+      udhcpc[6]: make log2 messages for chaddr field indented like the rest
+      udhcpc[6]: on log level 1, three messages about raw socket is overkill
+      udhcpc: downgrade "MAC X:X:X:X:X:X" message to log2 level
+      udhcpc: paranoia when using kernel UDP mode for sending renew: server ID may be bogus
+      unlzma: fix SEGV, closes 10436
+      unshare: -r implies -U, not -u
+      unshare: -r should map root to user, not the other way around
+      unxz: get_le32 macro is obviously wrong
+      unzip: implement -j, closes 9126
+      unzip: robustify overwrite checks
+      unzip: sanitize filename length: malloc(1234mb) is not funny
+      unzip: support symlinks. Closes 10031
+      uuencode: allow space instead of "`" as padding char. Closes 10046
+      volume_id: enable minix detection
+      watchdog: do not use argc, other cleanups
+      xargs: optional support for -P NUM. Closes 9511
+      xxd: allow "-" as file name meaning stdin
+      zcip: fix slow environment leak
+
+Eugene Rudoy (3):
+      iproute/iprule: support toolchains without RTA_TABLE routing attribute
+      unzip: fix content listing and filtering when -j is used
+      unzip: add missing -j to trivial usage
+
+James Clarke (6):
+      networking: Fall back on IPPROTO_RAW when SOL_RAW is not defined
+      blkdiscard: Only build on Linux
+      xfuncs: Handle missing non-POSIX termios constants
+      df: Use statvfs instead of non-standard statfs
+      udp_io, traceroute: Standardise IPv6 PKTINFO handling to be portable
+      grep: skip grepping symlinks to directories
+
+Johannes Schindelin (7):
+      ash: protect WIFSTOPPED use with #if JOBS
+      copyfd: guard use of munmap() with #if (windows builds need this)
+      ash: remove no-longer-used variable
+      ash: implement -d DELIM option for read
+      ash: report reason when a script file could not be opened
+      ash: when cd fails, say why
+      xargs: support -a FILE
+
+Kang-Che Sung (3):
+      cat: allow compiling out -n and -b
+      make_single_applets: fix ": $((fail++))" expansion error
+      ps: allow ps config options if minips is enabled
+
+Markus Gothe:
+      lsscsi: fix xchdir("..") from symlink in /sys/bus/scsi/devices
+
+Matt Spinler:
+      watchdog: stop watchdog first on startup
+
+Natanael Copa:
+      unzip: fix regression on big-endian machines
+
+Patrick Steinhardt (8):
+      setpriv: do not process remaining args
+      setpriv: prepare option parsing logic for additional opts
+      setpriv: dump no-new-privs info
+      setpriv: dump inheritable capability set
+      setpriv: dump capability bounding set
+      setpriv: dump ambient capabilities
+      setpriv: allow modifying inheritable caps
+      setpriv: allow modifying ambient capabilities
+
+Peter Korsgaard:
+      dpkg: fix CONFIG_FEATURE_CLEAN_UP handling
+
+Ron Yorston (9):
+      printf: fix format string sanity check
+      od_bloaty: fix floating point output
+      ash: support platforms that don't have '%m' printf specifier
+      libbb: remove vdprintf
+      ps: fix build failure if FEATURE_PS_TIME is disabled
+      libarchive: fix build failure on NOMMU systems
+      tar: fix handling of first argument without '-'
+      kill: add '--' option to separate options from arguments
+      env: -u option fails due to typo
+
+Thomas Petazzoni:
+      Makefile: include per-arch Makefile before Makefile.flags
+
+Timo Teräs:
+      add-remove-shell: fix crash when shell is already added
+
+Uwe Geuder:
+      bootchartd: prevent premature stop by device mapper
+
+Xabier Oneca:
+      chcon: show '--reference' in help text only if LONG_OPTS=y
+</pre>
+    </p>
+  </li>
+
   <li><b>17 August 2017 -- BusyBox 1.27.2 (stable)</b>
     <p><a href="http://busybox.net/downloads/busybox-1.27.2.tar.bz2">BusyBox 1.27.2</a>.
     (<a href="http://git.busybox.net/busybox/tree/?h=1_27_stable">git</a>,
